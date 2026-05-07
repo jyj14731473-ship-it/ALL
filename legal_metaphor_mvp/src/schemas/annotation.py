@@ -17,8 +17,16 @@ RdfPredicate = Literal[
     "ex:evokesFrame",
     "ex:hasMetaphorType",
     "ex:hasSurfaceExpression",
+    "ex:hasContextSentence",
+    "ex:hasLegalConcept",
+    "ex:realizesConceptualMetaphor",
+    "ex:appearsInOpinionType",
+    "ex:hasConfidence",
+    "ex:derivedFromCandidate",
     "ex:appearsInSentence",
     "ex:hasMIPVULabel",
+    "ex:mappingReason",
+    "ex:needsHumanReview",
 ]
 
 ALLOWED_PREDICATES: set[str] = set(get_args(RdfPredicate))
@@ -40,6 +48,8 @@ class AnnotationState(TypedDict):
     rdf_output: str
     errors: list[str]
     human_review_items: list[dict]
+    metadata: dict[str, object]
+    status: str
 
 
 def create_empty_state(document_id: str = "", case_id: str = "", raw_text: str = "") -> AnnotationState:
@@ -58,6 +68,8 @@ def create_empty_state(document_id: str = "", case_id: str = "", raw_text: str =
         "rdf_output": "",
         "errors": [],
         "human_review_items": [],
+        "metadata": {},
+        "status": "initialized",
     }
 
 

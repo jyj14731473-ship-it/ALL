@@ -21,25 +21,25 @@ class PromptAnnotator(BaseAnnotator):
     """Prompt-based annotator with explicit MIPVU-informed stages.
 
     Pipelines:
-    - simple: compact one-step annotation for quick MVP use
+    - legacy-simple: compact one-step annotation for quick dev use
     - staged: candidate extraction -> dictionary lookup -> MIPVU judgment -> classification
     """
 
     def __init__(self, prompt_dir: Path | None = None, model: str | None = None) -> None:
         project_root = Path(__file__).resolve().parents[2]
-        self.prompt_dir = prompt_dir or (project_root / "prompts")
+        self.prompt_dir = prompt_dir or (project_root / "src" / "prompts")
         self.model = model or os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
         self.dictionary_client = StandardKoreanDictionaryClient()
         self._warned_no_llm = False
         self.client = self._build_openai_client()
         self.prompt_files = {
-            "system_role": "00_system_role.txt",
-            "candidate_extract": "01_candidate_extract.txt",
-            "mipvu_judge": "02_mipvu_judge.txt",
-            "metaphor_classify": "03_metaphor_classify.txt",
-            "annotation_schema": "04_annotation_schema.txt",
-            "mipvu_guidelines": "05_korean_legal_mipvu_guidelines.txt",
-            "validation_check": "06_validation_check.txt",
+            "system_role": "system_role.md",
+            "candidate_extract": "candidate_extract.md",
+            "mipvu_judge": "mipvu_judge.md",
+            "metaphor_classify": "metaphor_classify.md",
+            "annotation_schema": "annotation_schema.md",
+            "mipvu_guidelines": "korean_legal_mipvu_guideline.md",
+            "validation_check": "validation_check.md",
         }
 
     def _build_openai_client(self) -> Any | None:
@@ -162,7 +162,7 @@ class PromptAnnotator(BaseAnnotator):
         return {"metaphors": metaphors}
 
     def _compare_with_dictionary(self, candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
-        """Attach 표준국어대사전 basic meaning lookup to each candidate."""
+        """Attach 표준국어대사전 basic meaning lookup metadata to each candidate."""
         enriched: list[dict[str, Any]] = []
         for candidate in candidates:
             surface = self._safe_string(candidate.get("surface_expression"))
@@ -173,7 +173,7 @@ class PromptAnnotator(BaseAnnotator):
             updated = dict(candidate)
             updated["dictionary_lookup"] = dictionary
             updated["basic_meaning_from_dict"] = self._safe_string(dictionary.get("definition"))
-            updated["basic_meaning_source"] = "stdict" if dictionary.get("status") == "ok" else "unavailable"
+            updated["basic_meaning_source"] = dictionary.get("basic_meaning_source", "unavailable")
             enriched.append(updated)
         return enriched
 
@@ -210,7 +210,7 @@ class PromptAnnotator(BaseAnnotator):
             "judgments": judgments,
         }
         payload = json.dumps(stage_input, ensure_ascii=False)
-        task = self.load_prompt("metaphor_classify").replace("{{PIPELINE_INPUT}}", payload)
+        task = self.load_prompt("metaphor_classify").replace("{{JUDGMENTS_JSON}}", payload)
         prompt = self.build_prompt(system_role, f"{guidelines}\n\n{task}", payload)
         return self._parse_metaphor_classify_response(self._llm_json_call("metaphor_classify", prompt))
 
@@ -226,7 +226,7 @@ class PromptAnnotator(BaseAnnotator):
         if not normalized_text:
             return {"metaphors": [], "metadata": metadata, "stage_outputs": {}}
 
-        if pipeline == "simple":
+        if pipeline in {"simple", "legacy-simple", "dev-simple"}:
             classified = self._stage_metaphor_classify(normalized_text, [], [], pipeline="simple")
             return {
                 "metaphors": classified["metaphors"],

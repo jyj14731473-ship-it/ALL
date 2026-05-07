@@ -10,7 +10,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_DIR = PROJECT_ROOT / "src"
 sys.path.insert(0, str(SRC_DIR))
 
-from dotenv import load_dotenv  # noqa: E402
+try:
+    from dotenv import load_dotenv  # noqa: E402
+except ImportError:  # pragma: no cover - optional at runtime
+    def load_dotenv(*_args: object, **_kwargs: object) -> bool:
+        return False
 from graph.annotation_graph import run_annotation_graph  # noqa: E402
 
 SAMPLE_TEXT = (

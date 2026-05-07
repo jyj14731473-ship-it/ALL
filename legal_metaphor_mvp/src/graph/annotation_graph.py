@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from typing import Any
 
 from nodes.candidate_extract import candidate_extract_node
@@ -14,7 +15,7 @@ from schemas.annotation import AnnotationState, create_empty_state
 
 
 def build_annotation_graph() -> Any:
-    """Build the optional LangGraph workflow."""
+    """Build the LangGraph workflow."""
     try:
         from langgraph.graph import END, StateGraph
     except Exception as exc:  # noqa: BLE001
@@ -43,6 +44,29 @@ def build_annotation_graph() -> Any:
 def run_annotation_graph(raw_text: str, document_id: str = "sample-doc", case_id: str = "sample-case") -> AnnotationState:
     """Run the full graph and return the final state."""
     state = create_empty_state(document_id=document_id, case_id=case_id, raw_text=raw_text)
-    app = build_annotation_graph()
+    state["metadata"] = {
+        "pipeline": "graph",
+        "prompt_directory": "src/prompts",
+        "llm_available": bool(os.getenv("OPENAI_API_KEY", "").strip()),
+    }
+    if not state["metadata"]["llm_available"]:
+        state["errors"].append(
+            "[graph] OPENAI_API_KEY가 없어 LLM 기반 노드는 빈 결과 또는 fallback 결과를 반환할 수 있습니다."
+        )
+
+    try:
+        app = build_annotation_graph()
+    except RuntimeError as exc:
+        state["errors"].append(f"[graph] {exc}")
+        state["status"] = "needs_repair"
+        state["metadata"]["validation_status"] = "needs_repair"
+        return state
+
     result = app.invoke(state)
+    if "metadata" not in result:
+        result["metadata"] = state["metadata"]
+    else:
+        result["metadata"].update(state["metadata"])
+    if "status" not in result:
+        result["status"] = "completed"
     return result

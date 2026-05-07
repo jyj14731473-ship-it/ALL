@@ -5,8 +5,8 @@
 순서:
 1. 문맥 의미를 법률 기능까지 포함해 기록한다.
 2. 기본 의미를 기록한다. 표준국어대사전 조회 결과가 있으면 우선한다.
-3. `distinctness`를 판단한다.
-4. `comparison_possible`과 `similarity`를 판단한다.
+3. `meaning_contrast`와 `distinctness`를 판단한다.
+4. `comparison_possible`과 `similarity`를 통해 metaphorical mapping 가능성을 판단한다.
 5. `mipvu_label`을 지정한다.
 
 라벨:

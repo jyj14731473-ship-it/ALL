@@ -8,7 +8,11 @@ import re
 from pathlib import Path
 from typing import Any
 
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except ImportError:  # pragma: no cover - optional at runtime
+    def load_dotenv(*_args: object, **_kwargs: object) -> bool:
+        return False
 from pydantic import BaseModel
 
 load_dotenv()

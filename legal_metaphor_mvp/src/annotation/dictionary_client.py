@@ -35,7 +35,8 @@ class StandardKoreanDictionaryClient:
                 "term": "",
                 "definition": "",
                 "pos": pos or "",
-                "source": "stdict",
+                "source": "unavailable",
+                "basic_meaning_source": "unavailable",
                 "status": "empty_term",
             }
 
@@ -44,7 +45,8 @@ class StandardKoreanDictionaryClient:
                 "term": word,
                 "definition": "",
                 "pos": pos or "",
-                "source": "stdict",
+                "source": "unavailable",
+                "basic_meaning_source": "unavailable",
                 "status": "no_api_key",
                 "message": "Set STDICT_API_KEY to enable dictionary lookup.",
             }
@@ -72,7 +74,8 @@ class StandardKoreanDictionaryClient:
                 "term": word,
                 "definition": "",
                 "pos": pos or "",
-                "source": "stdict",
+                "source": "unavailable",
+                "basic_meaning_source": "unavailable",
                 "status": "request_failed",
                 "message": str(exc),
             }
@@ -82,7 +85,8 @@ class StandardKoreanDictionaryClient:
                 "term": word,
                 "definition": "",
                 "pos": pos or "",
-                "source": "stdict",
+                "source": "unavailable",
+                "basic_meaning_source": "unavailable",
                 "status": "invalid_response",
             }
 
@@ -92,7 +96,8 @@ class StandardKoreanDictionaryClient:
                 "term": word,
                 "definition": "",
                 "pos": pos or "",
-                "source": "stdict",
+                "source": "unavailable",
+                "basic_meaning_source": "unavailable",
                 "status": "api_error",
                 "error_code": str(err.get("error_code", "")),
                 "message": str(err.get("message", "")),
@@ -107,7 +112,8 @@ class StandardKoreanDictionaryClient:
                 "term": word,
                 "definition": "",
                 "pos": pos or "",
-                "source": "stdict",
+                "source": "unavailable",
+                "basic_meaning_source": "unavailable",
                 "status": "not_found",
             }
 
@@ -124,6 +130,7 @@ class StandardKoreanDictionaryClient:
             "definition": definition,
             "pos": str(first.get("pos", pos or "")),
             "source": "stdict",
+            "basic_meaning_source": "stdict",
             "status": "ok",
             "link": str(sense.get("link", "")) if isinstance(sense, dict) else "",
         }

@@ -14,8 +14,16 @@
 - ex:evokesFrame
 - ex:hasMetaphorType
 - ex:hasSurfaceExpression
+- ex:hasContextSentence
+- ex:hasLegalConcept
+- ex:realizesConceptualMetaphor
+- ex:appearsInOpinionType
+- ex:hasConfidence
+- ex:derivedFromCandidate
 - ex:appearsInSentence
 - ex:hasMIPVULabel
+- ex:mappingReason
+- ex:needsHumanReview
 
 입력:
 {{METAPHORS_JSON}}

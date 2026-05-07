@@ -3,9 +3,10 @@
 한국어 법률 텍스트 은유 주석 MVP입니다.
 
 핵심 원칙:
-- 기본 주석 백엔드는 `prompt`입니다.
-- `finetuned`는 선택 백엔드입니다.
-- RDF 변환은 항상 결정적(deterministic)이며 주석 백엔드와 분리됩니다.
+- 공식 실행 경로는 `LangGraph` 기반 `graph` 파이프라인입니다.
+- `PromptAnnotator`와 `legacy-simple`는 개발/레거시 경로입니다.
+- `finetuned`는 실험용(experimental) 백엔드입니다.
+- RDF mapping과 Turtle 변환은 항상 결정적(deterministic) 경로를 사용합니다.
 
 ## Quick Start (실행 방법)
 
@@ -32,21 +33,21 @@ copy .env.example .env
 3. 입력 텍스트 준비
 - `data/input.txt`에 분석할 한국어 법률 텍스트 입력
 
-4. 주석 실행 (기본: prompt/simple)
+4. 공식 주석 실행 (기본: graph)
 
 ```powershell
-python src/main.py --input data/input.txt --output data/output/metaphors_raw.json --annotator prompt --pipeline simple
+python src/main.py --input data/input.txt --output data/output/graph_annotation.json --pipeline graph --ttl-output data/output/metaphors.ttl
 ```
 
-5. 단계형 주석 실행 (후보추출→사전비교→MIPVU→분류)
+5. 레거시 단계형 주석 실행 (개발용)
 
 ```powershell
 python src/main.py --input data/input.txt --output data/output/metaphors_raw.json --annotator prompt --pipeline staged
 ```
 
-연구용으로는 `staged` 실행을 권장합니다. 각 단계의 중간 결과는 `stage_outputs`에 함께 저장됩니다.
+개발용 빠른 실행이 필요하면 `--pipeline legacy-simple`를 사용할 수 있습니다.
 
-6. 선택: 파인튜닝 백엔드 추론 실행
+6. 선택: 실험용 파인튜닝 백엔드 추론 실행
 
 ```powershell
 python src/main.py --input data/input.txt --output data/output/metaphors_raw.json --annotator finetuned
@@ -58,46 +59,74 @@ python src/main.py --input data/input.txt --output data/output/metaphors_raw.jso
 python src/rdf_convert.py --input data/output/metaphors_raw.json --output data/output/metaphors.ttl
 ```
 
-## Annotation backends
+## Official Pipeline
 
-- `prompt` (default):
-  - 분리된 프롬프트(`prompts/`)를 사용
-  - `simple`, `staged` 파이프라인 지원
-- `finetuned` (optional):
-  - `models/ft_model_config.json` 기반
-  - 명시적으로 `--annotator finetuned`일 때만 동작
+공식 실행 경로는 `graph` 파이프라인입니다.
+
+흐름:
+1. candidate extraction
+2. basic meaning lookup
+3. MIPVU judgment
+4. metaphor classification
+5. RDF mapping
+6. validation
+7. deterministic Turtle conversion
+
+출력 JSON에는 최소한 다음이 포함됩니다.
+- `document_id`
+- `case_id`
+- `candidates`
+- `mipvu_annotations`
+- `metaphor_annotations`
+- `rdf_mappings`
+- `validation_results`
+- `human_review_items`
+- `rdf_output`
+- `errors`
+- `metadata`
 
 ## Staged annotation process (MIPVU + dictionary comparison)
 
 `--annotator prompt --pipeline staged` 흐름:
 
-1. 후보 추출 (`01_candidate_extract.txt`)
+1. 후보 추출 (`src/prompts/candidate_extract.md`)
    - 이 단계 내부에서 형태소/품사 태깅과 예외 후보 플래그를 함께 생성
 2. 표준국어대사전 API 기본 의미 조회(가능 시)
-3. MIPVU-informed 판정 (`02_mipvu_judge.txt`)
-4. 최종 은유 분류 (`03_metaphor_classify.txt`)
+3. MIPVU-informed 판정 (`src/prompts/mipvu_judge.md`)
+4. 최종 은유 분류 (`src/prompts/metaphor_classify.md`)
 
-사전 API 키가 없으면 프로그램은 크래시하지 않고, 사전 조회 상태를 `no_api_key`로 처리합니다.
-OpenAI API 키가 없으면 LLM 주석 단계는 빈 결과(`{"metaphors":[]}`)로 안전하게 종료됩니다.
+기본 의미 판단 규칙:
+- `STDICT_API_KEY`가 있으면 표준국어대사전 API로 basic meaning 후보를 조회합니다.
+- API 키가 없거나 조회 실패 시, basic meaning은 LLM 또는 rule-based fallback에서 `inferred` 또는 `unavailable`로 처리합니다.
+- 판단이 어려우면 `basic_meaning_source`는 `unavailable`로 남깁니다.
+- 별도 단어 의미 중의성 해소 모듈은 사용하지 않습니다.
 
-## Fine-tuning separation
+사전 API 키가 없으면 프로그램은 크래시하지 않고, 사전 조회 결과를 안전한 fallback payload로 반환합니다.
+OpenAI API 키가 없으면 프로그램은 크래시하지 않고, `metadata.llm_available=false`와 `errors`에 이유를 남깁니다.
 
-- 파인튜닝은 기본 파이프라인의 일부가 아닙니다.
-- 파인튜닝은 annotation 백엔드 대체 목적입니다.
-- 출력 포맷은 동일한 canonical JSON(`{"metaphors":[...]}`)입니다.
-- 따라서 `validate_schema` / `rdf_convert`는 변경 없이 동일하게 사용합니다.
+## Prompt Directory
 
-## 프롬프트 구조
+공식 프롬프트 위치는 `src/prompts/`입니다.
 
-- `00_system_role.txt`: 시스템 역할/보수적 정책
-- `01_candidate_extract.txt`: 은유 후보 추출 + 태깅/예외 후보
-- `02_mipvu_judge.txt`: MIPVU-informed 판정
-- `03_metaphor_classify.txt`: 최종 분류
-- `04_annotation_schema.txt`: 표준 스키마 레퍼런스
-- `05_korean_legal_mipvu_guidelines.txt`: 한국어 법률 텍스트용 MIPVU 적용 지침
-- `06_validation_check.txt`: 검증 체크 규칙
+사용 파일:
+- `src/prompts/system_role.md`
+- `src/prompts/candidate_extract.md`
+- `src/prompts/mipvu_judge.md`
+- `src/prompts/metaphor_classify.md`
+- `src/prompts/rdf_mapping.md`
+- `src/prompts/annotation_schema.md`
+- `src/prompts/korean_legal_mipvu_guideline.md`
+- `src/prompts/validation_check.md`
+
+## Legacy And Experimental Paths
+
+- `--pipeline staged`: 레거시 prompt 경로
+- `--pipeline legacy-simple`: 개발용 단순 경로
+- `--annotator finetuned`: 실험용 백엔드이며 기본값이 아닙니다.
 
 ## Fine-tune 보조 스크립트
+
+`src/finetune/`와 `data/finetune/`는 실험용(experimental) 영역입니다.
 
 ```powershell
 python src/finetune/prepare_dataset.py --input data/annotations/gold.jsonl --out-dir data/finetune
