@@ -48,6 +48,8 @@ def validate_item(item: dict[str, Any], idx: int) -> list[str]:
     conf = item.get("confidence")
     if conf is not None and not isinstance(conf, (int, float)):
         errors.append(f"metaphors[{idx}] confidence must be numeric")
+    elif isinstance(conf, (int, float)) and not (0.0 <= conf <= 1.0):
+        errors.append(f"metaphors[{idx}] confidence out of range [0.0, 1.0]: {conf}")
     return errors
 
 

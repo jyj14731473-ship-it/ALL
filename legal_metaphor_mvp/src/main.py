@@ -67,9 +67,9 @@ def main() -> None:
 
     # Keep canonical shape stable.
     if not isinstance(annotation, dict) or "metaphors" not in annotation:
-        annotation = {"metaphors": []}
+        annotation = {"metaphors": [], "stage_outputs": {}}
     if not isinstance(annotation.get("metaphors"), list):
-        annotation = {"metaphors": []}
+        annotation["metaphors"] = []
 
     write_json(args.output, annotation)
     print(f"[main] annotator={args.annotator} pipeline={args.pipeline}")

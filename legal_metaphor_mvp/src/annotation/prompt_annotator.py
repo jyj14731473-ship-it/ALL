@@ -45,20 +45,45 @@ class PromptAnnotator(BaseAnnotator):
     def build_prompt(system_role: str, task_prompt: str, input_text: str) -> str:
         return f"{system_role.strip()}\n\n{task_prompt.strip()}\n\n{input_text.strip()}\n"
 
+    @staticmethod
+    def _parse_candidate_extract_response(raw: Any) -> dict[str, Any]:
+        if not isinstance(raw, dict):
+            return {"candidates": []}
+        return {"candidates": [x for x in raw.get("candidates", []) if isinstance(x, dict)]}
+
+    @staticmethod
+    def _parse_mipvu_judge_response(raw: Any) -> dict[str, Any]:
+        if not isinstance(raw, dict):
+            return {"judgments": []}
+        return {"judgments": [x for x in raw.get("judgments", []) if isinstance(x, dict)]}
+
+    @staticmethod
+    def _parse_metaphor_classify_response(raw: Any) -> dict[str, Any]:
+        if not isinstance(raw, dict):
+            return {"metaphors": []}
+        return {"metaphors": [x for x in raw.get("metaphors", []) if isinstance(x, dict)]}
+
     def _llm_call_placeholder(self, stage: str, prompt: str) -> dict[str, Any]:
         """Placeholder for future LLM API calls.
 
         TODO:
-        - Replace with real LLM client.
-        - Parse and validate strict JSON response.
+        - Replace stub dict with real LLM client call using prompt.
+        - Pass raw JSON response to the corresponding _parse_*_response method.
         """
-        _ = stage
         _ = prompt
-        if stage == "candidate_extract":
-            return {"candidates": []}
-        if stage == "mipvu_judge":
-            return {"judgments": []}
-        return {"metaphors": []}
+        stubs: dict[str, dict[str, Any]] = {
+            "candidate_extract": {"candidates": []},
+            "mipvu_judge": {"judgments": []},
+            "metaphor_classify": {"metaphors": []},
+        }
+        parsers = {
+            "candidate_extract": self._parse_candidate_extract_response,
+            "mipvu_judge": self._parse_mipvu_judge_response,
+            "metaphor_classify": self._parse_metaphor_classify_response,
+        }
+        stub = stubs.get(stage, {"metaphors": []})
+        parser = parsers.get(stage, self._parse_metaphor_classify_response)
+        return parser(stub)
 
     @staticmethod
     def _as_list(value: Any) -> list[dict[str, Any]]:
@@ -204,5 +229,5 @@ class PromptAnnotator(BaseAnnotator):
         result = self.run_pipeline(text=text, pipeline=pipeline)
         metaphors = result.get("metaphors", [])
         if not isinstance(metaphors, list):
-            return {"metaphors": []}
-        return {"metaphors": metaphors}
+            return {"metaphors": [], "stage_outputs": {}}
+        return {"metaphors": metaphors, "stage_outputs": result.get("stage_outputs", {})}

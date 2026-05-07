@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import os
+import urllib.error
 import urllib.parse
 import urllib.request
 from typing import Any
@@ -67,13 +68,22 @@ class StandardKoreanDictionaryClient:
         try:
             with urllib.request.urlopen(url, timeout=10) as response:
                 payload = json.loads(response.read().decode("utf-8"))
-        except Exception as exc:  # noqa: BLE001
+        except (urllib.error.URLError, TimeoutError) as exc:
             return {
                 "term": word,
                 "definition": "",
                 "pos": pos or "",
                 "source": "stdict",
                 "status": "request_failed",
+                "message": str(exc),
+            }
+        except json.JSONDecodeError as exc:
+            return {
+                "term": word,
+                "definition": "",
+                "pos": pos or "",
+                "source": "stdict",
+                "status": "invalid_response",
                 "message": str(exc),
             }
 

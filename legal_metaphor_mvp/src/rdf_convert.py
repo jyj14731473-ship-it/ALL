@@ -39,7 +39,7 @@ def to_turtle(records: list[dict[str, Any]]) -> str:
         target_label = str(rec.get("target_domain") or "UnknownTargetDomain")
         legal_label = str(rec.get("legal_concept") or "UnknownLegalConcept")
 
-        m_uri = f"ex:metaphor_{slugify(m_id)}"
+        m_uri = f"ex:metaphor_{slugify(m_id)}_{idx}"
         cm_uri = f"ex:cm_{slugify(cm_label)}"
         source_uri = f"ex:source_{slugify(source_label)}"
         target_uri = f"ex:target_{slugify(target_label)}"
