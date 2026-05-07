@@ -1,0 +1,39 @@
+Task:
+Classify confirmed metaphorical expressions for legal metaphor annotation.
+
+Instructions:
+1. Use only candidates/judgments provided in input.
+2. Include only items that are metaphorical or reasonably supported as metaphorical.
+3. Assign normalized, stable labels for source_domain, target_domain, legal_concept, and conceptual_metaphor.
+4. If uncertain, use broader source domain labels instead of over-specific new labels.
+5. Preserve original Korean surface expression and context sentence exactly.
+6. If no valid metaphor remains, return {"metaphors":[]}.
+
+Output constraints:
+- Return ONLY valid JSON.
+- No markdown or additional commentary.
+
+Required JSON shape:
+{
+  "metaphors": [
+    {
+      "metaphor_id": "M001",
+      "source_candidate_id": "C001",
+      "surface_expression": "",
+      "context_sentence": "",
+      "legal_concept": "",
+      "target_domain": "",
+      "source_domain": "",
+      "conceptual_metaphor": "",
+      "metaphor_type": "structural | ontological | orientational | uncertain",
+      "is_legal_domain_specific": true,
+      "opinion_type": "majority | dissenting | concurring | unknown",
+      "confidence": 0.0,
+      "rationale_brief": ""
+    }
+  ]
+}
+
+Input (legal text and/or intermediate JSON):
+{{PIPELINE_INPUT}}
+

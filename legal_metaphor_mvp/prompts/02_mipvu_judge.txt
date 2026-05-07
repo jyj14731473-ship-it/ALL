@@ -1,0 +1,39 @@
+Task:
+Judge whether each candidate expression is metaphorical using a MIPVU-informed procedure.
+
+Input expectation:
+- Candidate JSON may include dictionary lookup results from 표준국어대사전.
+- Use dictionary-based basic meaning when available.
+
+Procedure:
+1. Read the contextual legal meaning from context_sentence.
+2. Identify the more basic meaning.
+   - Prefer basic meaning from dictionary_lookup.definition when provided.
+   - If dictionary lookup is unavailable, infer cautiously and mark lower confidence.
+3. Determine whether contextual meaning can be understood by comparison with basic meaning.
+4. Do not force certainty. Use low confidence for borderline cases.
+
+Output constraints:
+- Return ONLY valid JSON.
+- No markdown, no code fences, no extra prose.
+
+Required JSON shape:
+{
+  "judgments": [
+    {
+      "candidate_id": "C001",
+      "surface_expression": "",
+      "is_metaphorical": true,
+      "contextual_meaning": "",
+      "basic_meaning": "",
+      "basic_meaning_source": "stdict | inferred",
+      "metaphorical_mapping_exists": true,
+      "judgment_reason": "",
+      "confidence": 0.0
+    }
+  ]
+}
+
+Input candidates JSON:
+{{CANDIDATES_JSON}}
+

@@ -1,0 +1,39 @@
+Canonical annotation schema reference for legal metaphor instances.
+
+Top-level:
+{
+  "metaphors": [ ... ]
+}
+
+Each metaphor object fields:
+- metaphor_id: string
+  Unique metaphor identifier (e.g., "M001").
+- source_candidate_id: string
+  Candidate ID that this metaphor originated from (e.g., "C001").
+- surface_expression: string
+  Exact Korean expression from source text.
+- context_sentence: string
+  Sentence containing the expression.
+- legal_concept: string
+  Legal concept represented in context.
+- target_domain: string
+  Domain being reasoned about in legal context.
+- source_domain: string
+  Source concept domain used for mapping.
+- conceptual_metaphor: string
+  Normalized conceptual mapping label.
+- metaphor_type: string
+  Allowed values: structural | ontological | orientational | uncertain
+- is_legal_domain_specific: boolean
+  Whether usage appears specific to legal discourse.
+- opinion_type: string
+  Allowed values: majority | dissenting | concurring | unknown
+- confidence: number
+  Range [0.0, 1.0].
+- rationale_brief: string
+  Short explanation for annotation decision.
+
+Notes:
+- Keep Korean text fields verbatim from source when possible.
+- Do not add undeclared fields unless explicitly requested by downstream tool.
+

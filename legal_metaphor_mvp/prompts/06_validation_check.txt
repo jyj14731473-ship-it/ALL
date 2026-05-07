@@ -1,0 +1,35 @@
+Task:
+Validate either annotation JSON output or RDF Turtle output.
+
+Check list:
+- invalid JSON
+- missing required fields
+- invalid metaphor_type values
+- invalid opinion_type values
+- empty surface expressions
+- invented RDF predicates (outside allowed list)
+- malformed Turtle syntax
+
+Validation rules:
+- Report concrete issues with location and suggested fix.
+- If uncertain, raise a warning instead of guessing.
+
+Output constraints:
+- Return ONLY valid JSON.
+
+Required JSON shape:
+{
+  "is_valid": true,
+  "issues": [
+    {
+      "severity": "error | warning",
+      "location": "",
+      "message": "",
+      "suggested_fix": ""
+    }
+  ]
+}
+
+Input artifact:
+{{OUTPUT_CONTENT}}
+

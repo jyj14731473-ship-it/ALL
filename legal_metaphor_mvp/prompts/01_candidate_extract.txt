@@ -1,0 +1,43 @@
+Task:
+Extract metaphor candidate expressions from Korean legal text.
+
+Goal:
+- Recall-oriented candidate extraction.
+- Keep obvious literal legal technical terms out when no semantic tension exists.
+- Do NOT make final metaphor judgment at this stage.
+
+MIPVU-informed preprocessing requirements:
+1. For each candidate, provide at least one morpheme/POS tagging trace.
+2. Detect "exception candidates" that require stricter review
+   (e.g., formulaic legal boilerplate, highly lexicalized institutional terms, ambiguous idiomatic carry-over).
+3. Preserve Korean legal expression exactly as written.
+4. If uncertain, include candidate with lower confidence.
+
+Output constraints:
+- Return ONLY valid JSON.
+- No markdown, no code fences, no extra prose.
+
+Required JSON shape:
+{
+  "candidates": [
+    {
+      "candidate_id": "C001",
+      "surface_expression": "",
+      "context_sentence": "",
+      "candidate_legal_concept": "",
+      "reason_for_candidate": "",
+      "confidence": 0.0,
+      "morpheme_or_pos_tags": [
+        {"token": "", "pos": ""}
+      ],
+      "lemma": "",
+      "primary_pos": "",
+      "is_exception_candidate": false,
+      "exception_reason": ""
+    }
+  ]
+}
+
+Input legal text:
+{{INPUT_TEXT}}
+
