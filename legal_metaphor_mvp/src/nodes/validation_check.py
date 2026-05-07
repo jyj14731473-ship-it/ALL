@@ -1,13 +1,10 @@
-"""Validation node with rule checks and optional LLM review."""
+"""Validation node with rule checks."""
 
 from __future__ import annotations
 
-import json
-from pathlib import Path
 from typing import Any
 
-from graph.prompt_utils import call_structured_chain, load_common_system_prompt, load_prompt_text
-from schemas.annotation import ALLOWED_PREDICATES, AnnotationState, ValidationOutput
+from schemas.annotation import ALLOWED_PREDICATES, AnnotationState
 
 
 def _issue(severity: str, location: str, message: str, suggested_fix: str) -> dict[str, str]:
@@ -115,23 +112,6 @@ def validation_check_node(state: AnnotationState) -> dict[str, Any]:
             if predicate and predicate not in ALLOWED_PREDICATES:
                 issues.append(_issue("error", str(triple.get("subject_id", "")), f"허용되지 않은 predicate: {predicate}", "ALLOWED_PREDICATES 중 하나로 바꾸세요."))
                 errors.append(f"[validation_check] 허용되지 않은 predicate 사용: {predicate}")
-
-    prompt_dir = Path(__file__).resolve().parents[1] / "prompts"
-    system_prompt = load_common_system_prompt(prompt_dir)
-    user_prompt = load_prompt_text(prompt_dir, "validation_check.md")
-    payload = {"mipvu_annotations": mipvu, "metaphor_annotations": metaphors, "rdf_mappings": mappings}
-    if user_prompt:
-        llm_output = call_structured_chain(
-            system_prompt,
-            f"{user_prompt}\n\n입력:\n{json.dumps(payload, ensure_ascii=False)}",
-            ValidationOutput,
-            errors,
-            "validation_check",
-        )
-        if isinstance(llm_output, dict):
-            for item in llm_output.get("issues", []):
-                if isinstance(item, dict):
-                    issues.append(item)
 
     repair_needed = any(issue.get("severity") == "error" for issue in issues)
     human_review_needed = any(issue.get("severity") == "warning" for issue in issues)

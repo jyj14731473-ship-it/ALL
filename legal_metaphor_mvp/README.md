@@ -68,8 +68,8 @@ python src/rdf_convert.py --input data/output/metaphors_raw.json --output data/o
 2. basic meaning lookup
 3. MIPVU judgment
 4. metaphor classification
-5. RDF mapping
-6. validation
+5. RDF mapping (rule-based)
+6. validation (rule-based)
 7. deterministic Turtle conversion
 
 출력 JSON에는 최소한 다음이 포함됩니다.
@@ -113,16 +113,27 @@ OpenAI API 키가 없으면 프로그램은 크래시하지 않고, `metadata.ll
 - `src/prompts/candidate_extract.md`
 - `src/prompts/mipvu_judge.md`
 - `src/prompts/metaphor_classify.md`
-- `src/prompts/rdf_mapping.md`
 - `src/prompts/annotation_schema.md`
 - `src/prompts/korean_legal_mipvu_guideline.md`
-- `src/prompts/validation_check.md`
+
+`src/prompts/rdf_mapping.md`와 `src/prompts/validation_check.md`는 현재 그래프 파이프라인에서 직접 호출되지 않습니다.
+
+## Prompt Architecture (그래프 운영 기준)
+
+- LLM 프롬프트가 개입되는 노드: `candidate_extract`, `mipvu_judge`, `metaphor_classify`
+- 규칙 기반으로 처리되는 노드: `rdf_mapping`, `validation_check`, `rdf_convert`
+- 운영 기준에서 프롬프트는 다음에만 수정하면 됩니다.
+  - 문장/표현 추출 품질 개선: `candidate_extract.md`
+  - MIPVU 판정 규칙 반영: `mipvu_judge.md`
+  - 은유 분류 규칙 반영: `metaphor_classify.md`
 
 ## Legacy And Experimental Paths
 
 - `--pipeline staged`: 레거시 prompt 경로
 - `--pipeline legacy-simple`: 개발용 단순 경로
 - `--annotator finetuned`: 실험용 백엔드이며 기본값이 아닙니다.
+
+상세한 프롬프트 운영 아키텍처는 [docs/prompt-architecture.md](docs/prompt-architecture.md)에서 확인하세요.
 
 ## Fine-tune 보조 스크립트
 

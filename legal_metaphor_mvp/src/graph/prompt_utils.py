@@ -56,8 +56,6 @@ def _safe_empty_for_model(output_model: type[BaseModel]) -> dict[str, Any]:
         return {"judgments": []}
     if name == "MetaphorClassificationOutput":
         return {"metaphors": []}
-    if name == "RdfMappingOutput":
-        return {"rdf_mapping": None, "rdf_mappings": []}
     if name == "ValidationOutput":
         return {"is_valid": True, "issues": []}
     return {}

@@ -39,7 +39,6 @@ class PromptAnnotator(BaseAnnotator):
             "metaphor_classify": "metaphor_classify.md",
             "annotation_schema": "annotation_schema.md",
             "mipvu_guidelines": "korean_legal_mipvu_guideline.md",
-            "validation_check": "validation_check.md",
         }
 
     def _build_openai_client(self) -> Any | None:
