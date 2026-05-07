@@ -1,2 +1,4 @@
 python-dotenv>=1.0.1
-
+openai>=1.30.0
+jsonschema>=4.22.0
+rdflib>=7.0.0

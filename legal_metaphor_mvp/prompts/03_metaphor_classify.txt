@@ -8,6 +8,7 @@ Instructions:
 4. If uncertain, use broader source domain labels instead of over-specific new labels.
 5. Preserve original Korean surface expression and context sentence exactly.
 6. If no valid metaphor remains, return {"metaphors":[]}.
+7. In simple pipeline mode, candidates/judgments may be empty. In that case, perform a compact internal candidate extraction, MIPVU-informed judgment, and classification, but output only the final canonical metaphors JSON.
 
 Output constraints:
 - Return ONLY valid JSON.
@@ -36,4 +37,3 @@ Required JSON shape:
 
 Input (legal text and/or intermediate JSON):
 {{PIPELINE_INPUT}}
-
