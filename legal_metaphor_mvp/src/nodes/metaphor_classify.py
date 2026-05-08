@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -16,6 +17,12 @@ def _safe_float(value: Any) -> float:
 
 def _eligible(judgment: dict[str, Any]) -> bool:
     return str(judgment.get("mipvu_label", "")).strip() in {"MRW", "MRW_candidate", "borderline_candidate"}
+
+
+def _batch_items(items: list[dict[str, Any]], batch_size: int) -> list[list[dict[str, Any]]]:
+    if batch_size <= 0:
+        return [items]
+    return [items[idx : idx + batch_size] for idx in range(0, len(items), batch_size)]
 
 
 def metaphor_classify_node(state: AnnotationState) -> dict[str, Any]:
@@ -36,11 +43,27 @@ def metaphor_classify_node(state: AnnotationState) -> dict[str, Any]:
     user_prompt = load_prompt_text(prompt_dir, "metaphor_classify.md")
     if not user_prompt:
         user_prompt = "MIPVU 판정 결과를 개념 은유 주석 JSON으로 분류하세요.\n\n{{JUDGMENTS_JSON}}"
-    payload = {"raw_text": state.get("raw_text", ""), "candidates": candidates, "judgments": filtered}
-    user_prompt = user_prompt.replace("{{JUDGMENTS_JSON}}", json.dumps(payload, ensure_ascii=False))
 
-    parsed = call_structured_chain(system_prompt, user_prompt, MetaphorClassificationOutput, errors, "metaphor_classify")
-    metaphors = parsed.get("metaphors", []) if isinstance(parsed, dict) else []
+    batch_size = int(os.getenv("METAPHOR_BATCH_SIZE", "30").strip() or 30)
+    if batch_size < 1:
+        batch_size = 30
+
+    all_metaphors: list[dict[str, Any]] = []
+    chunks = _batch_items(filtered, batch_size)
+    for chunk_idx, chunk in enumerate(chunks, start=1):
+        if not chunk:
+            continue
+        payload = {"judgments": chunk}
+        chunk_prompt = user_prompt.replace("{{JUDGMENTS_JSON}}", json.dumps(payload, ensure_ascii=False))
+        parsed = call_structured_chain(
+            system_prompt,
+            chunk_prompt,
+            MetaphorClassificationOutput,
+            errors,
+            f"metaphor_classify_batch{chunk_idx}",
+        )
+        all_metaphors.extend(parsed.get("metaphors", []) if isinstance(parsed, dict) else [])
+    metaphors = all_metaphors
     candidate_lookup = {str(c.get("candidate_id", "")): c for c in candidates if isinstance(c, dict)}
 
     normalized: list[dict[str, Any]] = []

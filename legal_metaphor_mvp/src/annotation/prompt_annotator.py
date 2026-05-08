@@ -162,12 +162,21 @@ class PromptAnnotator(BaseAnnotator):
 
     def _compare_with_dictionary(self, candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
         """Attach 표준국어대사전 basic meaning lookup metadata to each candidate."""
-        enriched: list[dict[str, Any]] = []
+        lookup_requests = []
         for candidate in candidates:
             surface = self._safe_string(candidate.get("surface_expression"))
             lemma = self._safe_string(candidate.get("lemma")) or surface
             pos_tag = self._safe_string(candidate.get("primary_pos"))
-            dictionary = self.dictionary_client.lookup_basic_meaning(term=lemma, pos=pos_tag or None)
+            lookup_requests.append((lemma, pos_tag or None))
+
+        lookups = self.dictionary_client.lookup_basic_meanings(lookup_requests)
+
+        enriched: list[dict[str, Any]] = []
+        for idx, candidate in enumerate(candidates):
+            surface = self._safe_string(candidate.get("surface_expression"))
+            lemma = self._safe_string(candidate.get("lemma")) or surface
+            pos_tag = self._safe_string(candidate.get("primary_pos"))
+            dictionary = lookups[idx] if idx < len(lookups) else self.dictionary_client.lookup_basic_meaning(term=lemma, pos=pos_tag or None)
 
             updated = dict(candidate)
             updated["dictionary_lookup"] = dictionary

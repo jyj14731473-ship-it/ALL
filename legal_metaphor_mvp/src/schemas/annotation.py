@@ -9,7 +9,17 @@ from pydantic import BaseModel, Field
 MetaphorType = Literal["structural", "ontological", "orientational", "uncertain"]
 OpinionType = Literal["majority", "dissenting", "concurring", "unknown"]
 BasicMeaningSource = Literal["stdict", "inferred", "unavailable"]
-MIPVULabel = Literal["MRW", "MRW_candidate", "borderline_candidate", "non_MRW", "uncertain"]
+MIPVULabel = Literal[
+    "MRW",
+    "MRW_candidate",
+    "borderline_candidate",
+    "non_MRW",
+    "non-MRW",
+    "not_mrw",
+    "not-MRW",
+    "not_MRW",
+    "uncertain",
+]
 RdfPredicate = Literal[
     "ex:isConceptualizedAs",
     "ex:hasSourceDomain",
@@ -45,6 +55,7 @@ class AnnotationState(TypedDict):
     rdf_mappings: list[dict]
     validation_results: list[dict]
     final_annotations: list[dict]
+    contextual_meaning_by_lemma: dict[str, str]
     rdf_output: str
     errors: list[str]
     human_review_items: list[dict]
@@ -65,6 +76,7 @@ def create_empty_state(document_id: str = "", case_id: str = "", raw_text: str =
         "rdf_mappings": [],
         "validation_results": [],
         "final_annotations": [],
+        "contextual_meaning_by_lemma": {},
         "rdf_output": "",
         "errors": [],
         "human_review_items": [],
@@ -104,7 +116,7 @@ class MipvuJudgment(BaseModel):
     lemma: str = ""
     pos: str = ""
     context_sentence: str
-    contextual_meaning: str
+    contextual_meaning: str = ""
     basic_meaning: str = ""
     basic_meaning_source: BasicMeaningSource = "unavailable"
     meaning_contrast: str = ""

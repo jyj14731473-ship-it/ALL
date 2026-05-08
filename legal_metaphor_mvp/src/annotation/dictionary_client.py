@@ -6,11 +6,16 @@ Reference:
 
 from __future__ import annotations
 
+import concurrent.futures
 import json
 import os
 import urllib.parse
 import urllib.request
 from typing import Any
+from typing import Iterable
+
+from datetime import datetime
+from datetime import datetime
 
 
 class StandardKoreanDictionaryClient:
@@ -19,6 +24,10 @@ class StandardKoreanDictionaryClient:
     def __init__(self) -> None:
         self.api_key = os.getenv("STDICT_API_KEY", "").strip()
         self.endpoint = os.getenv("STDICT_API_URL", "https://stdict.korean.go.kr/api/search.do").strip()
+        self.certkey_no = os.getenv("STDICT_CERTKEY_NO", "").strip()
+        self.type_search = os.getenv("STDICT_TYPE_SEARCH", "search").strip() or "search"
+        self.req_type = os.getenv("STDICT_REQ_TYPE", "json").strip() or "json"
+        self.batch_size = self._read_batch_size()
 
     def is_available(self) -> bool:
         return bool(self.api_key)
@@ -54,12 +63,11 @@ class StandardKoreanDictionaryClient:
         params = {
             "key": self.api_key,
             "q": word,
-            "req_type": "json",
-            "start": "1",
-            "num": "1",
-            "method": "exact",
-            "type1": "word",
         }
+        if self.certkey_no:
+            params["certkey_no"] = self.certkey_no
+        params["type_search"] = self.type_search
+        params["req_type"] = self.req_type
         if pos:
             # API doc uses numeric pos filter; keep optional and conservative.
             # TODO: map Korean POS labels to numeric values if strict filtering is required.
@@ -68,7 +76,19 @@ class StandardKoreanDictionaryClient:
         url = f"{self.endpoint}?{urllib.parse.urlencode(params)}"
         try:
             with urllib.request.urlopen(url, timeout=10) as response:
-                payload = json.loads(response.read().decode("utf-8"))
+                raw = response.read()
+                payload_text = raw.decode("utf-8")
+                if not payload_text.strip():
+                    return {
+                        "term": word,
+                        "definition": "",
+                        "pos": pos or "",
+                        "source": "unavailable",
+                        "basic_meaning_source": "unavailable",
+                        "status": "request_failed",
+                        "message": "Empty response body from stdict API.",
+                    }
+                payload = json.loads(payload_text)
         except Exception as exc:  # noqa: BLE001
             return {
                 "term": word,
@@ -135,3 +155,56 @@ class StandardKoreanDictionaryClient:
             "link": str(sense.get("link", "")) if isinstance(sense, dict) else "",
         }
 
+    def lookup_basic_meanings(
+        self,
+        terms: Iterable[tuple[str, str | None]],
+        batch_size: int | None = None,
+    ) -> list[dict[str, Any]]:
+        """Look up basic meanings for terms in batches."""
+
+        term_items = [(str(term or "").strip(), pos or None) for term, pos in terms]
+        size = max(1, batch_size or self.batch_size)
+
+        results: list[dict[str, Any]] = [{} for _ in range(len(term_items))]
+        total = len(term_items)
+
+        if total == 0:
+            print("[dictionary] 사전 조회 대상이 없습니다.")
+            return results
+
+        total_batches = (total + size - 1) // size
+        print(f"[dictionary] 사전 조회 시작: 대상={total}개, 배치={size}, 배치수={total_batches}개")
+
+        for start in range(0, total, size):
+            chunk = term_items[start : start + size]
+            if not chunk:
+                continue
+            batch_idx = start // size + 1
+            batch_start = datetime.now()
+            print(f"[dictionary] batch {batch_idx}/{total_batches} 시작 ({len(chunk)}개)")
+
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(len(chunk), size)) as executor:
+                future_to_idx = {
+                    executor.submit(self.lookup_basic_meaning, term, pos): (start + offset)
+                    for offset, (term, pos) in enumerate(chunk)
+                }
+                for future in concurrent.futures.as_completed(future_to_idx):
+                    idx = future_to_idx[future]
+                    results[idx] = future.result()
+            batch_elapsed = datetime.now() - batch_start
+            done = min(start + size, total)
+            print(
+                f"[dictionary] batch {batch_idx}/{total_batches} 완료: {done}/{total} (진행률 "
+                f"{done/total:.1%}, 소요 {batch_elapsed.total_seconds():.1f}s)"
+            )
+
+        return results
+
+
+    def _read_batch_size(self) -> int:
+        value = os.getenv("STDICT_BATCH_SIZE", "50").strip()
+        try:
+            parsed = int(value)
+            return max(1, parsed)
+        except ValueError:
+            return 50

@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import urllib.error
+import urllib.request
 import os
 import re
 from pathlib import Path
@@ -14,6 +16,8 @@ except ImportError:  # pragma: no cover - optional at runtime
     def load_dotenv(*_args: object, **_kwargs: object) -> bool:
         return False
 from pydantic import BaseModel
+
+from langchain_core.messages import HumanMessage, SystemMessage
 
 load_dotenv()
 
@@ -61,6 +65,38 @@ def _safe_empty_for_model(output_model: type[BaseModel]) -> dict[str, Any]:
     return {}
 
 
+def _call_openai_json(
+    api_key: str,
+    model_name: str,
+    messages: list[dict[str, str]],
+    temperature: float,
+) -> dict[str, Any] | list[Any] | None:
+    """Call OpenAI chat completions endpoint with explicit UTF-8 JSON serialization."""
+    payload = {
+        "model": model_name,
+        "messages": messages,
+        "temperature": temperature,
+        "response_format": {"type": "json_object"},
+    }
+    request_payload = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    request = urllib.request.Request(
+        "https://api.openai.com/v1/chat/completions",
+        data=request_payload,
+        method="POST",
+        headers={
+            "Content-Type": "application/json; charset=utf-8",
+            "Authorization": f"Bearer {api_key}",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=120) as response:
+        raw = response.read().decode("utf-8")
+    body = json.loads(raw)
+    choice = body.get("choices", [{}])[0]
+    message = choice.get("message", {})
+    content = message.get("content", "")
+    return _extract_first_json(str(content))
+
+
 def call_structured_chain(
     system_prompt: str,
     user_prompt: str,
@@ -74,37 +110,36 @@ def call_structured_chain(
         errors.append(f"[{stage}] OPENAI_API_KEY가 없어 LLM 호출을 생략했습니다.")
         return _safe_empty_for_model(output_model)
 
-    try:
-        from langchain_core.prompts import ChatPromptTemplate
-        from langchain_openai import ChatOpenAI
-    except Exception as exc:  # noqa: BLE001
-        errors.append(f"[{stage}] LangChain 의존성을 불러오지 못했습니다: {exc}")
-        return _safe_empty_for_model(output_model)
-
     model_name = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
     temperature = float(os.getenv("OPENAI_TEMPERATURE", "0") or 0)
-    llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key)
-    prompt = ChatPromptTemplate.from_messages([("system", system_prompt), ("user", user_prompt)])
-
+    messages: list[dict[str, str]] = [
+        {"role": "system", "content": str(system_prompt)},
+        {"role": "user", "content": str(user_prompt)},
+    ]
+    parsed = None
     try:
-        chain = prompt | llm.with_structured_output(output_model)
-        result = chain.invoke({})
-        if isinstance(result, BaseModel):
-            return result.model_dump()
-        if isinstance(result, dict):
-            return output_model.model_validate(result).model_dump()
+        parsed = _call_openai_json(api_key=api_key, model_name=model_name, messages=messages, temperature=temperature)
     except Exception as exc:  # noqa: BLE001
-        errors.append(f"[{stage}] structured output 실패: {exc}")
+        errors.append(f"[{stage}] OPENAI SDK 호출 실패: {exc}")
+
+    if isinstance(parsed, dict):
+        try:
+            return output_model.model_validate(parsed).model_dump()
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"[{stage}] Pydantic 파싱 실패: {exc}")
 
     try:
-        chain = prompt | llm
-        response = chain.invoke({})
+        from langchain_openai import ChatOpenAI
+
+        llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key)
+        response = llm.invoke([SystemMessage(content=str(system_prompt)), HumanMessage(content=str(user_prompt))])
         content = response.content if hasattr(response, "content") else str(response)
         parsed = _extract_first_json(str(content))
         if isinstance(parsed, dict):
             return output_model.model_validate(parsed).model_dump()
         errors.append(f"[{stage}] JSON 파싱 실패 원문: {str(content)[:500]}")
     except Exception as exc:  # noqa: BLE001
-        errors.append(f"[{stage}] LLM 호출 실패: {exc}")
+        if parsed is None:
+            errors.append(f"[{stage}] LLM 호출 실패: {exc}")
 
     return _safe_empty_for_model(output_model)

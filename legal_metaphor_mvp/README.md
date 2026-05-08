@@ -39,6 +39,14 @@ copy .env.example .env
 python src/main.py --input data/input.txt --output data/output/graph_annotation.json --pipeline graph --ttl-output data/output/metaphors.ttl
 ```
 
+동료 전처리 파이프라인에서 생성한 contextualized JSON을 사용하려면 다음처럼 입력:
+
+```powershell
+python src/main.py --input data/input.txt --output data/output/graph_annotation.json --pipeline graph --contextual-json data/output/pos_nodes_contextualized.json
+```
+
+전처리된 `pos_nodes_contextualized.json`은 문맥 의존 토큰 후보를 직접 만들며, graph 파이프라인은 이를 그대로 받아서 사전 비교 + LLM 판정에 들어갑니다.
+
 5. 레거시 단계형 주석 실행 (개발용)
 
 ```powershell
@@ -64,7 +72,8 @@ python src/rdf_convert.py --input data/output/metaphors_raw.json --output data/o
 공식 실행 경로는 `graph` 파이프라인입니다.
 
 흐름:
-1. candidate extraction
+1. 후보 로드:
+   - `--contextual-json`의 `lemma_groups`에서 lemma occurrence를 후보로 생성
 2. basic meaning lookup
 3. MIPVU judgment
 4. metaphor classification
@@ -85,7 +94,9 @@ python src/rdf_convert.py --input data/output/metaphors_raw.json --output data/o
 - `errors`
 - `metadata`
 
-## Staged annotation process (MIPVU + dictionary comparison)
+## Staged annotation process (legacy prompt pipeline)
+
+이 경로는 기존 프롬프트 기반 실험 경로이며 candidate 추출 LLM 노드(`candidate_extract`)를 사용합니다.
 
 `--annotator prompt --pipeline staged` 흐름:
 
@@ -110,20 +121,19 @@ OpenAI API 키가 없으면 프로그램은 크래시하지 않고, `metadata.ll
 
 사용 파일:
 - `src/prompts/system_role.md`
-- `src/prompts/candidate_extract.md`
 - `src/prompts/mipvu_judge.md`
 - `src/prompts/metaphor_classify.md`
 - `src/prompts/annotation_schema.md`
 - `src/prompts/korean_legal_mipvu_guideline.md`
+- `src/prompts/candidate_extract.md` (legacy staged path only)
 
 `src/prompts/rdf_mapping.md`와 `src/prompts/validation_check.md`는 현재 그래프 파이프라인에서 직접 호출되지 않습니다.
 
 ## Prompt Architecture (그래프 운영 기준)
 
-- LLM 프롬프트가 개입되는 노드: `candidate_extract`, `mipvu_judge`, `metaphor_classify`
+- LLM 프롬프트가 개입되는 노드: `mipvu_judge`, `metaphor_classify`
 - 규칙 기반으로 처리되는 노드: `rdf_mapping`, `validation_check`, `rdf_convert`
 - 운영 기준에서 프롬프트는 다음에만 수정하면 됩니다.
-  - 문장/표현 추출 품질 개선: `candidate_extract.md`
   - MIPVU 판정 규칙 반영: `mipvu_judge.md`
   - 은유 분류 규칙 반영: `metaphor_classify.md`
 
@@ -155,3 +165,40 @@ python src/finetune/infer_annotation_model.py --input data/input.txt --output da
 
 실제 LLM 주석을 실행하려면 `.env`에 `OPENAI_API_KEY`를 설정해야 합니다.
 표준국어대사전 기본 의미 비교까지 쓰려면 `STDICT_API_KEY`도 설정합니다.
+
+## 전처리 전용 파이프라인(동료 모듈 병합)
+
+동료가 만든 형식상분석/동사형 추출/문맥의미 보정 파이프라인을 별도 모듈로 통합했습니다.
+`src/preprocessing/` 폴더에서 실행할 수 있습니다.
+
+### 설치
+
+```powershell
+pip install -r requirements.txt
+```
+
+### 기본 실행
+
+```powershell
+python src/preprocessing/main.py --full
+```
+
+`data/input.txt`를 읽어 다음 산출물을 생성합니다.
+- `data/output/pos_nodes.json`
+- `data/output/pos_nodes_corrected.json` (+ report)
+- `data/output/pos_nodes_contextualized.json` (+ report)
+
+### 옵션
+
+- `--input`: 입력 텍스트 경로
+- `--output`: 1차 POS 결과 경로
+- `--lemma-sanity`: 로컬 정제만 수행
+- `--lemma-sanity-gpt`: GPT 정제 포함
+- `--contextual-meaning`: 문맥적 의미 생성
+- `--no-resume` / `--*.no-resume`: 캐시 무시하고 GPT 재요청
+
+### 참고
+
+이 전처리 파이프라인은 기존 `graph`/`staged` 공식 은유 판정 파이프라인과는 별도 단계입니다.
+`graph` 공식 경로에서는 `--contextual-json` 입력 시 lemma별 `contextual_meaning`을 먼저 dictionary lookup과 병렬 비교해 반영한 뒤, LLM이 최종 판정에 참여합니다.
+필요 시 `src/preprocessing/contextual_meaning.md`와 `src/prompts/lemma_group_sanity.md`를 수정해 실험할 수 있습니다.

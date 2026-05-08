@@ -6,6 +6,8 @@ import json
 import sys
 from pathlib import Path
 
+from utils import read_json
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_DIR = PROJECT_ROOT / "src"
 sys.path.insert(0, str(SRC_DIR))
@@ -24,10 +26,35 @@ SAMPLE_TEXT = (
     "헌법이 상정하고 있는 전체 법질서의 통일성을 확보하기 위한 것으로 볼 수 있다."
 )
 
+def _load_contextual_lookup(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+
+    payload = read_json(path, default={})
+    if not isinstance(payload, dict):
+        return {}
+
+    lemma_groups = payload.get("lemma_groups")
+    if not isinstance(lemma_groups, list):
+        return {}
+
+    lookup: dict[str, str] = {}
+    for group in lemma_groups:
+        if not isinstance(group, dict):
+            continue
+        lemma = str(group.get("lemma", "")).strip()
+        if not lemma:
+            continue
+        contextual_meaning = str(group.get("contextual_meaning", "")).strip()
+        if contextual_meaning:
+            lookup[lemma] = contextual_meaning
+    return lookup
+
 
 def main() -> None:
     load_dotenv(PROJECT_ROOT / ".env")
-    state = run_annotation_graph(SAMPLE_TEXT)
+    contextual_lookup = _load_contextual_lookup(PROJECT_ROOT / "data/output/pos_nodes_contextualized.json")
+    state = run_annotation_graph(SAMPLE_TEXT, contextual_meaning_by_lemma=contextual_lookup)
 
     annotations_dir = PROJECT_ROOT / "outputs" / "annotations"
     rdf_dir = PROJECT_ROOT / "outputs" / "rdf"
