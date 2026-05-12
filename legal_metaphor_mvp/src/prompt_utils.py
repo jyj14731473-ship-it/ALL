@@ -92,7 +92,7 @@ def call_structured_chain(
         errors.append(f"[{stage}] OPENAI_API_KEY가 없어 LLM 호출을 생략했습니다.")
         return _safe_empty_for_model(output_model)
 
-    model_name = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+    model_name = os.getenv("OPENAI_MODEL", "gpt-5.4-mini")
     temperature = float(os.getenv("OPENAI_TEMPERATURE", "0") or 0)
     messages: list[dict[str, str]] = [
         {"role": "system", "content": str(system_prompt)},

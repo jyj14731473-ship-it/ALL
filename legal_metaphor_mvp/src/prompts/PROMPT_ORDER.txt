@@ -1,7 +1,7 @@
 Current Prompt Order
 
 현재 유지되는 공식 실행 경로는 src/main.py의 full pipeline 하나다.
-아래 파일만 현재 prompts 폴더에 남아 있으며, 삭제된 legacy candidate/staged 프롬프트는 더 이상 호출되지 않는다.
+아래 파일이 현재 prompts 폴더의 실행 순서다.
 
 1) lemma_group_sanity.md
    - 호출 코드: src/preprocessing/lemma_group_sanity.py
