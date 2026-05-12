@@ -1,8 +1,4 @@
-"""Main entry point for annotation execution.
-
-Official default pipeline is the LangGraph-based MIPVU-RDF workflow.
-Legacy prompt/fine-tuned backends remain available for development use.
-"""
+"""Main entry point for the lemma-level MIPVU to KG pipeline."""
 
 from __future__ import annotations
 
@@ -18,19 +14,8 @@ except ImportError:  # pragma: no cover - optional at runtime
     def load_dotenv(*_args: object, **_kwargs: object) -> bool:
         return False
 
-from annotation.base import BaseAnnotator
-from annotation.finetuned_annotator import FineTunedAnnotator
-from annotation.prompt_annotator import PromptAnnotator
-from graph.annotation_graph import run_annotation_graph
 from rdf.convert import convert_payload_to_turtle
 from utils import read_json, read_text, write_json, write_text
-
-
-def select_annotator(annotator_name: str, prompt_dir: Path, model: str | None = None) -> BaseAnnotator:
-    """Select annotation backend by CLI option."""
-    if annotator_name == "finetuned":
-        return FineTunedAnnotator()
-    return PromptAnnotator(prompt_dir=prompt_dir, model=model)
 
 
 def parse_args() -> argparse.Namespace:
@@ -43,26 +28,18 @@ def parse_args() -> argparse.Namespace:
         help="Output annotation JSON path.",
     )
     parser.add_argument(
-        "--annotator",
-        type=str,
-        default="prompt",
-        choices=["prompt", "finetuned"],
-        help="Annotation backend for legacy pipelines. Default: prompt.",
-    )
-    parser.add_argument(
         "--pipeline",
         type=str,
         default="full",
-        choices=["full", "graph", "staged", "legacy-simple"],
-        help="Pipeline mode for annotation backend.",
+        choices=["full"],
+        help="Pipeline mode. Only the current full lemma MIPVU/KG pipeline is supported.",
     )
     parser.add_argument(
         "--prompt-dir",
         type=Path,
         default=Path("src/prompts"),
-        help="Canonical prompt directory used by prompt annotator and graph nodes.",
+        help="Canonical prompt directory used by lemma sanity/contextual/MIPVU prompts.",
     )
-    parser.add_argument("--model", type=str, default=None, help="Optional model name for future integration.")
     parser.add_argument("--ttl-output", type=Path, default=Path("data/output/metaphors.ttl"), help="RDF Turtle output path.")
     parser.add_argument(
         "--kg-output",
@@ -98,76 +75,28 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def _load_contextual_payload(path: Path) -> tuple[dict[str, str], list[dict[str, Any]]]:
-    """Load contextual meaning lookup and per-occurrence candidates from contextualized JSON."""
+def _load_contextual_meaning_lookup(path: Path) -> dict[str, str]:
+    """Load contextual meaning lookup from contextualized JSON."""
     if not path.exists():
-        return {}, []
+        return {}
 
     payload = read_json(path, default={})
     if not isinstance(payload, dict):
-        return {}, []
+        return {}
 
     lemma_groups = payload.get("lemma_groups")
     if not isinstance(lemma_groups, list):
-        return {}, []
+        return {}
 
     lookup: dict[str, str] = {}
-    candidates: list[dict[str, Any]] = []
-
-    for idx, group in enumerate([g for g in lemma_groups if isinstance(g, dict)], start=1):
+    for group in [g for g in lemma_groups if isinstance(g, dict)]:
         lemma = str(group.get("lemma", "")).strip()
         if not lemma:
             continue
-
-        pos = str(group.get("pos", "")).strip()
         contextual_meaning = str(group.get("contextual_meaning", "")).strip()
         if contextual_meaning:
             lookup[lemma] = contextual_meaning
-        elif lemma in lookup:
-            # keep existing contextual meaning if duplicate 그룹이 섞여 들어올 수 있음.
-            contextual_meaning = lookup[lemma]
-
-        occurrences = group.get("occurrences")
-        if not isinstance(occurrences, list) or not occurrences:
-            occurrences = [{"sentence_id": f"S{idx:03d}", "node_id": "", "surface": lemma, "sentence": ""}]
-        representative = next((o for o in occurrences if isinstance(o, dict) and str(o.get("sentence", "")).strip()), None)
-        if representative is None:
-            representative = next((o for o in occurrences if isinstance(o, dict)), None)
-        representative = representative or {}
-
-        sentence_id = str(representative.get("sentence_id", f"S{idx:03d}")).strip()
-        surface = str(representative.get("surface", lemma)).strip() or lemma
-        sentence = str(representative.get("sentence", "")).strip()
-        candidates.append(
-            {
-                "candidate_id": f"C{len(candidates)+1:04d}",
-                "sentence_id": sentence_id,
-                "sentence": sentence,
-                "context_sentence": sentence,
-                "surface_expression": surface,
-                "lemma": lemma,
-                "pos": pos,
-                "morphemes": [],
-                "context_window": sentence,
-                "opinion_type": "unknown",
-                "extraction_reason": "contextualized_preprocessing",
-                "confidence": 0.0,
-                "needs_human_review": False,
-                "contextual_meaning": contextual_meaning,
-                "contextual_meaning_hint": "",
-                "node_id": str(representative.get("node_id", "")),
-            }
-        )
-
-    # Keep deterministic candidate_ids and sentence order based on source.
-    for idx, candidate in enumerate(candidates, start=1):
-        candidate["candidate_id"] = f"C{idx:04d}"
-    return lookup, candidates
-
-
-def _build_initial_state_contextual_candidates(path: Path) -> tuple[dict[str, str], list[dict[str, Any]]]:
-    """Load contextual candidates from contextualized POS JSON."""
-    return _load_contextual_payload(path)
+    return lookup
 
 
 def _configure_mipvu_input_paths(contextual_json: Path, dictionary_json: Path) -> None:
@@ -324,7 +253,7 @@ def _run_current_lemma_kg_pipeline(
     metadata: dict[str, Any] | None = None,
     initial_errors: list[str] | None = None,
 ) -> dict[str, Any]:
-    """Run the current lemma-level MIPVU -> RDF/KG nodes without legacy metaphor classification."""
+    """Run lemma-level MIPVU -> RDF/KG nodes."""
     from nodes.mipvu_judge import mipvu_judge_node
     from nodes.rdf_convert import rdf_convert_node
     from nodes.rdf_mapping import rdf_mapping_node
@@ -332,9 +261,8 @@ def _run_current_lemma_kg_pipeline(
     from schemas.annotation import create_empty_state
 
     _configure_mipvu_input_paths(contextual_json, dictionary_json)
-    contextual_meaning_by_lemma, contextual_candidates = _build_initial_state_contextual_candidates(contextual_json)
+    contextual_meaning_by_lemma = _load_contextual_meaning_lookup(contextual_json)
     state = create_empty_state(document_id=document_id, case_id=case_id, raw_text=raw_text)
-    state["candidates"] = contextual_candidates
     state["contextual_meaning_by_lemma"] = contextual_meaning_by_lemma
     state["metadata"] = {
         "pipeline": "full",
@@ -342,14 +270,11 @@ def _run_current_lemma_kg_pipeline(
         "llm_available": _llm_available(),
         "contextual_meaning_lookup_available": bool(contextual_meaning_by_lemma),
         "contextual_meaning_lookup_size": len(contextual_meaning_by_lemma),
-        "candidate_count": len(contextual_candidates),
     }
     if metadata:
         state["metadata"].update(metadata)
     if initial_errors:
         state["errors"].extend(initial_errors)
-    if not contextual_candidates:
-        state["errors"].append("[full] contextualized 후보 생성 결과가 비어 있습니다.")
     if not state["metadata"]["llm_available"]:
         state["errors"].append("[full] OPENAI_API_KEY가 없어 LLM 기반 MIPVU 판정은 fallback 결과를 반환할 수 있습니다.")
 
@@ -400,7 +325,6 @@ def _normalize_graph_payload(
     state: dict[str, Any],
     *,
     pipeline: str,
-    annotator: str,
     prompt_dir: Path,
     llm_available: bool,
 ) -> dict[str, Any]:
@@ -408,8 +332,7 @@ def _normalize_graph_payload(
     metadata.update(
         {
             "pipeline": pipeline,
-            "annotator": annotator,
-            "official_pipeline": pipeline == "graph",
+            "official_pipeline": True,
             "prompt_directory": str(prompt_dir),
             "llm_available": llm_available,
         }
@@ -419,9 +342,7 @@ def _normalize_graph_payload(
     payload = {
         "document_id": state.get("document_id", ""),
         "case_id": state.get("case_id", ""),
-        "candidates": state.get("candidates", []),
         "mipvu_annotations": state.get("mipvu_annotations", []),
-        "metaphor_annotations": state.get("metaphor_annotations", []),
         "rdf_mappings": state.get("rdf_mappings", []),
         "validation_results": state.get("validation_results", []),
         "human_review_items": state.get("human_review_items", []),
@@ -431,56 +352,7 @@ def _normalize_graph_payload(
         "status": "needs_repair" if validation_status == "needs_repair" else state.get("status", "completed"),
     }
     if not llm_available and not any("OPENAI_API_KEY" in str(item) for item in payload["errors"]):
-        payload["errors"].append("[main] OPENAI_API_KEY가 없어 graph pipeline의 LLM 단계가 빈 결과 또는 fallback 결과를 반환했습니다.")
-    return payload
-
-
-def _normalize_legacy_payload(
-    annotation: dict[str, Any],
-    *,
-    document_id: str,
-    case_id: str,
-    pipeline: str,
-    annotator: str,
-    prompt_dir: Path,
-    llm_available: bool,
-) -> dict[str, Any]:
-    stage_outputs = annotation.get("stage_outputs", {}) if isinstance(annotation.get("stage_outputs"), dict) else {}
-    candidates = (
-        stage_outputs.get("candidate_extract", {}).get("candidates", [])
-        if isinstance(stage_outputs.get("candidate_extract"), dict)
-        else []
-    )
-    mipvu_annotations = (
-        stage_outputs.get("mipvu_judge", {}).get("judgments", [])
-        if isinstance(stage_outputs.get("mipvu_judge"), dict)
-        else []
-    )
-    metaphor_annotations = annotation.get("metaphors", []) if isinstance(annotation.get("metaphors"), list) else []
-    payload = {
-        "document_id": document_id,
-        "case_id": case_id,
-        "candidates": candidates,
-        "mipvu_annotations": mipvu_annotations,
-        "metaphor_annotations": metaphor_annotations,
-        "rdf_mappings": [],
-        "validation_results": [],
-        "human_review_items": [],
-        "rdf_output": "",
-        "errors": [],
-        "metadata": {
-            "pipeline": pipeline,
-            "annotator": annotator,
-            "official_pipeline": False,
-            "experimental": annotator == "finetuned",
-            "prompt_directory": str(prompt_dir),
-            "llm_available": llm_available,
-            "validation_status": "ok",
-        },
-        "status": "completed",
-    }
-    if not llm_available:
-        payload["errors"].append("[main] OPENAI_API_KEY가 없어 legacy pipeline의 LLM 단계가 빈 결과를 반환했을 수 있습니다.")
+        payload["errors"].append("[main] OPENAI_API_KEY가 없어 full pipeline의 LLM 단계가 빈 결과 또는 fallback 결과를 반환했습니다.")
     return payload
 
 
@@ -494,64 +366,22 @@ def main() -> None:
 
     kg_output_path: Path | None = None
 
-    if args.pipeline == "full":
-        preprocessing_metadata, preprocessing_errors = _run_full_preprocessing(args, input_text, document_id)
-        state = _run_current_lemma_kg_pipeline(
-            raw_text=input_text,
-            document_id=document_id,
-            case_id=case_id,
-            contextual_json=args.contextual_json,
-            dictionary_json=args.dictionary_json,
-            metadata=preprocessing_metadata,
-            initial_errors=preprocessing_errors,
-        )
-        output_payload = _normalize_graph_payload(
-            state,
-            pipeline="full",
-            annotator=args.annotator,
-            prompt_dir=args.prompt_dir,
-            llm_available=llm_available,
-        )
-    elif args.pipeline == "graph":
-        _configure_mipvu_input_paths(args.contextual_json, args.dictionary_json)
-        contextual_meaning_by_lemma, contextual_candidates = _build_initial_state_contextual_candidates(
-            args.contextual_json
-        )
-        state = run_annotation_graph(
-            raw_text=input_text,
-            document_id=document_id,
-            case_id=case_id,
-            contextual_meaning_by_lemma=contextual_meaning_by_lemma,
-            contextual_candidates=contextual_candidates,
-        )
-        output_payload = _normalize_graph_payload(
-            state,
-            pipeline="graph",
-            annotator=args.annotator,
-            prompt_dir=args.prompt_dir,
-            llm_available=llm_available,
-        )
-        if args.annotator == "finetuned":
-            output_payload["errors"].append(
-                "[main] graph pipeline은 현재 prompt-based LangGraph 경로만 공식 지원합니다. finetuned backend 요청은 무시되었습니다."
-            )
-            output_payload["metadata"]["experimental_finetuned_requested"] = True
-    else:
-        annotator = select_annotator(args.annotator, prompt_dir=args.prompt_dir, model=args.model)
-        legacy_pipeline = "legacy-simple" if args.pipeline == "legacy-simple" else "staged"
-        annotation = annotator.annotate(text=input_text, pipeline=legacy_pipeline)
-        if not isinstance(annotation, dict):
-            annotation = {"metaphors": []}
-        output_payload = _normalize_legacy_payload(
-            annotation,
-            document_id=document_id,
-            case_id=case_id,
-            pipeline=legacy_pipeline,
-            annotator=args.annotator,
-            prompt_dir=args.prompt_dir,
-            llm_available=llm_available,
-        )
-        output_payload["rdf_output"] = convert_payload_to_turtle(output_payload, output_payload.get("validation_results", []))
+    preprocessing_metadata, preprocessing_errors = _run_full_preprocessing(args, input_text, document_id)
+    state = _run_current_lemma_kg_pipeline(
+        raw_text=input_text,
+        document_id=document_id,
+        case_id=case_id,
+        contextual_json=args.contextual_json,
+        dictionary_json=args.dictionary_json,
+        metadata=preprocessing_metadata,
+        initial_errors=preprocessing_errors,
+    )
+    output_payload = _normalize_graph_payload(
+        state,
+        pipeline=args.pipeline,
+        prompt_dir=args.prompt_dir,
+        llm_available=llm_available,
+    )
 
     if args.ttl_output:
         if not output_payload.get("rdf_output"):
@@ -567,7 +397,7 @@ def main() -> None:
     )
 
     write_json(args.output, output_payload)
-    print(f"[main] annotator={args.annotator} pipeline={args.pipeline} status={output_payload.get('status', 'completed')}")
+    print(f"[main] pipeline={args.pipeline} status={output_payload.get('status', 'completed')}")
     print(f"[main] saved: {args.output}")
     if args.ttl_output:
         print(f"[main] ttl saved: {args.ttl_output}")

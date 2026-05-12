@@ -1,276 +1,89 @@
-Legal Metaphor MVP Prompt Order
-================================
+Current Prompt Order
 
-이 파일은 현재 코드 기준으로 LLM 프롬프트가 어떤 순서로 호출되는지 정리한다.
-프롬프트 파일은 모두 src/prompts/ 안에 모아 둔다.
-
-
-0. 현재 작업 범위에서 실제로 쓰이는 프롬프트
----------------------------------------------
-
-처음 전처리 GPT 단계부터 지금 개편한 lemma 단위 MIPVU + KG 생성 단계까지
-실제로 쓰이는 프롬프트만 추리면 아래 순서다.
-
-1) lemma_group_sanity.md
-   - 단계: pos_nodes.json -> pos_nodes_corrected.json
-   - 역할: lemma group의 명백한 lemma 오류, POS 오류, artifact group을 보수적으로 점검한다.
-   - 실행 조건: --lemma-sanity-gpt 또는 --full.
-
-2) contextual_meaning.md
-   - 단계: pos_nodes_corrected.json -> pos_nodes_contextualized.json
-   - 역할: 각 lemma group이 판결문 안에서 어떤 의미로 쓰였는지 contextual_meaning을 만든다.
-   - 주의: 사전 정의를 반복하지 않고, 지금 문맥에서의 의미/기능을 정한다.
-   - 예외: 분석 제외는 DFMA, 불확실하지만 후속 은유 분석에 남길 항목은 WIDLII로 표시한다.
-   - 실행 조건: --contextual-meaning 또는 --full.
-
-3) dictionary lookup API
-   - 단계: pos_nodes_contextualized.json -> lemma_dictionary_lookup.json
-   - 역할: lemma별 표준국어대사전 뜻 후보를 가져온다.
-   - 프롬프트 없음. LLM을 쓰지 않는다.
-
-4) system_role.md
-   - 단계: lemma 단위 MIPVU LLM 호출의 공통 시스템 역할.
-   - 역할: 한국어 법률 텍스트 은유 분석 연구 보조자 역할과 JSON-only 원칙을 설정한다.
-
-5) korean_legal_mipvu_guideline.md
-   - 단계: lemma 단위 MIPVU LLM 호출의 공통 판단 기준.
-   - 역할: contextual meaning, original/basic meaning, distinctness,
-     comparison_possible, similarity 판단 기준을 제공한다.
-
-6) lemma_mipvu_judge.md
-   - 단계: lemma_dictionary_lookup.json + pos_nodes_contextualized.json -> lemma 단위 mipvu_annotations
-   - 역할:
-     a. 여러 사전 뜻 중 MIPVU 기준상 more basic meaning인 original meaning을 고른다.
-     b. original meaning과 contextual_meaning/sample_sentences를 1대1 비교한다.
-     c. distinctness, similarity, indirect/direct/implicit 가능성을 검토해 lemma 단위
-        mipvu_label을 판정한다.
-     d. MRW/MRW_candidate/borderline_candidate이면 target_domain과 source_domain을 판단한다.
-     e. Lakoff & Johnson 고전적 유형론(structural/orientational/ontological) 라벨을
-        lakoff_johnson_type에 부여한다.
-     f. target_domain과 source_domain을 "TARGET IS SOURCE" 형식의
-        conceptual_metaphor 라벨로 압축한다.
-   - batch 크기: 25개 lemma.
-   - 주의: POS는 이 단계의 입력/출력 어디에도 사용하지 않는다.
-
-7) RDF/KG deterministic mapping
-   - 단계: mipvu_annotations -> rdf_mappings -> rdf_output/Turtle -> RDFLib Graph
-   - 호출 코드:
-     a. src/nodes/rdf_mapping.py
-     b. src/rdf/convert.py
-     c. src/nodes/rdf_convert.py
-     d. src/graph_build.py
-   - 프롬프트 없음. LLM을 쓰지 않는다.
-   - 입력으로 쓰는 lemma-level 필드:
-     a. mipvu_label 및 judgment_reason/mipvu_subtype/mipvu_identification_label
-     b. source_domain
-     c. target_domain
-     d. conceptual_metaphor
-     e. lakoff_johnson_type
-   - KG 층위:
-     a. MIPVU 식별 라벨: ex:hasMIPVULabel, 예: MRW_INDIRECT
-     b. source domain: ex:hasSourceDomain, ex:hasSourceDomainLabel
-     c. target domain: ex:hasTargetDomain, ex:hasTargetDomainLabel
-     d. conceptual metaphor: ex:realizesConceptualMetaphor, ex:hasConceptualMetaphorLabel
-     e. 고전적 유형: ex:hasMetaphorType, 예: STRUCTURAL
-
-현재 작업 범위에서는 아래 프롬프트를 쓰지 않는다.
-- candidate_extract.md: legacy candidate 추출용.
-- mipvu_judge.md: legacy candidate 단위 MIPVU용.
-- metaphor_classify.md: legacy/candidate 단위 은유 분류용. 현재 lemma-level KG 생성에는 필요하지 않다.
-- annotation_schema.md: 다음/legacy 분류 schema용.
-- rdf_mapping.md: 현재 rule-based라 직접 미사용.
-- validation_check.md: 현재 rule-based라 직접 미사용.
-- MIPVU.md: 참고/구버전 성격.
-
-
-1. 전처리 optional GPT 파이프라인
---------------------------------
-
-실행 진입점:
-- src/preprocessing/main.py --full
-- 또는 --lemma-sanity-gpt, --contextual-meaning 옵션
-
-호출 순서:
+현재 유지되는 공식 실행 경로는 src/main.py의 full pipeline 하나다.
+아래 파일만 현재 prompts 폴더에 남아 있으며, 삭제된 legacy candidate/staged 프롬프트는 더 이상 호출되지 않는다.
 
 1) lemma_group_sanity.md
    - 호출 코드: src/preprocessing/lemma_group_sanity.py
-   - 목적: lemma_groups의 명백한 lemma 오류, POS 오류, artifact group을 보수적으로 점검한다.
-   - 주의: 이 단계는 전체 품질 개선이 아니라 sanity check다.
+   - 조건: --lemma-sanity-gpt가 켜져 있고 OPENAI_API_KEY가 있을 때만 LLM 사용
+   - 입력: pos_nodes.json의 lemma_groups batch
+   - 출력: pos_nodes_corrected.json
+   - 역할: 형태소/POS/lemma group 결과를 은유 판정 전 안정적으로 정리한다.
 
 2) contextual_meaning.md
    - 호출 코드: src/preprocessing/contextual_meaning.py
-   - 목적: lemma_group마다 판결문 안에서의 contextual_meaning을 생성한다.
-   - 주의: 일반 사전 뜻이 아니라 현재 문맥 의미를 쓰며, DFMA/WIDLII 예외 기준을 적용한다.
-   - 출력은 pos_nodes_contextualized.json에 반영된다.
+   - 조건: OPENAI_API_KEY가 있을 때 full pipeline에서 사용
+   - 입력: pos_nodes_corrected.json의 lemma_groups와 source text
+   - 출력: pos_nodes_contextualized.json
+   - 역할: 각 lemma가 해당 문맥에서 어떤 의미로 쓰였는지 정한다.
+   - DFMA/WIDLII 기준을 포함한다.
 
-참고:
-- dictionary_lookup 단계는 LLM을 쓰지 않는다.
-- 표준국어대사전 API 조회는 src/preprocessing/dictionary_lookup.py와
-  src/annotation/dictionary_client.py에서 처리한다.
-
-
-2. 현재 공식 graph MIPVU + KG 단계
-----------------------------------
-
-실행 진입점:
-- src/main.py
-- src/main.py --pipeline full
-- src/main.py --pipeline graph
-- graph 순서 자체는 src/graph/annotation_graph.py에 정의되어 있다.
-
-src/main.py의 기본값은 --pipeline full이다.
---pipeline full은 raw input부터 아래 산출물까지 한 번에 만든다.
-- pos_nodes.json
-- pos_nodes_corrected.json
-- pos_nodes_contextualized.json
-- lemma_dictionary_lookup.json
-- graph annotation JSON
-- Turtle
-- RDFLib KG serialization
-
-현재 MIPVU 프롬프트 호출 순서:
-
-1) system_role.md
+3) system_role.md
    - 호출 코드: src/nodes/mipvu_judge.py
-   - 역할: 공통 시스템 역할.
+   - 직접 단독 호출되지 않고 lemma_mipvu_judge.md의 system prompt 일부로 결합된다.
+   - 역할: 법률 은유/MIPVU 주석자의 기본 역할을 지정한다.
 
-2) korean_legal_mipvu_guideline.md
+4) korean_legal_mipvu_guideline.md
    - 호출 코드: src/nodes/mipvu_judge.py
-   - 역할: 한국어 법률 텍스트용 MIPVU-informed 판단 기준.
+   - 직접 단독 호출되지 않고 lemma_mipvu_judge.md의 system prompt 일부로 결합된다.
+   - 역할: 한국어 법률 텍스트에 맞춘 MIPVU 판정 원칙을 제공한다.
 
-3) lemma_mipvu_judge.md
+5) lemma_mipvu_judge.md
    - 호출 코드: src/nodes/mipvu_judge.py
-   - 목적:
-     a. lemma_dictionary_lookup.json의 여러 사전 뜻 중 MIPVU 기준상 more basic meaning인
-        original meaning 하나를 고른다.
-     b. pos_nodes_contextualized.json의 contextual_meaning 및 occurrence sentence와 비교한다.
-     c. distinctness, similarity, indirect/direct/implicit 가능성을 검토해 lemma 단위
-        mipvu_label을 판정한다.
-     d. MRW/MRW_candidate/borderline_candidate이면 target_domain과 source_domain을 판단한다.
-     e. Lakoff & Johnson 고전적 유형론(structural/orientational/ontological) 라벨을
-        lakoff_johnson_type에 부여한다.
-     f. target_domain과 source_domain을 "TARGET IS SOURCE" 형식의
-        conceptual_metaphor 라벨로 압축한다.
-   - batch 크기: 25개 lemma.
-   - 주의: POS는 이 단계의 입력/출력 어디에도 사용하지 않는다.
+   - 입력:
+     - data/output/lemma_dictionary_lookup.json
+     - data/output/pos_nodes_contextualized.json
+   - batch size: 25 lemma
+   - 출력 위치:
+     - data/output/graph_annotation.json 안의 mipvu_annotations
+   - 역할:
+     - 사전 뜻 후보 중 original/basic meaning을 선택한다.
+     - contextual meaning과 original meaning을 비교해 MIPVU label을 판단한다.
+     - MRW 계열이면 source_domain, target_domain, conceptual_metaphor, Lakoff-Johnson type을 함께 산출한다.
 
-현재 산출:
-- state["mipvu_annotations"]에 lemma 단위 판정 결과를 넣는다.
-- state["rdf_mappings"]는 lemma 단위 mipvu_annotations를 우선 사용해 결정론적으로 만든다.
-- state["rdf_output"]은 RDF-ready mapping을 Turtle 문자열로 변환한 결과다.
-- src/graph_build.py는 JSON/Turtle을 RDFLib Graph로 로드하고 다시 serialize할 수 있다.
+Non-Prompt Steps
 
-프롬프트를 쓰지 않는 후속 단계:
+아래 단계는 현재 LLM 프롬프트를 쓰지 않는다.
 
-1) rdf_mapping
+1) dictionary lookup
+   - 호출 코드: src/preprocessing/dictionary_lookup.py
+   - API: 표준국어대사전
+   - 출력: data/output/lemma_dictionary_lookup.json
+
+2) RDF mapping
    - 호출 코드: src/nodes/rdf_mapping.py
-   - 입력: state["mipvu_annotations"]
-   - 역할: MRW/MRW_candidate/borderline_candidate 중 source_domain, target_domain,
-     conceptual_metaphor가 있는 항목을 RDF-ready mapping으로 바꾼다.
-   - LLM 없음.
+   - 입력: mipvu_annotations
+   - 출력: state["rdf_mappings"]
 
-2) validation_check
+3) validation
    - 호출 코드: src/nodes/validation_check.py
-   - 역할: rule-based consistency check.
-   - LLM 없음.
+   - 입력: mipvu_annotations, rdf_mappings
+   - 출력: validation_results, human_review_items
 
-3) rdf_convert
+4) Turtle conversion
    - 호출 코드: src/nodes/rdf_convert.py, src/rdf/convert.py
-   - 역할: rdf_mappings를 Turtle 문자열로 변환한다.
-   - LLM 없음.
+   - 출력:
+     - state["rdf_output"]
+     - data/output/metaphors.ttl
 
-4) graph_build
+5) RDFLib KG build
    - 호출 코드: src/graph_build.py
-   - 역할: annotation JSON 또는 Turtle을 RDFLib Graph로 로드하고 serialize한다.
-   - LLM 없음.
+   - 출력: data/output/metaphor_kg.ttl
 
+Full Order
 
-3. 아직 candidate 계약을 쓰는 legacy graph 분류 단계
----------------------------------------------------
-
-현재 graph는 MIPVU 다음 노드로 metaphor_classify_node를 계속 연결한다.
-다만 metaphor_classify.md는 아직 candidate_id 기반의 예전 계약을 전제로 한다.
-현재 lemma-level KG 생성은 metaphor_classify_node의 출력에 의존하지 않는다.
-
-호출 순서:
-
-1) system_role.md
-2) korean_legal_mipvu_guideline.md
-3) annotation_schema.md
-4) metaphor_classify.md
-
-호출 코드:
-- src/nodes/metaphor_classify.py
-
-주의:
-- metaphor_classify는 candidate 계약 기반 legacy 분류 단계다.
-- RDF/KG 생성은 현재 lemma-level mipvu_annotations에서 직접 가능하다.
-
-
-4. legacy staged prompt pipeline
---------------------------------
-
-실행 진입점:
-- src/main.py --pipeline staged --annotator prompt
-- 구현: src/annotation/prompt_annotator.py
-
-호출 순서:
-
-1) system_role.md
-2) korean_legal_mipvu_guideline.md
-3) candidate_extract.md
-   - 목적: raw text에서 candidate를 추출한다.
-
-4) 표준국어대사전 lookup
-   - LLM 아님.
-   - candidate lemma의 basic meaning 후보를 조회한다.
-
-5) system_role.md
-6) korean_legal_mipvu_guideline.md
-7) mipvu_judge.md
-   - 목적: candidate 단위 MIPVU 판단.
-   - 주의: 현재 공식 graph의 lemma_mipvu_judge.md와 다르다.
-
-8) system_role.md
-9) korean_legal_mipvu_guideline.md
-10) annotation_schema.md
-11) metaphor_classify.md
-   - 목적: candidate 단위 metaphor annotation 생성.
-
-
-5. 현재 직접 호출되지 않는 프롬프트
-----------------------------------
-
-아래 파일은 보존되어 있지만 현재 공식 graph 경로에서 직접 호출되지 않는다.
-
-- rdf_mapping.md
-  - 현재 RDF mapping은 src/nodes/rdf_mapping.py와 src/rdf/convert.py에서 결정론적으로 처리한다.
-
-- validation_check.md
-  - 현재 validation은 src/nodes/validation_check.py에서 rule-based로 처리한다.
-
-- MIPVU.md
-  - mipvu_judge.md와 유사한 예전/참고용 파일로 보인다.
-  - 현재 코드에서 직접 호출되는 경로는 확인되지 않는다.
-
-
-6. 한 줄 요약
--------------
-
-전처리 GPT:
-lemma_group_sanity.md -> contextual_meaning.md
-
-현재 공식 MIPVU:
-system_role.md -> korean_legal_mipvu_guideline.md -> lemma_mipvu_judge.md
-
-현재 KG deterministic 단계:
-mipvu_annotations -> rdf_mapping.py -> rdf_convert.py / rdf.convert -> graph_build.py
-
-legacy graph 후속 candidate 단계:
-system_role.md -> korean_legal_mipvu_guideline.md -> annotation_schema.md -> metaphor_classify.md
-
-legacy staged:
-system_role.md -> korean_legal_mipvu_guideline.md -> candidate_extract.md
--> dictionary API lookup
--> system_role.md -> korean_legal_mipvu_guideline.md -> mipvu_judge.md
--> system_role.md -> korean_legal_mipvu_guideline.md -> annotation_schema.md -> metaphor_classify.md
+data/input.txt
+-> pos_nodes.json
+-> lemma_group_sanity.md
+-> pos_nodes_corrected.json
+-> contextual_meaning.md
+-> pos_nodes_contextualized.json
+-> dictionary lookup
+-> system_role.md + korean_legal_mipvu_guideline.md + lemma_mipvu_judge.md
+-> graph_annotation.json / mipvu_annotations
+-> rdf_mapping.py
+-> validation_check.py
+-> rdf_convert.py / rdf.convert
+-> metaphors.ttl
+-> graph_build.py
+-> metaphor_kg.ttl

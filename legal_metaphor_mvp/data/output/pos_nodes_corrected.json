@@ -1,5 +1,5 @@
 {
-  "document_id": "doc001",
+  "document_id": "input",
   "sentences": [
     {
       "sentence_id": "s001",
@@ -17896,8 +17896,8 @@
         {
           "node_id": "s027_w031",
           "surface": "이동하",
-          "lemma": "이동하다",
-          "pos": "동사",
+          "lemma": "이동하",
+          "pos": "명사",
           "mecab_parts": [
             [
               "이동하",
@@ -33268,7 +33268,7 @@
         {
           "node_id": "s051_w009",
           "surface": "고급스러운",
-          "lemma": "고급스럽다",
+          "lemma": "고급하다",
           "pos": "형용사",
           "mecab_parts": [
             [
@@ -34852,7 +34852,7 @@
         {
           "node_id": "s053_w026",
           "surface": "타나",
-          "lemma": "타다",
+          "lemma": "타나다",
           "pos": "동사",
           "mecab_parts": [
             [
@@ -36912,7 +36912,7 @@
         {
           "node_id": "s055_w045",
           "surface": "배치되는",
-          "lemma": "배치되다",
+          "lemma": "배치하다",
           "pos": "동사",
           "mecab_parts": [
             [
@@ -40196,8 +40196,8 @@
         {
           "node_id": "s059_w038",
           "surface": "그랬다",
-          "lemma": "그렇다",
-          "pos": "형용사",
+          "lemma": "그러다",
+          "pos": "동사",
           "mecab_parts": [
             [
               "그랬",
@@ -43714,7 +43714,7 @@
         {
           "node_id": "s064_w012",
           "surface": "자연스럽고",
-          "lemma": "자연스럽다",
+          "lemma": "자연하다",
           "pos": "형용사",
           "mecab_parts": [
             [
@@ -55427,6 +55427,68 @@
     },
     {
       "lemma_group_id": "lg209",
+      "lemma": "어",
+      "pos": "감탄사",
+      "occurrences": [
+        {
+          "sentence_id": "s013",
+          "node_id": "s013_w010",
+          "surface": "어",
+          "sentence": "피고인(남, 70세)은 채팅 어플 ‘○○○’를 통해 채팅을 주고받다가 피해자(여, 30세)를 만나게 되었다."
+        },
+        {
+          "sentence_id": "s026",
+          "node_id": "s026_w030",
+          "surface": "어",
+          "sentence": "가) 피해자와 피고인은 40세에 가까운 연령의 차이가 있고 이 사건 이전에는 일면식이 없던 사이인데, 피해자는 채팅 어플에서 나이 차이가 15세 이상일 경우 직접 대화가 불가능하자 63세의 ‘(대화명 생략)’이라는 대화명으로 계정을 새로이 가입하면서까지 피고인에게 먼저 연락을 시도하였다."
+        },
+        {
+          "sentence_id": "s030",
+          "node_id": "s030_w033",
+          "surface": "어",
+          "sentence": "피해자는 자신이 돈을 받지 않겠다는 의사를 표시하였음에도 피고인이 억지로 피해자의 핸드백에 돈을 집어넣었다고 주장하나, 피해자가 피고인을 만나기에 앞서 채팅 어플 또는 카카오톡 메신저를 통하여 여러 차례 자신이 처한 경제적 어려움에 관하여 하소연을 한 사실이 있는 데다가 돈을 받은 직후 피고인에게 감사의 뜻을 전하고 피고인 모친의 밥이나 반찬도 챙겨드리겠다는 취지의 말을 한 점 등에 비추어 보면 피해자가 돈을 받는 과정에서 그리 강한 거부의사를 표하지는 않았던 것으로 보인다."
+        },
+        {
+          "sentence_id": "s048",
+          "node_id": "s048_w006",
+          "surface": "어",
+          "sentence": "나) 피해자는 채팅 어플 ‘○○○’를 통하여 피고인(남, 70세, 당시 아이디에 표시된 나이는 62세)을 알게 되어 서로의 프로필을 보는 등 관심을 주고받던 중 2019. 1. 4. 나이가 63세로 된 아이디를 만들어 피고인에게 먼저 쪽지를 보냈다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg210",
+      "lemma": "플",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s013",
+          "node_id": "s013_w011",
+          "surface": "플",
+          "sentence": "피고인(남, 70세)은 채팅 어플 ‘○○○’를 통해 채팅을 주고받다가 피해자(여, 30세)를 만나게 되었다."
+        },
+        {
+          "sentence_id": "s026",
+          "node_id": "s026_w031",
+          "surface": "플",
+          "sentence": "가) 피해자와 피고인은 40세에 가까운 연령의 차이가 있고 이 사건 이전에는 일면식이 없던 사이인데, 피해자는 채팅 어플에서 나이 차이가 15세 이상일 경우 직접 대화가 불가능하자 63세의 ‘(대화명 생략)’이라는 대화명으로 계정을 새로이 가입하면서까지 피고인에게 먼저 연락을 시도하였다."
+        },
+        {
+          "sentence_id": "s030",
+          "node_id": "s030_w034",
+          "surface": "플",
+          "sentence": "피해자는 자신이 돈을 받지 않겠다는 의사를 표시하였음에도 피고인이 억지로 피해자의 핸드백에 돈을 집어넣었다고 주장하나, 피해자가 피고인을 만나기에 앞서 채팅 어플 또는 카카오톡 메신저를 통하여 여러 차례 자신이 처한 경제적 어려움에 관하여 하소연을 한 사실이 있는 데다가 돈을 받은 직후 피고인에게 감사의 뜻을 전하고 피고인 모친의 밥이나 반찬도 챙겨드리겠다는 취지의 말을 한 점 등에 비추어 보면 피해자가 돈을 받는 과정에서 그리 강한 거부의사를 표하지는 않았던 것으로 보인다."
+        },
+        {
+          "sentence_id": "s048",
+          "node_id": "s048_w007",
+          "surface": "플",
+          "sentence": "나) 피해자는 채팅 어플 ‘○○○’를 통하여 피고인(남, 70세, 당시 아이디에 표시된 나이는 62세)을 알게 되어 서로의 프로필을 보는 등 관심을 주고받던 중 2019. 1. 4. 나이가 63세로 된 아이디를 만들어 피고인에게 먼저 쪽지를 보냈다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg211",
       "lemma": "통하다",
       "pos": "동사",
       "occurrences": [
@@ -55457,7 +55519,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg210",
+      "lemma_group_id": "lg212",
       "lemma": "주고받다",
       "pos": "동사",
       "occurrences": [
@@ -55488,7 +55550,26 @@
       ]
     },
     {
-      "lemma_group_id": "lg211",
+      "lemma_group_id": "lg213",
+      "lemma": "여",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s013",
+          "node_id": "s013_w020",
+          "surface": "여",
+          "sentence": "피고인(남, 70세)은 채팅 어플 ‘○○○’를 통해 채팅을 주고받다가 피해자(여, 30세)를 만나게 되었다."
+        },
+        {
+          "sentence_id": "s046",
+          "node_id": "s046_w005",
+          "surface": "여",
+          "sentence": "가) 피해자(여, 30세)는 지능지수가 72 정도로 낮고, 고등학교를 졸업한 후 식당 아르바이트 등을 하며 지내는 사람이다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg214",
       "lemma": "만나다",
       "pos": "동사",
       "occurrences": [
@@ -55543,7 +55624,62 @@
       ]
     },
     {
-      "lemma_group_id": "lg212",
+      "lemma_group_id": "lg215",
+      "lemma": "경",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s014",
+          "node_id": "s014_w012",
+          "surface": "경",
+          "sentence": "피고인은 2019. 1. 20. 18:00경 구리시 △△마트 인근에서 피해자에게 “내가 예전에 국가대표 감독을 한 적이 있다. 중요하게 할 얘기가 있는데, 여기는 너무 춥다. 감독인 나를 믿어라, 나 그런 사람 아니다. 손끝 하나 건드리지 않을 테니 모텔에 들어가자.”라고 말하여 피해자를 ‘□□□ 모텔’에 데리고 들어갔다."
+        },
+        {
+          "sentence_id": "s052",
+          "node_id": "s052_w014",
+          "surface": "경",
+          "sentence": "다) 피해자는 2019. 1. 20. 18:00경 ☆☆☆☆에서 피고인을 만났는데, 피고인이 ‘조용한 곳에 가서 이야기를 하자.’고 하여 자리를 이동하기로 하였고, 피고인의 차를 타고 이동하던 중 피고인이 모텔에 가자고 하여 모텔에 들어가게 되었다."
+        },
+        {
+          "sentence_id": "s057",
+          "node_id": "s057_w041",
+          "surface": "경",
+          "sentence": "피해자는 이후 피고인의 차량 안에서 오줌을 지렸고, 집에 돌아와서는 온몸을 락스로 샤워하였다고 진술하였으며, 피고인의 메시지에 답장을 하지 않았고, 다음 날 새벽 02:20경 친구에게 ‘괴롭다’는 취지의 메시지를 보내고 03:30경 해바라기센터에 전화를 하였으며 이후 자살시도를 하였다."
+        },
+        {
+          "sentence_id": "s057",
+          "node_id": "s057_w056",
+          "surface": "경",
+          "sentence": "피해자는 이후 피고인의 차량 안에서 오줌을 지렸고, 집에 돌아와서는 온몸을 락스로 샤워하였다고 진술하였으며, 피고인의 메시지에 답장을 하지 않았고, 다음 날 새벽 02:20경 친구에게 ‘괴롭다’는 취지의 메시지를 보내고 03:30경 해바라기센터에 전화를 하였으며 이후 자살시도를 하였다."
+        },
+        {
+          "sentence_id": "s060",
+          "node_id": "s060_w014",
+          "surface": "경",
+          "sentence": "사) 피해자는 2019. 1. 21. 08:00경 친구의 ‘무슨 일이냐’는 답장에 성폭행을 당했다는 이야기를 하였고, 그 구체적인 대화 내용이 피해자의 진술 취지에 부합한다."
+        },
+        {
+          "sentence_id": "s061",
+          "node_id": "s061_w012",
+          "surface": "경",
+          "sentence": "피해자는 2019. 1. 21. 14:32경부터 피고인에게 항의를 하는 메시지를 보냈는데, 피고인은 답장을 하지 않았고, 피해자는 16:20경 경찰에 고소를 하였다."
+        },
+        {
+          "sentence_id": "s061",
+          "node_id": "s061_w035",
+          "surface": "경",
+          "sentence": "피해자는 2019. 1. 21. 14:32경부터 피고인에게 항의를 하는 메시지를 보냈는데, 피고인은 답장을 하지 않았고, 피해자는 16:20경 경찰에 고소를 하였다."
+        },
+        {
+          "sentence_id": "s062",
+          "node_id": "s062_w011",
+          "surface": "경",
+          "sentence": "아) 피해자는 피해 당일 새벽 03:30경 해바라기센터에 전화를 했을 때 경찰신고를 망설이는 이유에 대하여 ‘피고인은 돈도 많고 TV에도 나온 사람이라 자신이 당한 일을 말해도 경찰에 돈 써서 풀려날 것 같다. 내 의사는 아니었지만 돈을 받았으니 꽃뱀 취급을 할 것 같다.’는 취지로 말하였다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg216",
       "lemma": "구리시",
       "pos": "명사",
       "occurrences": [
@@ -55562,7 +55698,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg213",
+      "lemma_group_id": "lg217",
       "lemma": "마트",
       "pos": "명사",
       "occurrences": [
@@ -55581,7 +55717,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg214",
+      "lemma_group_id": "lg218",
       "lemma": "인근",
       "pos": "명사",
       "occurrences": [
@@ -55594,7 +55730,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg215",
+      "lemma_group_id": "lg219",
       "lemma": "내",
       "pos": "대명사",
       "occurrences": [
@@ -55619,7 +55755,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg216",
+      "lemma_group_id": "lg220",
       "lemma": "예전",
       "pos": "명사",
       "occurrences": [
@@ -55632,7 +55768,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg217",
+      "lemma_group_id": "lg221",
       "lemma": "국가",
       "pos": "명사",
       "occurrences": [
@@ -55645,7 +55781,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg218",
+      "lemma_group_id": "lg222",
       "lemma": "대표",
       "pos": "명사",
       "occurrences": [
@@ -55658,7 +55794,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg219",
+      "lemma_group_id": "lg223",
       "lemma": "감독",
       "pos": "명사",
       "occurrences": [
@@ -55677,7 +55813,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg220",
+      "lemma_group_id": "lg224",
       "lemma": "적",
       "pos": "명사",
       "occurrences": [
@@ -55690,7 +55826,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg221",
+      "lemma_group_id": "lg225",
       "lemma": "중요하다",
       "pos": "형용사",
       "occurrences": [
@@ -55703,7 +55839,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg222",
+      "lemma_group_id": "lg226",
       "lemma": "얘기",
       "pos": "명사",
       "occurrences": [
@@ -55716,7 +55852,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg223",
+      "lemma_group_id": "lg227",
       "lemma": "여기",
       "pos": "대명사",
       "occurrences": [
@@ -55735,7 +55871,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg224",
+      "lemma_group_id": "lg228",
       "lemma": "너무",
       "pos": "부사",
       "occurrences": [
@@ -55772,7 +55908,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg225",
+      "lemma_group_id": "lg229",
       "lemma": "춥다",
       "pos": "형용사",
       "occurrences": [
@@ -55791,7 +55927,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg226",
+      "lemma_group_id": "lg230",
       "lemma": "나",
       "pos": "대명사",
       "occurrences": [
@@ -55846,7 +55982,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg227",
+      "lemma_group_id": "lg231",
       "lemma": "그런",
       "pos": "관형사",
       "occurrences": [
@@ -55859,7 +55995,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg228",
+      "lemma_group_id": "lg232",
       "lemma": "사람",
       "pos": "명사",
       "occurrences": [
@@ -55884,7 +56020,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg229",
+      "lemma_group_id": "lg233",
       "lemma": "손끝",
       "pos": "명사",
       "occurrences": [
@@ -55897,7 +56033,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg230",
+      "lemma_group_id": "lg234",
       "lemma": "건드리다",
       "pos": "동사",
       "occurrences": [
@@ -55910,7 +56046,20 @@
       ]
     },
     {
-      "lemma_group_id": "lg231",
+      "lemma_group_id": "lg235",
+      "lemma": "테",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s014",
+          "node_id": "s014_w060",
+          "surface": "테",
+          "sentence": "피고인은 2019. 1. 20. 18:00경 구리시 △△마트 인근에서 피해자에게 “내가 예전에 국가대표 감독을 한 적이 있다. 중요하게 할 얘기가 있는데, 여기는 너무 춥다. 감독인 나를 믿어라, 나 그런 사람 아니다. 손끝 하나 건드리지 않을 테니 모텔에 들어가자.”라고 말하여 피해자를 ‘□□□ 모텔’에 데리고 들어갔다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg236",
       "lemma": "모텔",
       "pos": "명사",
       "occurrences": [
@@ -56049,7 +56198,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg232",
+      "lemma_group_id": "lg237",
       "lemma": "들어가다",
       "pos": "동사",
       "occurrences": [
@@ -56104,7 +56253,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg233",
+      "lemma_group_id": "lg238",
       "lemma": "말하다",
       "pos": "동사",
       "occurrences": [
@@ -56159,7 +56308,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg234",
+      "lemma_group_id": "lg239",
       "lemma": "데리다",
       "pos": "동사",
       "occurrences": [
@@ -56172,7 +56321,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg235",
+      "lemma_group_id": "lg240",
       "lemma": "같다",
       "pos": "형용사",
       "occurrences": [
@@ -56287,7 +56436,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg236",
+      "lemma_group_id": "lg241",
       "lemma": "날",
       "pos": "명사",
       "occurrences": [
@@ -56312,7 +56461,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg237",
+      "lemma_group_id": "lg242",
       "lemma": "일방적",
       "pos": "명사",
       "occurrences": [
@@ -56325,7 +56474,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg238",
+      "lemma_group_id": "lg243",
       "lemma": "생활비",
       "pos": "명사",
       "occurrences": [
@@ -56338,7 +56487,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg239",
+      "lemma_group_id": "lg244",
       "lemma": "보태다",
       "pos": "동사",
       "occurrences": [
@@ -56351,7 +56500,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg240",
+      "lemma_group_id": "lg245",
       "lemma": "가방",
       "pos": "명사",
       "occurrences": [
@@ -56364,7 +56513,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg241",
+      "lemma_group_id": "lg246",
       "lemma": "원",
       "pos": "명사",
       "occurrences": [
@@ -56395,7 +56544,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg242",
+      "lemma_group_id": "lg247",
       "lemma": "넣다",
       "pos": "동사",
       "occurrences": [
@@ -56414,7 +56563,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg243",
+      "lemma_group_id": "lg248",
       "lemma": "주다",
       "pos": "동사",
       "occurrences": [
@@ -56487,7 +56636,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg244",
+      "lemma_group_id": "lg249",
       "lemma": "가슴",
       "pos": "명사",
       "occurrences": [
@@ -56530,7 +56679,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg245",
+      "lemma_group_id": "lg250",
       "lemma": "한",
       "pos": "관형사",
       "occurrences": [
@@ -56543,7 +56692,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg246",
+      "lemma_group_id": "lg251",
       "lemma": "번",
       "pos": "명사",
       "occurrences": [
@@ -56556,7 +56705,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg247",
+      "lemma_group_id": "lg252",
       "lemma": "만지다",
       "pos": "동사",
       "occurrences": [
@@ -56581,7 +56730,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg248",
+      "lemma_group_id": "lg253",
       "lemma": "침대",
       "pos": "명사",
       "occurrences": [
@@ -56594,7 +56743,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg249",
+      "lemma_group_id": "lg254",
       "lemma": "눕히다",
       "pos": "동사",
       "occurrences": [
@@ -56607,7 +56756,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg250",
+      "lemma_group_id": "lg255",
       "lemma": "어깨",
       "pos": "명사",
       "occurrences": [
@@ -56620,7 +56769,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg251",
+      "lemma_group_id": "lg256",
       "lemma": "누르다",
       "pos": "동사",
       "occurrences": [
@@ -56645,7 +56794,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg252",
+      "lemma_group_id": "lg257",
       "lemma": "상의",
       "pos": "명사",
       "occurrences": [
@@ -56658,7 +56807,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg253",
+      "lemma_group_id": "lg258",
       "lemma": "벗기다",
       "pos": "동사",
       "occurrences": [
@@ -56677,7 +56826,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg254",
+      "lemma_group_id": "lg259",
       "lemma": "후",
       "pos": "명사",
       "occurrences": [
@@ -56738,7 +56887,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg255",
+      "lemma_group_id": "lg260",
       "lemma": "귀",
       "pos": "명사",
       "occurrences": [
@@ -56751,7 +56900,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg256",
+      "lemma_group_id": "lg261",
       "lemma": "빨다",
       "pos": "동사",
       "occurrences": [
@@ -56764,7 +56913,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg257",
+      "lemma_group_id": "lg262",
       "lemma": "배란",
       "pos": "명사",
       "occurrences": [
@@ -56777,7 +56926,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg258",
+      "lemma_group_id": "lg263",
       "lemma": "일",
       "pos": "명사",
       "occurrences": [
@@ -56820,7 +56969,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg259",
+      "lemma_group_id": "lg264",
       "lemma": "집",
       "pos": "명사",
       "occurrences": [
@@ -56839,7 +56988,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg260",
+      "lemma_group_id": "lg265",
       "lemma": "가다",
       "pos": "동사",
       "occurrences": [
@@ -56906,7 +57055,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg261",
+      "lemma_group_id": "lg266",
       "lemma": "싶다",
       "pos": "동사",
       "occurrences": [
@@ -56931,7 +57080,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg262",
+      "lemma_group_id": "lg267",
       "lemma": "발버둥",
       "pos": "명사",
       "occurrences": [
@@ -56950,7 +57099,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg263",
+      "lemma_group_id": "lg268",
       "lemma": "치다",
       "pos": "동사",
       "occurrences": [
@@ -56975,7 +57124,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg264",
+      "lemma_group_id": "lg269",
       "lemma": "저항하다",
       "pos": "동사",
       "occurrences": [
@@ -56994,7 +57143,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg265",
+      "lemma_group_id": "lg270",
       "lemma": "괜찮다",
       "pos": "형용사",
       "occurrences": [
@@ -57007,7 +57156,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg266",
+      "lemma_group_id": "lg271",
       "lemma": "묶다",
       "pos": "동사",
       "occurrences": [
@@ -57026,7 +57175,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg267",
+      "lemma_group_id": "lg272",
       "lemma": "몸",
       "pos": "명사",
       "occurrences": [
@@ -57069,7 +57218,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg268",
+      "lemma_group_id": "lg273",
       "lemma": "레깅스",
       "pos": "명사",
       "occurrences": [
@@ -57082,7 +57231,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg269",
+      "lemma_group_id": "lg274",
       "lemma": "팬티",
       "pos": "명사",
       "occurrences": [
@@ -57101,7 +57250,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg270",
+      "lemma_group_id": "lg275",
       "lemma": "올라타다",
       "pos": "동사",
       "occurrences": [
@@ -57114,7 +57263,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg271",
+      "lemma_group_id": "lg276",
       "lemma": "양손",
       "pos": "명사",
       "occurrences": [
@@ -57127,7 +57276,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg272",
+      "lemma_group_id": "lg277",
       "lemma": "바지",
       "pos": "명사",
       "occurrences": [
@@ -57140,7 +57289,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg273",
+      "lemma_group_id": "lg278",
       "lemma": "내리다",
       "pos": "동사",
       "occurrences": [
@@ -57153,7 +57302,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg274",
+      "lemma_group_id": "lg279",
       "lemma": "뒤",
       "pos": "명사",
       "occurrences": [
@@ -57166,7 +57315,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg275",
+      "lemma_group_id": "lg280",
       "lemma": "성기",
       "pos": "명사",
       "occurrences": [
@@ -57191,7 +57340,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg276",
+      "lemma_group_id": "lg281",
       "lemma": "비비다",
       "pos": "동사",
       "occurrences": [
@@ -57204,7 +57353,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg277",
+      "lemma_group_id": "lg282",
       "lemma": "강제",
       "pos": "명사",
       "occurrences": [
@@ -57253,7 +57402,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg278",
+      "lemma_group_id": "lg283",
       "lemma": "추행하다",
       "pos": "동사",
       "occurrences": [
@@ -57266,7 +57415,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg279",
+      "lemma_group_id": "lg284",
       "lemma": "원심",
       "pos": "명사",
       "occurrences": [
@@ -57321,7 +57470,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg280",
+      "lemma_group_id": "lg285",
       "lemma": "아래",
       "pos": "명사",
       "occurrences": [
@@ -57352,7 +57501,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg281",
+      "lemma_group_id": "lg286",
       "lemma": "그대로",
       "pos": "부사",
       "occurrences": [
@@ -57371,7 +57520,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg282",
+      "lemma_group_id": "lg287",
       "lemma": "어렵다",
       "pos": "형용사",
       "occurrences": [
@@ -57462,7 +57611,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg283",
+      "lemma_group_id": "lg288",
       "lemma": "심판",
       "pos": "명사",
       "occurrences": [
@@ -57475,7 +57624,20 @@
       ]
     },
     {
-      "lemma_group_id": "lg284",
+      "lemma_group_id": "lg289",
+      "lemma": "결",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s018",
+          "node_id": "s018_w028",
+          "surface": "결",
+          "sentence": "원심은 아래와 같은 이유로 공소사실에 부합하는 피해자 진술을 그대로 믿기 어렵다고 보아, 공소사실을 유죄로 판단한 제1심판결을 파기하고 무죄를 선고하였다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg290",
       "lemma": "파기하다",
       "pos": "동사",
       "occurrences": [
@@ -57494,7 +57656,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg285",
+      "lemma_group_id": "lg291",
       "lemma": "무죄",
       "pos": "명사",
       "occurrences": [
@@ -57507,7 +57669,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg286",
+      "lemma_group_id": "lg292",
       "lemma": "선고하다",
       "pos": "동사",
       "occurrences": [
@@ -57520,7 +57682,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg287",
+      "lemma_group_id": "lg293",
       "lemma": "전체",
       "pos": "명사",
       "occurrences": [
@@ -57533,7 +57695,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg288",
+      "lemma_group_id": "lg294",
       "lemma": "IQ",
       "pos": "명사",
       "occurrences": [
@@ -57546,7 +57708,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg289",
+      "lemma_group_id": "lg295",
       "lemma": "학력",
       "pos": "명사",
       "occurrences": [
@@ -57559,7 +57721,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg290",
+      "lemma_group_id": "lg296",
       "lemma": "경력",
       "pos": "명사",
       "occurrences": [
@@ -57572,7 +57734,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg291",
+      "lemma_group_id": "lg297",
       "lemma": "언어",
       "pos": "명사",
       "occurrences": [
@@ -57585,7 +57747,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg292",
+      "lemma_group_id": "lg298",
       "lemma": "이해",
       "pos": "명사",
       "occurrences": [
@@ -57598,7 +57760,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg293",
+      "lemma_group_id": "lg299",
       "lemma": "능력",
       "pos": "명사",
       "occurrences": [
@@ -57617,7 +57779,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg294",
+      "lemma_group_id": "lg300",
       "lemma": "지각",
       "pos": "명사",
       "occurrences": [
@@ -57630,7 +57792,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg295",
+      "lemma_group_id": "lg301",
       "lemma": "추론",
       "pos": "명사",
       "occurrences": [
@@ -57643,7 +57805,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg296",
+      "lemma_group_id": "lg302",
       "lemma": "성인",
       "pos": "명사",
       "occurrences": [
@@ -57656,7 +57818,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg297",
+      "lemma_group_id": "lg303",
       "lemma": "비하다",
       "pos": "동사",
       "occurrences": [
@@ -57675,7 +57837,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg298",
+      "lemma_group_id": "lg304",
       "lemma": "특별히",
       "pos": "부사",
       "occurrences": [
@@ -57688,7 +57850,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg299",
+      "lemma_group_id": "lg305",
       "lemma": "저조하다",
       "pos": "동사",
       "occurrences": [
@@ -57701,7 +57863,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg300",
+      "lemma_group_id": "lg306",
       "lemma": "점",
       "pos": "명사",
       "occurrences": [
@@ -57756,7 +57918,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg301",
+      "lemma_group_id": "lg307",
       "lemma": "종합하다",
       "pos": "동사",
       "occurrences": [
@@ -57775,7 +57937,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg302",
+      "lemma_group_id": "lg308",
       "lemma": "평가",
       "pos": "명사",
       "occurrences": [
@@ -57788,7 +57950,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg303",
+      "lemma_group_id": "lg309",
       "lemma": "관련하다",
       "pos": "형용사",
       "occurrences": [
@@ -57807,7 +57969,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg304",
+      "lemma_group_id": "lg310",
       "lemma": "다른",
       "pos": "관형사",
       "occurrences": [
@@ -57838,7 +58000,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg305",
+      "lemma_group_id": "lg311",
       "lemma": "척도",
       "pos": "명사",
       "occurrences": [
@@ -57851,7 +58013,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg306",
+      "lemma_group_id": "lg312",
       "lemma": "기준",
       "pos": "명사",
       "occurrences": [
@@ -57876,7 +58038,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg307",
+      "lemma_group_id": "lg313",
       "lemma": "적용하다",
       "pos": "동사",
       "occurrences": [
@@ -57889,7 +58051,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg308",
+      "lemma_group_id": "lg314",
       "lemma": "타당하다",
       "pos": "형용사",
       "occurrences": [
@@ -57902,7 +58064,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg309",
+      "lemma_group_id": "lg315",
       "lemma": "선뜻",
       "pos": "부사",
       "occurrences": [
@@ -57927,7 +58089,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg310",
+      "lemma_group_id": "lg316",
       "lemma": "수긍하다",
       "pos": "동사",
       "occurrences": [
@@ -57964,7 +58126,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg311",
+      "lemma_group_id": "lg317",
       "lemma": "측면",
       "pos": "명사",
       "occurrences": [
@@ -57995,7 +58157,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg312",
+      "lemma_group_id": "lg318",
       "lemma": "추행",
       "pos": "명사",
       "occurrences": [
@@ -58080,7 +58242,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg313",
+      "lemma_group_id": "lg319",
       "lemma": "태양",
       "pos": "명사",
       "occurrences": [
@@ -58093,7 +58255,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg314",
+      "lemma_group_id": "lg320",
       "lemma": "삽입",
       "pos": "명사",
       "occurrences": [
@@ -58106,7 +58268,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg315",
+      "lemma_group_id": "lg321",
       "lemma": "시도",
       "pos": "명사",
       "occurrences": [
@@ -58131,7 +58293,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg316",
+      "lemma_group_id": "lg322",
       "lemma": "화장실",
       "pos": "명사",
       "occurrences": [
@@ -58156,7 +58318,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg317",
+      "lemma_group_id": "lg323",
       "lemma": "횟수",
       "pos": "명사",
       "occurrences": [
@@ -58169,7 +58331,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg318",
+      "lemma_group_id": "lg324",
       "lemma": "번복하다",
       "pos": "동사",
       "occurrences": [
@@ -58194,7 +58356,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg319",
+      "lemma_group_id": "lg325",
       "lemma": "다",
       "pos": "부사",
       "occurrences": [
@@ -58219,7 +58381,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg320",
+      "lemma_group_id": "lg326",
       "lemma": "당하다",
       "pos": "동사",
       "occurrences": [
@@ -58280,7 +58442,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg321",
+      "lemma_group_id": "lg327",
       "lemma": "씻다",
       "pos": "동사",
       "occurrences": [
@@ -58293,7 +58455,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg322",
+      "lemma_group_id": "lg328",
       "lemma": "나오다",
       "pos": "동사",
       "occurrences": [
@@ -58348,7 +58510,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg323",
+      "lemma_group_id": "lg329",
       "lemma": "하의",
       "pos": "명사",
       "occurrences": [
@@ -58361,7 +58523,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg324",
+      "lemma_group_id": "lg330",
       "lemma": "벗다",
       "pos": "동사",
       "occurrences": [
@@ -58380,7 +58542,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg325",
+      "lemma_group_id": "lg331",
       "lemma": "앞",
       "pos": "명사",
       "occurrences": [
@@ -58393,7 +58555,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg326",
+      "lemma_group_id": "lg332",
       "lemma": "서다",
       "pos": "동사",
       "occurrences": [
@@ -58406,7 +58568,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg327",
+      "lemma_group_id": "lg333",
       "lemma": "모습",
       "pos": "명사",
       "occurrences": [
@@ -58425,7 +58587,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg328",
+      "lemma_group_id": "lg334",
       "lemma": "쭈글쭈글",
       "pos": "부사",
       "occurrences": [
@@ -58438,7 +58600,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg329",
+      "lemma_group_id": "lg335",
       "lemma": "징그럽다",
       "pos": "형용사",
       "occurrences": [
@@ -58451,7 +58613,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg330",
+      "lemma_group_id": "lg336",
       "lemma": "더럽다",
       "pos": "형용사",
       "occurrences": [
@@ -58464,7 +58626,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg331",
+      "lemma_group_id": "lg337",
       "lemma": "역겹다",
       "pos": "형용사",
       "occurrences": [
@@ -58477,7 +58639,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg332",
+      "lemma_group_id": "lg338",
       "lemma": "토하다",
       "pos": "동사",
       "occurrences": [
@@ -58496,7 +58658,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg333",
+      "lemma_group_id": "lg339",
       "lemma": "취지",
       "pos": "명사",
       "occurrences": [
@@ -58581,7 +58743,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg334",
+      "lemma_group_id": "lg340",
       "lemma": "진술하다",
       "pos": "동사",
       "occurrences": [
@@ -58648,7 +58810,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg335",
+      "lemma_group_id": "lg341",
       "lemma": "반면",
       "pos": "명사",
       "occurrences": [
@@ -58667,7 +58829,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg336",
+      "lemma_group_id": "lg342",
       "lemma": "속옷",
       "pos": "명사",
       "occurrences": [
@@ -58680,7 +58842,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg337",
+      "lemma_group_id": "lg343",
       "lemma": "주장하다",
       "pos": "동사",
       "occurrences": [
@@ -58705,7 +58867,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg338",
+      "lemma_group_id": "lg344",
       "lemma": "검증",
       "pos": "명사",
       "occurrences": [
@@ -58724,7 +58886,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg339",
+      "lemma_group_id": "lg345",
       "lemma": "결과",
       "pos": "명사",
       "occurrences": [
@@ -58749,7 +58911,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg340",
+      "lemma_group_id": "lg346",
       "lemma": "불룩",
       "pos": "부사",
       "occurrences": [
@@ -58762,7 +58924,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg341",
+      "lemma_group_id": "lg347",
       "lemma": "우람하다",
       "pos": "형용사",
       "occurrences": [
@@ -58775,7 +58937,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg342",
+      "lemma_group_id": "lg348",
       "lemma": "팔뚝",
       "pos": "명사",
       "occurrences": [
@@ -58788,7 +58950,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg343",
+      "lemma_group_id": "lg349",
       "lemma": "굵다",
       "pos": "형용사",
       "occurrences": [
@@ -58801,7 +58963,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg344",
+      "lemma_group_id": "lg350",
       "lemma": "탄탄하다",
       "pos": "형용사",
       "occurrences": [
@@ -58814,7 +58976,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg345",
+      "lemma_group_id": "lg351",
       "lemma": "복부",
       "pos": "명사",
       "occurrences": [
@@ -58827,7 +58989,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg346",
+      "lemma_group_id": "lg352",
       "lemma": "약간",
       "pos": "명사",
       "occurrences": [
@@ -58840,7 +59002,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg347",
+      "lemma_group_id": "lg353",
       "lemma": "주름",
       "pos": "명사",
       "occurrences": [
@@ -58859,7 +59021,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg348",
+      "lemma_group_id": "lg354",
       "lemma": "피부",
       "pos": "명사",
       "occurrences": [
@@ -58884,7 +59046,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg349",
+      "lemma_group_id": "lg355",
       "lemma": "약간",
       "pos": "부사",
       "occurrences": [
@@ -58897,7 +59059,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg350",
+      "lemma_group_id": "lg356",
       "lemma": "처지다",
       "pos": "동사",
       "occurrences": [
@@ -58910,7 +59072,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg351",
+      "lemma_group_id": "lg357",
       "lemma": "전체적",
       "pos": "명사",
       "occurrences": [
@@ -58923,7 +59085,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg352",
+      "lemma_group_id": "lg358",
       "lemma": "근육질",
       "pos": "명사",
       "occurrences": [
@@ -58936,7 +59098,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg353",
+      "lemma_group_id": "lg359",
       "lemma": "건장하다",
       "pos": "형용사",
       "occurrences": [
@@ -58949,7 +59111,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg354",
+      "lemma_group_id": "lg360",
       "lemma": "하반신",
       "pos": "명사",
       "occurrences": [
@@ -58962,7 +59124,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg355",
+      "lemma_group_id": "lg361",
       "lemma": "상반신",
       "pos": "명사",
       "occurrences": [
@@ -58975,7 +59137,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg356",
+      "lemma_group_id": "lg362",
       "lemma": "더",
       "pos": "부사",
       "occurrences": [
@@ -58994,7 +59156,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg357",
+      "lemma_group_id": "lg363",
       "lemma": "매끄럽다",
       "pos": "형용사",
       "occurrences": [
@@ -59007,7 +59169,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg358",
+      "lemma_group_id": "lg364",
       "lemma": "깨끗하다",
       "pos": "형용사",
       "occurrences": [
@@ -59020,7 +59182,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg359",
+      "lemma_group_id": "lg365",
       "lemma": "상태",
       "pos": "명사",
       "occurrences": [
@@ -59051,7 +59213,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg360",
+      "lemma_group_id": "lg366",
       "lemma": "실제로",
       "pos": "부사",
       "occurrences": [
@@ -59064,7 +59226,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg361",
+      "lemma_group_id": "lg367",
       "lemma": "벗",
       "pos": "명사",
       "occurrences": [
@@ -59077,7 +59239,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg362",
+      "lemma_group_id": "lg368",
       "lemma": "제대로",
       "pos": "부사",
       "occurrences": [
@@ -59096,7 +59258,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg363",
+      "lemma_group_id": "lg369",
       "lemma": "못하다",
       "pos": "동사",
       "occurrences": [
@@ -59109,7 +59271,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg364",
+      "lemma_group_id": "lg370",
       "lemma": "연령",
       "pos": "명사",
       "occurrences": [
@@ -59128,7 +59290,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg365",
+      "lemma_group_id": "lg371",
       "lemma": "짐작하다",
       "pos": "동사",
       "occurrences": [
@@ -59141,7 +59303,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg366",
+      "lemma_group_id": "lg372",
       "lemma": "만연히",
       "pos": "부사",
       "occurrences": [
@@ -59154,7 +59316,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg367",
+      "lemma_group_id": "lg373",
       "lemma": "가능성",
       "pos": "명사",
       "occurrences": [
@@ -59179,7 +59341,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg368",
+      "lemma_group_id": "lg374",
       "lemma": "발생",
       "pos": "명사",
       "occurrences": [
@@ -59204,7 +59366,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg369",
+      "lemma_group_id": "lg375",
       "lemma": "전후",
       "pos": "명사",
       "occurrences": [
@@ -59223,7 +59385,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg370",
+      "lemma_group_id": "lg376",
       "lemma": "태도",
       "pos": "명사",
       "occurrences": [
@@ -59242,7 +59404,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg371",
+      "lemma_group_id": "lg377",
       "lemma": "가깝다",
       "pos": "형용사",
       "occurrences": [
@@ -59255,7 +59417,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg372",
+      "lemma_group_id": "lg378",
       "lemma": "차이",
       "pos": "명사",
       "occurrences": [
@@ -59286,7 +59448,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg373",
+      "lemma_group_id": "lg379",
       "lemma": "이",
       "pos": "관형사",
       "occurrences": [
@@ -59317,7 +59479,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg374",
+      "lemma_group_id": "lg380",
       "lemma": "이전",
       "pos": "명사",
       "occurrences": [
@@ -59330,7 +59492,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg375",
+      "lemma_group_id": "lg381",
       "lemma": "일면식",
       "pos": "명사",
       "occurrences": [
@@ -59343,7 +59505,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg376",
+      "lemma_group_id": "lg382",
       "lemma": "사이",
       "pos": "명사",
       "occurrences": [
@@ -59356,7 +59518,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg377",
+      "lemma_group_id": "lg383",
       "lemma": "이상일",
       "pos": "명사",
       "occurrences": [
@@ -59369,7 +59531,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg378",
+      "lemma_group_id": "lg384",
       "lemma": "대화",
       "pos": "명사",
       "occurrences": [
@@ -59400,7 +59562,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg379",
+      "lemma_group_id": "lg385",
       "lemma": "불가능하다",
       "pos": "형용사",
       "occurrences": [
@@ -59413,7 +59575,20 @@
       ]
     },
     {
-      "lemma_group_id": "lg380",
+      "lemma_group_id": "lg386",
+      "lemma": "명생략",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s026",
+          "node_id": "s026_w049",
+          "surface": "명생략",
+          "sentence": "가) 피해자와 피고인은 40세에 가까운 연령의 차이가 있고 이 사건 이전에는 일면식이 없던 사이인데, 피해자는 채팅 어플에서 나이 차이가 15세 이상일 경우 직접 대화가 불가능하자 63세의 ‘(대화명 생략)’이라는 대화명으로 계정을 새로이 가입하면서까지 피고인에게 먼저 연락을 시도하였다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg387",
       "lemma": "대화명",
       "pos": "명사",
       "occurrences": [
@@ -59426,7 +59601,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg381",
+      "lemma_group_id": "lg388",
       "lemma": "계정",
       "pos": "명사",
       "occurrences": [
@@ -59439,7 +59614,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg382",
+      "lemma_group_id": "lg389",
       "lemma": "새로이",
       "pos": "부사",
       "occurrences": [
@@ -59452,7 +59627,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg383",
+      "lemma_group_id": "lg390",
       "lemma": "가입하다",
       "pos": "동사",
       "occurrences": [
@@ -59471,7 +59646,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg384",
+      "lemma_group_id": "lg391",
       "lemma": "먼저",
       "pos": "부사",
       "occurrences": [
@@ -59508,7 +59683,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg385",
+      "lemma_group_id": "lg392",
       "lemma": "연락",
       "pos": "명사",
       "occurrences": [
@@ -59527,7 +59702,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg386",
+      "lemma_group_id": "lg393",
       "lemma": "시도하다",
       "pos": "동사",
       "occurrences": [
@@ -59540,7 +59715,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg387",
+      "lemma_group_id": "lg394",
       "lemma": "차량",
       "pos": "명사",
       "occurrences": [
@@ -59589,7 +59764,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg388",
+      "lemma_group_id": "lg395",
       "lemma": "운전하다",
       "pos": "동사",
       "occurrences": [
@@ -59614,7 +59789,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg389",
+      "lemma_group_id": "lg396",
       "lemma": "거주하다",
       "pos": "형용사",
       "occurrences": [
@@ -59627,7 +59802,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg390",
+      "lemma_group_id": "lg397",
       "lemma": "함께",
       "pos": "부사",
       "occurrences": [
@@ -59646,7 +59821,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg391",
+      "lemma_group_id": "lg398",
       "lemma": "타다",
       "pos": "동사",
       "occurrences": [
@@ -59673,42 +59848,24 @@
           "node_id": "s058_w049",
           "surface": "타고",
           "sentence": "이와 같이 피해자가 믿고 의지하는 마음이 컸던 피고인으로부터 갑작스럽게 심한 추행을 당하여 극도로 당황하고 두려움과 수치심을 느끼게 된 상황이었다면, 피해자가 즉시 주변의 도움을 요청하거나 홀로 모텔을 빠져나오지 않은 채 피고인의 차를 타고 자신의 차가 있던 ☆☆☆☆까지 돌아왔다고 하여, 그것이 매우 이례적이라거나 납득하기 어려운 행동이라고 볼 수 없다."
-        },
-        {
-          "sentence_id": "s053",
-          "node_id": "s053_w026",
-          "surface": "타나",
-          "sentence": "피해자는 ‘피고인이 춥다고 모텔에 들어가자고 하였고 아무 짓도 하지 않겠다는 말도 하여, 나이가 많아서 추위를 많이 타나보다 하는 생각에서 피고인의 제안에 응하였다.’고 진술하는바, 피고인과 피해자의 나이 차이, 피해자의 심리 상태 등에 비추어 이러한 피해자의 행동은 충분히 납득할 만하고, 앞서 본 법리에 비추어 볼 때 이와 같은 경위로 피해자가 모텔에 들어가는 데 동의하고 안아보는 걸 허락했다고 하더라도 이러한 사정을 그 이상의 성적 접촉은 원하지 않았다는 피해자의 진술을 의심할 만한 사정이라고 볼 수는 없다."
         }
       ]
     },
     {
-      "lemma_group_id": "lg392",
-      "lemma": "이동하다",
-      "pos": "동사",
+      "lemma_group_id": "lg399",
+      "lemma": "이동하",
+      "pos": "명사",
       "occurrences": [
         {
           "sentence_id": "s027",
           "node_id": "s027_w031",
           "surface": "이동하",
           "sentence": "나) 피해자는 직접 차량을 운전하여 피고인이 거주하는 구리시에 있는 △△마트로 가서 피고인을 만난 후 피고인의 차량을 함께 타고 모텔로 이동하였다."
-        },
-        {
-          "sentence_id": "s052",
-          "node_id": "s052_w037",
-          "surface": "이동하기",
-          "sentence": "다) 피해자는 2019. 1. 20. 18:00경 ☆☆☆☆에서 피고인을 만났는데, 피고인이 ‘조용한 곳에 가서 이야기를 하자.’고 하여 자리를 이동하기로 하였고, 피고인의 차를 타고 이동하던 중 피고인이 모텔에 가자고 하여 모텔에 들어가게 되었다."
-        },
-        {
-          "sentence_id": "s052",
-          "node_id": "s052_w046",
-          "surface": "이동하던",
-          "sentence": "다) 피해자는 2019. 1. 20. 18:00경 ☆☆☆☆에서 피고인을 만났는데, 피고인이 ‘조용한 곳에 가서 이야기를 하자.’고 하여 자리를 이동하기로 하였고, 피고인의 차를 타고 이동하던 중 피고인이 모텔에 가자고 하여 모텔에 들어가게 되었다."
         }
       ]
     },
     {
-      "lemma_group_id": "lg393",
+      "lemma_group_id": "lg400",
       "lemma": "처음",
       "pos": "부사",
       "occurrences": [
@@ -59727,7 +59884,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg394",
+      "lemma_group_id": "lg401",
       "lemma": "별다르다",
       "pos": "형용사",
       "occurrences": [
@@ -59740,7 +59897,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg395",
+      "lemma_group_id": "lg402",
       "lemma": "거부",
       "pos": "명사",
       "occurrences": [
@@ -59765,7 +59922,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg396",
+      "lemma_group_id": "lg403",
       "lemma": "의사",
       "pos": "명사",
       "occurrences": [
@@ -59802,7 +59959,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg397",
+      "lemma_group_id": "lg404",
       "lemma": "밝히다",
       "pos": "동사",
       "occurrences": [
@@ -59815,7 +59972,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg398",
+      "lemma_group_id": "lg405",
       "lemma": "권유",
       "pos": "명사",
       "occurrences": [
@@ -59828,7 +59985,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg399",
+      "lemma_group_id": "lg406",
       "lemma": "내",
       "pos": "명사",
       "occurrences": [
@@ -59841,7 +59998,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg400",
+      "lemma_group_id": "lg407",
       "lemma": "현금",
       "pos": "명사",
       "occurrences": [
@@ -59854,7 +60011,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg401",
+      "lemma_group_id": "lg408",
       "lemma": "받다",
       "pos": "동사",
       "occurrences": [
@@ -59897,7 +60054,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg402",
+      "lemma_group_id": "lg409",
       "lemma": "돈",
       "pos": "명사",
       "occurrences": [
@@ -59952,7 +60109,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg403",
+      "lemma_group_id": "lg410",
       "lemma": "표시하다",
       "pos": "동사",
       "occurrences": [
@@ -59977,7 +60134,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg404",
+      "lemma_group_id": "lg411",
       "lemma": "억지로",
       "pos": "부사",
       "occurrences": [
@@ -59990,7 +60147,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg405",
+      "lemma_group_id": "lg412",
       "lemma": "핸드백",
       "pos": "명사",
       "occurrences": [
@@ -60003,7 +60160,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg406",
+      "lemma_group_id": "lg413",
       "lemma": "집어넣다",
       "pos": "동사",
       "occurrences": [
@@ -60016,7 +60173,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg407",
+      "lemma_group_id": "lg414",
       "lemma": "주장",
       "pos": "명사",
       "occurrences": [
@@ -60035,7 +60192,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg408",
+      "lemma_group_id": "lg415",
       "lemma": "앞서다",
       "pos": "동사",
       "occurrences": [
@@ -60060,7 +60217,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg409",
+      "lemma_group_id": "lg416",
       "lemma": "카카오톡",
       "pos": "명사",
       "occurrences": [
@@ -60085,7 +60242,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg410",
+      "lemma_group_id": "lg417",
       "lemma": "메신저",
       "pos": "명사",
       "occurrences": [
@@ -60104,7 +60261,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg411",
+      "lemma_group_id": "lg418",
       "lemma": "여러",
       "pos": "관형사",
       "occurrences": [
@@ -60117,7 +60274,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg412",
+      "lemma_group_id": "lg419",
       "lemma": "차례",
       "pos": "명사",
       "occurrences": [
@@ -60136,7 +60293,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg413",
+      "lemma_group_id": "lg420",
       "lemma": "경제적",
       "pos": "명사",
       "occurrences": [
@@ -60155,7 +60312,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg414",
+      "lemma_group_id": "lg421",
       "lemma": "하소연",
       "pos": "명사",
       "occurrences": [
@@ -60168,7 +60325,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg415",
+      "lemma_group_id": "lg422",
       "lemma": "직후",
       "pos": "명사",
       "occurrences": [
@@ -60187,7 +60344,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg416",
+      "lemma_group_id": "lg423",
       "lemma": "감사",
       "pos": "명사",
       "occurrences": [
@@ -60212,7 +60369,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg417",
+      "lemma_group_id": "lg424",
       "lemma": "뜻",
       "pos": "명사",
       "occurrences": [
@@ -60231,7 +60388,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg418",
+      "lemma_group_id": "lg425",
       "lemma": "전하다",
       "pos": "동사",
       "occurrences": [
@@ -60250,7 +60407,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg419",
+      "lemma_group_id": "lg426",
       "lemma": "모친",
       "pos": "명사",
       "occurrences": [
@@ -60263,7 +60420,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg420",
+      "lemma_group_id": "lg427",
       "lemma": "밥",
       "pos": "명사",
       "occurrences": [
@@ -60276,7 +60433,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg421",
+      "lemma_group_id": "lg428",
       "lemma": "반찬",
       "pos": "명사",
       "occurrences": [
@@ -60289,7 +60446,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg422",
+      "lemma_group_id": "lg429",
       "lemma": "챙기다",
       "pos": "동사",
       "occurrences": [
@@ -60302,7 +60459,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg423",
+      "lemma_group_id": "lg430",
       "lemma": "드리다",
       "pos": "동사",
       "occurrences": [
@@ -60321,7 +60478,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg424",
+      "lemma_group_id": "lg431",
       "lemma": "말",
       "pos": "명사",
       "occurrences": [
@@ -60346,7 +60503,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg425",
+      "lemma_group_id": "lg432",
       "lemma": "과정",
       "pos": "명사",
       "occurrences": [
@@ -60359,7 +60516,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg426",
+      "lemma_group_id": "lg433",
       "lemma": "그리",
       "pos": "부사",
       "occurrences": [
@@ -60372,7 +60529,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg427",
+      "lemma_group_id": "lg434",
       "lemma": "강하다",
       "pos": "형용사",
       "occurrences": [
@@ -60391,7 +60548,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg428",
+      "lemma_group_id": "lg435",
       "lemma": "표하다",
       "pos": "동사",
       "occurrences": [
@@ -60404,7 +60561,26 @@
       ]
     },
     {
-      "lemma_group_id": "lg429",
+      "lemma_group_id": "lg436",
+      "lemma": "라",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s031",
+          "node_id": "s031_w001",
+          "surface": "라",
+          "sentence": "라) 피해자는 모텔을 나서기 전 피고인의 얼굴에 묻은 화장품, 립스틱 등을 닦아주었다."
+        },
+        {
+          "sentence_id": "s054",
+          "node_id": "s054_w001",
+          "surface": "라",
+          "sentence": "라) 피고인이 50만 원을 주려고 하자 피해자가 한두 차례 거절을 하였다는 사실은 피고인 스스로도 인정하고 있다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg437",
       "lemma": "나서다",
       "pos": "동사",
       "occurrences": [
@@ -60417,7 +60593,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg430",
+      "lemma_group_id": "lg438",
       "lemma": "얼굴",
       "pos": "명사",
       "occurrences": [
@@ -60448,7 +60624,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg431",
+      "lemma_group_id": "lg439",
       "lemma": "묻다",
       "pos": "동사",
       "occurrences": [
@@ -60479,7 +60655,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg432",
+      "lemma_group_id": "lg440",
       "lemma": "화장품",
       "pos": "명사",
       "occurrences": [
@@ -60492,7 +60668,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg433",
+      "lemma_group_id": "lg441",
       "lemma": "립스틱",
       "pos": "명사",
       "occurrences": [
@@ -60517,7 +60693,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg434",
+      "lemma_group_id": "lg442",
       "lemma": "닦다",
       "pos": "동사",
       "occurrences": [
@@ -60548,7 +60724,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg435",
+      "lemma_group_id": "lg443",
       "lemma": "많다",
       "pos": "형용사",
       "occurrences": [
@@ -60573,7 +60749,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg436",
+      "lemma_group_id": "lg444",
       "lemma": "자칫",
       "pos": "부사",
       "occurrences": [
@@ -60586,7 +60762,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg437",
+      "lemma_group_id": "lg445",
       "lemma": "남들",
       "pos": "명사",
       "occurrences": [
@@ -60605,7 +60781,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg438",
+      "lemma_group_id": "lg446",
       "lemma": "이른바",
       "pos": "부사",
       "occurrences": [
@@ -60618,7 +60794,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg439",
+      "lemma_group_id": "lg447",
       "lemma": "원조",
       "pos": "명사",
       "occurrences": [
@@ -60637,7 +60813,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg440",
+      "lemma_group_id": "lg448",
       "lemma": "교제",
       "pos": "명사",
       "occurrences": [
@@ -60656,7 +60832,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg441",
+      "lemma_group_id": "lg449",
       "lemma": "오해하다",
       "pos": "동사",
       "occurrences": [
@@ -60675,7 +60851,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg442",
+      "lemma_group_id": "lg450",
       "lemma": "두렵다",
       "pos": "형용사",
       "occurrences": [
@@ -60688,7 +60864,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg443",
+      "lemma_group_id": "lg451",
       "lemma": "취하다",
       "pos": "동사",
       "occurrences": [
@@ -60707,7 +60883,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg444",
+      "lemma_group_id": "lg452",
       "lemma": "의지하다",
       "pos": "동사",
       "occurrences": [
@@ -60726,7 +60902,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg445",
+      "lemma_group_id": "lg453",
       "lemma": "뜻밖",
       "pos": "명사",
       "occurrences": [
@@ -60739,7 +60915,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg446",
+      "lemma_group_id": "lg454",
       "lemma": "극도",
       "pos": "명사",
       "occurrences": [
@@ -60758,7 +60934,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg447",
+      "lemma_group_id": "lg455",
       "lemma": "혐오감",
       "pos": "명사",
       "occurrences": [
@@ -60771,7 +60947,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg448",
+      "lemma_group_id": "lg456",
       "lemma": "인하다",
       "pos": "동사",
       "occurrences": [
@@ -60790,7 +60966,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg449",
+      "lemma_group_id": "lg457",
       "lemma": "그저",
       "pos": "부사",
       "occurrences": [
@@ -60803,7 +60979,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg450",
+      "lemma_group_id": "lg458",
       "lemma": "빨리",
       "pos": "부사",
       "occurrences": [
@@ -60816,7 +60992,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg451",
+      "lemma_group_id": "lg459",
       "lemma": "돌아가다",
       "pos": "동사",
       "occurrences": [
@@ -60829,7 +61005,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg452",
+      "lemma_group_id": "lg460",
       "lemma": "나가다",
       "pos": "동사",
       "occurrences": [
@@ -60848,7 +61024,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg453",
+      "lemma_group_id": "lg461",
       "lemma": "이후",
       "pos": "명사",
       "occurrences": [
@@ -60909,7 +61085,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg454",
+      "lemma_group_id": "lg462",
       "lemma": "타인",
       "pos": "명사",
       "occurrences": [
@@ -60928,7 +61104,26 @@
       ]
     },
     {
-      "lemma_group_id": "lg455",
+      "lemma_group_id": "lg463",
+      "lemma": "마",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s033",
+          "node_id": "s033_w001",
+          "surface": "마",
+          "sentence": "마) 피해자는 모텔에서 강제추행 피해를 당하였다고 하면서도 즉시 도움을 요청하거나 모텔을 빠져나오려는 행동을 취하지 않았고, 모텔에서 나와 피고인의 차량을 같이 타고 피해자 차량이 주차된 장소로 돌아온 후 자신의 차량을 운전하여 귀가하였다."
+        },
+        {
+          "sentence_id": "s056",
+          "node_id": "s056_w001",
+          "surface": "마",
+          "sentence": "마) 피해자는 피해상황에 대하여, 너무 깜짝 놀라고 피고인의 힘이 세서 반항하기 어려웠고 계속 발버둥 치면서 저항하다가 화장실로 도망갔으며, 피고인이 ‘내가 널 사랑해서 너가 원하지 않아서 하지 않은 거다. 너가 원할 때 관계를 가지겠다.’고 말하여 너무 놀라서 바들바들 떨렸다는 취지로 진술하였다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg464",
       "lemma": "즉시",
       "pos": "부사",
       "occurrences": [
@@ -60947,7 +61142,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg456",
+      "lemma_group_id": "lg465",
       "lemma": "도움",
       "pos": "명사",
       "occurrences": [
@@ -60972,7 +61167,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg457",
+      "lemma_group_id": "lg466",
       "lemma": "요청하다",
       "pos": "동사",
       "occurrences": [
@@ -60991,7 +61186,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg458",
+      "lemma_group_id": "lg467",
       "lemma": "빠지다",
       "pos": "동사",
       "occurrences": [
@@ -61010,7 +61205,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg459",
+      "lemma_group_id": "lg468",
       "lemma": "주차하다",
       "pos": "동사",
       "occurrences": [
@@ -61023,7 +61218,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg460",
+      "lemma_group_id": "lg469",
       "lemma": "장소",
       "pos": "명사",
       "occurrences": [
@@ -61036,7 +61231,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg461",
+      "lemma_group_id": "lg470",
       "lemma": "돌아오다",
       "pos": "동사",
       "occurrences": [
@@ -61061,7 +61256,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg462",
+      "lemma_group_id": "lg471",
       "lemma": "귀가하다",
       "pos": "동사",
       "occurrences": [
@@ -61074,7 +61269,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg463",
+      "lemma_group_id": "lg472",
       "lemma": "쉽사리",
       "pos": "부사",
       "occurrences": [
@@ -61087,7 +61282,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg464",
+      "lemma_group_id": "lg473",
       "lemma": "신빙하다",
       "pos": "동사",
       "occurrences": [
@@ -61100,7 +61295,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg465",
+      "lemma_group_id": "lg474",
       "lemma": "당일",
       "pos": "명사",
       "occurrences": [
@@ -61125,7 +61320,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg466",
+      "lemma_group_id": "lg475",
       "lemma": "해바라기",
       "pos": "명사",
       "occurrences": [
@@ -61150,7 +61345,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg467",
+      "lemma_group_id": "lg476",
       "lemma": "센터",
       "pos": "명사",
       "occurrences": [
@@ -61175,7 +61370,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg468",
+      "lemma_group_id": "lg477",
       "lemma": "전화하다",
       "pos": "동사",
       "occurrences": [
@@ -61188,7 +61383,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg469",
+      "lemma_group_id": "lg478",
       "lemma": "상담",
       "pos": "명사",
       "occurrences": [
@@ -61201,7 +61396,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg470",
+      "lemma_group_id": "lg479",
       "lemma": "처벌",
       "pos": "명사",
       "occurrences": [
@@ -61214,7 +61409,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg471",
+      "lemma_group_id": "lg480",
       "lemma": "공식적",
       "pos": "명사",
       "occurrences": [
@@ -61227,7 +61422,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg472",
+      "lemma_group_id": "lg481",
       "lemma": "처리",
       "pos": "명사",
       "occurrences": [
@@ -61240,7 +61435,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg473",
+      "lemma_group_id": "lg482",
       "lemma": "메시지",
       "pos": "명사",
       "occurrences": [
@@ -61295,7 +61490,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg474",
+      "lemma_group_id": "lg483",
       "lemma": "답",
       "pos": "명사",
       "occurrences": [
@@ -61308,7 +61503,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg475",
+      "lemma_group_id": "lg484",
       "lemma": "화",
       "pos": "명사",
       "occurrences": [
@@ -61321,7 +61516,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg476",
+      "lemma_group_id": "lg485",
       "lemma": "고소",
       "pos": "명사",
       "occurrences": [
@@ -61370,7 +61565,32 @@
       ]
     },
     {
-      "lemma_group_id": "lg477",
+      "lemma_group_id": "lg486",
+      "lemma": "바",
+      "pos": "명사",
+      "occurrences": [
+        {
+          "sentence_id": "s035",
+          "node_id": "s035_w056",
+          "surface": "바",
+          "sentence": "가) 피해자 진술에 의하더라도 사건 당일 해바라기센터에 전화하여 피해사실에 관한 상담을 하면서도 피고인에 대한 처벌이나 공식적인 사건처리를 원하지는 않았는데, 이후 피고인이 피해자의 카카오톡 메시지에 답을 하지 않자 화가 나 고소에 이르렀다는 취지인바, 위와 같은 고소 경위에 비추어 피해자가 피고인의 추행 사실 자체가 아닌 다른 부수적 사유에 의하여 이 사건 고소에 이르렀을 가능성도 배제할 수 없다."
+        },
+        {
+          "sentence_id": "s053",
+          "node_id": "s053_w040",
+          "surface": "바",
+          "sentence": "피해자는 ‘피고인이 춥다고 모텔에 들어가자고 하였고 아무 짓도 하지 않겠다는 말도 하여, 나이가 많아서 추위를 많이 타나보다 하는 생각에서 피고인의 제안에 응하였다.’고 진술하는바, 피고인과 피해자의 나이 차이, 피해자의 심리 상태 등에 비추어 이러한 피해자의 행동은 충분히 납득할 만하고, 앞서 본 법리에 비추어 볼 때 이와 같은 경위로 피해자가 모텔에 들어가는 데 동의하고 안아보는 걸 허락했다고 하더라도 이러한 사정을 그 이상의 성적 접촉은 원하지 않았다는 피해자의 진술을 의심할 만한 사정이라고 볼 수는 없다."
+        },
+        {
+          "sentence_id": "s059",
+          "node_id": "s059_w001",
+          "surface": "바",
+          "sentence": "바) 피해자가 모텔에서 나오기 전 피고인의 얼굴에 묻은 립스틱을 닦아준 것은 이례적이기는 하나, 피해자는 ‘남들이 원조교제로 오해하여 이상하게 쳐다볼까 봐 그랬다.’고 진술하고 있어 이해할 만한 측면이 있고, 무엇보다도 피해자는 최초 경찰 조사에서 아무도 묻지 않은 위 내용을 먼저 구체적으로 진술하였는바, 추행 사실을 거짓으로 진술하는 것이라면 굳이 위와 같은 진술을 할 필요가 없었을 것이므로, 오히려 위와 같은 이례적인 사정을 숨기지 않고 진술하였다는 점은 피해자 진술의 신빙성을 높이는 사정이라고 할 수도 있다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg487",
       "lemma": "경위",
       "pos": "명사",
       "occurrences": [
@@ -61401,7 +61621,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg478",
+      "lemma_group_id": "lg488",
       "lemma": "부수적",
       "pos": "명사",
       "occurrences": [
@@ -61420,7 +61640,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg479",
+      "lemma_group_id": "lg489",
       "lemma": "사유",
       "pos": "명사",
       "occurrences": [
@@ -61439,7 +61659,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg480",
+      "lemma_group_id": "lg490",
       "lemma": "헤어지다",
       "pos": "동사",
       "occurrences": [
@@ -61452,7 +61672,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg481",
+      "lemma_group_id": "lg491",
       "lemma": "가명",
       "pos": "명사",
       "occurrences": [
@@ -61465,7 +61685,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg482",
+      "lemma_group_id": "lg492",
       "lemma": "도착하다",
       "pos": "동사",
       "occurrences": [
@@ -61478,7 +61698,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg483",
+      "lemma_group_id": "lg493",
       "lemma": "톡",
       "pos": "부사",
       "occurrences": [
@@ -61491,7 +61711,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg484",
+      "lemma_group_id": "lg494",
       "lemma": "야",
       "pos": "감탄사",
       "occurrences": [
@@ -61504,7 +61724,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg485",
+      "lemma_group_id": "lg495",
       "lemma": "피곤하다",
       "pos": "형용사",
       "occurrences": [
@@ -61517,7 +61737,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg486",
+      "lemma_group_id": "lg496",
       "lemma": "잘다",
       "pos": "형용사",
       "occurrences": [
@@ -61530,7 +61750,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg487",
+      "lemma_group_id": "lg497",
       "lemma": "시간하다",
       "pos": "동사",
       "occurrences": [
@@ -61543,7 +61763,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg488",
+      "lemma_group_id": "lg498",
       "lemma": "연락하다",
       "pos": "동사",
       "occurrences": [
@@ -61556,7 +61776,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg489",
+      "lemma_group_id": "lg499",
       "lemma": "안전하다",
       "pos": "형용사",
       "occurrences": [
@@ -61569,7 +61789,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg490",
+      "lemma_group_id": "lg500",
       "lemma": "귀가",
       "pos": "명사",
       "occurrences": [
@@ -61582,7 +61802,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg491",
+      "lemma_group_id": "lg501",
       "lemma": "염려하다",
       "pos": "형용사",
       "occurrences": [
@@ -61595,7 +61815,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg492",
+      "lemma_group_id": "lg502",
       "lemma": "한편",
       "pos": "명사",
       "occurrences": [
@@ -61614,7 +61834,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg493",
+      "lemma_group_id": "lg503",
       "lemma": "지속하다",
       "pos": "형용사",
       "occurrences": [
@@ -61627,7 +61847,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg494",
+      "lemma_group_id": "lg504",
       "lemma": "보내다",
       "pos": "동사",
       "occurrences": [
@@ -61682,7 +61902,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg495",
+      "lemma_group_id": "lg505",
       "lemma": "약",
       "pos": "관형사",
       "occurrences": [
@@ -61695,7 +61915,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg496",
+      "lemma_group_id": "lg506",
       "lemma": "경과하다",
       "pos": "형용사",
       "occurrences": [
@@ -61708,7 +61928,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg497",
+      "lemma_group_id": "lg507",
       "lemma": "전화",
       "pos": "명사",
       "occurrences": [
@@ -61745,7 +61965,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg498",
+      "lemma_group_id": "lg508",
       "lemma": "통화",
       "pos": "명사",
       "occurrences": [
@@ -61764,7 +61984,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg499",
+      "lemma_group_id": "lg509",
       "lemma": "항의하다",
       "pos": "동사",
       "occurrences": [
@@ -61777,7 +61997,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg500",
+      "lemma_group_id": "lg510",
       "lemma": "사과하다",
       "pos": "동사",
       "occurrences": [
@@ -61796,7 +62016,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg501",
+      "lemma_group_id": "lg511",
       "lemma": "합의",
       "pos": "명사",
       "occurrences": [
@@ -61809,7 +62029,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg502",
+      "lemma_group_id": "lg512",
       "lemma": "제안하다",
       "pos": "동사",
       "occurrences": [
@@ -61834,7 +62054,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg503",
+      "lemma_group_id": "lg513",
       "lemma": "반응하다",
       "pos": "동사",
       "occurrences": [
@@ -61847,7 +62067,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg504",
+      "lemma_group_id": "lg514",
       "lemma": "오히려",
       "pos": "부사",
       "occurrences": [
@@ -61866,7 +62086,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg505",
+      "lemma_group_id": "lg515",
       "lemma": "적극적",
       "pos": "명사",
       "occurrences": [
@@ -61879,7 +62099,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg506",
+      "lemma_group_id": "lg516",
       "lemma": "결백하다",
       "pos": "형용사",
       "occurrences": [
@@ -61892,7 +62112,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg507",
+      "lemma_group_id": "lg517",
       "lemma": "그러나",
       "pos": "부사",
       "occurrences": [
@@ -61905,7 +62125,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg508",
+      "lemma_group_id": "lg518",
       "lemma": "다음",
       "pos": "명사",
       "occurrences": [
@@ -61930,7 +62150,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg509",
+      "lemma_group_id": "lg519",
       "lemma": "지적하다",
       "pos": "동사",
       "occurrences": [
@@ -61955,7 +62175,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg510",
+      "lemma_group_id": "lg520",
       "lemma": "묘사",
       "pos": "명사",
       "occurrences": [
@@ -61968,7 +62188,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg511",
+      "lemma_group_id": "lg521",
       "lemma": "표현",
       "pos": "명사",
       "occurrences": [
@@ -61981,7 +62201,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg512",
+      "lemma_group_id": "lg522",
       "lemma": "다소",
       "pos": "부사",
       "occurrences": [
@@ -61994,7 +62214,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg513",
+      "lemma_group_id": "lg523",
       "lemma": "뿐",
       "pos": "명사",
       "occurrences": [
@@ -62013,7 +62233,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg514",
+      "lemma_group_id": "lg524",
       "lemma": "평가하다",
       "pos": "동사",
       "occurrences": [
@@ -62026,7 +62246,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg515",
+      "lemma_group_id": "lg525",
       "lemma": "매우",
       "pos": "부사",
       "occurrences": [
@@ -62045,7 +62265,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg516",
+      "lemma_group_id": "lg526",
       "lemma": "지엽적",
       "pos": "명사",
       "occurrences": [
@@ -62058,7 +62278,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg517",
+      "lemma_group_id": "lg527",
       "lemma": "불분명하다",
       "pos": "형용사",
       "occurrences": [
@@ -62071,7 +62291,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg518",
+      "lemma_group_id": "lg528",
       "lemma": "최초",
       "pos": "명사",
       "occurrences": [
@@ -62090,7 +62310,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg519",
+      "lemma_group_id": "lg529",
       "lemma": "당시",
       "pos": "명사",
       "occurrences": [
@@ -62115,7 +62335,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg520",
+      "lemma_group_id": "lg530",
       "lemma": "내용들",
       "pos": "명사",
       "occurrences": [
@@ -62128,7 +62348,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg521",
+      "lemma_group_id": "lg531",
       "lemma": "쪽지",
       "pos": "명사",
       "occurrences": [
@@ -62165,7 +62385,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg522",
+      "lemma_group_id": "lg532",
       "lemma": "제안",
       "pos": "명사",
       "occurrences": [
@@ -62184,7 +62404,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg523",
+      "lemma_group_id": "lg533",
       "lemma": "안다",
       "pos": "동사",
       "occurrences": [
@@ -62203,7 +62423,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg524",
+      "lemma_group_id": "lg534",
       "lemma": "동의",
       "pos": "명사",
       "occurrences": [
@@ -62216,7 +62436,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg525",
+      "lemma_group_id": "lg535",
       "lemma": "모두",
       "pos": "부사",
       "occurrences": [
@@ -62229,7 +62449,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg526",
+      "lemma_group_id": "lg536",
       "lemma": "숨김없이",
       "pos": "부사",
       "occurrences": [
@@ -62242,7 +62462,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg527",
+      "lemma_group_id": "lg537",
       "lemma": "친구",
       "pos": "명사",
       "occurrences": [
@@ -62273,7 +62493,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg528",
+      "lemma_group_id": "lg538",
       "lemma": "자살",
       "pos": "명사",
       "occurrences": [
@@ -62292,7 +62512,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg529",
+      "lemma_group_id": "lg539",
       "lemma": "객관적",
       "pos": "명사",
       "occurrences": [
@@ -62311,7 +62531,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg530",
+      "lemma_group_id": "lg540",
       "lemma": "정황들",
       "pos": "명사",
       "occurrences": [
@@ -62324,7 +62544,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg531",
+      "lemma_group_id": "lg541",
       "lemma": "다분히",
       "pos": "부사",
       "occurrences": [
@@ -62337,7 +62557,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg532",
+      "lemma_group_id": "lg542",
       "lemma": "주관적",
       "pos": "명사",
       "occurrences": [
@@ -62350,7 +62570,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg533",
+      "lemma_group_id": "lg543",
       "lemma": "감정적",
       "pos": "명사",
       "occurrences": [
@@ -62363,7 +62583,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg534",
+      "lemma_group_id": "lg544",
       "lemma": "알다",
       "pos": "동사",
       "occurrences": [
@@ -62388,7 +62608,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg535",
+      "lemma_group_id": "lg545",
       "lemma": "법원",
       "pos": "명사",
       "occurrences": [
@@ -62407,7 +62627,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg536",
+      "lemma_group_id": "lg546",
       "lemma": "역시",
       "pos": "부사",
       "occurrences": [
@@ -62420,7 +62640,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg537",
+      "lemma_group_id": "lg547",
       "lemma": "비교하다",
       "pos": "동사",
       "occurrences": [
@@ -62433,7 +62653,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg538",
+      "lemma_group_id": "lg548",
       "lemma": "증거조사",
       "pos": "명사",
       "occurrences": [
@@ -62446,7 +62666,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg539",
+      "lemma_group_id": "lg549",
       "lemma": "토대",
       "pos": "명사",
       "occurrences": [
@@ -62459,7 +62679,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg540",
+      "lemma_group_id": "lg550",
       "lemma": "적법하다",
       "pos": "형용사",
       "occurrences": [
@@ -62472,7 +62692,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg541",
+      "lemma_group_id": "lg551",
       "lemma": "채택하다",
       "pos": "동사",
       "occurrences": [
@@ -62485,7 +62705,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg542",
+      "lemma_group_id": "lg552",
       "lemma": "때",
       "pos": "명사",
       "occurrences": [
@@ -62522,7 +62742,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg543",
+      "lemma_group_id": "lg553",
       "lemma": "납득하다",
       "pos": "동사",
       "occurrences": [
@@ -62547,7 +62767,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg544",
+      "lemma_group_id": "lg554",
       "lemma": "들다",
       "pos": "동사",
       "occurrences": [
@@ -62584,7 +62804,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg545",
+      "lemma_group_id": "lg555",
       "lemma": "잘못",
       "pos": "부사",
       "occurrences": [
@@ -62597,7 +62817,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg546",
+      "lemma_group_id": "lg556",
       "lemma": "부정하다",
       "pos": "형용사",
       "occurrences": [
@@ -62610,7 +62830,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg547",
+      "lemma_group_id": "lg557",
       "lemma": "지수",
       "pos": "명사",
       "occurrences": [
@@ -62623,7 +62843,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg548",
+      "lemma_group_id": "lg558",
       "lemma": "낮다",
       "pos": "형용사",
       "occurrences": [
@@ -62642,7 +62862,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg549",
+      "lemma_group_id": "lg559",
       "lemma": "고등학교",
       "pos": "명사",
       "occurrences": [
@@ -62655,7 +62875,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg550",
+      "lemma_group_id": "lg560",
       "lemma": "졸업하다",
       "pos": "동사",
       "occurrences": [
@@ -62668,7 +62888,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg551",
+      "lemma_group_id": "lg561",
       "lemma": "식당",
       "pos": "명사",
       "occurrences": [
@@ -62681,7 +62901,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg552",
+      "lemma_group_id": "lg562",
       "lemma": "아르바이트",
       "pos": "명사",
       "occurrences": [
@@ -62694,7 +62914,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg553",
+      "lemma_group_id": "lg563",
       "lemma": "지내다",
       "pos": "동사",
       "occurrences": [
@@ -62707,7 +62927,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg554",
+      "lemma_group_id": "lg564",
       "lemma": "스스로",
       "pos": "명사",
       "occurrences": [
@@ -62726,7 +62946,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg555",
+      "lemma_group_id": "lg565",
       "lemma": "가난하다",
       "pos": "형용사",
       "occurrences": [
@@ -62739,7 +62959,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg556",
+      "lemma_group_id": "lg566",
       "lemma": "표현하다",
       "pos": "동사",
       "occurrences": [
@@ -62752,7 +62972,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg557",
+      "lemma_group_id": "lg567",
       "lemma": "무렵",
       "pos": "명사",
       "occurrences": [
@@ -62765,7 +62985,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg558",
+      "lemma_group_id": "lg568",
       "lemma": "사기",
       "pos": "명사",
       "occurrences": [
@@ -62778,7 +62998,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg559",
+      "lemma_group_id": "lg569",
       "lemma": "사회",
       "pos": "명사",
       "occurrences": [
@@ -62791,7 +63011,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg560",
+      "lemma_group_id": "lg570",
       "lemma": "형성",
       "pos": "명사",
       "occurrences": [
@@ -62804,7 +63024,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg561",
+      "lemma_group_id": "lg571",
       "lemma": "욕구",
       "pos": "명사",
       "occurrences": [
@@ -62817,7 +63037,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg562",
+      "lemma_group_id": "lg572",
       "lemma": "높다",
       "pos": "형용사",
       "occurrences": [
@@ -62830,7 +63050,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg563",
+      "lemma_group_id": "lg573",
       "lemma": "현실적",
       "pos": "명사",
       "occurrences": [
@@ -62843,7 +63063,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg564",
+      "lemma_group_id": "lg574",
       "lemma": "심리적",
       "pos": "명사",
       "occurrences": [
@@ -62856,7 +63076,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg565",
+      "lemma_group_id": "lg575",
       "lemma": "고립하다",
       "pos": "형용사",
       "occurrences": [
@@ -62869,7 +63089,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg566",
+      "lemma_group_id": "lg576",
       "lemma": "아이디",
       "pos": "명사",
       "occurrences": [
@@ -62888,7 +63108,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg567",
+      "lemma_group_id": "lg577",
       "lemma": "서로",
       "pos": "명사",
       "occurrences": [
@@ -62901,7 +63121,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg568",
+      "lemma_group_id": "lg578",
       "lemma": "프로필",
       "pos": "명사",
       "occurrences": [
@@ -62914,7 +63134,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg569",
+      "lemma_group_id": "lg579",
       "lemma": "관심",
       "pos": "명사",
       "occurrences": [
@@ -62927,7 +63147,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg570",
+      "lemma_group_id": "lg580",
       "lemma": "중",
       "pos": "명사",
       "occurrences": [
@@ -62946,7 +63166,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg571",
+      "lemma_group_id": "lg581",
       "lemma": "만들다",
       "pos": "동사",
       "occurrences": [
@@ -62959,7 +63179,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg572",
+      "lemma_group_id": "lg582",
       "lemma": "때문",
       "pos": "명사",
       "occurrences": [
@@ -62972,7 +63192,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg573",
+      "lemma_group_id": "lg583",
       "lemma": "게",
       "pos": "명사",
       "occurrences": [
@@ -62985,7 +63205,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg574",
+      "lemma_group_id": "lg584",
       "lemma": "안",
       "pos": "부사",
       "occurrences": [
@@ -62998,7 +63218,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg575",
+      "lemma_group_id": "lg585",
       "lemma": "걸로",
       "pos": "명사",
       "occurrences": [
@@ -63011,7 +63231,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg576",
+      "lemma_group_id": "lg586",
       "lemma": "늘",
       "pos": "부사",
       "occurrences": [
@@ -63024,7 +63244,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg577",
+      "lemma_group_id": "lg587",
       "lemma": "오다",
       "pos": "동사",
       "occurrences": [
@@ -63037,7 +63257,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg578",
+      "lemma_group_id": "lg588",
       "lemma": "꼭",
       "pos": "부사",
       "occurrences": [
@@ -63050,7 +63270,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg579",
+      "lemma_group_id": "lg589",
       "lemma": "좋다",
       "pos": "형용사",
       "occurrences": [
@@ -63075,7 +63295,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg580",
+      "lemma_group_id": "lg590",
       "lemma": "인연",
       "pos": "명사",
       "occurrences": [
@@ -63088,7 +63308,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg581",
+      "lemma_group_id": "lg591",
       "lemma": "바라다",
       "pos": "동사",
       "occurrences": [
@@ -63101,7 +63321,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg582",
+      "lemma_group_id": "lg592",
       "lemma": "반갑다",
       "pos": "형용사",
       "occurrences": [
@@ -63114,7 +63334,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg583",
+      "lemma_group_id": "lg593",
       "lemma": "답장",
       "pos": "명사",
       "occurrences": [
@@ -63145,7 +63365,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg584",
+      "lemma_group_id": "lg594",
       "lemma": "휴대",
       "pos": "명사",
       "occurrences": [
@@ -63158,7 +63378,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg585",
+      "lemma_group_id": "lg595",
       "lemma": "번호",
       "pos": "명사",
       "occurrences": [
@@ -63177,7 +63397,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg586",
+      "lemma_group_id": "lg596",
       "lemma": "물다",
       "pos": "동사",
       "occurrences": [
@@ -63196,7 +63416,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg587",
+      "lemma_group_id": "lg597",
       "lemma": "연예인",
       "pos": "명사",
       "occurrences": [
@@ -63209,7 +63429,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg588",
+      "lemma_group_id": "lg598",
       "lemma": "친분",
       "pos": "명사",
       "occurrences": [
@@ -63222,7 +63442,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg589",
+      "lemma_group_id": "lg599",
       "lemma": "재계",
       "pos": "명사",
       "occurrences": [
@@ -63235,7 +63455,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg590",
+      "lemma_group_id": "lg600",
       "lemma": "인사들",
       "pos": "명사",
       "occurrences": [
@@ -63248,7 +63468,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg591",
+      "lemma_group_id": "lg601",
       "lemma": "잘",
       "pos": "부사",
       "occurrences": [
@@ -63261,7 +63481,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg592",
+      "lemma_group_id": "lg602",
       "lemma": "이야기하다",
       "pos": "동사",
       "occurrences": [
@@ -63274,7 +63494,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg593",
+      "lemma_group_id": "lg603",
       "lemma": "상의하다",
       "pos": "동사",
       "occurrences": [
@@ -63287,7 +63507,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg594",
+      "lemma_group_id": "lg604",
       "lemma": "서로",
       "pos": "부사",
       "occurrences": [
@@ -63300,7 +63520,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg595",
+      "lemma_group_id": "lg605",
       "lemma": "살아가다",
       "pos": "동사",
       "occurrences": [
@@ -63313,7 +63533,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg596",
+      "lemma_group_id": "lg606",
       "lemma": "기뻐하다",
       "pos": "동사",
       "occurrences": [
@@ -63326,8 +63546,8 @@
       ]
     },
     {
-      "lemma_group_id": "lg597",
-      "lemma": "고급스럽다",
+      "lemma_group_id": "lg607",
+      "lemma": "고급하다",
       "pos": "형용사",
       "occurrences": [
         {
@@ -63339,7 +63559,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg598",
+      "lemma_group_id": "lg608",
       "lemma": "스타일",
       "pos": "명사",
       "occurrences": [
@@ -63352,7 +63572,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg599",
+      "lemma_group_id": "lg609",
       "lemma": "부러워하다",
       "pos": "동사",
       "occurrences": [
@@ -63365,7 +63585,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg600",
+      "lemma_group_id": "lg610",
       "lemma": "동경하다",
       "pos": "동사",
       "occurrences": [
@@ -63378,7 +63598,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg601",
+      "lemma_group_id": "lg611",
       "lemma": "나누다",
       "pos": "동사",
       "occurrences": [
@@ -63391,7 +63611,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg602",
+      "lemma_group_id": "lg612",
       "lemma": "지",
       "pos": "명사",
       "occurrences": [
@@ -63404,7 +63624,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg603",
+      "lemma_group_id": "lg613",
       "lemma": "만",
       "pos": "명사",
       "occurrences": [
@@ -63417,7 +63637,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg604",
+      "lemma_group_id": "lg614",
       "lemma": "식사",
       "pos": "명사",
       "occurrences": [
@@ -63430,7 +63650,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg605",
+      "lemma_group_id": "lg615",
       "lemma": "조용하다",
       "pos": "형용사",
       "occurrences": [
@@ -63443,7 +63663,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg606",
+      "lemma_group_id": "lg616",
       "lemma": "곳",
       "pos": "명사",
       "occurrences": [
@@ -63456,7 +63676,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg607",
+      "lemma_group_id": "lg617",
       "lemma": "이야기",
       "pos": "명사",
       "occurrences": [
@@ -63475,7 +63695,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg608",
+      "lemma_group_id": "lg618",
       "lemma": "자리",
       "pos": "명사",
       "occurrences": [
@@ -63488,7 +63708,26 @@
       ]
     },
     {
-      "lemma_group_id": "lg609",
+      "lemma_group_id": "lg619",
+      "lemma": "이동하다",
+      "pos": "동사",
+      "occurrences": [
+        {
+          "sentence_id": "s052",
+          "node_id": "s052_w037",
+          "surface": "이동하기",
+          "sentence": "다) 피해자는 2019. 1. 20. 18:00경 ☆☆☆☆에서 피고인을 만났는데, 피고인이 ‘조용한 곳에 가서 이야기를 하자.’고 하여 자리를 이동하기로 하였고, 피고인의 차를 타고 이동하던 중 피고인이 모텔에 가자고 하여 모텔에 들어가게 되었다."
+        },
+        {
+          "sentence_id": "s052",
+          "node_id": "s052_w046",
+          "surface": "이동하던",
+          "sentence": "다) 피해자는 2019. 1. 20. 18:00경 ☆☆☆☆에서 피고인을 만났는데, 피고인이 ‘조용한 곳에 가서 이야기를 하자.’고 하여 자리를 이동하기로 하였고, 피고인의 차를 타고 이동하던 중 피고인이 모텔에 가자고 하여 모텔에 들어가게 되었다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg620",
       "lemma": "차",
       "pos": "명사",
       "occurrences": [
@@ -63513,7 +63752,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg610",
+      "lemma_group_id": "lg621",
       "lemma": "아무",
       "pos": "관형사",
       "occurrences": [
@@ -63526,7 +63765,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg611",
+      "lemma_group_id": "lg622",
       "lemma": "짓",
       "pos": "명사",
       "occurrences": [
@@ -63539,7 +63778,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg612",
+      "lemma_group_id": "lg623",
       "lemma": "추위",
       "pos": "명사",
       "occurrences": [
@@ -63552,7 +63791,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg613",
+      "lemma_group_id": "lg624",
       "lemma": "많이",
       "pos": "부사",
       "occurrences": [
@@ -63565,7 +63804,20 @@
       ]
     },
     {
-      "lemma_group_id": "lg614",
+      "lemma_group_id": "lg625",
+      "lemma": "타나다",
+      "pos": "동사",
+      "occurrences": [
+        {
+          "sentence_id": "s053",
+          "node_id": "s053_w026",
+          "surface": "타나",
+          "sentence": "피해자는 ‘피고인이 춥다고 모텔에 들어가자고 하였고 아무 짓도 하지 않겠다는 말도 하여, 나이가 많아서 추위를 많이 타나보다 하는 생각에서 피고인의 제안에 응하였다.’고 진술하는바, 피고인과 피해자의 나이 차이, 피해자의 심리 상태 등에 비추어 이러한 피해자의 행동은 충분히 납득할 만하고, 앞서 본 법리에 비추어 볼 때 이와 같은 경위로 피해자가 모텔에 들어가는 데 동의하고 안아보는 걸 허락했다고 하더라도 이러한 사정을 그 이상의 성적 접촉은 원하지 않았다는 피해자의 진술을 의심할 만한 사정이라고 볼 수는 없다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg626",
       "lemma": "보다",
       "pos": "부사",
       "occurrences": [
@@ -63578,7 +63830,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg615",
+      "lemma_group_id": "lg627",
       "lemma": "생각",
       "pos": "명사",
       "occurrences": [
@@ -63609,7 +63861,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg616",
+      "lemma_group_id": "lg628",
       "lemma": "응하다",
       "pos": "동사",
       "occurrences": [
@@ -63622,7 +63874,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg617",
+      "lemma_group_id": "lg629",
       "lemma": "심리",
       "pos": "명사",
       "occurrences": [
@@ -63641,7 +63893,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg618",
+      "lemma_group_id": "lg630",
       "lemma": "걸",
       "pos": "명사",
       "occurrences": [
@@ -63654,7 +63906,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg619",
+      "lemma_group_id": "lg631",
       "lemma": "허락하다",
       "pos": "동사",
       "occurrences": [
@@ -63673,7 +63925,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg620",
+      "lemma_group_id": "lg632",
       "lemma": "이상",
       "pos": "명사",
       "occurrences": [
@@ -63692,7 +63944,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg621",
+      "lemma_group_id": "lg633",
       "lemma": "성적",
       "pos": "명사",
       "occurrences": [
@@ -63705,7 +63957,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg622",
+      "lemma_group_id": "lg634",
       "lemma": "의심하다",
       "pos": "형용사",
       "occurrences": [
@@ -63718,7 +63970,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg623",
+      "lemma_group_id": "lg635",
       "lemma": "한두",
       "pos": "관형사",
       "occurrences": [
@@ -63731,7 +63983,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg624",
+      "lemma_group_id": "lg636",
       "lemma": "거절",
       "pos": "명사",
       "occurrences": [
@@ -63744,8 +63996,8 @@
       ]
     },
     {
-      "lemma_group_id": "lg625",
-      "lemma": "배치되다",
+      "lemma_group_id": "lg637",
+      "lemma": "배치하다",
       "pos": "동사",
       "occurrences": [
         {
@@ -63757,7 +64009,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg626",
+      "lemma_group_id": "lg638",
       "lemma": "깜짝",
       "pos": "부사",
       "occurrences": [
@@ -63770,7 +64022,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg627",
+      "lemma_group_id": "lg639",
       "lemma": "놀라다",
       "pos": "동사",
       "occurrences": [
@@ -63789,7 +64041,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg628",
+      "lemma_group_id": "lg640",
       "lemma": "힘",
       "pos": "명사",
       "occurrences": [
@@ -63802,7 +64054,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg629",
+      "lemma_group_id": "lg641",
       "lemma": "세다",
       "pos": "형용사",
       "occurrences": [
@@ -63815,7 +64067,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg630",
+      "lemma_group_id": "lg642",
       "lemma": "반항하다",
       "pos": "동사",
       "occurrences": [
@@ -63828,7 +64080,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg631",
+      "lemma_group_id": "lg643",
       "lemma": "도망가다",
       "pos": "동사",
       "occurrences": [
@@ -63841,7 +64093,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg632",
+      "lemma_group_id": "lg644",
       "lemma": "사랑하다",
       "pos": "동사",
       "occurrences": [
@@ -63854,7 +64106,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg633",
+      "lemma_group_id": "lg645",
       "lemma": "너",
       "pos": "대명사",
       "occurrences": [
@@ -63873,7 +64125,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg634",
+      "lemma_group_id": "lg646",
       "lemma": "거",
       "pos": "명사",
       "occurrences": [
@@ -63886,7 +64138,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg635",
+      "lemma_group_id": "lg647",
       "lemma": "바들바들",
       "pos": "부사",
       "occurrences": [
@@ -63899,7 +64151,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg636",
+      "lemma_group_id": "lg648",
       "lemma": "떨리다",
       "pos": "동사",
       "occurrences": [
@@ -63912,7 +64164,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg637",
+      "lemma_group_id": "lg649",
       "lemma": "안",
       "pos": "명사",
       "occurrences": [
@@ -63925,7 +64177,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg638",
+      "lemma_group_id": "lg650",
       "lemma": "오줌",
       "pos": "명사",
       "occurrences": [
@@ -63938,7 +64190,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg639",
+      "lemma_group_id": "lg651",
       "lemma": "온몸",
       "pos": "명사",
       "occurrences": [
@@ -63951,7 +64203,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg640",
+      "lemma_group_id": "lg652",
       "lemma": "락스",
       "pos": "명사",
       "occurrences": [
@@ -63964,7 +64216,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg641",
+      "lemma_group_id": "lg653",
       "lemma": "샤워하다",
       "pos": "동사",
       "occurrences": [
@@ -63977,7 +64229,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg642",
+      "lemma_group_id": "lg654",
       "lemma": "새벽",
       "pos": "명사",
       "occurrences": [
@@ -63996,7 +64248,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg643",
+      "lemma_group_id": "lg655",
       "lemma": "괴롭다",
       "pos": "형용사",
       "occurrences": [
@@ -64009,7 +64261,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg644",
+      "lemma_group_id": "lg656",
       "lemma": "마음",
       "pos": "명사",
       "occurrences": [
@@ -64022,7 +64274,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg645",
+      "lemma_group_id": "lg657",
       "lemma": "크다",
       "pos": "형용사",
       "occurrences": [
@@ -64035,7 +64287,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg646",
+      "lemma_group_id": "lg658",
       "lemma": "갑작스럽다",
       "pos": "형용사",
       "occurrences": [
@@ -64048,7 +64300,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg647",
+      "lemma_group_id": "lg659",
       "lemma": "심하다",
       "pos": "형용사",
       "occurrences": [
@@ -64061,7 +64313,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg648",
+      "lemma_group_id": "lg660",
       "lemma": "당황하다",
       "pos": "형용사",
       "occurrences": [
@@ -64074,7 +64326,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg649",
+      "lemma_group_id": "lg661",
       "lemma": "두려움",
       "pos": "명사",
       "occurrences": [
@@ -64087,7 +64339,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg650",
+      "lemma_group_id": "lg662",
       "lemma": "수치심",
       "pos": "명사",
       "occurrences": [
@@ -64100,7 +64352,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg651",
+      "lemma_group_id": "lg663",
       "lemma": "주변",
       "pos": "명사",
       "occurrences": [
@@ -64113,7 +64365,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg652",
+      "lemma_group_id": "lg664",
       "lemma": "홀로",
       "pos": "부사",
       "occurrences": [
@@ -64126,7 +64378,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg653",
+      "lemma_group_id": "lg665",
       "lemma": "이례적",
       "pos": "명사",
       "occurrences": [
@@ -64151,7 +64403,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg654",
+      "lemma_group_id": "lg666",
       "lemma": "이상하다",
       "pos": "형용사",
       "occurrences": [
@@ -64182,9 +64434,9 @@
       ]
     },
     {
-      "lemma_group_id": "lg655",
-      "lemma": "그렇다",
-      "pos": "형용사",
+      "lemma_group_id": "lg667",
+      "lemma": "그러다",
+      "pos": "동사",
       "occurrences": [
         {
           "sentence_id": "s059",
@@ -64195,7 +64447,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg656",
+      "lemma_group_id": "lg668",
       "lemma": "이해하다",
       "pos": "동사",
       "occurrences": [
@@ -64214,7 +64466,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg657",
+      "lemma_group_id": "lg669",
       "lemma": "무엇",
       "pos": "대명사",
       "occurrences": [
@@ -64227,7 +64479,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg658",
+      "lemma_group_id": "lg670",
       "lemma": "경찰",
       "pos": "명사",
       "occurrences": [
@@ -64264,7 +64516,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg659",
+      "lemma_group_id": "lg671",
       "lemma": "조사",
       "pos": "명사",
       "occurrences": [
@@ -64277,7 +64529,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg660",
+      "lemma_group_id": "lg672",
       "lemma": "아무",
       "pos": "대명사",
       "occurrences": [
@@ -64290,7 +64542,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg661",
+      "lemma_group_id": "lg673",
       "lemma": "거짓",
       "pos": "명사",
       "occurrences": [
@@ -64303,7 +64555,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg662",
+      "lemma_group_id": "lg674",
       "lemma": "굳이",
       "pos": "부사",
       "occurrences": [
@@ -64316,7 +64568,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg663",
+      "lemma_group_id": "lg675",
       "lemma": "필요",
       "pos": "명사",
       "occurrences": [
@@ -64329,7 +64581,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg664",
+      "lemma_group_id": "lg676",
       "lemma": "숨기다",
       "pos": "동사",
       "occurrences": [
@@ -64342,7 +64594,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg665",
+      "lemma_group_id": "lg677",
       "lemma": "높이다",
       "pos": "동사",
       "occurrences": [
@@ -64355,7 +64607,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg666",
+      "lemma_group_id": "lg678",
       "lemma": "사",
       "pos": "명사",
       "occurrences": [
@@ -64368,7 +64620,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg667",
+      "lemma_group_id": "lg679",
       "lemma": "무슨",
       "pos": "관형사",
       "occurrences": [
@@ -64381,7 +64633,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg668",
+      "lemma_group_id": "lg680",
       "lemma": "성폭행",
       "pos": "명사",
       "occurrences": [
@@ -64394,7 +64646,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg669",
+      "lemma_group_id": "lg681",
       "lemma": "항의",
       "pos": "명사",
       "occurrences": [
@@ -64407,7 +64659,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg670",
+      "lemma_group_id": "lg682",
       "lemma": "아",
       "pos": "감탄사",
       "occurrences": [
@@ -64420,7 +64672,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg671",
+      "lemma_group_id": "lg683",
       "lemma": "신고",
       "pos": "명사",
       "occurrences": [
@@ -64433,7 +64685,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg672",
+      "lemma_group_id": "lg684",
       "lemma": "망설이다",
       "pos": "동사",
       "occurrences": [
@@ -64446,7 +64698,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg673",
+      "lemma_group_id": "lg685",
       "lemma": "TV",
       "pos": "명사",
       "occurrences": [
@@ -64459,7 +64711,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg674",
+      "lemma_group_id": "lg686",
       "lemma": "쓰다",
       "pos": "동사",
       "occurrences": [
@@ -64472,7 +64724,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg675",
+      "lemma_group_id": "lg687",
       "lemma": "풀려나다",
       "pos": "동사",
       "occurrences": [
@@ -64485,7 +64737,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg676",
+      "lemma_group_id": "lg688",
       "lemma": "꽃뱀",
       "pos": "명사",
       "occurrences": [
@@ -64498,7 +64750,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg677",
+      "lemma_group_id": "lg689",
       "lemma": "취급",
       "pos": "명사",
       "occurrences": [
@@ -64511,7 +64763,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg678",
+      "lemma_group_id": "lg690",
       "lemma": "아침",
       "pos": "명사",
       "occurrences": [
@@ -64524,7 +64776,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg679",
+      "lemma_group_id": "lg691",
       "lemma": "신고하다",
       "pos": "동사",
       "occurrences": [
@@ -64537,7 +64789,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg680",
+      "lemma_group_id": "lg692",
       "lemma": "권유하다",
       "pos": "동사",
       "occurrences": [
@@ -64550,7 +64802,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg681",
+      "lemma_group_id": "lg693",
       "lemma": "망설임",
       "pos": "명사",
       "occurrences": [
@@ -64563,8 +64815,8 @@
       ]
     },
     {
-      "lemma_group_id": "lg682",
-      "lemma": "자연스럽다",
+      "lemma_group_id": "lg694",
+      "lemma": "자연하다",
       "pos": "형용사",
       "occurrences": [
         {
@@ -64576,7 +64828,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg683",
+      "lemma_group_id": "lg695",
       "lemma": "변소",
       "pos": "명사",
       "occurrences": [
@@ -64589,7 +64841,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg684",
+      "lemma_group_id": "lg696",
       "lemma": "뽀뽀",
       "pos": "명사",
       "occurrences": [
@@ -64608,7 +64860,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg685",
+      "lemma_group_id": "lg697",
       "lemma": "달다",
       "pos": "동사",
       "occurrences": [
@@ -64621,7 +64873,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg686",
+      "lemma_group_id": "lg698",
       "lemma": "옷",
       "pos": "명사",
       "occurrences": [
@@ -64634,7 +64886,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg687",
+      "lemma_group_id": "lg699",
       "lemma": "갑자기",
       "pos": "부사",
       "occurrences": [
@@ -64653,7 +64905,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg688",
+      "lemma_group_id": "lg700",
       "lemma": "스스로",
       "pos": "부사",
       "occurrences": [
@@ -64666,7 +64918,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg689",
+      "lemma_group_id": "lg701",
       "lemma": "신발",
       "pos": "명사",
       "occurrences": [
@@ -64679,7 +64931,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg690",
+      "lemma_group_id": "lg702",
       "lemma": "끈",
       "pos": "명사",
       "occurrences": [
@@ -64692,7 +64944,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg691",
+      "lemma_group_id": "lg703",
       "lemma": "외우다",
       "pos": "동사",
       "occurrences": [
@@ -64705,7 +64957,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg692",
+      "lemma_group_id": "lg704",
       "lemma": "중얼거리다",
       "pos": "동사",
       "occurrences": [
@@ -64718,7 +64970,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg693",
+      "lemma_group_id": "lg705",
       "lemma": "일들",
       "pos": "명사",
       "occurrences": [
@@ -64731,7 +64983,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg694",
+      "lemma_group_id": "lg706",
       "lemma": "판시",
       "pos": "명사",
       "occurrences": [
@@ -64744,7 +64996,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg695",
+      "lemma_group_id": "lg707",
       "lemma": "위반하다",
       "pos": "동사",
       "occurrences": [
@@ -64757,7 +65009,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg696",
+      "lemma_group_id": "lg708",
       "lemma": "영향",
       "pos": "명사",
       "occurrences": [
@@ -64770,7 +65022,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg697",
+      "lemma_group_id": "lg709",
       "lemma": "미치다",
       "pos": "동사",
       "occurrences": [
@@ -64783,7 +65035,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg698",
+      "lemma_group_id": "lg710",
       "lemma": "잘못",
       "pos": "명사",
       "occurrences": [
@@ -64796,7 +65048,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg699",
+      "lemma_group_id": "lg711",
       "lemma": "결론",
       "pos": "명사",
       "occurrences": [
@@ -64809,7 +65061,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg700",
+      "lemma_group_id": "lg712",
       "lemma": "그러므로",
       "pos": "부사",
       "occurrences": [
@@ -64822,7 +65074,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg701",
+      "lemma_group_id": "lg713",
       "lemma": "다시",
       "pos": "부사",
       "occurrences": [
@@ -64835,7 +65087,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg702",
+      "lemma_group_id": "lg714",
       "lemma": "환송하다",
       "pos": "동사",
       "occurrences": [
@@ -64848,7 +65100,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg703",
+      "lemma_group_id": "lg715",
       "lemma": "관여",
       "pos": "명사",
       "occurrences": [
@@ -64861,7 +65113,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg704",
+      "lemma_group_id": "lg716",
       "lemma": "대법관",
       "pos": "명사",
       "occurrences": [
@@ -64874,7 +65126,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg705",
+      "lemma_group_id": "lg717",
       "lemma": "일치하다",
       "pos": "형용사",
       "occurrences": [
@@ -64887,7 +65139,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg706",
+      "lemma_group_id": "lg718",
       "lemma": "의견",
       "pos": "명사",
       "occurrences": [
@@ -64900,7 +65152,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg707",
+      "lemma_group_id": "lg719",
       "lemma": "주문",
       "pos": "명사",
       "occurrences": [
@@ -64913,7 +65165,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg708",
+      "lemma_group_id": "lg720",
       "lemma": "판결하다",
       "pos": "동사",
       "occurrences": [

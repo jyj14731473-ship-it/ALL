@@ -14,7 +14,6 @@ LITERAL_PREDICATES = {
     "ex:hasSourceDomainLabel",
     "ex:hasTargetDomainLabel",
     "ex:hasConceptualMetaphorLabel",
-    "ex:appearsInOpinionType",
     "ex:hasConfidence",
     "ex:appearsInSentence",
     "ex:hasMIPVULabel",
@@ -83,7 +82,7 @@ def _is_mipvu_kg_candidate(annotation: dict[str, Any]) -> bool:
     )
 
 
-def fallback_mapping_from_mipvu_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
+def mapping_from_mipvu_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
     """Build deterministic RDF-ready mapping from a lemma-level MIPVU annotation."""
     lemma_group_id = str(annotation.get("lemma_group_id") or "LG000")
     lemma = str(annotation.get("lemma") or lemma_group_id)
@@ -210,138 +209,8 @@ def fallback_mapping_from_mipvu_annotation(annotation: dict[str, Any]) -> dict[s
     }
 
 
-def fallback_mapping_from_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
-    """Build deterministic RDF-ready mapping from canonical annotation JSON."""
-    metaphor_id = str(annotation.get("metaphor_id") or "M000")
-    candidate_id = str(annotation.get("candidate_id") or annotation.get("source_candidate_id") or "C000")
-    legal = str(annotation.get("legal_concept") or annotation.get("target_domain") or "UnknownLegalConcept")
-    source = str(annotation.get("source_domain") or "UnknownSourceDomain")
-    target = str(annotation.get("target_domain") or "UnknownTargetDomain")
-    conceptual = str(annotation.get("conceptual_metaphor") or f"{target}_AS_{source}")
-    surface = str(annotation.get("surface_expression") or "")
-    sentence = str(annotation.get("context_sentence") or "")
-    opinion = str(annotation.get("opinion_type") or "unknown")
-    metaphor_type = str(annotation.get("metaphor_type") or "uncertain")
-    confidence = annotation.get("confidence", 0.0)
-    confidence_value = float(confidence) if isinstance(confidence, (int, float)) else 0.0
-
-    metaphor_instance_id = _slugged_id("Metaphor", metaphor_id, "unknown_metaphor")
-    candidate_node_id = _slugged_id("Candidate", candidate_id, "unknown_candidate")
-    legal_id = _slugged_id("LegalConcept", legal, "unknown_legal_concept")
-    source_id = _slugged_id("SourceDomain", source, "unknown_source_domain")
-    target_id = _slugged_id("TargetDomain", target, "unknown_target_domain")
-    conceptual_id = _slugged_id("ConceptualMetaphor", conceptual, "unknown_conceptual_metaphor")
-
-    return {
-        "primary_triple": {
-            "subject_label": legal,
-            "subject_type": "LegalConcept",
-            "subject_id": legal_id,
-            "predicate": "ex:isConceptualizedAs",
-            "object_label": source,
-            "object_type": "SourceDomain",
-            "object_id": source_id,
-        },
-        "supporting_triples": [
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:hasLegalConcept",
-                "object_label": legal,
-                "object_type": "LegalConcept",
-                "object_id": legal_id,
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:hasSourceDomain",
-                "object_label": source,
-                "object_type": "SourceDomain",
-                "object_id": source_id,
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:hasTargetDomain",
-                "object_label": target,
-                "object_type": "TargetDomain",
-                "object_id": target_id,
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:realizesConceptualMetaphor",
-                "object_label": conceptual,
-                "object_type": "ConceptualMetaphor",
-                "object_id": conceptual_id,
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:hasSurfaceExpression",
-                "object_label": surface,
-                "object_type": "Literal",
-                "object_id": _slugged_id("LiteralSurface", surface or metaphor_id, "surface"),
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:hasContextSentence",
-                "object_label": sentence,
-                "object_type": "Literal",
-                "object_id": _slugged_id("LiteralSentence", sentence or metaphor_id, "sentence"),
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:appearsInOpinionType",
-                "object_label": opinion,
-                "object_type": "Literal",
-                "object_id": _slugged_id("LiteralOpinion", opinion, "opinion"),
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:hasMetaphorType",
-                "object_label": metaphor_type,
-                "object_type": "Literal",
-                "object_id": _slugged_id("LiteralType", metaphor_type, "type"),
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:hasConfidence",
-                "object_label": f"{confidence_value:.4f}",
-                "object_type": "Literal",
-                "object_id": _slugged_id("LiteralConfidence", metaphor_id, "confidence"),
-            },
-            {
-                "subject_label": surface or metaphor_id,
-                "subject_type": "MetaphorInstance",
-                "subject_id": metaphor_instance_id,
-                "predicate": "ex:derivedFromCandidate",
-                "object_label": candidate_id,
-                "object_type": "Candidate",
-                "object_id": candidate_node_id,
-            },
-        ],
-        "mapping_reason": "Deterministic fallback mapping from canonical metaphor annotation.",
-        "confidence": confidence_value,
-        "needs_human_review": confidence_value < 0.5,
-    }
-
-
 def normalize_rdf_mappings(payload: Any) -> list[dict[str, Any]]:
-    """Extract RDF mappings from graph output or build deterministic fallback mappings."""
+    """Extract RDF mappings or build them from lemma-level MIPVU annotations."""
     if isinstance(payload, dict):
         rdf_mappings = payload.get("rdf_mappings")
         if isinstance(rdf_mappings, list):
@@ -354,17 +223,16 @@ def normalize_rdf_mappings(payload: Any) -> list[dict[str, Any]]:
             mipvu_records = payload.get("judgments")
         if isinstance(mipvu_records, list):
             return [
-                fallback_mapping_from_mipvu_annotation(item)
+                mapping_from_mipvu_annotation(item)
                 for item in mipvu_records
                 if isinstance(item, dict) and _is_mipvu_kg_candidate(item)
             ]
-        records = payload.get("metaphor_annotations")
-        if not isinstance(records, list):
-            records = payload.get("metaphors")
-        if isinstance(records, list):
-            return [fallback_mapping_from_annotation(item) for item in records if isinstance(item, dict)]
     if isinstance(payload, list):
-        return [fallback_mapping_from_annotation(item) for item in payload if isinstance(item, dict)]
+        return [
+            mapping_from_mipvu_annotation(item)
+            for item in payload
+            if isinstance(item, dict) and _is_mipvu_kg_candidate(item)
+        ]
     return []
 
 

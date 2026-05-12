@@ -8,7 +8,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from graph.prompt_utils import call_structured_chain, load_prompt_text
+from prompt_utils import call_structured_chain, load_prompt_text
 from schemas.annotation import AnnotationState
 from utils import read_json
 

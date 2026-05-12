@@ -21,14 +21,14 @@ def _add_review_item(
     *,
     reason: str,
     severity: str,
-    candidate_id: str = "",
-    metaphor_id: str = "",
+    lemma_group_id: str = "",
+    lemma: str = "",
 ) -> None:
     item = {
         "reason": reason,
         "severity": severity,
-        "candidate_id": candidate_id,
-        "metaphor_id": metaphor_id,
+        "lemma_group_id": lemma_group_id,
+        "lemma": lemma,
     }
     if item not in human_review_items:
         human_review_items.append(item)
@@ -37,65 +37,70 @@ def _add_review_item(
 def validation_check_node(state: AnnotationState) -> dict[str, Any]:
     errors = list(state.get("errors", []))
     mipvu = state.get("mipvu_annotations", [])
-    metaphors = state.get("metaphor_annotations", [])
     mappings = state.get("rdf_mappings", [])
     issues: list[dict[str, str]] = []
     human_review_items: list[dict[str, Any]] = list(state.get("human_review_items", []))
 
-    mipvu_lookup = {str(item.get("candidate_id", "")): item for item in mipvu if isinstance(item, dict)}
     for judgment in mipvu if isinstance(mipvu, list) else []:
         if not isinstance(judgment, dict):
             continue
-        cid = str(judgment.get("candidate_id", ""))
+        lemma_group_id = str(judgment.get("lemma_group_id", ""))
+        lemma = str(judgment.get("lemma", ""))
+        location = f"lemma_group_id={lemma_group_id or lemma}"
         confidence = judgment.get("confidence", 0.0)
         confidence = confidence if isinstance(confidence, (int, float)) else 0.0
         if confidence < 0.5:
-            _add_review_item(human_review_items, reason="candidate confidence < 0.5", severity="warning", candidate_id=cid)
-        if str(judgment.get("mipvu_label", "")) == "borderline_candidate":
-            _add_review_item(human_review_items, reason="mipvu_label == borderline_candidate", severity="warning", candidate_id=cid)
-        if str(judgment.get("basic_meaning_source", "")) == "unavailable":
-            _add_review_item(human_review_items, reason="basic_meaning_source == unavailable", severity="warning", candidate_id=cid)
-        if bool(judgment.get("similarity")) and not bool(judgment.get("comparison_possible")):
-            _add_review_item(human_review_items, reason="comparison_possible/similarity 판단 모순", severity="error", candidate_id=cid)
-
-    for annotation in metaphors if isinstance(metaphors, list) else []:
-        if not isinstance(annotation, dict):
-            continue
-        mid = str(annotation.get("metaphor_id", ""))
-        cid = str(annotation.get("candidate_id") or annotation.get("source_candidate_id") or "")
-        confidence = annotation.get("confidence", 0.0)
-        confidence = confidence if isinstance(confidence, (int, float)) else 0.0
-        if confidence < 0.35:
-            issues.append(_issue("warning", f"metaphor_id={mid}", "confidence가 낮습니다.", "human review에서 근거를 확인하세요."))
-        if confidence < 0.5:
-            _add_review_item(human_review_items, reason="confidence < 0.5", severity="warning", candidate_id=cid, metaphor_id=mid)
-        if not str(annotation.get("source_domain", "")).strip() or not str(annotation.get("target_domain", "")).strip():
-            issues.append(_issue("error", f"metaphor_id={mid}", "source_domain 또는 target_domain이 비어 있습니다.", "분류 노드 출력을 재검토하세요."))
             _add_review_item(
                 human_review_items,
-                reason="source_domain 또는 target_domain이 비어 있음",
-                severity="error",
-                candidate_id=cid,
-                metaphor_id=mid,
+                reason="MIPVU confidence < 0.5",
+                severity="warning",
+                lemma_group_id=lemma_group_id,
+                lemma=lemma,
             )
-        if str(annotation.get("metaphor_type", "")).strip() == "uncertain":
-            _add_review_item(human_review_items, reason="metaphor_type == uncertain", severity="warning", candidate_id=cid, metaphor_id=mid)
-
-        judgment = mipvu_lookup.get(cid, {})
-        if isinstance(judgment, dict) and str(judgment.get("mipvu_label", "")) in {"MRW", "MRW_candidate", "borderline_candidate"}:
+        if str(judgment.get("mipvu_label", "")) == "borderline_candidate":
+            _add_review_item(
+                human_review_items,
+                reason="mipvu_label == borderline_candidate",
+                severity="warning",
+                lemma_group_id=lemma_group_id,
+                lemma=lemma,
+            )
+        if bool(judgment.get("similarity")) and not bool(judgment.get("comparison_possible")):
+            _add_review_item(
+                human_review_items,
+                reason="comparison_possible/similarity 판단 모순",
+                severity="error",
+                lemma_group_id=lemma_group_id,
+                lemma=lemma,
+            )
+        if str(judgment.get("mipvu_label", "")) in {"MRW", "MRW_candidate", "borderline_candidate"}:
             if not judgment.get("distinctness", False):
-                issues.append(_issue("error", f"candidate_id={cid}", "distinctness=false인데 MRW 계열입니다.", "MIPVU distinctness 단계를 재판정하세요."))
-                _add_review_item(human_review_items, reason="distinctness 판단 모순", severity="error", candidate_id=cid, metaphor_id=mid)
-            if not (judgment.get("similarity", False) or judgment.get("comparison_possible", False)):
-                issues.append(_issue("error", f"candidate_id={cid}", "similarity=false인데 MRW 계열입니다.", "비교 가능성 단계를 재판정하세요."))
-                _add_review_item(human_review_items, reason="similarity/comparison_possible 판단 모순", severity="error", candidate_id=cid, metaphor_id=mid)
-        if isinstance(judgment, dict):
-            if str(judgment.get("mipvu_label", "")) == "borderline_candidate":
-                _add_review_item(human_review_items, reason="mipvu_label == borderline_candidate", severity="warning", candidate_id=cid, metaphor_id=mid)
-            if str(judgment.get("basic_meaning_source", "")) == "unavailable":
-                _add_review_item(human_review_items, reason="basic_meaning_source == unavailable", severity="warning", candidate_id=cid, metaphor_id=mid)
-            if bool(judgment.get("similarity")) and not bool(judgment.get("comparison_possible")):
-                _add_review_item(human_review_items, reason="comparison_possible/similarity 판단 모순", severity="error", candidate_id=cid, metaphor_id=mid)
+                issues.append(_issue("error", location, "distinctness=false인데 MRW 계열입니다.", "MIPVU distinctness 단계를 재판정하세요."))
+                _add_review_item(
+                    human_review_items,
+                    reason="distinctness 판단 모순",
+                    severity="error",
+                    lemma_group_id=lemma_group_id,
+                    lemma=lemma,
+                )
+            if not bool(judgment.get("similarity", False)):
+                issues.append(_issue("error", location, "similarity=false인데 MRW 계열입니다.", "basic/contextual meaning 유사성 단계를 재판정하세요."))
+                _add_review_item(
+                    human_review_items,
+                    reason="similarity 판단 모순",
+                    severity="error",
+                    lemma_group_id=lemma_group_id,
+                    lemma=lemma,
+                )
+            if not all(str(judgment.get(key, "")).strip() for key in ("source_domain", "target_domain", "conceptual_metaphor")):
+                issues.append(_issue("error", location, "MRW 계열인데 KG domain/conceptual metaphor 필드가 비어 있습니다.", "lemma_mipvu_judge 결과를 재검토하세요."))
+                _add_review_item(
+                    human_review_items,
+                    reason="KG domain/conceptual metaphor 누락",
+                    severity="error",
+                    lemma_group_id=lemma_group_id,
+                    lemma=lemma,
+                )
 
     for mapping in mappings if isinstance(mappings, list) else []:
         if not isinstance(mapping, dict):

@@ -1,9 +1,9 @@
 {
   "prompt_version": "contextual_meaning_v2",
   "summary": {
-    "input_groups": 708,
-    "output_contextualized_groups": 708,
-    "output_contextual_meanings": 708,
+    "input_groups": 720,
+    "output_contextualized_groups": 720,
+    "output_contextual_meanings": 720,
     "missing_contextual_meanings": 0,
     "issues": 0,
     "batch_count": 8,

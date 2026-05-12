@@ -1,10 +1,10 @@
 {
-  "document_id": "doc001",
+  "document_id": "input",
   "source_path": "data/output/pos_nodes_contextualized.json",
   "summary": {
-    "lemma_group_count": 708,
-    "found_count": 691,
-    "missing_count": 17
+    "lemma_group_count": 720,
+    "found_count": 699,
+    "missing_count": 21
   },
   "lemma_dictionary_results": [
     {
@@ -4039,15 +4039,11 @@
       "lemma_group_id": "lg173",
       "lemma": "처하다",
       "pos": "동사",
-      "exists_in_dictionary": true,
-      "status": "ok",
-      "total": 1,
-      "definitions": [
-        {
-          "sup_no": "0",
-          "definition": "어떤 형편이나 처지에 놓이다."
-        }
-      ]
+      "exists_in_dictionary": false,
+      "status": "request_failed",
+      "total": 0,
+      "definitions": [],
+      "message": "The read operation timed out"
     },
     {
       "lemma_group_id": "lg174",
@@ -4885,6 +4881,54 @@
     },
     {
       "lemma_group_id": "lg209",
+      "lemma": "어",
+      "pos": "감탄사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 7,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "한글 자모 ‘ㅓ’의 이름."
+        },
+        {
+          "sup_no": "2",
+          "definition": "놀라거나, 당황하거나, 초조하거나, 다급할 때 나오는 소리."
+        },
+        {
+          "sup_no": "3",
+          "definition": "‘어하다’의 어근."
+        },
+        {
+          "sup_no": "4",
+          "definition": "궁중에서 쓰던 타악기의 하나. 엎드린 범의 모양으로, 등에 27개의 톱니가 있어 견(籈)으로 긁어서 소리를 낸다. 음악을 그치게 할 때에 쓰던 것으로, 견의 끝으로 범 목덜미를 세 번 친 다음 톱니를 세 차례 긁어 신호한다."
+        },
+        {
+          "sup_no": "5",
+          "definition": "우리나라 성(姓)의 하나. 본관은 함종(咸從), 충주(忠州), 경흥(慶興) 등이 현존한다."
+        },
+        {
+          "sup_no": "6",
+          "definition": "시간상의 선후 관계를 나타내거나 방법 따위를 나타내는 연결 어미."
+        },
+        {
+          "sup_no": "7",
+          "definition": "‘말’ 또는 ‘단어’의 뜻을 더하는 접미사."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg210",
+      "lemma": "플",
+      "pos": "명사",
+      "exists_in_dictionary": false,
+      "status": "request_failed",
+      "total": 0,
+      "definitions": [],
+      "message": "Empty response body from stdict API."
+    },
+    {
+      "lemma_group_id": "lg211",
       "lemma": "통하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -4898,7 +4942,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg210",
+      "lemma_group_id": "lg212",
       "lemma": "주고받다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -4912,7 +4956,117 @@
       ]
     },
     {
-      "lemma_group_id": "lg211",
+      "lemma_group_id": "lg213",
+      "lemma": "여",
+      "pos": "명사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 25,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "물속에 잠겨 보이지 않는 바위."
+        },
+        {
+          "sup_no": "2",
+          "definition": "한글 자모 ‘ㅕ’의 이름."
+        },
+        {
+          "sup_no": "3",
+          "definition": "주로 자기보다 나이가 어리거나 지위가 낮은 누군가를 부르거나 주의를 집중시킬 때 하는 말."
+        },
+        {
+          "sup_no": "4",
+          "definition": "→ 여기."
+        },
+        {
+          "sup_no": "5",
+          "definition": "여성으로 태어난 사람."
+        },
+        {
+          "sup_no": "6",
+          "definition": "음력 2월을 달리 이르는 말."
+        },
+        {
+          "sup_no": "7",
+          "definition": "평등하여 차별이 없는 모든 사물의 있는 그대로의 모습."
+        },
+        {
+          "sup_no": "8",
+          "definition": "‘여하다’의 어근."
+        },
+        {
+          "sup_no": "9",
+          "definition": "우리나라 성(姓)의 하나. 주요 본관은 안산(安山)이 현존한다."
+        },
+        {
+          "sup_no": "10",
+          "definition": "‘너’ 또는 ‘자네’를 문어적으로 이르는 말."
+        },
+        {
+          "sup_no": "11",
+          "definition": "우리나라 성(姓)의 하나. 본관은 의령(宜寧), 하동(河東) 등이 현존한다."
+        },
+        {
+          "sup_no": "12",
+          "definition": "음력 4월을 달리 이르는 말."
+        },
+        {
+          "sup_no": "13",
+          "definition": "‘나’를 문어적으로 이르는 말."
+        },
+        {
+          "sup_no": "14",
+          "definition": "우리나라 성(姓)의 하나. 본관은 함양(咸陽), 성주(星州), 선산(善山) 등 10여 본이 현존한다."
+        },
+        {
+          "sup_no": "15",
+          "definition": "아악(雅樂)에서, 십이율(十二律) 가운데 음(陰)에 속하는 음(音)."
+        },
+        {
+          "sup_no": "16",
+          "definition": "입과 눈이 비뚤어지는 증상."
+        },
+        {
+          "sup_no": "17",
+          "definition": "육십사괘의 하나. 이괘(離卦)와 간괘(艮卦)가 거듭된 것으로, 산 위에 불이 있음을 상징한다."
+        },
+        {
+          "sup_no": "18",
+          "definition": "고려·조선 시대에 둔, 군(軍) 편제(編制)의 하나. 1여는 대략 125인이었다."
+        },
+        {
+          "sup_no": "19",
+          "definition": "정당 정치에서, 현재 정권을 잡고 있는 정당."
+        },
+        {
+          "sup_no": "20",
+          "definition": "살벌(殺罰)을 맡아 다스리는 궁중의 작은 신. 나라에서 가을에 제를 올렸다."
+        },
+        {
+          "sup_no": "21",
+          "definition": "제왕(帝王)의 지친(至親)들이 쓰던 탈것."
+        },
+        {
+          "sup_no": "22",
+          "definition": "정중하게 부르는 뜻을 나타내는 격 조사. 흔히 감탄이나 호소의 뜻이 포함된다."
+        },
+        {
+          "sup_no": "23",
+          "definition": "시간상의 선후 관계를 나타내거나 방법 따위를 나타내는 연결 어미."
+        },
+        {
+          "sup_no": "24",
+          "definition": "‘여자’의 뜻을 더하는 접두사."
+        },
+        {
+          "sup_no": "25",
+          "definition": "‘그 수를 넘음’의 뜻을 더하는 접미사."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg214",
       "lemma": "만나다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -4926,7 +5080,113 @@
       ]
     },
     {
-      "lemma_group_id": "lg212",
+      "lemma_group_id": "lg215",
+      "lemma": "경",
+      "pos": "명사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 24,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "일몰부터 일출까지 하룻밤을 다섯으로 나누어 부르는 시간의 이름. 밤 7시부터 시작하여 두 시간씩 나누어 각각 초경, 이경, 삼경, 사경, 오경이라고 이른다."
+        },
+        {
+          "sup_no": "2",
+          "definition": "중국에서 쓰는 항해 거리의 단위. 1경은 60리에 해당한다."
+        },
+        {
+          "sup_no": "3",
+          "definition": "예전에, 곳간으로 쓰려고 지은 집."
+        },
+        {
+          "sup_no": "4",
+          "definition": "조(兆)의 만 배가 되는 수. 즉, 10<sup style='font-size:11px;'>16</sup>을 이른다."
+        },
+        {
+          "sup_no": "5",
+          "definition": "천간(天干)의 일곱째."
+        },
+        {
+          "sup_no": "6",
+          "definition": "‘지름’의 전 용어."
+        },
+        {
+          "sup_no": "7",
+          "definition": "고등 식물에 있어서 기본 기관의 하나. 식물체를 받치고 뿌리로부터 흡수한 수분이나 양분을 체관부, 물관부를 통하여 각 부에 나르는 역할을 한다. 표피계, 기본 조직계, 관다발계로 되어 있다."
+        },
+        {
+          "sup_no": "8",
+          "definition": "땅 넓이의 단위. 정(町)으로 끝나고 우수리가 없을 때 쓴다. 1경은 3,000평으로 약 9,917.4㎡에 해당한다."
+        },
+        {
+          "sup_no": "9",
+          "definition": "영국에서, 귀족의 작위를 받은 이를 높여 이르는 말."
+        },
+        {
+          "sup_no": "10",
+          "definition": "신라 때에 둔 중앙 관아와 각 성전(成典)의 으뜸 또는 버금 벼슬. 위계는 6등급인 아찬(阿飡)에서 11등급인 내마(奈麻)까지였다."
+        },
+        {
+          "sup_no": "11",
+          "definition": "산이나 들, 강, 바다 따위의 자연이나 지역의 모습."
+        },
+        {
+          "sup_no": "12",
+          "definition": "우리나라 성(姓)의 하나. 본관은 태인(泰仁), 해주(海州) 등이 현존한다."
+        },
+        {
+          "sup_no": "13",
+          "definition": "옛 성현들이 유교의 사상과 교리를 써 놓은 책. ≪역경≫·≪서경≫·≪시경≫·≪예기≫·≪춘추≫·≪대학≫·≪논어≫·≪맹자≫·≪중용≫ 따위를 통틀어 이른다."
+        },
+        {
+          "sup_no": "14",
+          "definition": "세로, 상하, 남북의 방향."
+        },
+        {
+          "sup_no": "15",
+          "definition": "나라나 지역 따위의 구간을 가르는 경계."
+        },
+        {
+          "sup_no": "16",
+          "definition": "‘경하다’의 어근."
+        },
+        {
+          "sup_no": "17",
+          "definition": "우리나라 성(姓)의 하나. 본관은 청주(淸州), 충주(忠州) 등 10여 본이 현존한다."
+        },
+        {
+          "sup_no": "18",
+          "definition": "틀에 옥돌을 달아, 뿔 망치로 쳐 소리를 내는 아악기(雅樂器)."
+        },
+        {
+          "sup_no": "19",
+          "definition": "척추동물의 머리와 몸통을 잇는 잘록한 부분."
+        },
+        {
+          "sup_no": "20",
+          "definition": "빛의 반사를 이용하여 물체의 모양을 비추어 보는 물건. 옛날에는 구리나 돌을 매끄럽게 갈아서 만들었는데, 지금은 보통 유리 뒤쪽에 아말감을 발라 만든다."
+        },
+        {
+          "sup_no": "21",
+          "definition": "중국에서 행하던 오형(五刑) 가운데 하나. 죄인의 이마나 팔뚝 따위에 먹줄로 죄명을 써넣던 형벌이다."
+        },
+        {
+          "sup_no": "22",
+          "definition": "‘그 시간 또는 날짜에 가까운 때’의 뜻을 더하는 접미사."
+        },
+        {
+          "sup_no": "23",
+          "definition": "‘가벼운’의 뜻을 더하는 접두사."
+        },
+        {
+          "sup_no": "24",
+          "definition": "‘무언가를 보기 위한 기구’의 뜻을 더하는 접미사."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg216",
       "lemma": "구리시",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -4936,7 +5196,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg213",
+      "lemma_group_id": "lg217",
       "lemma": "마트",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -4954,7 +5214,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg214",
+      "lemma_group_id": "lg218",
       "lemma": "인근",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -4968,7 +5228,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg215",
+      "lemma_group_id": "lg219",
       "lemma": "내",
       "pos": "대명사",
       "exists_in_dictionary": true,
@@ -5022,7 +5282,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg216",
+      "lemma_group_id": "lg220",
       "lemma": "예전",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5060,7 +5320,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg217",
+      "lemma_group_id": "lg221",
       "lemma": "국가",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5078,7 +5338,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg218",
+      "lemma_group_id": "lg222",
       "lemma": "대표",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5092,7 +5352,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg219",
+      "lemma_group_id": "lg223",
       "lemma": "감독",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5106,7 +5366,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg220",
+      "lemma_group_id": "lg224",
       "lemma": "적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5180,7 +5440,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg221",
+      "lemma_group_id": "lg225",
       "lemma": "중요하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -5198,7 +5458,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg222",
+      "lemma_group_id": "lg226",
       "lemma": "얘기",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5212,7 +5472,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg223",
+      "lemma_group_id": "lg227",
       "lemma": "여기",
       "pos": "대명사",
       "exists_in_dictionary": true,
@@ -5266,7 +5526,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg224",
+      "lemma_group_id": "lg228",
       "lemma": "너무",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -5280,7 +5540,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg225",
+      "lemma_group_id": "lg229",
       "lemma": "춥다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -5294,7 +5554,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg226",
+      "lemma_group_id": "lg230",
       "lemma": "나",
       "pos": "대명사",
       "exists_in_dictionary": true,
@@ -5348,7 +5608,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg227",
+      "lemma_group_id": "lg231",
       "lemma": "그런",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -5366,7 +5626,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg228",
+      "lemma_group_id": "lg232",
       "lemma": "사람",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5380,7 +5640,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg229",
+      "lemma_group_id": "lg233",
       "lemma": "손끝",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5394,7 +5654,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg230",
+      "lemma_group_id": "lg234",
       "lemma": "건드리다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5408,7 +5668,25 @@
       ]
     },
     {
-      "lemma_group_id": "lg231",
+      "lemma_group_id": "lg235",
+      "lemma": "테",
+      "pos": "명사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 2,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "어그러지거나 깨지지 아니하도록 그릇 따위의 몸을 둘러맨 줄."
+        },
+        {
+          "sup_no": "2",
+          "definition": "서려 놓은 실의 묶음을 세는 단위."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg236",
       "lemma": "모텔",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5422,7 +5700,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg232",
+      "lemma_group_id": "lg237",
       "lemma": "들어가다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5440,7 +5718,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg233",
+      "lemma_group_id": "lg238",
       "lemma": "말하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5454,7 +5732,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg234",
+      "lemma_group_id": "lg239",
       "lemma": "데리다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5468,7 +5746,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg235",
+      "lemma_group_id": "lg240",
       "lemma": "같다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -5482,7 +5760,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg236",
+      "lemma_group_id": "lg241",
       "lemma": "날",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5516,7 +5794,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg237",
+      "lemma_group_id": "lg242",
       "lemma": "일방적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5530,7 +5808,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg238",
+      "lemma_group_id": "lg243",
       "lemma": "생활비",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5544,7 +5822,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg239",
+      "lemma_group_id": "lg244",
       "lemma": "보태다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5558,7 +5836,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg240",
+      "lemma_group_id": "lg245",
       "lemma": "가방",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5600,7 +5878,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg241",
+      "lemma_group_id": "lg246",
       "lemma": "원",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5690,7 +5968,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg242",
+      "lemma_group_id": "lg247",
       "lemma": "넣다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5704,7 +5982,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg243",
+      "lemma_group_id": "lg248",
       "lemma": "주다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5722,7 +6000,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg244",
+      "lemma_group_id": "lg249",
       "lemma": "가슴",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5736,7 +6014,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg245",
+      "lemma_group_id": "lg250",
       "lemma": "한",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -5806,7 +6084,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg246",
+      "lemma_group_id": "lg251",
       "lemma": "번",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5848,7 +6126,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg247",
+      "lemma_group_id": "lg252",
       "lemma": "만지다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5862,7 +6140,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg248",
+      "lemma_group_id": "lg253",
       "lemma": "침대",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5880,7 +6158,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg249",
+      "lemma_group_id": "lg254",
       "lemma": "눕히다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5894,7 +6172,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg250",
+      "lemma_group_id": "lg255",
       "lemma": "어깨",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5912,7 +6190,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg251",
+      "lemma_group_id": "lg256",
       "lemma": "누르다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -5930,7 +6208,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg252",
+      "lemma_group_id": "lg257",
       "lemma": "상의",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -5988,7 +6266,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg253",
+      "lemma_group_id": "lg258",
       "lemma": "벗기다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6006,7 +6284,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg254",
+      "lemma_group_id": "lg259",
       "lemma": "후",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6056,7 +6334,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg255",
+      "lemma_group_id": "lg260",
       "lemma": "귀",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6086,7 +6364,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg256",
+      "lemma_group_id": "lg261",
       "lemma": "빨다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6108,7 +6386,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg257",
+      "lemma_group_id": "lg262",
       "lemma": "배란",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6122,7 +6400,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg258",
+      "lemma_group_id": "lg263",
       "lemma": "일",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6160,7 +6438,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg259",
+      "lemma_group_id": "lg264",
       "lemma": "집",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6194,7 +6472,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg260",
+      "lemma_group_id": "lg265",
       "lemma": "가다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6220,7 +6498,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg261",
+      "lemma_group_id": "lg266",
       "lemma": "싶다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6234,7 +6512,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg262",
+      "lemma_group_id": "lg267",
       "lemma": "발버둥",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6248,7 +6526,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg263",
+      "lemma_group_id": "lg268",
       "lemma": "치다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6310,7 +6588,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg264",
+      "lemma_group_id": "lg269",
       "lemma": "저항하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6324,7 +6602,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg265",
+      "lemma_group_id": "lg270",
       "lemma": "괜찮다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -6338,7 +6616,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg266",
+      "lemma_group_id": "lg271",
       "lemma": "묶다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6352,7 +6630,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg267",
+      "lemma_group_id": "lg272",
       "lemma": "몸",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6370,7 +6648,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg268",
+      "lemma_group_id": "lg273",
       "lemma": "레깅스",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6384,7 +6662,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg269",
+      "lemma_group_id": "lg274",
       "lemma": "팬티",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6398,7 +6676,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg270",
+      "lemma_group_id": "lg275",
       "lemma": "올라타다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6412,7 +6690,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg271",
+      "lemma_group_id": "lg276",
       "lemma": "양손",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6430,7 +6708,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg272",
+      "lemma_group_id": "lg277",
       "lemma": "바지",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6448,7 +6726,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg273",
+      "lemma_group_id": "lg278",
       "lemma": "내리다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6466,7 +6744,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg274",
+      "lemma_group_id": "lg279",
       "lemma": "뒤",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6484,7 +6762,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg275",
+      "lemma_group_id": "lg280",
       "lemma": "성기",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6534,7 +6812,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg276",
+      "lemma_group_id": "lg281",
       "lemma": "비비다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6548,7 +6826,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg277",
+      "lemma_group_id": "lg282",
       "lemma": "강제",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6570,7 +6848,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg278",
+      "lemma_group_id": "lg283",
       "lemma": "추행하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6596,7 +6874,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg279",
+      "lemma_group_id": "lg284",
       "lemma": "원심",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6622,7 +6900,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg280",
+      "lemma_group_id": "lg285",
       "lemma": "아래",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6636,7 +6914,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg281",
+      "lemma_group_id": "lg286",
       "lemma": "그대로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -6650,7 +6928,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg282",
+      "lemma_group_id": "lg287",
       "lemma": "어렵다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -6664,7 +6942,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg283",
+      "lemma_group_id": "lg288",
       "lemma": "심판",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6682,7 +6960,73 @@
       ]
     },
     {
-      "lemma_group_id": "lg284",
+      "lemma_group_id": "lg289",
+      "lemma": "결",
+      "pos": "명사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 14,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "나무, 돌, 살갗 따위에서 조직의 굳고 무른 부분이 모여 일정하게 켜를 지으면서 짜인 바탕의 상태나 무늬."
+        },
+        {
+          "sup_no": "2",
+          "definition": "성품의 바탕이나 상태."
+        },
+        {
+          "sup_no": "3",
+          "definition": "‘겨울’의 준말."
+        },
+        {
+          "sup_no": "4",
+          "definition": "‘때’, ‘사이’, ‘짬’의 뜻을 나타내는 말."
+        },
+        {
+          "sup_no": "5",
+          "definition": "활을 쏠 때에 시위를 잡아당기기 위하여 엄지손가락의 아랫마디에 끼는 뿔로 만든 기구. 대롱을 엇비스듬하게 자른 모양으로 만든다."
+        },
+        {
+          "sup_no": "6",
+          "definition": "‘결하다’의 어근."
+        },
+        {
+          "sup_no": "7",
+          "definition": "고대 중국에서, 옥으로 만든 패물의 하나. 남자의 허리에 차는데, 고리 모양으로 한쪽이 터졌다."
+        },
+        {
+          "sup_no": "8",
+          "definition": "빠져서 부족함."
+        },
+        {
+          "sup_no": "9",
+          "definition": "어떤 글의 체계를 기승전결로 구분할 때의 넷째 단계. 전체 구성의 끝을 맺는다."
+        },
+        {
+          "sup_no": "10",
+          "definition": "몸과 마음을 결박하여 자유를 얻지 못하게 하는 번뇌."
+        },
+        {
+          "sup_no": "11",
+          "definition": "조선 후기에, 균역법의 실시에 따른 나라 재정의 부족을 메우기 위하여 전결(田結)에 덧붙여 거두어들이던 돈."
+        },
+        {
+          "sup_no": "12",
+          "definition": "논밭 넓이의 단위. 세금을 계산할 때 썼다. 한 결은 한 동의 열 배로, 그 넓이는 시대에 따라 달랐다."
+        },
+        {
+          "sup_no": "13",
+          "definition": "한 곡이 끝남을 이르는 말."
+        },
+        {
+          "sup_no": "14",
+          "definition": "‘지나가는 사이’, ‘도중’의 뜻을 더하는 접미사."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg290",
       "lemma": "파기하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6700,7 +7044,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg285",
+      "lemma_group_id": "lg291",
       "lemma": "무죄",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6714,7 +7058,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg286",
+      "lemma_group_id": "lg292",
       "lemma": "선고하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6732,7 +7076,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg287",
+      "lemma_group_id": "lg293",
       "lemma": "전체",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6754,7 +7098,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg288",
+      "lemma_group_id": "lg294",
       "lemma": "IQ",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -6764,7 +7108,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg289",
+      "lemma_group_id": "lg295",
       "lemma": "학력",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6782,7 +7126,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg290",
+      "lemma_group_id": "lg296",
       "lemma": "경력",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6804,7 +7148,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg291",
+      "lemma_group_id": "lg297",
       "lemma": "언어",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6826,7 +7170,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg292",
+      "lemma_group_id": "lg298",
       "lemma": "이해",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6868,7 +7212,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg293",
+      "lemma_group_id": "lg299",
       "lemma": "능력",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6886,7 +7230,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg294",
+      "lemma_group_id": "lg300",
       "lemma": "지각",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6920,7 +7264,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg295",
+      "lemma_group_id": "lg301",
       "lemma": "추론",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6938,7 +7282,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg296",
+      "lemma_group_id": "lg302",
       "lemma": "성인",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -6964,7 +7308,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg297",
+      "lemma_group_id": "lg303",
       "lemma": "비하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -6978,7 +7322,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg298",
+      "lemma_group_id": "lg304",
       "lemma": "특별히",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -6992,7 +7336,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg299",
+      "lemma_group_id": "lg305",
       "lemma": "저조하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7006,7 +7350,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg300",
+      "lemma_group_id": "lg306",
       "lemma": "점",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7060,7 +7404,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg301",
+      "lemma_group_id": "lg307",
       "lemma": "종합하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7074,7 +7418,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg302",
+      "lemma_group_id": "lg308",
       "lemma": "평가",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7096,7 +7440,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg303",
+      "lemma_group_id": "lg309",
       "lemma": "관련하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7110,7 +7454,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg304",
+      "lemma_group_id": "lg310",
       "lemma": "다른",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -7124,7 +7468,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg305",
+      "lemma_group_id": "lg311",
       "lemma": "척도",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7138,7 +7482,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg306",
+      "lemma_group_id": "lg312",
       "lemma": "기준",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7164,7 +7508,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg307",
+      "lemma_group_id": "lg313",
       "lemma": "적용하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7178,7 +7522,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg308",
+      "lemma_group_id": "lg314",
       "lemma": "타당하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7192,7 +7536,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg309",
+      "lemma_group_id": "lg315",
       "lemma": "선뜻",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -7210,7 +7554,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg310",
+      "lemma_group_id": "lg316",
       "lemma": "수긍하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7224,7 +7568,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg311",
+      "lemma_group_id": "lg317",
       "lemma": "측면",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7238,7 +7582,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg312",
+      "lemma_group_id": "lg318",
       "lemma": "추행",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7264,7 +7608,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg313",
+      "lemma_group_id": "lg319",
       "lemma": "태양",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7290,7 +7634,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg314",
+      "lemma_group_id": "lg320",
       "lemma": "삽입",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7304,7 +7648,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg315",
+      "lemma_group_id": "lg321",
       "lemma": "시도",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7350,7 +7694,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg316",
+      "lemma_group_id": "lg322",
       "lemma": "화장실",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7364,7 +7708,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg317",
+      "lemma_group_id": "lg323",
       "lemma": "횟수",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7378,7 +7722,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg318",
+      "lemma_group_id": "lg324",
       "lemma": "번복하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7392,7 +7736,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg319",
+      "lemma_group_id": "lg325",
       "lemma": "다",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -7434,7 +7778,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg320",
+      "lemma_group_id": "lg326",
       "lemma": "당하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7452,7 +7796,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg321",
+      "lemma_group_id": "lg327",
       "lemma": "씻다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7466,7 +7810,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg322",
+      "lemma_group_id": "lg328",
       "lemma": "나오다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7480,7 +7824,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg323",
+      "lemma_group_id": "lg329",
       "lemma": "하의",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7514,7 +7858,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg324",
+      "lemma_group_id": "lg330",
       "lemma": "벗다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7528,7 +7872,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg325",
+      "lemma_group_id": "lg331",
       "lemma": "앞",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7542,7 +7886,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg326",
+      "lemma_group_id": "lg332",
       "lemma": "서다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7560,7 +7904,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg327",
+      "lemma_group_id": "lg333",
       "lemma": "모습",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7582,7 +7926,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg328",
+      "lemma_group_id": "lg334",
       "lemma": "쭈글쭈글",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -7596,7 +7940,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg329",
+      "lemma_group_id": "lg335",
       "lemma": "징그럽다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7610,7 +7954,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg330",
+      "lemma_group_id": "lg336",
       "lemma": "더럽다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7624,7 +7968,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg331",
+      "lemma_group_id": "lg337",
       "lemma": "역겹다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7638,7 +7982,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg332",
+      "lemma_group_id": "lg338",
       "lemma": "토하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7652,7 +7996,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg333",
+      "lemma_group_id": "lg339",
       "lemma": "취지",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7674,7 +8018,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg334",
+      "lemma_group_id": "lg340",
       "lemma": "진술하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7688,7 +8032,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg335",
+      "lemma_group_id": "lg341",
       "lemma": "반면",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7714,7 +8058,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg336",
+      "lemma_group_id": "lg342",
       "lemma": "속옷",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7728,7 +8072,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg337",
+      "lemma_group_id": "lg343",
       "lemma": "주장하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7758,7 +8102,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg338",
+      "lemma_group_id": "lg344",
       "lemma": "검증",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7772,7 +8116,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg339",
+      "lemma_group_id": "lg345",
       "lemma": "결과",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7794,7 +8138,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg340",
+      "lemma_group_id": "lg346",
       "lemma": "불룩",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -7808,7 +8152,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg341",
+      "lemma_group_id": "lg347",
       "lemma": "우람하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7826,7 +8170,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg342",
+      "lemma_group_id": "lg348",
       "lemma": "팔뚝",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7840,7 +8184,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg343",
+      "lemma_group_id": "lg349",
       "lemma": "굵다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7854,7 +8198,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg344",
+      "lemma_group_id": "lg350",
       "lemma": "탄탄하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -7872,7 +8216,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg345",
+      "lemma_group_id": "lg351",
       "lemma": "복부",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7890,7 +8234,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg346",
+      "lemma_group_id": "lg352",
       "lemma": "약간",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7904,7 +8248,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg347",
+      "lemma_group_id": "lg353",
       "lemma": "주름",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7926,7 +8270,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg348",
+      "lemma_group_id": "lg354",
       "lemma": "피부",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7944,7 +8288,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg349",
+      "lemma_group_id": "lg355",
       "lemma": "약간",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -7958,7 +8302,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg350",
+      "lemma_group_id": "lg356",
       "lemma": "처지다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -7972,7 +8316,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg351",
+      "lemma_group_id": "lg357",
       "lemma": "전체적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -7986,7 +8330,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg352",
+      "lemma_group_id": "lg358",
       "lemma": "근육질",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8000,7 +8344,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg353",
+      "lemma_group_id": "lg359",
       "lemma": "건장하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -8014,7 +8358,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg354",
+      "lemma_group_id": "lg360",
       "lemma": "하반신",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8028,7 +8372,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg355",
+      "lemma_group_id": "lg361",
       "lemma": "상반신",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8042,7 +8386,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg356",
+      "lemma_group_id": "lg362",
       "lemma": "더",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -8060,7 +8404,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg357",
+      "lemma_group_id": "lg363",
       "lemma": "매끄럽다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -8074,7 +8418,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg358",
+      "lemma_group_id": "lg364",
       "lemma": "깨끗하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -8088,7 +8432,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg359",
+      "lemma_group_id": "lg365",
       "lemma": "상태",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8106,7 +8450,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg360",
+      "lemma_group_id": "lg366",
       "lemma": "실제로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -8120,7 +8464,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg361",
+      "lemma_group_id": "lg367",
       "lemma": "벗",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8142,7 +8486,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg362",
+      "lemma_group_id": "lg368",
       "lemma": "제대로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -8156,7 +8500,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg363",
+      "lemma_group_id": "lg369",
       "lemma": "못하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -8170,7 +8514,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg364",
+      "lemma_group_id": "lg370",
       "lemma": "연령",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8192,7 +8536,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg365",
+      "lemma_group_id": "lg371",
       "lemma": "짐작하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -8206,7 +8550,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg366",
+      "lemma_group_id": "lg372",
       "lemma": "만연히",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -8220,7 +8564,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg367",
+      "lemma_group_id": "lg373",
       "lemma": "가능성",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8234,7 +8578,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg368",
+      "lemma_group_id": "lg374",
       "lemma": "발생",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8248,7 +8592,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg369",
+      "lemma_group_id": "lg375",
       "lemma": "전후",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8274,7 +8618,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg370",
+      "lemma_group_id": "lg376",
       "lemma": "태도",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8296,7 +8640,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg371",
+      "lemma_group_id": "lg377",
       "lemma": "가깝다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -8310,7 +8654,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg372",
+      "lemma_group_id": "lg378",
       "lemma": "차이",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8324,7 +8668,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg373",
+      "lemma_group_id": "lg379",
       "lemma": "이",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -8458,7 +8802,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg374",
+      "lemma_group_id": "lg380",
       "lemma": "이전",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8504,7 +8848,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg375",
+      "lemma_group_id": "lg381",
       "lemma": "일면식",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8518,7 +8862,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg376",
+      "lemma_group_id": "lg382",
       "lemma": "사이",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8552,7 +8896,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg377",
+      "lemma_group_id": "lg383",
       "lemma": "이상일",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -8562,7 +8906,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg378",
+      "lemma_group_id": "lg384",
       "lemma": "대화",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8596,7 +8940,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg379",
+      "lemma_group_id": "lg385",
       "lemma": "불가능하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -8610,7 +8954,17 @@
       ]
     },
     {
-      "lemma_group_id": "lg380",
+      "lemma_group_id": "lg386",
+      "lemma": "명생략",
+      "pos": "명사",
+      "exists_in_dictionary": false,
+      "status": "request_failed",
+      "total": 0,
+      "definitions": [],
+      "message": "Empty response body from stdict API."
+    },
+    {
+      "lemma_group_id": "lg387",
       "lemma": "대화명",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -8620,7 +8974,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg381",
+      "lemma_group_id": "lg388",
       "lemma": "계정",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8650,7 +9004,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg382",
+      "lemma_group_id": "lg389",
       "lemma": "새로이",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -8664,7 +9018,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg383",
+      "lemma_group_id": "lg390",
       "lemma": "가입하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -8678,7 +9032,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg384",
+      "lemma_group_id": "lg391",
       "lemma": "먼저",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -8692,7 +9046,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg385",
+      "lemma_group_id": "lg392",
       "lemma": "연락",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8714,7 +9068,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg386",
+      "lemma_group_id": "lg393",
       "lemma": "시도하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -8736,7 +9090,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg387",
+      "lemma_group_id": "lg394",
       "lemma": "차량",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8754,7 +9108,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg388",
+      "lemma_group_id": "lg395",
       "lemma": "운전하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -8768,7 +9122,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg389",
+      "lemma_group_id": "lg396",
       "lemma": "거주하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -8782,7 +9136,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg390",
+      "lemma_group_id": "lg397",
       "lemma": "함께",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -8796,7 +9150,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg391",
+      "lemma_group_id": "lg398",
       "lemma": "타다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -8842,31 +9196,31 @@
       ]
     },
     {
-      "lemma_group_id": "lg392",
-      "lemma": "이동하다",
-      "pos": "동사",
+      "lemma_group_id": "lg399",
+      "lemma": "이동하",
+      "pos": "명사",
+      "exists_in_dictionary": false,
+      "status": "request_failed",
+      "total": 0,
+      "definitions": [],
+      "message": "Empty response body from stdict API."
+    },
+    {
+      "lemma_group_id": "lg400",
+      "lemma": "처음",
+      "pos": "부사",
       "exists_in_dictionary": true,
       "status": "ok",
       "total": 1,
       "definitions": [
         {
           "sup_no": "0",
-          "definition": "움직여 옮기다. 또는 움직여 자리를 바꾸다."
+          "definition": "시간적으로나 순서상으로 맨 앞."
         }
       ]
     },
     {
-      "lemma_group_id": "lg393",
-      "lemma": "처음",
-      "pos": "부사",
-      "exists_in_dictionary": false,
-      "status": "request_failed",
-      "total": 0,
-      "definitions": [],
-      "message": "The read operation timed out"
-    },
-    {
-      "lemma_group_id": "lg394",
+      "lemma_group_id": "lg401",
       "lemma": "별다르다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -8880,7 +9234,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg395",
+      "lemma_group_id": "lg402",
       "lemma": "거부",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8902,7 +9256,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg396",
+      "lemma_group_id": "lg403",
       "lemma": "의사",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -8968,7 +9322,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg397",
+      "lemma_group_id": "lg404",
       "lemma": "밝히다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -8982,7 +9336,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg398",
+      "lemma_group_id": "lg405",
       "lemma": "권유",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9008,7 +9362,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg399",
+      "lemma_group_id": "lg406",
       "lemma": "내",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9062,7 +9416,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg400",
+      "lemma_group_id": "lg407",
       "lemma": "현금",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9096,7 +9450,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg401",
+      "lemma_group_id": "lg408",
       "lemma": "받다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9118,7 +9472,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg402",
+      "lemma_group_id": "lg409",
       "lemma": "돈",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9164,7 +9518,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg403",
+      "lemma_group_id": "lg410",
       "lemma": "표시하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9182,7 +9536,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg404",
+      "lemma_group_id": "lg411",
       "lemma": "억지로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -9196,7 +9550,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg405",
+      "lemma_group_id": "lg412",
       "lemma": "핸드백",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9210,7 +9564,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg406",
+      "lemma_group_id": "lg413",
       "lemma": "집어넣다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9224,7 +9578,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg407",
+      "lemma_group_id": "lg414",
       "lemma": "주장",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9302,7 +9656,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg408",
+      "lemma_group_id": "lg415",
       "lemma": "앞서다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9316,7 +9670,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg409",
+      "lemma_group_id": "lg416",
       "lemma": "카카오톡",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -9326,7 +9680,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg410",
+      "lemma_group_id": "lg417",
       "lemma": "메신저",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9340,7 +9694,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg411",
+      "lemma_group_id": "lg418",
       "lemma": "여러",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -9354,7 +9708,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg412",
+      "lemma_group_id": "lg419",
       "lemma": "차례",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9372,7 +9726,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg413",
+      "lemma_group_id": "lg420",
       "lemma": "경제적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9386,7 +9740,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg414",
+      "lemma_group_id": "lg421",
       "lemma": "하소연",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9400,7 +9754,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg415",
+      "lemma_group_id": "lg422",
       "lemma": "직후",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9414,7 +9768,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg416",
+      "lemma_group_id": "lg423",
       "lemma": "감사",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9484,7 +9838,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg417",
+      "lemma_group_id": "lg424",
       "lemma": "뜻",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9498,7 +9852,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg418",
+      "lemma_group_id": "lg425",
       "lemma": "전하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9512,7 +9866,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg419",
+      "lemma_group_id": "lg426",
       "lemma": "모친",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9526,7 +9880,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg420",
+      "lemma_group_id": "lg427",
       "lemma": "밥",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9552,7 +9906,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg421",
+      "lemma_group_id": "lg428",
       "lemma": "반찬",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9566,7 +9920,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg422",
+      "lemma_group_id": "lg429",
       "lemma": "챙기다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9580,7 +9934,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg423",
+      "lemma_group_id": "lg430",
       "lemma": "드리다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9618,7 +9972,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg424",
+      "lemma_group_id": "lg431",
       "lemma": "말",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9668,7 +10022,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg425",
+      "lemma_group_id": "lg432",
       "lemma": "과정",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9694,7 +10048,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg426",
+      "lemma_group_id": "lg433",
       "lemma": "그리",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -9712,7 +10066,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg427",
+      "lemma_group_id": "lg434",
       "lemma": "강하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -9734,7 +10088,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg428",
+      "lemma_group_id": "lg435",
       "lemma": "표하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9752,7 +10106,49 @@
       ]
     },
     {
-      "lemma_group_id": "lg429",
+      "lemma_group_id": "lg436",
+      "lemma": "라",
+      "pos": "명사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 8,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "서양 음악의 칠음 체계에서, 두 번째 음이름."
+        },
+        {
+          "sup_no": "2",
+          "definition": "생황 사자관의 구음(口音)."
+        },
+        {
+          "sup_no": "3",
+          "definition": "서양 음악의 칠음 체계에서, 여섯 번째 계이름."
+        },
+        {
+          "sup_no": "4",
+          "definition": "이집트 신화에 나오는 태양신. 광명·생명·정의의 지배자로, 제5왕조 때부터 왕국의 신이 되었다. 독수리의 머리 위에 태양을 나타내는 구(球)와 왕자(王者)의 상징인 뱀을 올린 모양을 하고 있다."
+        },
+        {
+          "sup_no": "5",
+          "definition": "‘라고’의 준말."
+        },
+        {
+          "sup_no": "6",
+          "definition": "까닭이나 근거 따위를 나타내는 연결 어미."
+        },
+        {
+          "sup_no": "7",
+          "definition": "(예스러운 표현으로) 해라할 자리에 쓰여, 현재 사건이나 사실을 서술하는 뜻을 나타내는 종결 어미."
+        },
+        {
+          "sup_no": "8",
+          "definition": "하라체를 사용할 자리에 쓰여, 구체적으로 정해지지 않은 청자나 독자에게 책 따위의 매체를 통해 명령의 뜻을 나타내는 종결 어미."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg437",
       "lemma": "나서다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9766,7 +10162,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg430",
+      "lemma_group_id": "lg438",
       "lemma": "얼굴",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9780,7 +10176,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg431",
+      "lemma_group_id": "lg439",
       "lemma": "묻다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9806,7 +10202,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg432",
+      "lemma_group_id": "lg440",
       "lemma": "화장품",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9820,7 +10216,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg433",
+      "lemma_group_id": "lg441",
       "lemma": "립스틱",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9834,7 +10230,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg434",
+      "lemma_group_id": "lg442",
       "lemma": "닦다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9848,7 +10244,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg435",
+      "lemma_group_id": "lg443",
       "lemma": "많다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -9862,7 +10258,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg436",
+      "lemma_group_id": "lg444",
       "lemma": "자칫",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -9880,7 +10276,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg437",
+      "lemma_group_id": "lg445",
       "lemma": "남들",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -9890,7 +10286,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg438",
+      "lemma_group_id": "lg446",
       "lemma": "이른바",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -9904,7 +10300,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg439",
+      "lemma_group_id": "lg447",
       "lemma": "원조",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9950,7 +10346,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg440",
+      "lemma_group_id": "lg448",
       "lemma": "교제",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -9976,7 +10372,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg441",
+      "lemma_group_id": "lg449",
       "lemma": "오해하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -9990,7 +10386,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg442",
+      "lemma_group_id": "lg450",
       "lemma": "두렵다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -10004,7 +10400,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg443",
+      "lemma_group_id": "lg451",
       "lemma": "취하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10026,7 +10422,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg444",
+      "lemma_group_id": "lg452",
       "lemma": "의지하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10040,7 +10436,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg445",
+      "lemma_group_id": "lg453",
       "lemma": "뜻밖",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10054,7 +10450,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg446",
+      "lemma_group_id": "lg454",
       "lemma": "극도",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10076,7 +10472,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg447",
+      "lemma_group_id": "lg455",
       "lemma": "혐오감",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10090,7 +10486,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg448",
+      "lemma_group_id": "lg456",
       "lemma": "인하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10112,7 +10508,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg449",
+      "lemma_group_id": "lg457",
       "lemma": "그저",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -10126,7 +10522,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg450",
+      "lemma_group_id": "lg458",
       "lemma": "빨리",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -10140,7 +10536,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg451",
+      "lemma_group_id": "lg459",
       "lemma": "돌아가다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10154,7 +10550,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg452",
+      "lemma_group_id": "lg460",
       "lemma": "나가다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10168,7 +10564,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg453",
+      "lemma_group_id": "lg461",
       "lemma": "이후",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10198,7 +10594,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg454",
+      "lemma_group_id": "lg462",
       "lemma": "타인",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10216,7 +10612,61 @@
       ]
     },
     {
-      "lemma_group_id": "lg455",
+      "lemma_group_id": "lg463",
+      "lemma": "마",
+      "pos": "명사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 11,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "뱃사람의 말로, ‘남쪽’을 이르는 말."
+        },
+        {
+          "sup_no": "2",
+          "definition": "맛과의 덩굴풀을 통틀어 이르는 말."
+        },
+        {
+          "sup_no": "3",
+          "definition": "서양 음악의 칠음 체계에서, 세 번째 음이름."
+        },
+        {
+          "sup_no": "4",
+          "definition": "우리나라 성(姓)의 하나. 본관은 장흥(長興), 목천(木川) 등이 현존한다."
+        },
+        {
+          "sup_no": "5",
+          "definition": "‘馬’ 자를 새긴 장기짝. 한 편에 둘씩 넷이 있고, 앞으로 두 칸 옆으로 한 칸, 또는 앞으로 한 칸 옆으로 두 칸 건너 있는 밭으로 다닌다."
+        },
+        {
+          "sup_no": "6",
+          "definition": "우리나라 성(姓)의 하나. 본관은 영평(永平), 열산(烈山) 등이 현존한다."
+        },
+        {
+          "sup_no": "7",
+          "definition": "삼과의 한해살이풀. 높이는 온대에서 3미터, 열대에서는 6미터 정도 자라며, 잎은 5~9갈래로 갈라진 장상 복엽으로 열편은 피침 모양이다. 암수딴그루로 7~8월에 꽃이 피고 수꽃은 원추(圓錐) 화서로, 암꽃은 수상(穗狀) 화서로 달린다. 열매는 수과(瘦果)로 공 모양이다. 종자는 식용·약용하거나 사료로 쓰고 줄기의 껍질은 섬유의 원료로 쓰이는데 줄기에서 나오는 진에는 마취 물질이 들어 있다. 중앙아시아가 원산지이며, 아시아·유럽의 온대·열대에 분포한다."
+        },
+        {
+          "sup_no": "8",
+          "definition": "야드파운드법에 의한 길이의 단위. 한 마는 1피트의 세 배로 91.44cm에 해당한다. 기호는 yd."
+        },
+        {
+          "sup_no": "9",
+          "definition": "일이 잘되지 아니하게 헤살을 부리는 요사스러운 장애물."
+        },
+        {
+          "sup_no": "10",
+          "definition": "해라할 자리에 쓰여, 상대편에게 약속하는 뜻을 나타내는 종결 어미."
+        },
+        {
+          "sup_no": "11",
+          "definition": "내시 집의 하인들이 상전을 높여서 부를 때 쓰는 접미사."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg464",
       "lemma": "즉시",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -10230,7 +10680,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg456",
+      "lemma_group_id": "lg465",
       "lemma": "도움",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10244,7 +10694,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg457",
+      "lemma_group_id": "lg466",
       "lemma": "요청하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10258,7 +10708,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg458",
+      "lemma_group_id": "lg467",
       "lemma": "빠지다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10276,7 +10726,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg459",
+      "lemma_group_id": "lg468",
       "lemma": "주차하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10294,7 +10744,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg460",
+      "lemma_group_id": "lg469",
       "lemma": "장소",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10328,7 +10778,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg461",
+      "lemma_group_id": "lg470",
       "lemma": "돌아오다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10342,7 +10792,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg462",
+      "lemma_group_id": "lg471",
       "lemma": "귀가하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10360,7 +10810,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg463",
+      "lemma_group_id": "lg472",
       "lemma": "쉽사리",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -10374,7 +10824,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg464",
+      "lemma_group_id": "lg473",
       "lemma": "신빙하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10388,7 +10838,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg465",
+      "lemma_group_id": "lg474",
       "lemma": "당일",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10402,7 +10852,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg466",
+      "lemma_group_id": "lg475",
       "lemma": "해바라기",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10420,7 +10870,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg467",
+      "lemma_group_id": "lg476",
       "lemma": "센터",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10438,7 +10888,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg468",
+      "lemma_group_id": "lg477",
       "lemma": "전화하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10460,7 +10910,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg469",
+      "lemma_group_id": "lg478",
       "lemma": "상담",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10498,7 +10948,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg470",
+      "lemma_group_id": "lg479",
       "lemma": "처벌",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10512,7 +10962,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg471",
+      "lemma_group_id": "lg480",
       "lemma": "공식적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10526,7 +10976,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg472",
+      "lemma_group_id": "lg481",
       "lemma": "처리",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10540,7 +10990,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg473",
+      "lemma_group_id": "lg482",
       "lemma": "메시지",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10554,7 +11004,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg474",
+      "lemma_group_id": "lg483",
       "lemma": "답",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10572,7 +11022,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg475",
+      "lemma_group_id": "lg484",
       "lemma": "화",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10646,7 +11096,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg476",
+      "lemma_group_id": "lg485",
       "lemma": "고소",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10680,7 +11130,41 @@
       ]
     },
     {
-      "lemma_group_id": "lg477",
+      "lemma_group_id": "lg486",
+      "lemma": "바",
+      "pos": "명사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 6,
+      "definitions": [
+        {
+          "sup_no": "1",
+          "definition": "삼이나 칡 따위로 세 가닥을 지어 굵다랗게 드린 줄."
+        },
+        {
+          "sup_no": "2",
+          "definition": "서양 음악의 칠음 체계에서, 네 번째 음이름."
+        },
+        {
+          "sup_no": "3",
+          "definition": "앞에서 말한 내용 그 자체나 일 따위를 나타내는 말."
+        },
+        {
+          "sup_no": "4",
+          "definition": "서양식의 술집. 긴 스탠드 앞에 의자를 늘어놓고 바텐더가 여러 손님을 상대한다."
+        },
+        {
+          "sup_no": "5",
+          "definition": "압력의 단위. 1바는 1㎠에 100만 다인(dyne)의 힘이 작용할 때의 압력이다. 기호는 bar."
+        },
+        {
+          "sup_no": "6",
+          "definition": "무효 전력의 단위. 1바는 1볼트암페어에 해당한다. 기호는 var."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg487",
       "lemma": "경위",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10718,7 +11202,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg478",
+      "lemma_group_id": "lg488",
       "lemma": "부수적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10732,7 +11216,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg479",
+      "lemma_group_id": "lg489",
       "lemma": "사유",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10786,7 +11270,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg480",
+      "lemma_group_id": "lg490",
       "lemma": "헤어지다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10800,7 +11284,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg481",
+      "lemma_group_id": "lg491",
       "lemma": "가명",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -10826,7 +11310,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg482",
+      "lemma_group_id": "lg492",
       "lemma": "도착하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10848,7 +11332,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg483",
+      "lemma_group_id": "lg493",
       "lemma": "톡",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -10866,7 +11350,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg484",
+      "lemma_group_id": "lg494",
       "lemma": "야",
       "pos": "감탄사",
       "exists_in_dictionary": true,
@@ -10920,7 +11404,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg485",
+      "lemma_group_id": "lg495",
       "lemma": "피곤하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -10934,7 +11418,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg486",
+      "lemma_group_id": "lg496",
       "lemma": "잘다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -10948,7 +11432,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg487",
+      "lemma_group_id": "lg497",
       "lemma": "시간하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10966,7 +11450,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg488",
+      "lemma_group_id": "lg498",
       "lemma": "연락하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -10988,7 +11472,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg489",
+      "lemma_group_id": "lg499",
       "lemma": "안전하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -11006,7 +11490,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg490",
+      "lemma_group_id": "lg500",
       "lemma": "귀가",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11032,7 +11516,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg491",
+      "lemma_group_id": "lg501",
       "lemma": "염려하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -11050,7 +11534,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg492",
+      "lemma_group_id": "lg502",
       "lemma": "한편",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11064,7 +11548,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg493",
+      "lemma_group_id": "lg503",
       "lemma": "지속하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -11078,7 +11562,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg494",
+      "lemma_group_id": "lg504",
       "lemma": "보내다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11092,7 +11576,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg495",
+      "lemma_group_id": "lg505",
       "lemma": "약",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -11138,7 +11622,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg496",
+      "lemma_group_id": "lg506",
       "lemma": "경과하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -11152,7 +11636,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg497",
+      "lemma_group_id": "lg507",
       "lemma": "전화",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11206,7 +11690,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg498",
+      "lemma_group_id": "lg508",
       "lemma": "통화",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11232,7 +11716,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg499",
+      "lemma_group_id": "lg509",
       "lemma": "항의하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11246,7 +11730,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg500",
+      "lemma_group_id": "lg510",
       "lemma": "사과하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11264,7 +11748,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg501",
+      "lemma_group_id": "lg511",
       "lemma": "합의",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11282,7 +11766,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg502",
+      "lemma_group_id": "lg512",
       "lemma": "제안하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11300,7 +11784,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg503",
+      "lemma_group_id": "lg513",
       "lemma": "반응하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11314,7 +11798,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg504",
+      "lemma_group_id": "lg514",
       "lemma": "오히려",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11328,7 +11812,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg505",
+      "lemma_group_id": "lg515",
       "lemma": "적극적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11342,7 +11826,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg506",
+      "lemma_group_id": "lg516",
       "lemma": "결백하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -11356,7 +11840,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg507",
+      "lemma_group_id": "lg517",
       "lemma": "그러나",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11370,7 +11854,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg508",
+      "lemma_group_id": "lg518",
       "lemma": "다음",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11392,7 +11876,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg509",
+      "lemma_group_id": "lg519",
       "lemma": "지적하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11406,7 +11890,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg510",
+      "lemma_group_id": "lg520",
       "lemma": "묘사",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11444,7 +11928,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg511",
+      "lemma_group_id": "lg521",
       "lemma": "표현",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11458,7 +11942,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg512",
+      "lemma_group_id": "lg522",
       "lemma": "다소",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11480,7 +11964,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg513",
+      "lemma_group_id": "lg523",
       "lemma": "뿐",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11498,7 +11982,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg514",
+      "lemma_group_id": "lg524",
       "lemma": "평가하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11512,7 +11996,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg515",
+      "lemma_group_id": "lg525",
       "lemma": "매우",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11542,7 +12026,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg516",
+      "lemma_group_id": "lg526",
       "lemma": "지엽적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11556,7 +12040,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg517",
+      "lemma_group_id": "lg527",
       "lemma": "불분명하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -11570,7 +12054,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg518",
+      "lemma_group_id": "lg528",
       "lemma": "최초",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11584,7 +12068,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg519",
+      "lemma_group_id": "lg529",
       "lemma": "당시",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11610,7 +12094,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg520",
+      "lemma_group_id": "lg530",
       "lemma": "내용들",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -11620,7 +12104,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg521",
+      "lemma_group_id": "lg531",
       "lemma": "쪽지",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11634,7 +12118,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg522",
+      "lemma_group_id": "lg532",
       "lemma": "제안",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11652,7 +12136,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg523",
+      "lemma_group_id": "lg533",
       "lemma": "안다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11666,7 +12150,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg524",
+      "lemma_group_id": "lg534",
       "lemma": "동의",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11704,7 +12188,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg525",
+      "lemma_group_id": "lg535",
       "lemma": "모두",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11730,7 +12214,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg526",
+      "lemma_group_id": "lg536",
       "lemma": "숨김없이",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11744,7 +12228,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg527",
+      "lemma_group_id": "lg537",
       "lemma": "친구",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11762,7 +12246,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg528",
+      "lemma_group_id": "lg538",
       "lemma": "자살",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11780,7 +12264,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg529",
+      "lemma_group_id": "lg539",
       "lemma": "객관적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11794,7 +12278,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg530",
+      "lemma_group_id": "lg540",
       "lemma": "정황들",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -11804,7 +12288,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg531",
+      "lemma_group_id": "lg541",
       "lemma": "다분히",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11818,7 +12302,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg532",
+      "lemma_group_id": "lg542",
       "lemma": "주관적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11832,7 +12316,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg533",
+      "lemma_group_id": "lg543",
       "lemma": "감정적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11850,7 +12334,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg534",
+      "lemma_group_id": "lg544",
       "lemma": "알다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11864,7 +12348,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg535",
+      "lemma_group_id": "lg545",
       "lemma": "법원",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11882,7 +12366,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg536",
+      "lemma_group_id": "lg546",
       "lemma": "역시",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -11908,7 +12392,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg537",
+      "lemma_group_id": "lg547",
       "lemma": "비교하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11922,7 +12406,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg538",
+      "lemma_group_id": "lg548",
       "lemma": "증거조사",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11936,7 +12420,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg539",
+      "lemma_group_id": "lg549",
       "lemma": "토대",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -11950,7 +12434,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg540",
+      "lemma_group_id": "lg550",
       "lemma": "적법하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -11964,7 +12448,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg541",
+      "lemma_group_id": "lg551",
       "lemma": "채택하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -11978,7 +12462,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg542",
+      "lemma_group_id": "lg552",
       "lemma": "때",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12000,7 +12484,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg543",
+      "lemma_group_id": "lg553",
       "lemma": "납득하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12014,7 +12498,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg544",
+      "lemma_group_id": "lg554",
       "lemma": "들다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12040,7 +12524,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg545",
+      "lemma_group_id": "lg555",
       "lemma": "잘못",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -12054,7 +12538,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg546",
+      "lemma_group_id": "lg556",
       "lemma": "부정하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -12096,7 +12580,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg547",
+      "lemma_group_id": "lg557",
       "lemma": "지수",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12154,7 +12638,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg548",
+      "lemma_group_id": "lg558",
       "lemma": "낮다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -12168,7 +12652,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg549",
+      "lemma_group_id": "lg559",
       "lemma": "고등학교",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12182,7 +12666,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg550",
+      "lemma_group_id": "lg560",
       "lemma": "졸업하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12196,7 +12680,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg551",
+      "lemma_group_id": "lg561",
       "lemma": "식당",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12210,7 +12694,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg552",
+      "lemma_group_id": "lg562",
       "lemma": "아르바이트",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12224,7 +12708,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg553",
+      "lemma_group_id": "lg563",
       "lemma": "지내다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12238,7 +12722,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg554",
+      "lemma_group_id": "lg564",
       "lemma": "스스로",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12252,7 +12736,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg555",
+      "lemma_group_id": "lg565",
       "lemma": "가난하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -12266,7 +12750,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg556",
+      "lemma_group_id": "lg566",
       "lemma": "표현하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12280,7 +12764,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg557",
+      "lemma_group_id": "lg567",
       "lemma": "무렵",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12294,7 +12778,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg558",
+      "lemma_group_id": "lg568",
       "lemma": "사기",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12412,7 +12896,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg559",
+      "lemma_group_id": "lg569",
       "lemma": "사회",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12450,7 +12934,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg560",
+      "lemma_group_id": "lg570",
       "lemma": "형성",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12472,7 +12956,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg561",
+      "lemma_group_id": "lg571",
       "lemma": "욕구",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12486,7 +12970,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg562",
+      "lemma_group_id": "lg572",
       "lemma": "높다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -12500,7 +12984,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg563",
+      "lemma_group_id": "lg573",
       "lemma": "현실적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12514,7 +12998,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg564",
+      "lemma_group_id": "lg574",
       "lemma": "심리적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12528,7 +13012,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg565",
+      "lemma_group_id": "lg575",
       "lemma": "고립하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -12546,7 +13030,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg566",
+      "lemma_group_id": "lg576",
       "lemma": "아이디",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12560,7 +13044,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg567",
+      "lemma_group_id": "lg577",
       "lemma": "서로",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12582,7 +13066,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg568",
+      "lemma_group_id": "lg578",
       "lemma": "프로필",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12596,7 +13080,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg569",
+      "lemma_group_id": "lg579",
       "lemma": "관심",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12614,7 +13098,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg570",
+      "lemma_group_id": "lg580",
       "lemma": "중",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12648,7 +13132,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg571",
+      "lemma_group_id": "lg581",
       "lemma": "만들다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12662,7 +13146,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg572",
+      "lemma_group_id": "lg582",
       "lemma": "때문",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12676,7 +13160,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg573",
+      "lemma_group_id": "lg583",
       "lemma": "게",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12726,7 +13210,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg574",
+      "lemma_group_id": "lg584",
       "lemma": "안",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -12760,7 +13244,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg575",
+      "lemma_group_id": "lg585",
       "lemma": "걸로",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -12770,7 +13254,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg576",
+      "lemma_group_id": "lg586",
       "lemma": "늘",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -12784,7 +13268,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg577",
+      "lemma_group_id": "lg587",
       "lemma": "오다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12798,7 +13282,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg578",
+      "lemma_group_id": "lg588",
       "lemma": "꼭",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -12824,7 +13308,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg579",
+      "lemma_group_id": "lg589",
       "lemma": "좋다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -12838,7 +13322,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg580",
+      "lemma_group_id": "lg590",
       "lemma": "인연",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12864,7 +13348,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg581",
+      "lemma_group_id": "lg591",
       "lemma": "바라다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12878,7 +13362,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg582",
+      "lemma_group_id": "lg592",
       "lemma": "반갑다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -12892,7 +13376,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg583",
+      "lemma_group_id": "lg593",
       "lemma": "답장",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12906,7 +13390,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg584",
+      "lemma_group_id": "lg594",
       "lemma": "휴대",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12920,7 +13404,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg585",
+      "lemma_group_id": "lg595",
       "lemma": "번호",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12938,7 +13422,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg586",
+      "lemma_group_id": "lg596",
       "lemma": "물다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -12964,7 +13448,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg587",
+      "lemma_group_id": "lg597",
       "lemma": "연예인",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12978,7 +13462,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg588",
+      "lemma_group_id": "lg598",
       "lemma": "친분",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -12992,7 +13476,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg589",
+      "lemma_group_id": "lg599",
       "lemma": "재계",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13018,7 +13502,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg590",
+      "lemma_group_id": "lg600",
       "lemma": "인사들",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -13028,7 +13512,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg591",
+      "lemma_group_id": "lg601",
       "lemma": "잘",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -13050,7 +13534,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg592",
+      "lemma_group_id": "lg602",
       "lemma": "이야기하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13064,7 +13548,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg593",
+      "lemma_group_id": "lg603",
       "lemma": "상의하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13090,7 +13574,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg594",
+      "lemma_group_id": "lg604",
       "lemma": "서로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -13112,7 +13596,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg595",
+      "lemma_group_id": "lg605",
       "lemma": "살아가다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13126,7 +13610,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg596",
+      "lemma_group_id": "lg606",
       "lemma": "기뻐하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13140,21 +13624,25 @@
       ]
     },
     {
-      "lemma_group_id": "lg597",
-      "lemma": "고급스럽다",
+      "lemma_group_id": "lg607",
+      "lemma": "고급하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
       "status": "ok",
-      "total": 1,
+      "total": 2,
       "definitions": [
         {
-          "sup_no": "0",
-          "definition": "내용, 품질, 등급, 수준 따위가 높은 듯하다."
+          "sup_no": "1",
+          "definition": "급한 상황을 알리다."
+        },
+        {
+          "sup_no": "2",
+          "definition": "내용, 품질, 등급, 수준 따위가 높다."
         }
       ]
     },
     {
-      "lemma_group_id": "lg598",
+      "lemma_group_id": "lg608",
       "lemma": "스타일",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13168,7 +13656,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg599",
+      "lemma_group_id": "lg609",
       "lemma": "부러워하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13182,7 +13670,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg600",
+      "lemma_group_id": "lg610",
       "lemma": "동경하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13200,7 +13688,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg601",
+      "lemma_group_id": "lg611",
       "lemma": "나누다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13214,7 +13702,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg602",
+      "lemma_group_id": "lg612",
       "lemma": "지",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13336,7 +13824,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg603",
+      "lemma_group_id": "lg613",
       "lemma": "만",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13398,7 +13886,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg604",
+      "lemma_group_id": "lg614",
       "lemma": "식사",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13436,7 +13924,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg605",
+      "lemma_group_id": "lg615",
       "lemma": "조용하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -13462,7 +13950,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg606",
+      "lemma_group_id": "lg616",
       "lemma": "곳",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13476,7 +13964,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg607",
+      "lemma_group_id": "lg617",
       "lemma": "이야기",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13490,7 +13978,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg608",
+      "lemma_group_id": "lg618",
       "lemma": "자리",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13532,7 +14020,21 @@
       ]
     },
     {
-      "lemma_group_id": "lg609",
+      "lemma_group_id": "lg619",
+      "lemma": "이동하다",
+      "pos": "동사",
+      "exists_in_dictionary": true,
+      "status": "ok",
+      "total": 1,
+      "definitions": [
+        {
+          "sup_no": "0",
+          "definition": "움직여 옮기다. 또는 움직여 자리를 바꾸다."
+        }
+      ]
+    },
+    {
+      "lemma_group_id": "lg620",
       "lemma": "차",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13590,7 +14092,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg610",
+      "lemma_group_id": "lg621",
       "lemma": "아무",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -13608,7 +14110,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg611",
+      "lemma_group_id": "lg622",
       "lemma": "짓",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13630,7 +14132,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg612",
+      "lemma_group_id": "lg623",
       "lemma": "추위",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13652,7 +14154,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg613",
+      "lemma_group_id": "lg624",
       "lemma": "많이",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -13666,7 +14168,17 @@
       ]
     },
     {
-      "lemma_group_id": "lg614",
+      "lemma_group_id": "lg625",
+      "lemma": "타나다",
+      "pos": "동사",
+      "exists_in_dictionary": false,
+      "status": "request_failed",
+      "total": 0,
+      "definitions": [],
+      "message": "Empty response body from stdict API."
+    },
+    {
+      "lemma_group_id": "lg626",
       "lemma": "보다",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -13688,7 +14200,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg615",
+      "lemma_group_id": "lg627",
       "lemma": "생각",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13706,7 +14218,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg616",
+      "lemma_group_id": "lg628",
       "lemma": "응하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13720,7 +14232,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg617",
+      "lemma_group_id": "lg629",
       "lemma": "심리",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13742,7 +14254,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg618",
+      "lemma_group_id": "lg630",
       "lemma": "걸",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13760,7 +14272,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg619",
+      "lemma_group_id": "lg631",
       "lemma": "허락하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13774,7 +14286,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg620",
+      "lemma_group_id": "lg632",
       "lemma": "이상",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13844,7 +14356,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg621",
+      "lemma_group_id": "lg633",
       "lemma": "성적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13890,7 +14402,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg622",
+      "lemma_group_id": "lg634",
       "lemma": "의심하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -13904,7 +14416,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg623",
+      "lemma_group_id": "lg635",
       "lemma": "한두",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -13918,7 +14430,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg624",
+      "lemma_group_id": "lg636",
       "lemma": "거절",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -13936,8 +14448,8 @@
       ]
     },
     {
-      "lemma_group_id": "lg625",
-      "lemma": "배치되다",
+      "lemma_group_id": "lg637",
+      "lemma": "배치하다",
       "pos": "동사",
       "exists_in_dictionary": true,
       "status": "ok",
@@ -13945,20 +14457,20 @@
       "definitions": [
         {
           "sup_no": "1",
-          "definition": "서로 반대로 되어 어그러지거나 어긋나게 되다."
+          "definition": "서로 반대로 되어 어그러지거나 어긋나다."
         },
         {
           "sup_no": "2",
-          "definition": "사람이나 물자 따위가 일정한 자리에 알맞게 나뉘어 놓이다."
+          "definition": "사람이나 물자 따위를 일정한 자리에 알맞게 나누어 두다."
         },
         {
           "sup_no": "3",
-          "definition": "일정한 차례나 간격에 따라 벌여져 놓이다."
+          "definition": "일정한 차례나 간격에 따라 벌여 놓다."
         }
       ]
     },
     {
-      "lemma_group_id": "lg626",
+      "lemma_group_id": "lg638",
       "lemma": "깜짝",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -13976,7 +14488,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg627",
+      "lemma_group_id": "lg639",
       "lemma": "놀라다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -13990,7 +14502,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg628",
+      "lemma_group_id": "lg640",
       "lemma": "힘",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14004,7 +14516,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg629",
+      "lemma_group_id": "lg641",
       "lemma": "세다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -14030,7 +14542,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg630",
+      "lemma_group_id": "lg642",
       "lemma": "반항하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14048,7 +14560,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg631",
+      "lemma_group_id": "lg643",
       "lemma": "도망가다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14062,7 +14574,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg632",
+      "lemma_group_id": "lg644",
       "lemma": "사랑하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14076,7 +14588,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg633",
+      "lemma_group_id": "lg645",
       "lemma": "너",
       "pos": "대명사",
       "exists_in_dictionary": true,
@@ -14094,7 +14606,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg634",
+      "lemma_group_id": "lg646",
       "lemma": "거",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14136,7 +14648,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg635",
+      "lemma_group_id": "lg647",
       "lemma": "바들바들",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -14150,7 +14662,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg636",
+      "lemma_group_id": "lg648",
       "lemma": "떨리다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14168,7 +14680,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg637",
+      "lemma_group_id": "lg649",
       "lemma": "안",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14202,7 +14714,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg638",
+      "lemma_group_id": "lg650",
       "lemma": "오줌",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14216,7 +14728,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg639",
+      "lemma_group_id": "lg651",
       "lemma": "온몸",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14230,7 +14742,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg640",
+      "lemma_group_id": "lg652",
       "lemma": "락스",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -14240,7 +14752,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg641",
+      "lemma_group_id": "lg653",
       "lemma": "샤워하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14254,7 +14766,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg642",
+      "lemma_group_id": "lg654",
       "lemma": "새벽",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14272,7 +14784,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg643",
+      "lemma_group_id": "lg655",
       "lemma": "괴롭다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -14286,7 +14798,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg644",
+      "lemma_group_id": "lg656",
       "lemma": "마음",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14300,7 +14812,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg645",
+      "lemma_group_id": "lg657",
       "lemma": "크다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -14314,7 +14826,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg646",
+      "lemma_group_id": "lg658",
       "lemma": "갑작스럽다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -14328,7 +14840,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg647",
+      "lemma_group_id": "lg659",
       "lemma": "심하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -14342,7 +14854,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg648",
+      "lemma_group_id": "lg660",
       "lemma": "당황하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -14356,7 +14868,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg649",
+      "lemma_group_id": "lg661",
       "lemma": "두려움",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14370,7 +14882,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg650",
+      "lemma_group_id": "lg662",
       "lemma": "수치심",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14384,7 +14896,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg651",
+      "lemma_group_id": "lg663",
       "lemma": "주변",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14402,7 +14914,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg652",
+      "lemma_group_id": "lg664",
       "lemma": "홀로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -14416,7 +14928,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg653",
+      "lemma_group_id": "lg665",
       "lemma": "이례적",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14430,7 +14942,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg654",
+      "lemma_group_id": "lg666",
       "lemma": "이상하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -14444,21 +14956,21 @@
       ]
     },
     {
-      "lemma_group_id": "lg655",
-      "lemma": "그렇다",
-      "pos": "형용사",
+      "lemma_group_id": "lg667",
+      "lemma": "그러다",
+      "pos": "동사",
       "exists_in_dictionary": true,
       "status": "ok",
       "total": 1,
       "definitions": [
         {
           "sup_no": "0",
-          "definition": "상태, 모양, 성질 따위가 그와 같다."
+          "definition": "‘그리하다’의 준말."
         }
       ]
     },
     {
-      "lemma_group_id": "lg656",
+      "lemma_group_id": "lg668",
       "lemma": "이해하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14480,7 +14992,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg657",
+      "lemma_group_id": "lg669",
       "lemma": "무엇",
       "pos": "대명사",
       "exists_in_dictionary": true,
@@ -14494,7 +15006,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg658",
+      "lemma_group_id": "lg670",
       "lemma": "경찰",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14520,7 +15032,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg659",
+      "lemma_group_id": "lg671",
       "lemma": "조사",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14658,7 +15170,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg660",
+      "lemma_group_id": "lg672",
       "lemma": "아무",
       "pos": "대명사",
       "exists_in_dictionary": true,
@@ -14676,7 +15188,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg661",
+      "lemma_group_id": "lg673",
       "lemma": "거짓",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14690,7 +15202,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg662",
+      "lemma_group_id": "lg674",
       "lemma": "굳이",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -14704,7 +15216,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg663",
+      "lemma_group_id": "lg675",
       "lemma": "필요",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14718,7 +15230,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg664",
+      "lemma_group_id": "lg676",
       "lemma": "숨기다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14732,7 +15244,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg665",
+      "lemma_group_id": "lg677",
       "lemma": "높이다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -14746,7 +15258,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg666",
+      "lemma_group_id": "lg678",
       "lemma": "사",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14928,7 +15440,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg667",
+      "lemma_group_id": "lg679",
       "lemma": "무슨",
       "pos": "관형사",
       "exists_in_dictionary": true,
@@ -14942,7 +15454,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg668",
+      "lemma_group_id": "lg680",
       "lemma": "성폭행",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14956,7 +15468,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg669",
+      "lemma_group_id": "lg681",
       "lemma": "항의",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -14986,7 +15498,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg670",
+      "lemma_group_id": "lg682",
       "lemma": "아",
       "pos": "감탄사",
       "exists_in_dictionary": true,
@@ -15040,7 +15552,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg671",
+      "lemma_group_id": "lg683",
       "lemma": "신고",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15062,7 +15574,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg672",
+      "lemma_group_id": "lg684",
       "lemma": "망설이다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15076,7 +15588,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg673",
+      "lemma_group_id": "lg685",
       "lemma": "TV",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -15086,7 +15598,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg674",
+      "lemma_group_id": "lg686",
       "lemma": "쓰다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15120,7 +15632,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg675",
+      "lemma_group_id": "lg687",
       "lemma": "풀려나다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15134,7 +15646,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg676",
+      "lemma_group_id": "lg688",
       "lemma": "꽃뱀",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15148,7 +15660,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg677",
+      "lemma_group_id": "lg689",
       "lemma": "취급",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15162,7 +15674,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg678",
+      "lemma_group_id": "lg690",
       "lemma": "아침",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15176,7 +15688,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg679",
+      "lemma_group_id": "lg691",
       "lemma": "신고하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15194,7 +15706,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg680",
+      "lemma_group_id": "lg692",
       "lemma": "권유하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15216,7 +15728,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg681",
+      "lemma_group_id": "lg693",
       "lemma": "망설임",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15230,8 +15742,8 @@
       ]
     },
     {
-      "lemma_group_id": "lg682",
-      "lemma": "자연스럽다",
+      "lemma_group_id": "lg694",
+      "lemma": "자연하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
       "status": "ok",
@@ -15239,12 +15751,12 @@
       "definitions": [
         {
           "sup_no": "0",
-          "definition": "억지로 꾸미지 아니하여 이상함이 없다."
+          "definition": "저절로 되어 억지나 거짓이 없다."
         }
       ]
     },
     {
-      "lemma_group_id": "lg683",
+      "lemma_group_id": "lg695",
       "lemma": "변소",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15258,7 +15770,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg684",
+      "lemma_group_id": "lg696",
       "lemma": "뽀뽀",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15272,7 +15784,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg685",
+      "lemma_group_id": "lg697",
       "lemma": "달다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15310,7 +15822,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg686",
+      "lemma_group_id": "lg698",
       "lemma": "옷",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15324,7 +15836,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg687",
+      "lemma_group_id": "lg699",
       "lemma": "갑자기",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -15338,7 +15850,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg688",
+      "lemma_group_id": "lg700",
       "lemma": "스스로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -15352,7 +15864,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg689",
+      "lemma_group_id": "lg701",
       "lemma": "신발",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15366,7 +15878,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg690",
+      "lemma_group_id": "lg702",
       "lemma": "끈",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15380,7 +15892,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg691",
+      "lemma_group_id": "lg703",
       "lemma": "외우다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15394,7 +15906,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg692",
+      "lemma_group_id": "lg704",
       "lemma": "중얼거리다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15408,7 +15920,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg693",
+      "lemma_group_id": "lg705",
       "lemma": "일들",
       "pos": "명사",
       "exists_in_dictionary": false,
@@ -15418,7 +15930,7 @@
       "message": "Empty response body from stdict API."
     },
     {
-      "lemma_group_id": "lg694",
+      "lemma_group_id": "lg706",
       "lemma": "판시",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15432,7 +15944,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg695",
+      "lemma_group_id": "lg707",
       "lemma": "위반하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15450,7 +15962,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg696",
+      "lemma_group_id": "lg708",
       "lemma": "영향",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15476,7 +15988,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg697",
+      "lemma_group_id": "lg709",
       "lemma": "미치다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15494,7 +16006,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg698",
+      "lemma_group_id": "lg710",
       "lemma": "잘못",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15508,7 +16020,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg699",
+      "lemma_group_id": "lg711",
       "lemma": "결론",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15526,7 +16038,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg700",
+      "lemma_group_id": "lg712",
       "lemma": "그러므로",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -15540,7 +16052,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg701",
+      "lemma_group_id": "lg713",
       "lemma": "다시",
       "pos": "부사",
       "exists_in_dictionary": true,
@@ -15574,7 +16086,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg702",
+      "lemma_group_id": "lg714",
       "lemma": "환송하다",
       "pos": "동사",
       "exists_in_dictionary": true,
@@ -15592,7 +16104,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg703",
+      "lemma_group_id": "lg715",
       "lemma": "관여",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15606,7 +16118,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg704",
+      "lemma_group_id": "lg716",
       "lemma": "대법관",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15620,7 +16132,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg705",
+      "lemma_group_id": "lg717",
       "lemma": "일치하다",
       "pos": "형용사",
       "exists_in_dictionary": true,
@@ -15634,7 +16146,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg706",
+      "lemma_group_id": "lg718",
       "lemma": "의견",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15656,7 +16168,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg707",
+      "lemma_group_id": "lg719",
       "lemma": "주문",
       "pos": "명사",
       "exists_in_dictionary": true,
@@ -15698,7 +16210,7 @@
       ]
     },
     {
-      "lemma_group_id": "lg708",
+      "lemma_group_id": "lg720",
       "lemma": "판결하다",
       "pos": "동사",
       "exists_in_dictionary": true,
