@@ -15,7 +15,7 @@ from preprocessing.lemma_grouper import build_lemma_groups
 from preprocessing.mecab_analyzer import get_default_analyzer
 from preprocessing.pos_reconstructor import finalize_pos_nodes, reconstruct_pos_nodes
 from preprocessing.sentence_splitter import split_sentences
-from utils import read_text, write_json
+from utils import read_json, read_text, write_json
 
 
 def build_pos_json(text: str, document_id: str = "doc001") -> dict:
@@ -79,6 +79,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--contextual-cache-dir", type=Path, default=None)
     parser.add_argument("--contextual-no-resume", action="store_true")
     parser.add_argument("--contextual-max-retries", type=int, default=3)
+    parser.add_argument(
+        "--dictionary-lookup",
+        action="store_true",
+        help="Build lemma dictionary lookup JSON from contextualized lemma_groups.",
+    )
+    parser.add_argument("--dictionary-output", type=Path, default=Path("data/output/lemma_dictionary_lookup.json"))
+    parser.add_argument(
+        "--dictionary-page-size",
+        type=int,
+        default=None,
+        help="Dictionary API page size. Defaults to STDICT_PAGE_SIZE or 100.",
+    )
     return parser.parse_args()
 
 
@@ -87,6 +99,36 @@ def main() -> None:
     if args.full:
         args.lemma_sanity_gpt = True
         args.contextual_meaning = True
+        args.dictionary_lookup = True
+
+    dictionary_only = (
+        args.dictionary_lookup
+        and not args.contextual_meaning
+        and not args.lemma_sanity
+        and not args.lemma_sanity_gpt
+        and args.corrected_output is None
+    )
+    if dictionary_only:
+        from preprocessing.dictionary_lookup import build_lemma_dictionary_lookup_payload
+
+        dictionary_payload = read_json(args.contextual_output, default={})
+        if not isinstance(dictionary_payload, dict):
+            raise SystemExit(f"Dictionary input JSON must be an object: {args.contextual_output}")
+        output = build_lemma_dictionary_lookup_payload(
+            dictionary_payload,
+            source_path=args.contextual_output,
+            page_size=args.dictionary_page_size,
+        )
+        write_json(args.dictionary_output, output)
+        summary = output["summary"]
+        print(
+            "lemma dictionary lookup complete "
+            f"groups={summary['lemma_group_count']} "
+            f"found={summary['found_count']} "
+            f"missing={summary['missing_count']} "
+            f"path={args.dictionary_output}"
+        )
+        return
 
     source_text = read_text(args.input)
     payload = build_pos_json(source_text, document_id=args.document_id)
@@ -149,6 +191,7 @@ def main() -> None:
         )
         write_json(args.contextual_output, output)
         write_json(args.contextual_report_output or infer_report_output_path(args.contextual_output), report)
+        pipeline_payload = output
         print(
             "contextualized POS JSON complete "
             f"input_groups={report['summary']['input_groups']} "
@@ -156,6 +199,30 @@ def main() -> None:
             f"missing={report['summary']['missing_contextual_meanings']} "
             f"issues={report['summary']['issues']} "
             f"path={args.contextual_output}"
+        )
+
+    if args.dictionary_lookup:
+        from preprocessing.dictionary_lookup import build_lemma_dictionary_lookup_payload
+
+        dictionary_source_path = args.contextual_output if args.contextual_output.exists() else args.output
+        dictionary_payload = pipeline_payload
+        if not args.contextual_meaning and dictionary_source_path.exists():
+            loaded_payload = read_json(dictionary_source_path, default={})
+            if isinstance(loaded_payload, dict):
+                dictionary_payload = loaded_payload
+        output = build_lemma_dictionary_lookup_payload(
+            dictionary_payload,
+            source_path=dictionary_source_path,
+            page_size=args.dictionary_page_size,
+        )
+        write_json(args.dictionary_output, output)
+        summary = output["summary"]
+        print(
+            "lemma dictionary lookup complete "
+            f"groups={summary['lemma_group_count']} "
+            f"found={summary['found_count']} "
+            f"missing={summary['missing_count']} "
+            f"path={args.dictionary_output}"
         )
 
 

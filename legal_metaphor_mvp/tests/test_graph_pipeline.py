@@ -19,12 +19,90 @@ from schemas.annotation import create_empty_state  # noqa: E402
 
 
 class GraphPipelineSmokeTests(unittest.TestCase):
+    def test_main_full_pipeline_without_api_key_does_not_crash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            input_path = tmp / "input.txt"
+            output_path = tmp / "full_output.json"
+            input_path.write_text("그 주장은 무너졌다.", encoding="utf-8")
+            env = os.environ.copy()
+            env["OPENAI_API_KEY"] = ""
+            env["STDICT_API_KEY"] = ""
+            command = [
+                sys.executable,
+                "src/main.py",
+                "--pipeline",
+                "full",
+                "--input",
+                str(input_path),
+                "--output",
+                str(output_path),
+                "--pos-output",
+                str(tmp / "pos_nodes.json"),
+                "--corrected-output",
+                str(tmp / "pos_nodes_corrected.json"),
+                "--contextual-json",
+                str(tmp / "pos_nodes_contextualized.json"),
+                "--dictionary-json",
+                str(tmp / "lemma_dictionary_lookup.json"),
+                "--ttl-output",
+                str(tmp / "metaphors.ttl"),
+                "--kg-output",
+                str(tmp / "metaphor_kg.ttl"),
+            ]
+
+            completed = subprocess.run(command, cwd=PROJECT_ROOT, env=env, check=False, capture_output=True, text=True)
+
+            self.assertEqual(completed.returncode, 0, msg=completed.stderr)
+            payload = json.loads(output_path.read_text(encoding="utf-8"))
+            self.assertEqual(payload.get("metadata", {}).get("pipeline"), "full")
+            self.assertFalse(payload.get("metadata", {}).get("llm_available", True))
+            self.assertTrue((tmp / "metaphors.ttl").exists())
+            self.assertTrue((tmp / "metaphor_kg.ttl").exists())
+
+    def test_main_defaults_run_full_pipeline_outputs(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            input_path = tmp / "input.txt"
+            input_path.write_text("그 주장은 무너졌다.", encoding="utf-8")
+            env = os.environ.copy()
+            env["OPENAI_API_KEY"] = ""
+            env["STDICT_API_KEY"] = ""
+            command = [
+                sys.executable,
+                "src/main.py",
+                "--input",
+                str(input_path),
+                "--output",
+                str(tmp / "graph_annotation.json"),
+                "--pos-output",
+                str(tmp / "pos_nodes.json"),
+                "--corrected-output",
+                str(tmp / "pos_nodes_corrected.json"),
+                "--contextual-json",
+                str(tmp / "pos_nodes_contextualized.json"),
+                "--dictionary-json",
+                str(tmp / "lemma_dictionary_lookup.json"),
+                "--ttl-output",
+                str(tmp / "metaphors.ttl"),
+                "--kg-output",
+                str(tmp / "metaphor_kg.ttl"),
+            ]
+
+            completed = subprocess.run(command, cwd=PROJECT_ROOT, env=env, check=False, capture_output=True, text=True)
+
+            self.assertEqual(completed.returncode, 0, msg=completed.stderr)
+            payload = json.loads((tmp / "graph_annotation.json").read_text(encoding="utf-8"))
+            self.assertEqual(payload.get("metadata", {}).get("pipeline"), "full")
+            self.assertTrue((tmp / "metaphors.ttl").exists())
+            self.assertTrue((tmp / "metaphor_kg.ttl").exists())
+
     def test_main_graph_without_api_key_does_not_crash(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
             output_path = Path(tmpdir) / "graph_output.json"
             ttl_path = Path(tmpdir) / "graph_output.ttl"
             env = os.environ.copy()
-            env.pop("OPENAI_API_KEY", None)
+            env["OPENAI_API_KEY"] = ""
             command = [
                 sys.executable,
                 "src/main.py",

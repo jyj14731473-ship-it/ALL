@@ -3,10 +3,12 @@
 한국어 법률 텍스트 은유 주석 MVP입니다.
 
 핵심 원칙:
-- 공식 실행 경로는 `LangGraph` 기반 `graph` 파이프라인입니다.
+- 공식 실행 경로는 `src/main.py`의 기본 `full` 파이프라인입니다.
 - `PromptAnnotator`와 `legacy-simple`는 개발/레거시 경로입니다.
 - `finetuned`는 실험용(experimental) 백엔드입니다.
-- RDF mapping과 Turtle 변환은 항상 결정적(deterministic) 경로를 사용합니다.
+- 현재 MIPVU 판정 단위는 lemma group입니다.
+- RDF/KG mapping, Turtle 변환, RDFLib graph build는 모두 결정적(deterministic) 경로를 사용합니다.
+- LLM은 lemma-level MIPVU 판단에만 필요합니다. KG 생성 자체는 기존 JSON만으로 수행됩니다.
 
 ## Quick Start (실행 방법)
 
@@ -33,7 +35,29 @@ copy .env.example .env
 3. 입력 텍스트 준비
 - `data/input.txt`에 분석할 한국어 법률 텍스트 입력
 
-4. 공식 주석 실행 (기본: graph)
+4. 전체 파이프라인 실행
+
+raw text에서 POS, lemma 정리, contextual JSON, dictionary lookup, lemma-level MIPVU,
+RDF/Turtle, RDFLib KG까지 한 번에 실행합니다.
+
+```bash
+.venv/bin/python src/main.py
+```
+
+기본 입력/출력:
+- 입력: `data/input.txt`
+- annotation JSON: `data/output/graph_annotation.json`
+- Turtle: `data/output/metaphors.ttl`
+- RDFLib KG: `data/output/metaphor_kg.ttl`
+- 중간 산출물: `data/output/pos_nodes*.json`, `data/output/lemma_dictionary_lookup.json`
+
+`OPENAI_API_KEY`가 없으면 contextual meaning과 MIPVU LLM 단계는 fallback/reuse 경로로 처리되어
+끝까지 실행되지만, 의미 있는 MRW/KG triple은 생성되지 않을 수 있습니다.
+
+5. 기존 산출물 기반 graph 실행
+
+실행 전에 `data/output/pos_nodes_contextualized.json`과
+`data/output/lemma_dictionary_lookup.json`이 준비되어 있어야 합니다.
 
 ```powershell
 python src/main.py --input data/input.txt --output data/output/graph_annotation.json --pipeline graph --ttl-output data/output/metaphors.ttl
@@ -47,7 +71,17 @@ python src/main.py --input data/input.txt --output data/output/graph_annotation.
 
 전처리된 `pos_nodes_contextualized.json`은 문맥 의존 토큰 후보를 직접 만들며, graph 파이프라인은 이를 그대로 받아서 사전 비교 + LLM 판정에 들어갑니다.
 
-5. 레거시 단계형 주석 실행 (개발용)
+6. 지식그래프 빌드(RDFLib)
+
+```bash
+.venv/bin/python src/graph_build.py \
+  --input data/output/graph_annotation.json \
+  --output data/output/metaphor_kg.ttl
+```
+
+입력은 annotation JSON 또는 Turtle 모두 가능합니다. KG 생성은 LLM을 사용하지 않습니다.
+
+7. 레거시 단계형 주석 실행 (개발용)
 
 ```powershell
 python src/main.py --input data/input.txt --output data/output/metaphors_raw.json --annotator prompt --pipeline staged
@@ -55,13 +89,13 @@ python src/main.py --input data/input.txt --output data/output/metaphors_raw.jso
 
 개발용 빠른 실행이 필요하면 `--pipeline legacy-simple`를 사용할 수 있습니다.
 
-6. 선택: 실험용 파인튜닝 백엔드 추론 실행
+8. 선택: 실험용 파인튜닝 백엔드 추론 실행
 
 ```powershell
 python src/main.py --input data/input.txt --output data/output/metaphors_raw.json --annotator finetuned
 ```
 
-7. RDF 변환(항상 결정적 변환)
+9. 독립 RDF 변환(항상 결정적 변환)
 
 ```powershell
 python src/rdf_convert.py --input data/output/metaphors_raw.json --output data/output/metaphors.ttl
@@ -69,17 +103,30 @@ python src/rdf_convert.py --input data/output/metaphors_raw.json --output data/o
 
 ## Official Pipeline
 
-공식 실행 경로는 `graph` 파이프라인입니다.
+전체 실행 경로는 `--pipeline full`, 기존 산출물 기반 주석 실행 경로는 `--pipeline graph`입니다.
 
 흐름:
-1. 후보 로드:
+1. POS/lemma group 생성:
+   - `data/input.txt` -> `pos_nodes.json`
+2. lemma group sanity cleanup:
+   - `pos_nodes.json` -> `pos_nodes_corrected.json`
+3. contextual meaning 생성 또는 fallback/reuse:
+   - `pos_nodes_corrected.json` -> `pos_nodes_contextualized.json`
+4. lemma dictionary lookup:
+   - `pos_nodes_contextualized.json` -> `lemma_dictionary_lookup.json`
+5. 후보 로드:
    - `--contextual-json`의 `lemma_groups`에서 lemma occurrence를 후보로 생성
-2. basic meaning lookup
-3. MIPVU judgment
-4. metaphor classification
-5. RDF mapping (rule-based)
-6. validation (rule-based)
-7. deterministic Turtle conversion
+6. lemma dictionary lookup 결과 로드:
+   - `data/output/lemma_dictionary_lookup.json`
+7. lemma-level MIPVU judgment:
+   - `mipvu_annotations` 생성
+   - `source_domain`, `target_domain`, `conceptual_metaphor`, `lakoff_johnson_type` 포함
+8. RDF/KG mapping (rule-based):
+   - `mipvu_annotations`를 우선 사용
+   - `metaphor_annotations`는 legacy fallback
+9. validation (rule-based)
+10. deterministic Turtle conversion
+11. optional RDFLib graph build
 
 출력 JSON에는 최소한 다음이 포함됩니다.
 - `document_id`
@@ -93,6 +140,51 @@ python src/rdf_convert.py --input data/output/metaphors_raw.json --output data/o
 - `rdf_output`
 - `errors`
 - `metadata`
+
+### Lemma-level MIPVU Output
+
+현재 `mipvu_annotations`의 핵심 필드는 다음과 같습니다.
+
+- `lemma_group_id`
+- `lemma`
+- `contextual_meaning`
+- `selected_sup_no`
+- `original_meaning`
+- `meaning_contrast`
+- `distinctness`
+- `comparison_possible`
+- `similarity`
+- `mipvu_label`
+- `source_domain`
+- `target_domain`
+- `conceptual_metaphor`
+- `lakoff_johnson_type`
+- `confidence`
+- `needs_human_review`
+
+`pos`, `candidate_id`, `sentence_id`, `token`, `target_concept`, `source_concept`는 현재 lemma-level 출력 계약에 포함하지 않습니다.
+
+### KG Layers
+
+KG에는 다음 층위를 포함합니다.
+
+| 층위 | JSON 필드 | RDF predicate 예시 |
+| --- | --- | --- |
+| MIPVU 식별 라벨 | `mipvu_label`, `mipvu_subtype`, `judgment_reason` | `ex:hasMIPVULabel` |
+| source domain | `source_domain` | `ex:hasSourceDomain`, `ex:hasSourceDomainLabel` |
+| target domain | `target_domain` | `ex:hasTargetDomain`, `ex:hasTargetDomainLabel` |
+| conceptual metaphor | `conceptual_metaphor` | `ex:realizesConceptualMetaphor`, `ex:hasConceptualMetaphorLabel` |
+| 고전적 유형 | `lakoff_johnson_type` | `ex:hasMetaphorType` |
+
+예:
+
+```text
+MIPVU 식별 라벨      MRW_INDIRECT
+source domain       BUILDING / PHYSICAL STRUCTURE
+target domain       ARGUMENT / LEGAL REASONING
+conceptual metaphor ARGUMENT IS A STRUCTURE
+고전적 유형          STRUCTURAL
+```
 
 ## Staged annotation process (legacy prompt pipeline)
 
@@ -119,23 +211,33 @@ OpenAI API 키가 없으면 프로그램은 크래시하지 않고, `metadata.ll
 
 공식 프롬프트 위치는 `src/prompts/`입니다.
 
-사용 파일:
+현재 lemma-level MIPVU 흐름에서 사용하는 파일:
+- `src/prompts/lemma_group_sanity.md` (optional preprocessing GPT)
+- `src/prompts/contextual_meaning.md` (optional preprocessing GPT)
 - `src/prompts/system_role.md`
+- `src/prompts/korean_legal_mipvu_guideline.md`
+- `src/prompts/lemma_mipvu_judge.md`
+
+legacy/staged 경로에서 쓰이는 파일:
+- `src/prompts/candidate_extract.md` (legacy staged path only)
 - `src/prompts/mipvu_judge.md`
 - `src/prompts/metaphor_classify.md`
 - `src/prompts/annotation_schema.md`
-- `src/prompts/korean_legal_mipvu_guideline.md`
-- `src/prompts/candidate_extract.md` (legacy staged path only)
 
 `src/prompts/rdf_mapping.md`와 `src/prompts/validation_check.md`는 현재 그래프 파이프라인에서 직접 호출되지 않습니다.
+프롬프트 호출 순서는 `src/prompts/PROMPT_ORDER.txt`에 정리되어 있습니다.
 
 ## Prompt Architecture (그래프 운영 기준)
 
-- LLM 프롬프트가 개입되는 노드: `mipvu_judge`, `metaphor_classify`
+- 현재 lemma-level KG 흐름에서 LLM 프롬프트가 개입되는 노드: `mipvu_judge`
 - 규칙 기반으로 처리되는 노드: `rdf_mapping`, `validation_check`, `rdf_convert`
+- RDFLib 기반 로컬 KG 빌더: `src/graph_build.py`
 - 운영 기준에서 프롬프트는 다음에만 수정하면 됩니다.
-  - MIPVU 판정 규칙 반영: `mipvu_judge.md`
-  - 은유 분류 규칙 반영: `metaphor_classify.md`
+  - contextual meaning 규칙 반영: `contextual_meaning.md`
+  - lemma-level MIPVU/basic meaning/domain/KG 라벨 규칙 반영: `lemma_mipvu_judge.md`
+
+주의: `metaphor_classify`는 아직 candidate 계약 기반 legacy 분류 단계입니다.
+현재 KG 생성은 `mipvu_annotations`에서 직접 수행되므로 `metaphor_classify` 출력에 의존하지 않습니다.
 
 ## Legacy And Experimental Paths
 
@@ -162,6 +264,7 @@ python src/finetune/infer_annotation_model.py --input data/input.txt --output da
 - `OPENAI_MODEL`
 - `STDICT_API_KEY` (optional)
 - `STDICT_API_URL` (default: `https://stdict.korean.go.kr/api/search.do`)
+- `STDICT_PAGE_SIZE` (default: `100`, lemma 사전 전체 검색 페이지 크기)
 
 실제 LLM 주석을 실행하려면 `.env`에 `OPENAI_API_KEY`를 설정해야 합니다.
 표준국어대사전 기본 의미 비교까지 쓰려면 `STDICT_API_KEY`도 설정합니다.
@@ -187,6 +290,7 @@ python src/preprocessing/main.py --full
 - `data/output/pos_nodes.json`
 - `data/output/pos_nodes_corrected.json` (+ report)
 - `data/output/pos_nodes_contextualized.json` (+ report)
+- `data/output/lemma_dictionary_lookup.json` (`--full` 실행 시)
 
 ### 옵션
 
@@ -196,6 +300,15 @@ python src/preprocessing/main.py --full
 - `--lemma-sanity-gpt`: GPT 정제 포함
 - `--contextual-meaning`: 문맥적 의미 생성
 - `--no-resume` / `--*.no-resume`: 캐시 무시하고 GPT 재요청
+- `--dictionary-lookup`: `lemma_groups`의 모든 lemma를 표준국어대사전 API로 조회해 별도 JSON 생성
+- `--dictionary-output`: 사전 조회 JSON 출력 경로
+- `--dictionary-page-size`: 사전 검색 페이지 크기(기본 `STDICT_PAGE_SIZE` 또는 100)
+
+이미 생성된 contextualized JSON만 대상으로 사전 조회를 실행하려면:
+
+```powershell
+python src/preprocessing/main.py --dictionary-lookup --contextual-output data/output/pos_nodes_contextualized.json
+```
 
 ### 참고
 

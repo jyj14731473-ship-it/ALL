@@ -23,9 +23,12 @@ MIPVULabel = Literal[
 RdfPredicate = Literal[
     "ex:isConceptualizedAs",
     "ex:hasSourceDomain",
+    "ex:hasSourceDomainLabel",
     "ex:hasTargetDomain",
+    "ex:hasTargetDomainLabel",
     "ex:evokesFrame",
     "ex:hasMetaphorType",
+    "ex:hasConceptualMetaphorLabel",
     "ex:hasSurfaceExpression",
     "ex:hasContextSentence",
     "ex:hasLegalConcept",

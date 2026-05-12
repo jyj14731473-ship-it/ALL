@@ -11,6 +11,9 @@ LITERAL_PREDICATES = {
     "ex:hasSurfaceExpression",
     "ex:hasContextSentence",
     "ex:hasMetaphorType",
+    "ex:hasSourceDomainLabel",
+    "ex:hasTargetDomainLabel",
+    "ex:hasConceptualMetaphorLabel",
     "ex:appearsInOpinionType",
     "ex:hasConfidence",
     "ex:appearsInSentence",
@@ -22,6 +25,189 @@ LITERAL_PREDICATES = {
 
 def _slugged_id(prefix: str, value: str, fallback: str) -> str:
     return f"{prefix}_{slugify(value or fallback)}"
+
+
+def _safe_float(value: Any) -> float:
+    return float(value) if isinstance(value, (int, float)) else 0.0
+
+
+def _literal_triple(
+    *,
+    subject_label: str,
+    subject_id: str,
+    predicate: str,
+    object_label: str,
+    object_id: str,
+    subject_type: str = "MetaphorInstance",
+) -> dict[str, str]:
+    return {
+        "subject_label": subject_label,
+        "subject_type": subject_type,
+        "subject_id": subject_id,
+        "predicate": predicate,
+        "object_label": object_label,
+        "object_type": "Literal",
+        "object_id": object_id,
+    }
+
+
+def _mipvu_identification_label(annotation: dict[str, Any]) -> str:
+    explicit = str(annotation.get("mipvu_identification_label", "")).strip()
+    if explicit:
+        return explicit.upper().replace("-", "_").replace(" ", "_")
+
+    base = str(annotation.get("mipvu_label", "uncertain")).strip()
+    base_normalized = base.upper().replace("-", "_")
+    reason = str(annotation.get("judgment_reason", "")).lower()
+    subtype = str(annotation.get("mipvu_subtype", "")).lower().strip()
+    subtype_source = f"{subtype} {reason}"
+
+    if base_normalized in {"MRW", "MRW_CANDIDATE", "BORDERLINE_CANDIDATE"}:
+        if "implicit" in subtype_source or "암시" in subtype_source:
+            return "MRW_IMPLICIT"
+        if "indirect" in subtype_source or "간접" in subtype_source:
+            return "MRW_INDIRECT"
+        if "direct" in subtype_source or "직접" in subtype_source:
+            return "MRW_DIRECT"
+
+    return base_normalized or "UNCERTAIN"
+
+
+def _is_mipvu_kg_candidate(annotation: dict[str, Any]) -> bool:
+    label = str(annotation.get("mipvu_label", "")).strip()
+    if label not in {"MRW", "MRW_candidate", "borderline_candidate"}:
+        return False
+    return all(
+        str(annotation.get(key, "")).strip()
+        for key in ("source_domain", "target_domain", "conceptual_metaphor")
+    )
+
+
+def fallback_mapping_from_mipvu_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
+    """Build deterministic RDF-ready mapping from a lemma-level MIPVU annotation."""
+    lemma_group_id = str(annotation.get("lemma_group_id") or "LG000")
+    lemma = str(annotation.get("lemma") or lemma_group_id)
+    source = str(annotation.get("source_domain") or "UnknownSourceDomain")
+    target = str(annotation.get("target_domain") or "UnknownTargetDomain")
+    conceptual = str(annotation.get("conceptual_metaphor") or f"{target} IS {source}")
+    mipvu_label = _mipvu_identification_label(annotation)
+    lakoff_type = str(annotation.get("lakoff_johnson_type") or "uncertain").upper()
+    confidence = _safe_float(annotation.get("confidence", 0.0))
+
+    instance_id = _slugged_id("LemmaMetaphor", lemma_group_id, "unknown_lemma_metaphor")
+    source_id = _slugged_id("SourceDomain", source, "unknown_source_domain")
+    target_id = _slugged_id("TargetDomain", target, "unknown_target_domain")
+    conceptual_id = _slugged_id("ConceptualMetaphor", conceptual, "unknown_conceptual_metaphor")
+
+    sample_sentences = annotation.get("sample_sentences", [])
+    context_sentence = ""
+    if isinstance(sample_sentences, list):
+        context_sentence = next((str(item).strip() for item in sample_sentences if str(item).strip()), "")
+
+    supporting_triples = [
+        {
+            "subject_label": lemma,
+            "subject_type": "MetaphorInstance",
+            "subject_id": instance_id,
+            "predicate": "ex:hasSourceDomain",
+            "object_label": source,
+            "object_type": "SourceDomain",
+            "object_id": source_id,
+        },
+        {
+            "subject_label": lemma,
+            "subject_type": "MetaphorInstance",
+            "subject_id": instance_id,
+            "predicate": "ex:hasTargetDomain",
+            "object_label": target,
+            "object_type": "TargetDomain",
+            "object_id": target_id,
+        },
+        {
+            "subject_label": lemma,
+            "subject_type": "MetaphorInstance",
+            "subject_id": instance_id,
+            "predicate": "ex:realizesConceptualMetaphor",
+            "object_label": conceptual,
+            "object_type": "ConceptualMetaphor",
+            "object_id": conceptual_id,
+        },
+        _literal_triple(
+            subject_label=lemma,
+            subject_id=instance_id,
+            predicate="ex:hasSourceDomainLabel",
+            object_label=source,
+            object_id=_slugged_id("LiteralSourceDomain", source, "source_domain"),
+        ),
+        _literal_triple(
+            subject_label=lemma,
+            subject_id=instance_id,
+            predicate="ex:hasTargetDomainLabel",
+            object_label=target,
+            object_id=_slugged_id("LiteralTargetDomain", target, "target_domain"),
+        ),
+        _literal_triple(
+            subject_label=lemma,
+            subject_id=instance_id,
+            predicate="ex:hasConceptualMetaphorLabel",
+            object_label=conceptual,
+            object_id=_slugged_id("LiteralConceptualMetaphor", conceptual, "conceptual_metaphor"),
+        ),
+        _literal_triple(
+            subject_label=lemma,
+            subject_id=instance_id,
+            predicate="ex:hasMIPVULabel",
+            object_label=mipvu_label,
+            object_id=_slugged_id("LiteralMIPVU", mipvu_label, "mipvu"),
+        ),
+        _literal_triple(
+            subject_label=lemma,
+            subject_id=instance_id,
+            predicate="ex:hasMetaphorType",
+            object_label=lakoff_type,
+            object_id=_slugged_id("LiteralLakoffJohnsonType", lakoff_type, "lakoff_johnson_type"),
+        ),
+        _literal_triple(
+            subject_label=lemma,
+            subject_id=instance_id,
+            predicate="ex:hasSurfaceExpression",
+            object_label=lemma,
+            object_id=_slugged_id("LiteralLemma", lemma, "lemma"),
+        ),
+        _literal_triple(
+            subject_label=lemma,
+            subject_id=instance_id,
+            predicate="ex:hasConfidence",
+            object_label=f"{confidence:.4f}",
+            object_id=_slugged_id("LiteralConfidence", lemma_group_id, "confidence"),
+        ),
+    ]
+    if context_sentence:
+        supporting_triples.append(
+            _literal_triple(
+                subject_label=lemma,
+                subject_id=instance_id,
+                predicate="ex:hasContextSentence",
+                object_label=context_sentence,
+                object_id=_slugged_id("LiteralSentence", f"{lemma_group_id}_sample", "sentence"),
+            )
+        )
+
+    return {
+        "primary_triple": {
+            "subject_label": target,
+            "subject_type": "TargetDomain",
+            "subject_id": target_id,
+            "predicate": "ex:isConceptualizedAs",
+            "object_label": source,
+            "object_type": "SourceDomain",
+            "object_id": source_id,
+        },
+        "supporting_triples": supporting_triples,
+        "mapping_reason": "Deterministic KG mapping from lemma-level MIPVU annotation.",
+        "confidence": confidence,
+        "needs_human_review": bool(annotation.get("needs_human_review", False) or confidence < 0.5),
+    }
 
 
 def fallback_mapping_from_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
@@ -163,6 +349,15 @@ def normalize_rdf_mappings(payload: Any) -> list[dict[str, Any]]:
         rdf_mapping = payload.get("rdf_mapping")
         if isinstance(rdf_mapping, dict):
             return [rdf_mapping]
+        mipvu_records = payload.get("mipvu_annotations")
+        if not isinstance(mipvu_records, list):
+            mipvu_records = payload.get("judgments")
+        if isinstance(mipvu_records, list):
+            return [
+                fallback_mapping_from_mipvu_annotation(item)
+                for item in mipvu_records
+                if isinstance(item, dict) and _is_mipvu_kg_candidate(item)
+            ]
         records = payload.get("metaphor_annotations")
         if not isinstance(records, list):
             records = payload.get("metaphors")

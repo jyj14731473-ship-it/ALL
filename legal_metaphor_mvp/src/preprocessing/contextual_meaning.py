@@ -221,7 +221,7 @@ def merge_contextual_meaning_results(
         contextualized_payload["lemma_groups"] = payload_groups
 
     missing = []
-    for group in payload_groups:
+    for idx, group in enumerate(payload_groups):
         if not isinstance(group, dict):
             continue
         group_id = str(group.get("lemma_group_id", ""))
@@ -237,7 +237,7 @@ def merge_contextual_meaning_results(
         if not meaning:
             missing.append(group_id)
             meaning = "WIDLII: 문맥상 의미를 확정하기 어렵다."
-        group["contextual_meaning"] = meaning
+        payload_groups[idx] = reorder_lemma_group_contextual_meaning(group, meaning)
 
     report = {
         "prompt_version": PROMPT_VERSION,
@@ -252,6 +252,36 @@ def merge_contextual_meaning_results(
         "issues": issues,
     }
     return contextualized_payload, report
+
+
+def reorder_contextualized_payload(payload: dict[str, Any]) -> dict[str, Any]:
+    """Return payload with contextual_meaning placed before occurrences in lemma_groups."""
+    output = copy.deepcopy(payload)
+    groups = output.get("lemma_groups", [])
+    if not isinstance(groups, list):
+        return output
+    for idx, group in enumerate(groups):
+        if not isinstance(group, dict):
+            continue
+        meaning = str(group.get("contextual_meaning", "")).strip()
+        groups[idx] = reorder_lemma_group_contextual_meaning(group, meaning)
+    return output
+
+
+def reorder_lemma_group_contextual_meaning(group: dict[str, Any], contextual_meaning: str) -> dict[str, Any]:
+    """Place contextual_meaning immediately before occurrences while preserving other keys."""
+    reordered: dict[str, Any] = {}
+    inserted = False
+    for key, value in group.items():
+        if key == "contextual_meaning":
+            continue
+        if key == "occurrences":
+            reordered["contextual_meaning"] = contextual_meaning
+            inserted = True
+        reordered[key] = value
+    if not inserted:
+        reordered["contextual_meaning"] = contextual_meaning
+    return reordered
 
 
 def load_lemma_groups_from_payload(payload: dict[str, Any]) -> list[dict[str, Any]]:
