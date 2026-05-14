@@ -19,7 +19,7 @@ def rdf_mapping_node(state: AnnotationState) -> dict[str, Any]:
     if isinstance(mipvu_annotations, list) and mipvu_annotations:
         normalized: list[dict[str, Any]] = []
         for idx, item in enumerate([m for m in mipvu_annotations if isinstance(m, dict)], start=1):
-            if str(item.get("mipvu_label", "")).strip() not in {"MRW", "MRW_candidate", "borderline_candidate"}:
+            if str(item.get("mipvu_label", "")).strip() != "MRW":
                 continue
             if not all(str(item.get(key, "")).strip() for key in ("source_domain", "target_domain", "conceptual_metaphor")):
                 continue

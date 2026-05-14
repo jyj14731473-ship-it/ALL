@@ -1,134 +1,6 @@
 @prefix ex: <http://example.org/legal-metaphor#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:targetdomain_소송상_입증_부담 ex:isConceptualizedAs ex:sourcedomain_의무_임무 .
-ex:lemmametaphor_lg027 ex:hasSourceDomain ex:sourcedomain_의무_임무 .
-ex:lemmametaphor_lg027 ex:hasTargetDomain ex:targetdomain_소송상_입증_부담 .
-ex:lemmametaphor_lg027 ex:realizesConceptualMetaphor ex:conceptualmetaphor_소송상_입증_부담_is_의무 .
-ex:lemmametaphor_lg027 ex:hasSourceDomainLabel "의무·임무" .
-ex:lemmametaphor_lg027 ex:hasTargetDomainLabel "소송상 입증 부담" .
-ex:lemmametaphor_lg027 ex:hasConceptualMetaphorLabel "소송상 입증 부담 IS 의무" .
-ex:lemmametaphor_lg027 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg027 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg027 ex:hasSurfaceExpression "책임" .
-ex:lemmametaphor_lg027 ex:hasConfidence "0.7200" .
-ex:lemmametaphor_lg027 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_001 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_001 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_001 ex:needsHumanReview "true" .
-
-ex:targetdomain_판단의_가능성_여지 ex:isConceptualizedAs ex:sourcedomain_남은_땅 .
-ex:lemmametaphor_lg034 ex:hasSourceDomain ex:sourcedomain_남은_땅 .
-ex:lemmametaphor_lg034 ex:hasTargetDomain ex:targetdomain_판단의_가능성_여지 .
-ex:lemmametaphor_lg034 ex:realizesConceptualMetaphor ex:conceptualmetaphor_판단의_가능성_is_남은_공간 .
-ex:lemmametaphor_lg034 ex:hasSourceDomainLabel "남은 땅" .
-ex:lemmametaphor_lg034 ex:hasTargetDomainLabel "판단의 가능성·여지" .
-ex:lemmametaphor_lg034 ex:hasConceptualMetaphorLabel "판단의 가능성 IS 남은 공간" .
-ex:lemmametaphor_lg034 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg034 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg034 ex:hasSurfaceExpression "여지" .
-ex:lemmametaphor_lg034 ex:hasConfidence "0.7400" .
-ex:lemmametaphor_lg034 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_002 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_002 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_002 ex:needsHumanReview "true" .
-
-ex:targetdomain_사실의_참됨 ex:isConceptualizedAs ex:sourcedomain_마음의_거짓_없음 .
-ex:lemmametaphor_lg038 ex:hasSourceDomain ex:sourcedomain_마음의_거짓_없음 .
-ex:lemmametaphor_lg038 ex:hasTargetDomain ex:targetdomain_사실의_참됨 .
-ex:lemmametaphor_lg038 ex:realizesConceptualMetaphor ex:conceptualmetaphor_사실의_참됨_is_마음의_거짓_없음 .
-ex:lemmametaphor_lg038 ex:hasSourceDomainLabel "마음의 거짓 없음" .
-ex:lemmametaphor_lg038 ex:hasTargetDomainLabel "사실의 참됨" .
-ex:lemmametaphor_lg038 ex:hasConceptualMetaphorLabel "사실의 참됨 IS 마음의 거짓 없음" .
-ex:lemmametaphor_lg038 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg038 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg038 ex:hasSurfaceExpression "진실하다" .
-ex:lemmametaphor_lg038 ex:hasConfidence "0.6300" .
-ex:lemmametaphor_lg038 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_003 ex:hasConfidence "0.6300"^^xsd:decimal .
-_:mapping_003 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_003 ex:needsHumanReview "true" .
-
-ex:targetdomain_심리_상태의_보유 ex:isConceptualizedAs ex:sourcedomain_물리적_소유 .
-ex:lemmametaphor_lg041 ex:hasSourceDomain ex:sourcedomain_물리적_소유 .
-ex:lemmametaphor_lg041 ex:hasTargetDomain ex:targetdomain_심리_상태의_보유 .
-ex:lemmametaphor_lg041 ex:realizesConceptualMetaphor ex:conceptualmetaphor_mental_states_are_possessions .
-ex:lemmametaphor_lg041 ex:hasSourceDomainLabel "물리적 소유" .
-ex:lemmametaphor_lg041 ex:hasTargetDomainLabel "심리 상태의 보유" .
-ex:lemmametaphor_lg041 ex:hasConceptualMetaphorLabel "MENTAL STATES ARE POSSESSIONS" .
-ex:lemmametaphor_lg041 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg041 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg041 ex:hasSurfaceExpression "가지다" .
-ex:lemmametaphor_lg041 ex:hasConfidence "0.7000" .
-ex:lemmametaphor_lg041 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_004 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_004 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_004 ex:needsHumanReview "true" .
-
-ex:targetdomain_논리적_제외 ex:isConceptualizedAs ex:sourcedomain_물리적_배척 .
-ex:lemmametaphor_lg046 ex:hasSourceDomain ex:sourcedomain_물리적_배척 .
-ex:lemmametaphor_lg046 ex:hasTargetDomain ex:targetdomain_논리적_제외 .
-ex:lemmametaphor_lg046 ex:realizesConceptualMetaphor ex:conceptualmetaphor_논리적_제외_is_물리적_배척 .
-ex:lemmametaphor_lg046 ex:hasSourceDomainLabel "물리적 배척" .
-ex:lemmametaphor_lg046 ex:hasTargetDomainLabel "논리적 제외" .
-ex:lemmametaphor_lg046 ex:hasConceptualMetaphorLabel "논리적 제외 IS 물리적 배척" .
-ex:lemmametaphor_lg046 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg046 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg046 ex:hasSurfaceExpression "배제하다" .
-ex:lemmametaphor_lg046 ex:hasConfidence "0.7300" .
-ex:lemmametaphor_lg046 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_005 ex:hasConfidence "0.7300"^^xsd:decimal .
-_:mapping_005 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_005 ex:needsHumanReview "true" .
-
-ex:targetdomain_판단_결과의_도달 ex:isConceptualizedAs ex:sourcedomain_물리적_도착 .
-ex:lemmametaphor_lg047 ex:hasSourceDomain ex:sourcedomain_물리적_도착 .
-ex:lemmametaphor_lg047 ex:hasTargetDomain ex:targetdomain_판단_결과의_도달 .
-ex:lemmametaphor_lg047 ex:realizesConceptualMetaphor ex:conceptualmetaphor_판단의_성립_is_도착 .
-ex:lemmametaphor_lg047 ex:hasSourceDomainLabel "물리적 도착" .
-ex:lemmametaphor_lg047 ex:hasTargetDomainLabel "판단/결과의 도달" .
-ex:lemmametaphor_lg047 ex:hasConceptualMetaphorLabel "판단의 성립 IS 도착" .
-ex:lemmametaphor_lg047 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg047 ex:hasMetaphorType "ORIENTATIONAL" .
-ex:lemmametaphor_lg047 ex:hasSurfaceExpression "이르다" .
-ex:lemmametaphor_lg047 ex:hasConfidence "0.7100" .
-ex:lemmametaphor_lg047 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_006 ex:hasConfidence "0.7100"^^xsd:decimal .
-_:mapping_006 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_006 ex:needsHumanReview "true" .
-
-ex:targetdomain_필요조건의_설정 ex:isConceptualizedAs ex:sourcedomain_청구_행위 .
-ex:lemmametaphor_lg048 ex:hasSourceDomain ex:sourcedomain_청구_행위 .
-ex:lemmametaphor_lg048 ex:hasTargetDomain ex:targetdomain_필요조건의_설정 .
-ex:lemmametaphor_lg048 ex:realizesConceptualMetaphor ex:conceptualmetaphor_조건은_요구되는_것 .
-ex:lemmametaphor_lg048 ex:hasSourceDomainLabel "청구 행위" .
-ex:lemmametaphor_lg048 ex:hasTargetDomainLabel "필요조건의 설정" .
-ex:lemmametaphor_lg048 ex:hasConceptualMetaphorLabel "조건은 요구되는 것" .
-ex:lemmametaphor_lg048 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg048 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg048 ex:hasSurfaceExpression "요구하다" .
-ex:lemmametaphor_lg048 ex:hasConfidence "0.6600" .
-ex:lemmametaphor_lg048 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_007 ex:hasConfidence "0.6600"^^xsd:decimal .
-_:mapping_007 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_007 ex:needsHumanReview "true" .
-
-ex:targetdomain_근거의_존재 ex:isConceptualizedAs ex:sourcedomain_물리적_머묾 .
-ex:lemmametaphor_lg050 ex:hasSourceDomain ex:sourcedomain_물리적_머묾 .
-ex:lemmametaphor_lg050 ex:hasTargetDomain ex:targetdomain_근거의_존재 .
-ex:lemmametaphor_lg050 ex:realizesConceptualMetaphor ex:conceptualmetaphor_근거는_거기에_있다 .
-ex:lemmametaphor_lg050 ex:hasSourceDomainLabel "물리적 머묾" .
-ex:lemmametaphor_lg050 ex:hasTargetDomainLabel "근거의 존재" .
-ex:lemmametaphor_lg050 ex:hasConceptualMetaphorLabel "근거는 거기에 있다" .
-ex:lemmametaphor_lg050 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg050 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg050 ex:hasSurfaceExpression "있다" .
-ex:lemmametaphor_lg050 ex:hasConfidence "0.6800" .
-ex:lemmametaphor_lg050 ex:hasContextSentence "형사재판에서 공소제기 된 범죄사실에 대한 증명책임은 검사에게 있고 유죄의 인정은 법관으로 하여금 합리적 의심의 여지가 없을 정도로 공소사실이 진실한 것이라는 확신을 가지게 하는 증명력을 가진 증거에 의하여야 하나, 이는 모든 가능한 의심을 배제할 정도에 이를 것까지 요구하는 것은 아니며, 증명력이 있는 것으로 인정되는 증거를 합리적인 근거가 없는 의심을 일으켜 이를 배척하는 것은 자유심증주의의 한계를 벗어나는 것으로 허용될 수 없다(대법원 1994. 9. 13. 선고 94도1335 판결, 대법원 2004. 6. 25. 선고 2004도2221 판결 등 참조)." .
-_:mapping_008 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_008 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_008 ex:needsHumanReview "true" .
-
 ex:targetdomain_진술_메시지의_의미_취지 ex:isConceptualizedAs ex:sourcedomain_그릇이나_포장_안에_든_물리적_내용물 .
 ex:lemmametaphor_lg080 ex:hasSourceDomain ex:sourcedomain_그릇이나_포장_안에_든_물리적_내용물 .
 ex:lemmametaphor_lg080 ex:hasTargetDomain ex:targetdomain_진술_메시지의_의미_취지 .
@@ -141,9 +13,9 @@ ex:lemmametaphor_lg080 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg080 ex:hasSurfaceExpression "내용" .
 ex:lemmametaphor_lg080 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg080 ex:hasContextSentence "성폭력 사건에서 피고인이 공소사실을 부인하고 있고 공소사실에 부합하는 직접증거로 사실상 피해자의 진술이 유일한 경우, 피해자의 진술이 합리적인 의심을 배제할 만한 신빙성이 있는지 여부는 그 진술 내용의 주요한 부분이 일관되고 구체적인지, 진술 내용이 논리와 경험칙에 비추어 합리적이고, 진술 자체로 모순되거나 객관적으로 확인된 사실이나 사정과 모순되지는 않는지, 또는 허위로 피고인에게 불리한 진술을 할 만한 동기나 이유가 있는지 등을 종합적으로 고려하여 신중하게 판단하여야 한다." .
-_:mapping_009 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_009 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_009 ex:needsHumanReview "true" .
+_:mapping_001 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_001 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_001 ex:needsHumanReview "true" .
 
 ex:targetdomain_진술의_명확성_세부성 ex:isConceptualizedAs ex:sourcedomain_직접_경험하거나_지각할_수_있는_형태를_갖춘_사물 .
 ex:lemmametaphor_lg084 ex:hasSourceDomain ex:sourcedomain_직접_경험하거나_지각할_수_있는_형태를_갖춘_사물 .
@@ -157,9 +29,9 @@ ex:lemmametaphor_lg084 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg084 ex:hasSurfaceExpression "구체적" .
 ex:lemmametaphor_lg084 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg084 ex:hasContextSentence "성폭력 사건에서 피고인이 공소사실을 부인하고 있고 공소사실에 부합하는 직접증거로 사실상 피해자의 진술이 유일한 경우, 피해자의 진술이 합리적인 의심을 배제할 만한 신빙성이 있는지 여부는 그 진술 내용의 주요한 부분이 일관되고 구체적인지, 진술 내용이 논리와 경험칙에 비추어 합리적이고, 진술 자체로 모순되거나 객관적으로 확인된 사실이나 사정과 모순되지는 않는지, 또는 허위로 피고인에게 불리한 진술을 할 만한 동기나 이유가 있는지 등을 종합적으로 고려하여 신중하게 판단하여야 한다." .
-_:mapping_010 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_010 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_010 ex:needsHumanReview "true" .
+_:mapping_002 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_002 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_002 ex:needsHumanReview "true" .
 
 ex:targetdomain_판단_검토 ex:isConceptualizedAs ex:sourcedomain_빛을_보내어_밝게_하는_행위 .
 ex:lemmametaphor_lg086 ex:hasSourceDomain ex:sourcedomain_빛을_보내어_밝게_하는_행위 .
@@ -173,9 +45,9 @@ ex:lemmametaphor_lg086 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg086 ex:hasSurfaceExpression "비추다" .
 ex:lemmametaphor_lg086 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg086 ex:hasContextSentence "성폭력 사건에서 피고인이 공소사실을 부인하고 있고 공소사실에 부합하는 직접증거로 사실상 피해자의 진술이 유일한 경우, 피해자의 진술이 합리적인 의심을 배제할 만한 신빙성이 있는지 여부는 그 진술 내용의 주요한 부분이 일관되고 구체적인지, 진술 내용이 논리와 경험칙에 비추어 합리적이고, 진술 자체로 모순되거나 객관적으로 확인된 사실이나 사정과 모순되지는 않는지, 또는 허위로 피고인에게 불리한 진술을 할 만한 동기나 이유가 있는지 등을 종합적으로 고려하여 신중하게 판단하여야 한다." .
-_:mapping_011 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_011 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_011 ex:needsHumanReview "true" .
+_:mapping_003 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_003 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_003 ex:needsHumanReview "true" .
 
 ex:targetdomain_대상의_독립적_평가 ex:isConceptualizedAs ex:sourcedomain_사물의_본래_몸체_바탕 .
 ex:lemmametaphor_lg087 ex:hasSourceDomain ex:sourcedomain_사물의_본래_몸체_바탕 .
@@ -189,9 +61,9 @@ ex:lemmametaphor_lg087 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg087 ex:hasSurfaceExpression "자체" .
 ex:lemmametaphor_lg087 ex:hasConfidence "0.7900" .
 ex:lemmametaphor_lg087 ex:hasContextSentence "성폭력 사건에서 피고인이 공소사실을 부인하고 있고 공소사실에 부합하는 직접증거로 사실상 피해자의 진술이 유일한 경우, 피해자의 진술이 합리적인 의심을 배제할 만한 신빙성이 있는지 여부는 그 진술 내용의 주요한 부분이 일관되고 구체적인지, 진술 내용이 논리와 경험칙에 비추어 합리적이고, 진술 자체로 모순되거나 객관적으로 확인된 사실이나 사정과 모순되지는 않는지, 또는 허위로 피고인에게 불리한 진술을 할 만한 동기나 이유가 있는지 등을 종합적으로 고려하여 신중하게 판단하여야 한다." .
-_:mapping_012 ex:hasConfidence "0.7900"^^xsd:decimal .
-_:mapping_012 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_012 ex:needsHumanReview "true" .
+_:mapping_004 ex:hasConfidence "0.7900"^^xsd:decimal .
+_:mapping_004 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_004 ex:needsHumanReview "true" .
 
 ex:targetdomain_판단_행위의_기준화 ex:isConceptualizedAs ex:sourcedomain_뒤를_따라_가는_물리적_이동 .
 ex:lemmametaphor_lg116 ex:hasSourceDomain ex:sourcedomain_뒤를_따라_가는_물리적_이동 .
@@ -205,8 +77,8 @@ ex:lemmametaphor_lg116 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg116 ex:hasSurfaceExpression "따르다" .
 ex:lemmametaphor_lg116 ex:hasConfidence "0.8600" .
 ex:lemmametaphor_lg116 ex:hasContextSentence "성폭력 범죄는 성별에 따라 차별적으로 구조화된 성을 기반으로 지극히 사적인 영역에서 발생하므로, 피해자라도 본격적으로 문제제기를 하게 되기 전까지는 피해사실이 알려지기를 원하지 아니하고 가해자와 종전의 관계를 계속 유지하는 경우도 적지 아니하며, 피해상황에서도 가해자에 대한 이중적인 감정을 느끼기도 한다." .
-_:mapping_013 ex:hasConfidence "0.8600"^^xsd:decimal .
-_:mapping_013 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_005 ex:hasConfidence "0.8600"^^xsd:decimal .
+_:mapping_005 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_사회적_법적_범위 ex:isConceptualizedAs ex:sourcedomain_공간적_울타리_경계_안 .
 ex:lemmametaphor_lg123 ex:hasSourceDomain ex:sourcedomain_공간적_울타리_경계_안 .
@@ -220,8 +92,8 @@ ex:lemmametaphor_lg123 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg123 ex:hasSurfaceExpression "영역" .
 ex:lemmametaphor_lg123 ex:hasConfidence "0.8900" .
 ex:lemmametaphor_lg123 ex:hasContextSentence "성폭력 범죄는 성별에 따라 차별적으로 구조화된 성을 기반으로 지극히 사적인 영역에서 발생하므로, 피해자라도 본격적으로 문제제기를 하게 되기 전까지는 피해사실이 알려지기를 원하지 아니하고 가해자와 종전의 관계를 계속 유지하는 경우도 적지 아니하며, 피해상황에서도 가해자에 대한 이중적인 감정을 느끼기도 한다." .
-_:mapping_014 ex:hasConfidence "0.8900"^^xsd:decimal .
-_:mapping_014 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_006 ex:hasConfidence "0.8900"^^xsd:decimal .
+_:mapping_006 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_쟁점_이의제기_대상 ex:isConceptualizedAs ex:sourcedomain_해답을_요구하는_물음 .
 ex:lemmametaphor_lg126 ex:hasSourceDomain ex:sourcedomain_해답을_요구하는_물음 .
@@ -235,8 +107,8 @@ ex:lemmametaphor_lg126 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg126 ex:hasSurfaceExpression "문제" .
 ex:lemmametaphor_lg126 ex:hasConfidence "0.8100" .
 ex:lemmametaphor_lg126 ex:hasContextSentence "성폭력 범죄는 성별에 따라 차별적으로 구조화된 성을 기반으로 지극히 사적인 영역에서 발생하므로, 피해자라도 본격적으로 문제제기를 하게 되기 전까지는 피해사실이 알려지기를 원하지 아니하고 가해자와 종전의 관계를 계속 유지하는 경우도 적지 아니하며, 피해상황에서도 가해자에 대한 이중적인 감정을 느끼기도 한다." .
-_:mapping_015 ex:hasConfidence "0.8100"^^xsd:decimal .
-_:mapping_015 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_007 ex:hasConfidence "0.8100"^^xsd:decimal .
+_:mapping_007 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_감정_경험 ex:isConceptualizedAs ex:sourcedomain_감각적_지각 .
 ex:lemmametaphor_lg140 ex:hasSourceDomain ex:sourcedomain_감각적_지각 .
@@ -250,9 +122,9 @@ ex:lemmametaphor_lg140 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg140 ex:hasSurfaceExpression "느끼다" .
 ex:lemmametaphor_lg140 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg140 ex:hasContextSentence "성폭력 범죄는 성별에 따라 차별적으로 구조화된 성을 기반으로 지극히 사적인 영역에서 발생하므로, 피해자라도 본격적으로 문제제기를 하게 되기 전까지는 피해사실이 알려지기를 원하지 아니하고 가해자와 종전의 관계를 계속 유지하는 경우도 적지 아니하며, 피해상황에서도 가해자에 대한 이중적인 감정을 느끼기도 한다." .
-_:mapping_016 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_016 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_016 ex:needsHumanReview "true" .
+_:mapping_008 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_008 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_008 ex:needsHumanReview "true" .
 
 ex:targetdomain_행위_허락 ex:isConceptualizedAs ex:sourcedomain_의사_의견의_일치 .
 ex:lemmametaphor_lg150 ex:hasSourceDomain ex:sourcedomain_의사_의견의_일치 .
@@ -266,9 +138,9 @@ ex:lemmametaphor_lg150 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg150 ex:hasSurfaceExpression "동의하다" .
 ex:lemmametaphor_lg150 ex:hasConfidence "0.7800" .
 ex:lemmametaphor_lg150 ex:hasContextSentence "한편 누구든지 일정 수준의 신체접촉을 용인하였더라도 자신이 예상하거나 동의한 범위를 넘어서는 신체접촉을 거부할 수 있고(대법원 2019. 7. 11. 선고 2018도2614 판결 참조), 피해상황에서 명확한 판단이나 즉각적인 대응을 하는 데에 어려움을 겪을 수 있다." .
-_:mapping_017 ex:hasConfidence "0.7800"^^xsd:decimal .
-_:mapping_017 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_017 ex:needsHumanReview "true" .
+_:mapping_009 ex:hasConfidence "0.7800"^^xsd:decimal .
+_:mapping_009 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_009 ex:needsHumanReview "true" .
 
 ex:targetdomain_한계_초과 ex:isConceptualizedAs ex:sourcedomain_공간적_경계_위로_지나감 .
 ex:lemmametaphor_lg152 ex:hasSourceDomain ex:sourcedomain_공간적_경계_위로_지나감 .
@@ -282,9 +154,9 @@ ex:lemmametaphor_lg152 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg152 ex:hasSurfaceExpression "넘어서다" .
 ex:lemmametaphor_lg152 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg152 ex:hasContextSentence "한편 누구든지 일정 수준의 신체접촉을 용인하였더라도 자신이 예상하거나 동의한 범위를 넘어서는 신체접촉을 거부할 수 있고(대법원 2019. 7. 11. 선고 2018도2614 판결 참조), 피해상황에서 명확한 판단이나 즉각적인 대응을 하는 데에 어려움을 겪을 수 있다." .
-_:mapping_018 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_018 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_018 ex:needsHumanReview "true" .
+_:mapping_010 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_010 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_010 ex:needsHumanReview "true" .
 
 ex:targetdomain_법적_판단과_평가 ex:isConceptualizedAs ex:sourcedomain_시각적_인지 .
 ex:lemmametaphor_lg179 ex:hasSourceDomain ex:sourcedomain_시각적_인지 .
@@ -298,9 +170,9 @@ ex:lemmametaphor_lg179 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg179 ex:hasSurfaceExpression "보이다" .
 ex:lemmametaphor_lg179 ex:hasConfidence "0.8600" .
 ex:lemmametaphor_lg179 ex:hasContextSentence "따라서 피해자의 진술 내용이 논리와 경험칙에 비추어 합리적인지 여부는 개별적, 구체적인 사건에서 성폭력 피해자가 처하여 있는 상황에 기초하여 판단하여야 하고, 그러한 사정을 충분히 고려하지 아니한 채 통상의 성폭력 피해자라면 마땅히 보여야 할 반응을 상정해 두고 이러한 통념에 어긋나는 행동을 하였다는 이유로 섣불리 경험칙에 어긋난다거나 합리성이 없다고 판단하는 것은 정의와 형평의 이념에 입각하여 논리와 경험의 법칙에 따른 증거판단이라고 볼 수 없다(대법원 2018. 10. 25. 선고 2018도7709 판결, 대법원 2020. 10. 29. 선고 2019도4047 판결 등 참조)." .
-_:mapping_019 ex:hasConfidence "0.8600"^^xsd:decimal .
-_:mapping_019 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_019 ex:needsHumanReview "true" .
+_:mapping_011 ex:hasConfidence "0.8600"^^xsd:decimal .
+_:mapping_011 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_011 ex:needsHumanReview "true" .
 
 ex:targetdomain_가정_설정과_전제 ex:isConceptualizedAs ex:sourcedomain_물건을_놓아_두는_행위 .
 ex:lemmametaphor_lg182 ex:hasSourceDomain ex:sourcedomain_물건을_놓아_두는_행위 .
@@ -314,9 +186,9 @@ ex:lemmametaphor_lg182 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg182 ex:hasSurfaceExpression "두다" .
 ex:lemmametaphor_lg182 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg182 ex:hasContextSentence "따라서 피해자의 진술 내용이 논리와 경험칙에 비추어 합리적인지 여부는 개별적, 구체적인 사건에서 성폭력 피해자가 처하여 있는 상황에 기초하여 판단하여야 하고, 그러한 사정을 충분히 고려하지 아니한 채 통상의 성폭력 피해자라면 마땅히 보여야 할 반응을 상정해 두고 이러한 통념에 어긋나는 행동을 하였다는 이유로 섣불리 경험칙에 어긋난다거나 합리성이 없다고 판단하는 것은 정의와 형평의 이념에 입각하여 논리와 경험의 법칙에 따른 증거판단이라고 볼 수 없다(대법원 2018. 10. 25. 선고 2018도7709 판결, 대법원 2020. 10. 29. 선고 2019도4047 판결 등 참조)." .
-_:mapping_020 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_020 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_020 ex:needsHumanReview "true" .
+_:mapping_012 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_012 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_012 ex:needsHumanReview "true" .
 
 ex:targetdomain_규범과_기대의_부합_여부 ex:isConceptualizedAs ex:sourcedomain_물체의_맞물림과_정렬 .
 ex:lemmametaphor_lg185 ex:hasSourceDomain ex:sourcedomain_물체의_맞물림과_정렬 .
@@ -330,9 +202,9 @@ ex:lemmametaphor_lg185 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg185 ex:hasSurfaceExpression "어긋나다" .
 ex:lemmametaphor_lg185 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg185 ex:hasContextSentence "따라서 피해자의 진술 내용이 논리와 경험칙에 비추어 합리적인지 여부는 개별적, 구체적인 사건에서 성폭력 피해자가 처하여 있는 상황에 기초하여 판단하여야 하고, 그러한 사정을 충분히 고려하지 아니한 채 통상의 성폭력 피해자라면 마땅히 보여야 할 반응을 상정해 두고 이러한 통념에 어긋나는 행동을 하였다는 이유로 섣불리 경험칙에 어긋난다거나 합리성이 없다고 판단하는 것은 정의와 형평의 이념에 입각하여 논리와 경험의 법칙에 따른 증거판단이라고 볼 수 없다(대법원 2018. 10. 25. 선고 2018도7709 판결, 대법원 2020. 10. 29. 선고 2019도4047 판결 등 참조)." .
-_:mapping_021 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_021 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_021 ex:needsHumanReview "true" .
+_:mapping_013 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_013 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_013 ex:needsHumanReview "true" .
 
 ex:lemmametaphor_lg193 ex:hasSourceDomain ex:sourcedomain_시각적_인지 .
 ex:lemmametaphor_lg193 ex:hasTargetDomain ex:targetdomain_법적_판단과_평가 .
@@ -345,9 +217,9 @@ ex:lemmametaphor_lg193 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg193 ex:hasSurfaceExpression "보다" .
 ex:lemmametaphor_lg193 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg193 ex:hasContextSentence "따라서 피해자의 진술 내용이 논리와 경험칙에 비추어 합리적인지 여부는 개별적, 구체적인 사건에서 성폭력 피해자가 처하여 있는 상황에 기초하여 판단하여야 하고, 그러한 사정을 충분히 고려하지 아니한 채 통상의 성폭력 피해자라면 마땅히 보여야 할 반응을 상정해 두고 이러한 통념에 어긋나는 행동을 하였다는 이유로 섣불리 경험칙에 어긋난다거나 합리성이 없다고 판단하는 것은 정의와 형평의 이념에 입각하여 논리와 경험의 법칙에 따른 증거판단이라고 볼 수 없다(대법원 2018. 10. 25. 선고 2018도7709 판결, 대법원 2020. 10. 29. 선고 2019도4047 판결 등 참조)." .
-_:mapping_022 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_022 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_022 ex:needsHumanReview "true" .
+_:mapping_014 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_014 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_014 ex:needsHumanReview "true" .
 
 ex:targetdomain_논증과_신빙성_보강 ex:isConceptualizedAs ex:sourcedomain_뒤에서_지지하는_행위 .
 ex:lemmametaphor_lg198 ex:hasSourceDomain ex:sourcedomain_뒤에서_지지하는_행위 .
@@ -361,9 +233,9 @@ ex:lemmametaphor_lg198 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg198 ex:hasSurfaceExpression "뒷받침하다" .
 ex:lemmametaphor_lg198 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg198 ex:hasContextSentence "그리고 공소사실을 인정할 증거로 사실상 피해자의 진술이 유일한 경우에 피고인의 진술이 경험칙상 합리성이 없고 그 자체로 모순되어 믿을 수 없다고 하여 그것이 공소사실을 인정하는 직접증거가 되는 것은 아니지만, 이러한 사정은 법관의 자유판단에 따라 피해자 진술의 신빙성을 뒷받침하거나 직접증거인 피해자 진술과 결합하여 공소사실을 뒷받침하는 간접정황이 될 수 있다(위 2018도7709 판결 참조)." .
-_:mapping_023 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_023 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_023 ex:needsHumanReview "true" .
+_:mapping_015 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_015 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_015 ex:needsHumanReview "true" .
 
 ex:targetdomain_연락_소통 ex:isConceptualizedAs ex:sourcedomain_막힘_없이_지나가다 .
 ex:lemmametaphor_lg211 ex:hasSourceDomain ex:sourcedomain_막힘_없이_지나가다 .
@@ -377,8 +249,8 @@ ex:lemmametaphor_lg211 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg211 ex:hasSurfaceExpression "통하다" .
 ex:lemmametaphor_lg211 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg211 ex:hasContextSentence "피고인(남, 70세)은 채팅 어플 ‘○○○’를 통해 채팅을 주고받다가 피해자(여, 30세)를 만나게 되었다." .
-_:mapping_024 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_024 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_016 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_016 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_사람의_실제_대면 ex:isConceptualizedAs ex:sourcedomain_선이나_길이_서로_마주_닿음 .
 ex:lemmametaphor_lg214 ex:hasSourceDomain ex:sourcedomain_선이나_길이_서로_마주_닿음 .
@@ -392,8 +264,8 @@ ex:lemmametaphor_lg214 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg214 ex:hasSurfaceExpression "만나다" .
 ex:lemmametaphor_lg214 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg214 ex:hasContextSentence "피고인(남, 70세)은 채팅 어플 ‘○○○’를 통해 채팅을 주고받다가 피해자(여, 30세)를 만나게 되었다." .
-_:mapping_025 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_025 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_017 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_017 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_직책_역할 ex:isConceptualizedAs ex:sourcedomain_지휘하고_살피는_행위 .
 ex:lemmametaphor_lg223 ex:hasSourceDomain ex:sourcedomain_지휘하고_살피는_행위 .
@@ -407,40 +279,8 @@ ex:lemmametaphor_lg223 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg223 ex:hasSurfaceExpression "감독" .
 ex:lemmametaphor_lg223 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg223 ex:hasContextSentence "피고인은 2019. 1. 20. 18:00경 구리시 △△마트 인근에서 피해자에게 “내가 예전에 국가대표 감독을 한 적이 있다. 중요하게 할 얘기가 있는데, 여기는 너무 춥다. 감독인 나를 믿어라, 나 그런 사람 아니다. 손끝 하나 건드리지 않을 테니 모텔에 들어가자.”라고 말하여 피해자를 ‘□□□ 모텔’에 데리고 들어갔다." .
-_:mapping_026 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_026 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-
-ex:targetdomain_경험_표지 ex:isConceptualizedAs ex:sourcedomain_시간_때 .
-ex:lemmametaphor_lg224 ex:hasSourceDomain ex:sourcedomain_시간_때 .
-ex:lemmametaphor_lg224 ex:hasTargetDomain ex:targetdomain_경험_표지 .
-ex:lemmametaphor_lg224 ex:realizesConceptualMetaphor ex:conceptualmetaphor_경험은_때 .
-ex:lemmametaphor_lg224 ex:hasSourceDomainLabel "시간/때" .
-ex:lemmametaphor_lg224 ex:hasTargetDomainLabel "경험 표지" .
-ex:lemmametaphor_lg224 ex:hasConceptualMetaphorLabel "경험은 때" .
-ex:lemmametaphor_lg224 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg224 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg224 ex:hasSurfaceExpression "적" .
-ex:lemmametaphor_lg224 ex:hasConfidence "0.6200" .
-ex:lemmametaphor_lg224 ex:hasContextSentence "피고인은 2019. 1. 20. 18:00경 구리시 △△마트 인근에서 피해자에게 “내가 예전에 국가대표 감독을 한 적이 있다. 중요하게 할 얘기가 있는데, 여기는 너무 춥다. 감독인 나를 믿어라, 나 그런 사람 아니다. 손끝 하나 건드리지 않을 테니 모텔에 들어가자.”라고 말하여 피해자를 ‘□□□ 모텔’에 데리고 들어갔다." .
-_:mapping_027 ex:hasConfidence "0.6200"^^xsd:decimal .
-_:mapping_027 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_027 ex:needsHumanReview "true" .
-
-ex:targetdomain_신체_접촉의_최소_허용_범위 ex:isConceptualizedAs ex:sourcedomain_손의_끝부분 .
-ex:lemmametaphor_lg233 ex:hasSourceDomain ex:sourcedomain_손의_끝부분 .
-ex:lemmametaphor_lg233 ex:hasTargetDomain ex:targetdomain_신체_접촉의_최소_허용_범위 .
-ex:lemmametaphor_lg233 ex:realizesConceptualMetaphor ex:conceptualmetaphor_minimal_contact_is_a_hand_tip .
-ex:lemmametaphor_lg233 ex:hasSourceDomainLabel "손의 끝부분" .
-ex:lemmametaphor_lg233 ex:hasTargetDomainLabel "신체 접촉의 최소 허용 범위" .
-ex:lemmametaphor_lg233 ex:hasConceptualMetaphorLabel "MINIMAL CONTACT IS A HAND TIP" .
-ex:lemmametaphor_lg233 ex:hasMIPVULabel "MRW_INDIRECT" .
-ex:lemmametaphor_lg233 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg233 ex:hasSurfaceExpression "손끝" .
-ex:lemmametaphor_lg233 ex:hasConfidence "0.6200" .
-ex:lemmametaphor_lg233 ex:hasContextSentence "피고인은 2019. 1. 20. 18:00경 구리시 △△마트 인근에서 피해자에게 “내가 예전에 국가대표 감독을 한 적이 있다. 중요하게 할 얘기가 있는데, 여기는 너무 춥다. 감독인 나를 믿어라, 나 그런 사람 아니다. 손끝 하나 건드리지 않을 테니 모텔에 들어가자.”라고 말하여 피해자를 ‘□□□ 모텔’에 데리고 들어갔다." .
-_:mapping_028 ex:hasConfidence "0.6200"^^xsd:decimal .
-_:mapping_028 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_028 ex:needsHumanReview "true" .
+_:mapping_018 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_018 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_신체_접촉을_통한_해악_성적_행위 ex:isConceptualizedAs ex:sourcedomain_손으로_가볍게_대는_물리적_접촉 .
 ex:lemmametaphor_lg234 ex:hasSourceDomain ex:sourcedomain_손으로_가볍게_대는_물리적_접촉 .
@@ -454,9 +294,9 @@ ex:lemmametaphor_lg234 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg234 ex:hasSurfaceExpression "건드리다" .
 ex:lemmametaphor_lg234 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg234 ex:hasContextSentence "피고인은 2019. 1. 20. 18:00경 구리시 △△마트 인근에서 피해자에게 “내가 예전에 국가대표 감독을 한 적이 있다. 중요하게 할 얘기가 있는데, 여기는 너무 춥다. 감독인 나를 믿어라, 나 그런 사람 아니다. 손끝 하나 건드리지 않을 테니 모텔에 들어가자.”라고 말하여 피해자를 ‘□□□ 모텔’에 데리고 들어갔다." .
-_:mapping_029 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_029 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_029 ex:needsHumanReview "true" .
+_:mapping_019 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_019 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_019 ex:needsHumanReview "true" .
 
 ex:targetdomain_상대를_특정_장소로_이동시키는_행위 ex:isConceptualizedAs ex:sourcedomain_몸_가까이_두는_행위 .
 ex:lemmametaphor_lg239 ex:hasSourceDomain ex:sourcedomain_몸_가까이_두는_행위 .
@@ -470,9 +310,9 @@ ex:lemmametaphor_lg239 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg239 ex:hasSurfaceExpression "데리다" .
 ex:lemmametaphor_lg239 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg239 ex:hasContextSentence "피고인은 2019. 1. 20. 18:00경 구리시 △△마트 인근에서 피해자에게 “내가 예전에 국가대표 감독을 한 적이 있다. 중요하게 할 얘기가 있는데, 여기는 너무 춥다. 감독인 나를 믿어라, 나 그런 사람 아니다. 손끝 하나 건드리지 않을 테니 모텔에 들어가자.”라고 말하여 피해자를 ‘□□□ 모텔’에 데리고 들어갔다." .
-_:mapping_030 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_030 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_030 ex:needsHumanReview "true" .
+_:mapping_020 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_020 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_020 ex:needsHumanReview "true" .
 
 ex:targetdomain_성적_신체_접촉 ex:isConceptualizedAs ex:sourcedomain_손으로_대어_주무르거나_쥐는_물리적_접촉 .
 ex:lemmametaphor_lg252 ex:hasSourceDomain ex:sourcedomain_손으로_대어_주무르거나_쥐는_물리적_접촉 .
@@ -486,9 +326,9 @@ ex:lemmametaphor_lg252 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg252 ex:hasSurfaceExpression "만지다" .
 ex:lemmametaphor_lg252 ex:hasConfidence "0.9300" .
 ex:lemmametaphor_lg252 ex:hasContextSentence "피고인은 같은 날 19:00경 모텔에서 일방적으로 생활비 등에 보태라고 피해자의 가방에 50만 원을 넣어주고, “가슴 한번 만져보자.”라고 말하면서 피해자를 침대에 눕혀 어깨를 누르고 상의를 벗긴 후, 피해자의 귀와 가슴 등을 빨았다." .
-_:mapping_031 ex:hasConfidence "0.9300"^^xsd:decimal .
-_:mapping_031 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_031 ex:needsHumanReview "true" .
+_:mapping_021 ex:hasConfidence "0.9300"^^xsd:decimal .
+_:mapping_021 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_021 ex:needsHumanReview "true" .
 
 ex:targetdomain_신체_제압 ex:isConceptualizedAs ex:sourcedomain_물체에_힘이나_무게를_가하는_물리적_압박 .
 ex:lemmametaphor_lg256 ex:hasSourceDomain ex:sourcedomain_물체에_힘이나_무게를_가하는_물리적_압박 .
@@ -502,409 +342,9 @@ ex:lemmametaphor_lg256 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg256 ex:hasSurfaceExpression "누르다" .
 ex:lemmametaphor_lg256 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg256 ex:hasContextSentence "피고인은 같은 날 19:00경 모텔에서 일방적으로 생활비 등에 보태라고 피해자의 가방에 50만 원을 넣어주고, “가슴 한번 만져보자.”라고 말하면서 피해자를 침대에 눕혀 어깨를 누르고 상의를 벗긴 후, 피해자의 귀와 가슴 등을 빨았다." .
-_:mapping_032 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_032 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_032 ex:needsHumanReview "true" .
-
-ex:targetdomain_성적_접촉_행위 ex:isConceptualizedAs ex:sourcedomain_입으로_빨아들이는_물리적_동작 .
-ex:lemmametaphor_lg261 ex:hasSourceDomain ex:sourcedomain_입으로_빨아들이는_물리적_동작 .
-ex:lemmametaphor_lg261 ex:hasTargetDomain ex:targetdomain_성적_접촉_행위 .
-ex:lemmametaphor_lg261 ex:realizesConceptualMetaphor ex:conceptualmetaphor_sexual_contact_is_suction .
-ex:lemmametaphor_lg261 ex:hasSourceDomainLabel "입으로 빨아들이는 물리적 동작" .
-ex:lemmametaphor_lg261 ex:hasTargetDomainLabel "성적 접촉 행위" .
-ex:lemmametaphor_lg261 ex:hasConceptualMetaphorLabel "SEXUAL CONTACT IS SUCTION" .
-ex:lemmametaphor_lg261 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg261 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg261 ex:hasSurfaceExpression "빨다" .
-ex:lemmametaphor_lg261 ex:hasConfidence "0.7200" .
-ex:lemmametaphor_lg261 ex:hasContextSentence "피고인은 같은 날 19:00경 모텔에서 일방적으로 생활비 등에 보태라고 피해자의 가방에 50만 원을 넣어주고, “가슴 한번 만져보자.”라고 말하면서 피해자를 침대에 눕혀 어깨를 누르고 상의를 벗긴 후, 피해자의 귀와 가슴 등을 빨았다." .
-_:mapping_033 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_033 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_033 ex:needsHumanReview "true" .
-
-ex:targetdomain_상대의_제압_통제 ex:isConceptualizedAs ex:sourcedomain_끈을_매듭으로_묶는_물리적_행위 .
-ex:lemmametaphor_lg271 ex:hasSourceDomain ex:sourcedomain_끈을_매듭으로_묶는_물리적_행위 .
-ex:lemmametaphor_lg271 ex:hasTargetDomain ex:targetdomain_상대의_제압_통제 .
-ex:lemmametaphor_lg271 ex:realizesConceptualMetaphor ex:conceptualmetaphor_control_is_tying .
-ex:lemmametaphor_lg271 ex:hasSourceDomainLabel "끈을 매듭으로 묶는 물리적 행위" .
-ex:lemmametaphor_lg271 ex:hasTargetDomainLabel "상대의 제압/통제" .
-ex:lemmametaphor_lg271 ex:hasConceptualMetaphorLabel "CONTROL IS TYING" .
-ex:lemmametaphor_lg271 ex:hasMIPVULabel "MRW_DIRECT" .
-ex:lemmametaphor_lg271 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg271 ex:hasSurfaceExpression "묶다" .
-ex:lemmametaphor_lg271 ex:hasConfidence "0.6300" .
-ex:lemmametaphor_lg271 ex:hasContextSentence "피해자가 “배란일이다. 집에 가고 싶다.”라고 말하며 발버둥을 치고 저항하였으나, 피고인은 “괜찮다. 나 묶었다.”라고 말하면서 피해자의 몸을 누르고, 피해자의 레깅스와 팬티를 벗긴 후 피해자의 몸에 올라타 양손으로 피해자의 가슴을 누르고, 피고인의 바지와 팬티를 내린 뒤 피고인의 성기를 피해자의 성기에 비벼 피해자를 강제로 추행하였다." .
-_:mapping_034 ex:hasConfidence "0.6300"^^xsd:decimal .
-_:mapping_034 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_034 ex:needsHumanReview "true" .
-
-ex:targetdomain_상대의_제압_성적_폭력 ex:isConceptualizedAs ex:sourcedomain_탈것에_몸을_올려놓는_행위 .
-ex:lemmametaphor_lg275 ex:hasSourceDomain ex:sourcedomain_탈것에_몸을_올려놓는_행위 .
-ex:lemmametaphor_lg275 ex:hasTargetDomain ex:targetdomain_상대의_제압_성적_폭력 .
-ex:lemmametaphor_lg275 ex:realizesConceptualMetaphor ex:conceptualmetaphor_control_sexual_assault_is_mounting .
-ex:lemmametaphor_lg275 ex:hasSourceDomainLabel "탈것에 몸을 올려놓는 행위" .
-ex:lemmametaphor_lg275 ex:hasTargetDomainLabel "상대의 제압/성적 폭력" .
-ex:lemmametaphor_lg275 ex:hasConceptualMetaphorLabel "CONTROL/SEXUAL ASSAULT IS MOUNTING" .
-ex:lemmametaphor_lg275 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg275 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg275 ex:hasSurfaceExpression "올라타다" .
-ex:lemmametaphor_lg275 ex:hasConfidence "0.6600" .
-ex:lemmametaphor_lg275 ex:hasContextSentence "피해자가 “배란일이다. 집에 가고 싶다.”라고 말하며 발버둥을 치고 저항하였으나, 피고인은 “괜찮다. 나 묶었다.”라고 말하면서 피해자의 몸을 누르고, 피해자의 레깅스와 팬티를 벗긴 후 피해자의 몸에 올라타 양손으로 피해자의 가슴을 누르고, 피고인의 바지와 팬티를 내린 뒤 피고인의 성기를 피해자의 성기에 비벼 피해자를 강제로 추행하였다." .
-_:mapping_035 ex:hasConfidence "0.6600"^^xsd:decimal .
-_:mapping_035 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_035 ex:needsHumanReview "true" .
-
-ex:targetdomain_시간적_순서 ex:isConceptualizedAs ex:sourcedomain_공간적_뒤쪽 .
-ex:lemmametaphor_lg279 ex:hasSourceDomain ex:sourcedomain_공간적_뒤쪽 .
-ex:lemmametaphor_lg279 ex:hasTargetDomain ex:targetdomain_시간적_순서 .
-ex:lemmametaphor_lg279 ex:realizesConceptualMetaphor ex:conceptualmetaphor_time_is_space .
-ex:lemmametaphor_lg279 ex:hasSourceDomainLabel "공간적 뒤쪽" .
-ex:lemmametaphor_lg279 ex:hasTargetDomainLabel "시간적 순서" .
-ex:lemmametaphor_lg279 ex:hasConceptualMetaphorLabel "TIME IS SPACE" .
-ex:lemmametaphor_lg279 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg279 ex:hasMetaphorType "ORIENTATIONAL" .
-ex:lemmametaphor_lg279 ex:hasSurfaceExpression "뒤" .
-ex:lemmametaphor_lg279 ex:hasConfidence "0.8400" .
-ex:lemmametaphor_lg279 ex:hasContextSentence "피해자가 “배란일이다. 집에 가고 싶다.”라고 말하며 발버둥을 치고 저항하였으나, 피고인은 “괜찮다. 나 묶었다.”라고 말하면서 피해자의 몸을 누르고, 피해자의 레깅스와 팬티를 벗긴 후 피해자의 몸에 올라타 양손으로 피해자의 가슴을 누르고, 피고인의 바지와 팬티를 내린 뒤 피고인의 성기를 피해자의 성기에 비벼 피해자를 강제로 추행하였다." .
-_:mapping_036 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_036 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_036 ex:needsHumanReview "true" .
-
-ex:targetdomain_성적_접촉_행위 ex:isConceptualizedAs ex:sourcedomain_두_물체를_맞대어_문지르는_물리적_동작 .
-ex:lemmametaphor_lg281 ex:hasSourceDomain ex:sourcedomain_두_물체를_맞대어_문지르는_물리적_동작 .
-ex:lemmametaphor_lg281 ex:hasTargetDomain ex:targetdomain_성적_접촉_행위 .
-ex:lemmametaphor_lg281 ex:realizesConceptualMetaphor ex:conceptualmetaphor_sexual_contact_is_rubbing .
-ex:lemmametaphor_lg281 ex:hasSourceDomainLabel "두 물체를 맞대어 문지르는 물리적 동작" .
-ex:lemmametaphor_lg281 ex:hasTargetDomainLabel "성적 접촉 행위" .
-ex:lemmametaphor_lg281 ex:hasConceptualMetaphorLabel "SEXUAL CONTACT IS RUBBING" .
-ex:lemmametaphor_lg281 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg281 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg281 ex:hasSurfaceExpression "비비다" .
-ex:lemmametaphor_lg281 ex:hasConfidence "0.7400" .
-ex:lemmametaphor_lg281 ex:hasContextSentence "피해자가 “배란일이다. 집에 가고 싶다.”라고 말하며 발버둥을 치고 저항하였으나, 피고인은 “괜찮다. 나 묶었다.”라고 말하면서 피해자의 몸을 누르고, 피해자의 레깅스와 팬티를 벗긴 후 피해자의 몸에 올라타 양손으로 피해자의 가슴을 누르고, 피고인의 바지와 팬티를 내린 뒤 피고인의 성기를 피해자의 성기에 비벼 피해자를 강제로 추행하였다." .
-_:mapping_037 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_037 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_037 ex:needsHumanReview "true" .
-
-ex:targetdomain_문서_내_항목_지시 ex:isConceptualizedAs ex:sourcedomain_낮은_위치 .
-ex:lemmametaphor_lg285 ex:hasSourceDomain ex:sourcedomain_낮은_위치 .
-ex:lemmametaphor_lg285 ex:hasTargetDomain ex:targetdomain_문서_내_항목_지시 .
-ex:lemmametaphor_lg285 ex:realizesConceptualMetaphor ex:conceptualmetaphor_문서_내_항목_지시는_낮은_위치 .
-ex:lemmametaphor_lg285 ex:hasSourceDomainLabel "낮은 위치" .
-ex:lemmametaphor_lg285 ex:hasTargetDomainLabel "문서 내 항목 지시" .
-ex:lemmametaphor_lg285 ex:hasConceptualMetaphorLabel "문서 내 항목 지시는 낮은 위치" .
-ex:lemmametaphor_lg285 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg285 ex:hasMetaphorType "ORIENTATIONAL" .
-ex:lemmametaphor_lg285 ex:hasSurfaceExpression "아래" .
-ex:lemmametaphor_lg285 ex:hasConfidence "0.7400" .
-ex:lemmametaphor_lg285 ex:hasContextSentence "원심은 아래와 같은 이유로 공소사실에 부합하는 피해자 진술을 그대로 믿기 어렵다고 보아, 공소사실을 유죄로 판단한 제1심판결을 파기하고 무죄를 선고하였다." .
-_:mapping_038 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_038 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_038 ex:needsHumanReview "true" .
-
-ex:targetdomain_판단_내용의_유지 ex:isConceptualizedAs ex:sourcedomain_변함없는_모양 .
-ex:lemmametaphor_lg286 ex:hasSourceDomain ex:sourcedomain_변함없는_모양 .
-ex:lemmametaphor_lg286 ex:hasTargetDomain ex:targetdomain_판단_내용의_유지 .
-ex:lemmametaphor_lg286 ex:realizesConceptualMetaphor ex:conceptualmetaphor_판단의_유지_is_형태의_유지 .
-ex:lemmametaphor_lg286 ex:hasSourceDomainLabel "변함없는 모양" .
-ex:lemmametaphor_lg286 ex:hasTargetDomainLabel "판단·내용의 유지" .
-ex:lemmametaphor_lg286 ex:hasConceptualMetaphorLabel "판단의 유지 IS 형태의 유지" .
-ex:lemmametaphor_lg286 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg286 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg286 ex:hasSurfaceExpression "그대로" .
-ex:lemmametaphor_lg286 ex:hasConfidence "0.7000" .
-ex:lemmametaphor_lg286 ex:hasContextSentence "원심은 아래와 같은 이유로 공소사실에 부합하는 피해자 진술을 그대로 믿기 어렵다고 보아, 공소사실을 유죄로 판단한 제1심판결을 파기하고 무죄를 선고하였다." .
-_:mapping_039 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_039 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_039 ex:needsHumanReview "true" .
-
-ex:targetdomain_판단_수긍의_난이도 ex:isConceptualizedAs ex:sourcedomain_행위_수행의_어려움 .
-ex:lemmametaphor_lg287 ex:hasSourceDomain ex:sourcedomain_행위_수행의_어려움 .
-ex:lemmametaphor_lg287 ex:hasTargetDomain ex:targetdomain_판단_수긍의_난이도 .
-ex:lemmametaphor_lg287 ex:realizesConceptualMetaphor ex:conceptualmetaphor_판단은_행위다 .
-ex:lemmametaphor_lg287 ex:hasSourceDomainLabel "행위 수행의 어려움" .
-ex:lemmametaphor_lg287 ex:hasTargetDomainLabel "판단·수긍의 난이도" .
-ex:lemmametaphor_lg287 ex:hasConceptualMetaphorLabel "판단은 행위다" .
-ex:lemmametaphor_lg287 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg287 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg287 ex:hasSurfaceExpression "어렵다" .
-ex:lemmametaphor_lg287 ex:hasConfidence "0.7800" .
-ex:lemmametaphor_lg287 ex:hasContextSentence "원심은 아래와 같은 이유로 공소사실에 부합하는 피해자 진술을 그대로 믿기 어렵다고 보아, 공소사실을 유죄로 판단한 제1심판결을 파기하고 무죄를 선고하였다." .
-_:mapping_040 ex:hasConfidence "0.7800"^^xsd:decimal .
-_:mapping_040 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_040 ex:needsHumanReview "true" .
-
-ex:targetdomain_판결의_결론_구조 ex:isConceptualizedAs ex:sourcedomain_글의_끝맺음_단계 .
-ex:lemmametaphor_lg289 ex:hasSourceDomain ex:sourcedomain_글의_끝맺음_단계 .
-ex:lemmametaphor_lg289 ex:hasTargetDomain ex:targetdomain_판결의_결론_구조 .
-ex:lemmametaphor_lg289 ex:realizesConceptualMetaphor ex:conceptualmetaphor_판결의_결론은_글의_끝맺음 .
-ex:lemmametaphor_lg289 ex:hasSourceDomainLabel "글의 끝맺음 단계" .
-ex:lemmametaphor_lg289 ex:hasTargetDomainLabel "판결의 결론 구조" .
-ex:lemmametaphor_lg289 ex:hasConceptualMetaphorLabel "판결의 결론은 글의 끝맺음" .
-ex:lemmametaphor_lg289 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg289 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg289 ex:hasSurfaceExpression "결" .
-ex:lemmametaphor_lg289 ex:hasConfidence "0.6800" .
-ex:lemmametaphor_lg289 ex:hasContextSentence "원심은 아래와 같은 이유로 공소사실에 부합하는 피해자 진술을 그대로 믿기 어렵다고 보아, 공소사실을 유죄로 판단한 제1심판결을 파기하고 무죄를 선고하였다." .
-_:mapping_041 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_041 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_041 ex:needsHumanReview "true" .
-
-ex:targetdomain_판결의_효력_제거 ex:isConceptualizedAs ex:sourcedomain_깨뜨려_없애기 .
-ex:lemmametaphor_lg290 ex:hasSourceDomain ex:sourcedomain_깨뜨려_없애기 .
-ex:lemmametaphor_lg290 ex:hasTargetDomain ex:targetdomain_판결의_효력_제거 .
-ex:lemmametaphor_lg290 ex:realizesConceptualMetaphor ex:conceptualmetaphor_판결의_취소는_물건을_깨뜨려_버리기 .
-ex:lemmametaphor_lg290 ex:hasSourceDomainLabel "깨뜨려 없애기" .
-ex:lemmametaphor_lg290 ex:hasTargetDomainLabel "판결의 효력 제거" .
-ex:lemmametaphor_lg290 ex:hasConceptualMetaphorLabel "판결의 취소는 물건을 깨뜨려 버리기" .
-ex:lemmametaphor_lg290 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg290 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg290 ex:hasSurfaceExpression "파기하다" .
-ex:lemmametaphor_lg290 ex:hasConfidence "0.7600" .
-ex:lemmametaphor_lg290 ex:hasContextSentence "원심은 아래와 같은 이유로 공소사실에 부합하는 피해자 진술을 그대로 믿기 어렵다고 보아, 공소사실을 유죄로 판단한 제1심판결을 파기하고 무죄를 선고하였다." .
-_:mapping_042 ex:hasConfidence "0.7600"^^xsd:decimal .
-_:mapping_042 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_042 ex:needsHumanReview "true" .
-
-ex:targetdomain_사고_판단_능력 ex:isConceptualizedAs ex:sourcedomain_미루어_생각하여_논함 .
-ex:lemmametaphor_lg301 ex:hasSourceDomain ex:sourcedomain_미루어_생각하여_논함 .
-ex:lemmametaphor_lg301 ex:hasTargetDomain ex:targetdomain_사고_판단_능력 .
-ex:lemmametaphor_lg301 ex:realizesConceptualMetaphor ex:conceptualmetaphor_사고_능력은_추론_행위 .
-ex:lemmametaphor_lg301 ex:hasSourceDomainLabel "미루어 생각하여 논함" .
-ex:lemmametaphor_lg301 ex:hasTargetDomainLabel "사고·판단 능력" .
-ex:lemmametaphor_lg301 ex:hasConceptualMetaphorLabel "사고 능력은 추론 행위" .
-ex:lemmametaphor_lg301 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg301 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg301 ex:hasSurfaceExpression "추론" .
-ex:lemmametaphor_lg301 ex:hasConfidence "0.7200" .
-ex:lemmametaphor_lg301 ex:hasContextSentence "1) 피해자의 전체 지능수준이 IQ 72인 것으로 나타났으나, 피해자의 학력, 경력, 진술내용 등에 비추어 피해자의 언어이해능력이나 지각추론능력이 통상의 성인에 비하여 특별히 저조하다고 보이지 않는 점 등을 종합하면, 피해자 진술의 신빙성 평가와 관련하여 통상의 성폭력 피해자와 다른 척도나 기준을 적용하는 것은 타당하지 않다." .
-_:mapping_043 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_043 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_043 ex:needsHumanReview "true" .
-
-ex:targetdomain_수준의_낮음 ex:isConceptualizedAs ex:sourcedomain_음의_낮음 .
-ex:lemmametaphor_lg305 ex:hasSourceDomain ex:sourcedomain_음의_낮음 .
-ex:lemmametaphor_lg305 ex:hasTargetDomain ex:targetdomain_수준의_낮음 .
-ex:lemmametaphor_lg305 ex:realizesConceptualMetaphor ex:conceptualmetaphor_수준은_높낮이다 .
-ex:lemmametaphor_lg305 ex:hasSourceDomainLabel "음의 낮음" .
-ex:lemmametaphor_lg305 ex:hasTargetDomainLabel "수준의 낮음" .
-ex:lemmametaphor_lg305 ex:hasConceptualMetaphorLabel "수준은 높낮이다" .
-ex:lemmametaphor_lg305 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg305 ex:hasMetaphorType "ORIENTATIONAL" .
-ex:lemmametaphor_lg305 ex:hasSurfaceExpression "저조하다" .
-ex:lemmametaphor_lg305 ex:hasConfidence "0.7300" .
-ex:lemmametaphor_lg305 ex:hasContextSentence "1) 피해자의 전체 지능수준이 IQ 72인 것으로 나타났으나, 피해자의 학력, 경력, 진술내용 등에 비추어 피해자의 언어이해능력이나 지각추론능력이 통상의 성인에 비하여 특별히 저조하다고 보이지 않는 점 등을 종합하면, 피해자 진술의 신빙성 평가와 관련하여 통상의 성폭력 피해자와 다른 척도나 기준을 적용하는 것은 타당하지 않다." .
-_:mapping_044 ex:hasConfidence "0.7300"^^xsd:decimal .
-_:mapping_044 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_044 ex:needsHumanReview "true" .
-
-ex:targetdomain_판단의_근거 ex:isConceptualizedAs ex:sourcedomain_작고_둥근_표식 .
-ex:lemmametaphor_lg306 ex:hasSourceDomain ex:sourcedomain_작고_둥근_표식 .
-ex:lemmametaphor_lg306 ex:hasTargetDomain ex:targetdomain_판단의_근거 .
-ex:lemmametaphor_lg306 ex:realizesConceptualMetaphor ex:conceptualmetaphor_근거는_표식 .
-ex:lemmametaphor_lg306 ex:hasSourceDomainLabel "작고 둥근 표식" .
-ex:lemmametaphor_lg306 ex:hasTargetDomainLabel "판단의 근거" .
-ex:lemmametaphor_lg306 ex:hasConceptualMetaphorLabel "근거는 표식" .
-ex:lemmametaphor_lg306 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg306 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg306 ex:hasSurfaceExpression "점" .
-ex:lemmametaphor_lg306 ex:hasConfidence "0.7100" .
-ex:lemmametaphor_lg306 ex:hasContextSentence "1) 피해자의 전체 지능수준이 IQ 72인 것으로 나타났으나, 피해자의 학력, 경력, 진술내용 등에 비추어 피해자의 언어이해능력이나 지각추론능력이 통상의 성인에 비하여 특별히 저조하다고 보이지 않는 점 등을 종합하면, 피해자 진술의 신빙성 평가와 관련하여 통상의 성폭력 피해자와 다른 척도나 기준을 적용하는 것은 타당하지 않다." .
-_:mapping_045 ex:hasConfidence "0.7100"^^xsd:decimal .
-_:mapping_045 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_045 ex:needsHumanReview "true" .
-
-ex:targetdomain_법적_판단 ex:isConceptualizedAs ex:sourcedomain_가치_산정_계량 .
-ex:lemmametaphor_lg308 ex:hasSourceDomain ex:sourcedomain_가치_산정_계량 .
-ex:lemmametaphor_lg308 ex:hasTargetDomain ex:targetdomain_법적_판단 .
-ex:lemmametaphor_lg308 ex:realizesConceptualMetaphor ex:conceptualmetaphor_legal_judgment_is_value_assessment .
-ex:lemmametaphor_lg308 ex:hasSourceDomainLabel "가치 산정/계량" .
-ex:lemmametaphor_lg308 ex:hasTargetDomainLabel "법적 판단" .
-ex:lemmametaphor_lg308 ex:hasConceptualMetaphorLabel "LEGAL JUDGMENT IS VALUE ASSESSMENT" .
-ex:lemmametaphor_lg308 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg308 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg308 ex:hasSurfaceExpression "평가" .
-ex:lemmametaphor_lg308 ex:hasConfidence "0.6200" .
-ex:lemmametaphor_lg308 ex:hasContextSentence "1) 피해자의 전체 지능수준이 IQ 72인 것으로 나타났으나, 피해자의 학력, 경력, 진술내용 등에 비추어 피해자의 언어이해능력이나 지각추론능력이 통상의 성인에 비하여 특별히 저조하다고 보이지 않는 점 등을 종합하면, 피해자 진술의 신빙성 평가와 관련하여 통상의 성폭력 피해자와 다른 척도나 기준을 적용하는 것은 타당하지 않다." .
-_:mapping_046 ex:hasConfidence "0.6200"^^xsd:decimal .
-_:mapping_046 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_046 ex:needsHumanReview "true" .
-
-ex:targetdomain_판단_기준 ex:isConceptualizedAs ex:sourcedomain_길이_측정_표준 .
-ex:lemmametaphor_lg311 ex:hasSourceDomain ex:sourcedomain_길이_측정_표준 .
-ex:lemmametaphor_lg311 ex:hasTargetDomain ex:targetdomain_판단_기준 .
-ex:lemmametaphor_lg311 ex:realizesConceptualMetaphor ex:conceptualmetaphor_judgment_is_measurement .
-ex:lemmametaphor_lg311 ex:hasSourceDomainLabel "길이 측정 표준" .
-ex:lemmametaphor_lg311 ex:hasTargetDomainLabel "판단 기준" .
-ex:lemmametaphor_lg311 ex:hasConceptualMetaphorLabel "JUDGMENT IS MEASUREMENT" .
-ex:lemmametaphor_lg311 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg311 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg311 ex:hasSurfaceExpression "척도" .
-ex:lemmametaphor_lg311 ex:hasConfidence "0.6800" .
-ex:lemmametaphor_lg311 ex:hasContextSentence "1) 피해자의 전체 지능수준이 IQ 72인 것으로 나타났으나, 피해자의 학력, 경력, 진술내용 등에 비추어 피해자의 언어이해능력이나 지각추론능력이 통상의 성인에 비하여 특별히 저조하다고 보이지 않는 점 등을 종합하면, 피해자 진술의 신빙성 평가와 관련하여 통상의 성폭력 피해자와 다른 척도나 기준을 적용하는 것은 타당하지 않다." .
-_:mapping_047 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_047 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_047 ex:needsHumanReview "true" .
-
-ex:targetdomain_사안의_국면 ex:isConceptualizedAs ex:sourcedomain_공간적_면 .
-ex:lemmametaphor_lg317 ex:hasSourceDomain ex:sourcedomain_공간적_면 .
-ex:lemmametaphor_lg317 ex:hasTargetDomain ex:targetdomain_사안의_국면 .
-ex:lemmametaphor_lg317 ex:realizesConceptualMetaphor ex:conceptualmetaphor_issue_as_object .
-ex:lemmametaphor_lg317 ex:hasSourceDomainLabel "공간적 면" .
-ex:lemmametaphor_lg317 ex:hasTargetDomainLabel "사안의 국면" .
-ex:lemmametaphor_lg317 ex:hasConceptualMetaphorLabel "ISSUE AS OBJECT" .
-ex:lemmametaphor_lg317 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg317 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg317 ex:hasSurfaceExpression "측면" .
-ex:lemmametaphor_lg317 ex:hasConfidence "0.7000" .
-ex:lemmametaphor_lg317 ex:hasContextSentence "2) 피해자의 진술이 일관되지 않거나 선뜻 수긍되지 않는 측면이 있다." .
-_:mapping_048 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_048 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_048 ex:needsHumanReview "true" .
-
-ex:targetdomain_성적_행위 ex:isConceptualizedAs ex:sourcedomain_물체를_틈_구멍에_넣는_행위 .
-ex:lemmametaphor_lg320 ex:hasSourceDomain ex:sourcedomain_물체를_틈_구멍에_넣는_행위 .
-ex:lemmametaphor_lg320 ex:hasTargetDomain ex:targetdomain_성적_행위 .
-ex:lemmametaphor_lg320 ex:realizesConceptualMetaphor ex:conceptualmetaphor_sexual_intercourse_is_insertion .
-ex:lemmametaphor_lg320 ex:hasSourceDomainLabel "물체를 틈/구멍에 넣는 행위" .
-ex:lemmametaphor_lg320 ex:hasTargetDomainLabel "성적 행위" .
-ex:lemmametaphor_lg320 ex:hasConceptualMetaphorLabel "SEXUAL INTERCOURSE IS INSERTION" .
-ex:lemmametaphor_lg320 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg320 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg320 ex:hasSurfaceExpression "삽입" .
-ex:lemmametaphor_lg320 ex:hasConfidence "0.7300" .
-ex:lemmametaphor_lg320 ex:hasContextSentence "가) 피고인의 성기 부분과 관련한 추행의 태양이나 피고인의 삽입 시도 등에 관한 피해자의 진술이 일관되지 않는다." .
-_:mapping_049 ex:hasConfidence "0.7300"^^xsd:decimal .
-_:mapping_049 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_049 ex:needsHumanReview "true" .
-
-ex:targetdomain_진술_입장의_변경 ex:isConceptualizedAs ex:sourcedomain_뒤집힘 .
-ex:lemmametaphor_lg324 ex:hasSourceDomain ex:sourcedomain_뒤집힘 .
-ex:lemmametaphor_lg324 ex:hasTargetDomain ex:targetdomain_진술_입장의_변경 .
-ex:lemmametaphor_lg324 ex:realizesConceptualMetaphor ex:conceptualmetaphor_statement_is_an_object_that_can_be_turned_over .
-ex:lemmametaphor_lg324 ex:hasSourceDomainLabel "뒤집힘" .
-ex:lemmametaphor_lg324 ex:hasTargetDomainLabel "진술/입장의 변경" .
-ex:lemmametaphor_lg324 ex:hasConceptualMetaphorLabel "STATEMENT IS AN OBJECT THAT CAN BE TURNED OVER" .
-ex:lemmametaphor_lg324 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg324 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg324 ex:hasSurfaceExpression "번복하다" .
-ex:lemmametaphor_lg324 ex:hasConfidence "0.6600" .
-ex:lemmametaphor_lg324 ex:hasContextSentence "나) 피해자는 화장실에 간 횟수에 관하여 진술을 번복하였다." .
-_:mapping_050 ex:hasConfidence "0.6600"^^xsd:decimal .
-_:mapping_050 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_050 ex:needsHumanReview "true" .
-
-ex:targetdomain_정지_상태 ex:isConceptualizedAs ex:sourcedomain_직립_자세 .
-ex:lemmametaphor_lg332 ex:hasSourceDomain ex:sourcedomain_직립_자세 .
-ex:lemmametaphor_lg332 ex:hasTargetDomain ex:targetdomain_정지_상태 .
-ex:lemmametaphor_lg332 ex:realizesConceptualMetaphor ex:conceptualmetaphor_stillness_is_standing .
-ex:lemmametaphor_lg332 ex:hasSourceDomainLabel "직립 자세" .
-ex:lemmametaphor_lg332 ex:hasTargetDomainLabel "정지 상태" .
-ex:lemmametaphor_lg332 ex:hasConceptualMetaphorLabel "STILLNESS IS STANDING" .
-ex:lemmametaphor_lg332 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg332 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg332 ex:hasSurfaceExpression "서다" .
-ex:lemmametaphor_lg332 ex:hasConfidence "0.6400" .
-ex:lemmametaphor_lg332 ex:hasContextSentence "다) 피해자는 추행을 당한 후 몸을 씻고 나오는데 ‘피고인이 하의를 벗고 화장실 앞에 서 있었고, 그 모습이 쭈글쭈글 징그럽고 너무 더럽고 역겨워서 토할 것 같았다.’는 취지로 진술한 반면, 피고인은 속옷을 벗은 사실이 없다고 주장한다." .
-_:mapping_051 ex:hasConfidence "0.6400"^^xsd:decimal .
-_:mapping_051 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_051 ex:needsHumanReview "true" .
-
-ex:targetdomain_혐오감의_평가 ex:isConceptualizedAs ex:sourcedomain_물리적_오염_지저분함 .
-ex:lemmametaphor_lg336 ex:hasSourceDomain ex:sourcedomain_물리적_오염_지저분함 .
-ex:lemmametaphor_lg336 ex:hasTargetDomain ex:targetdomain_혐오감의_평가 .
-ex:lemmametaphor_lg336 ex:realizesConceptualMetaphor ex:conceptualmetaphor_혐오감의_평가_is_물리적_오염 .
-ex:lemmametaphor_lg336 ex:hasSourceDomainLabel "물리적 오염/지저분함" .
-ex:lemmametaphor_lg336 ex:hasTargetDomainLabel "혐오감의 평가" .
-ex:lemmametaphor_lg336 ex:hasConceptualMetaphorLabel "혐오감의 평가 IS 물리적 오염" .
-ex:lemmametaphor_lg336 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg336 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg336 ex:hasSurfaceExpression "더럽다" .
-ex:lemmametaphor_lg336 ex:hasConfidence "0.7200" .
-ex:lemmametaphor_lg336 ex:hasContextSentence "다) 피해자는 추행을 당한 후 몸을 씻고 나오는데 ‘피고인이 하의를 벗고 화장실 앞에 서 있었고, 그 모습이 쭈글쭈글 징그럽고 너무 더럽고 역겨워서 토할 것 같았다.’는 취지로 진술한 반면, 피고인은 속옷을 벗은 사실이 없다고 주장한다." .
-_:mapping_052 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_052 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_052 ex:needsHumanReview "true" .
-
-ex:targetdomain_혐오감의_강도 ex:isConceptualizedAs ex:sourcedomain_실제_구토_행위 .
-ex:lemmametaphor_lg338 ex:hasSourceDomain ex:sourcedomain_실제_구토_행위 .
-ex:lemmametaphor_lg338 ex:hasTargetDomain ex:targetdomain_혐오감의_강도 .
-ex:lemmametaphor_lg338 ex:realizesConceptualMetaphor ex:conceptualmetaphor_혐오감의_강도_is_구토_행위 .
-ex:lemmametaphor_lg338 ex:hasSourceDomainLabel "실제 구토 행위" .
-ex:lemmametaphor_lg338 ex:hasTargetDomainLabel "혐오감의 강도" .
-ex:lemmametaphor_lg338 ex:hasConceptualMetaphorLabel "혐오감의 강도 IS 구토 행위" .
-ex:lemmametaphor_lg338 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg338 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg338 ex:hasSurfaceExpression "토하다" .
-ex:lemmametaphor_lg338 ex:hasConfidence "0.7800" .
-ex:lemmametaphor_lg338 ex:hasContextSentence "다) 피해자는 추행을 당한 후 몸을 씻고 나오는데 ‘피고인이 하의를 벗고 화장실 앞에 서 있었고, 그 모습이 쭈글쭈글 징그럽고 너무 더럽고 역겨워서 토할 것 같았다.’는 취지로 진술한 반면, 피고인은 속옷을 벗은 사실이 없다고 주장한다." .
-_:mapping_053 ex:hasConfidence "0.7800"^^xsd:decimal .
-_:mapping_053 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_053 ex:needsHumanReview "true" .
-
-ex:targetdomain_조사_검증의_산출 ex:isConceptualizedAs ex:sourcedomain_열매_맺음 .
-ex:lemmametaphor_lg345 ex:hasSourceDomain ex:sourcedomain_열매_맺음 .
-ex:lemmametaphor_lg345 ex:hasTargetDomain ex:targetdomain_조사_검증의_산출 .
-ex:lemmametaphor_lg345 ex:realizesConceptualMetaphor ex:conceptualmetaphor_조사_검증의_산출_is_열매 .
-ex:lemmametaphor_lg345 ex:hasSourceDomainLabel "열매/맺음" .
-ex:lemmametaphor_lg345 ex:hasTargetDomainLabel "조사·검증의 산출" .
-ex:lemmametaphor_lg345 ex:hasConceptualMetaphorLabel "조사·검증의 산출 IS 열매" .
-ex:lemmametaphor_lg345 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg345 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg345 ex:hasSurfaceExpression "결과" .
-ex:lemmametaphor_lg345 ex:hasConfidence "0.6800" .
-ex:lemmametaphor_lg345 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_054 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_054 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_054 ex:needsHumanReview "true" .
-
-ex:targetdomain_신체의_두께_평가 ex:isConceptualizedAs ex:sourcedomain_물체의_두께_지름 .
-ex:lemmametaphor_lg349 ex:hasSourceDomain ex:sourcedomain_물체의_두께_지름 .
-ex:lemmametaphor_lg349 ex:hasTargetDomain ex:targetdomain_신체의_두께_평가 .
-ex:lemmametaphor_lg349 ex:realizesConceptualMetaphor ex:conceptualmetaphor_신체의_두께_평가_is_물체의_두께 .
-ex:lemmametaphor_lg349 ex:hasSourceDomainLabel "물체의 두께/지름" .
-ex:lemmametaphor_lg349 ex:hasTargetDomainLabel "신체의 두께 평가" .
-ex:lemmametaphor_lg349 ex:hasConceptualMetaphorLabel "신체의 두께 평가 IS 물체의 두께" .
-ex:lemmametaphor_lg349 ex:hasMIPVULabel "MRW_DIRECT" .
-ex:lemmametaphor_lg349 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg349 ex:hasSurfaceExpression "굵다" .
-ex:lemmametaphor_lg349 ex:hasConfidence "0.7400" .
-ex:lemmametaphor_lg349 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_055 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_055 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_055 ex:needsHumanReview "true" .
-
-ex:targetdomain_신체의_단단함_평가 ex:isConceptualizedAs ex:sourcedomain_물체의_단단함_굳셈 .
-ex:lemmametaphor_lg350 ex:hasSourceDomain ex:sourcedomain_물체의_단단함_굳셈 .
-ex:lemmametaphor_lg350 ex:hasTargetDomain ex:targetdomain_신체의_단단함_평가 .
-ex:lemmametaphor_lg350 ex:realizesConceptualMetaphor ex:conceptualmetaphor_신체의_단단함_평가_is_물체의_단단함 .
-ex:lemmametaphor_lg350 ex:hasSourceDomainLabel "물체의 단단함/굳셈" .
-ex:lemmametaphor_lg350 ex:hasTargetDomainLabel "신체의 단단함 평가" .
-ex:lemmametaphor_lg350 ex:hasConceptualMetaphorLabel "신체의 단단함 평가 IS 물체의 단단함" .
-ex:lemmametaphor_lg350 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg350 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg350 ex:hasSurfaceExpression "탄탄하다" .
-ex:lemmametaphor_lg350 ex:hasConfidence "0.7600" .
-ex:lemmametaphor_lg350 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_056 ex:hasConfidence "0.7600"^^xsd:decimal .
-_:mapping_056 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_056 ex:needsHumanReview "true" .
-
-ex:targetdomain_피부의_늘어진_상태 ex:isConceptualizedAs ex:sourcedomain_위에서_아래로_늘어짐 .
-ex:lemmametaphor_lg356 ex:hasSourceDomain ex:sourcedomain_위에서_아래로_늘어짐 .
-ex:lemmametaphor_lg356 ex:hasTargetDomain ex:targetdomain_피부의_늘어진_상태 .
-ex:lemmametaphor_lg356 ex:realizesConceptualMetaphor ex:conceptualmetaphor_피부의_늘어진_상태_is_아래로_늘어짐 .
-ex:lemmametaphor_lg356 ex:hasSourceDomainLabel "위에서 아래로 늘어짐" .
-ex:lemmametaphor_lg356 ex:hasTargetDomainLabel "피부의 늘어진 상태" .
-ex:lemmametaphor_lg356 ex:hasConceptualMetaphorLabel "피부의 늘어진 상태 IS 아래로 늘어짐" .
-ex:lemmametaphor_lg356 ex:hasMIPVULabel "MRW_DIRECT" .
-ex:lemmametaphor_lg356 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg356 ex:hasSurfaceExpression "처지다" .
-ex:lemmametaphor_lg356 ex:hasConfidence "0.7000" .
-ex:lemmametaphor_lg356 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_057 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_057 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_057 ex:needsHumanReview "true" .
+_:mapping_022 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_022 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_022 ex:needsHumanReview "true" .
 
 ex:targetdomain_인체_체형_묘사 ex:isConceptualizedAs ex:sourcedomain_근육의_성질 .
 ex:lemmametaphor_lg358 ex:hasSourceDomain ex:sourcedomain_근육의_성질 .
@@ -918,9 +358,9 @@ ex:lemmametaphor_lg358 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg358 ex:hasSurfaceExpression "근육질" .
 ex:lemmametaphor_lg358 ex:hasConfidence "0.8600" .
 ex:lemmametaphor_lg358 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_058 ex:hasConfidence "0.8600"^^xsd:decimal .
-_:mapping_058 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_058 ex:needsHumanReview "true" .
+_:mapping_023 ex:hasConfidence "0.8600"^^xsd:decimal .
+_:mapping_023 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_023 ex:needsHumanReview "true" .
 
 ex:targetdomain_피부의_표면_상태 ex:isConceptualizedAs ex:sourcedomain_저절로_밀릴_정도의_반드러운_표면 .
 ex:lemmametaphor_lg363 ex:hasSourceDomain ex:sourcedomain_저절로_밀릴_정도의_반드러운_표면 .
@@ -934,9 +374,9 @@ ex:lemmametaphor_lg363 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg363 ex:hasSurfaceExpression "매끄럽다" .
 ex:lemmametaphor_lg363 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg363 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_059 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_059 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_059 ex:needsHumanReview "true" .
+_:mapping_024 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_024 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_024 ex:needsHumanReview "true" .
 
 ex:targetdomain_피부의_상태 ex:isConceptualizedAs ex:sourcedomain_때나_찌꺼기가_없는_물리적_표면 .
 ex:lemmametaphor_lg364 ex:hasSourceDomain ex:sourcedomain_때나_찌꺼기가_없는_물리적_표면 .
@@ -950,9 +390,9 @@ ex:lemmametaphor_lg364 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg364 ex:hasSurfaceExpression "깨끗하다" .
 ex:lemmametaphor_lg364 ex:hasConfidence "0.8000" .
 ex:lemmametaphor_lg364 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_060 ex:hasConfidence "0.8000"^^xsd:decimal .
-_:mapping_060 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_060 ex:needsHumanReview "true" .
+_:mapping_025 ex:hasConfidence "0.8000"^^xsd:decimal .
+_:mapping_025 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_025 ex:needsHumanReview "true" .
 
 ex:targetdomain_행위의_정확성 ex:isConceptualizedAs ex:sourcedomain_기준이나_규격에_맞음 .
 ex:lemmametaphor_lg368 ex:hasSourceDomain ex:sourcedomain_기준이나_규격에_맞음 .
@@ -966,9 +406,9 @@ ex:lemmametaphor_lg368 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg368 ex:hasSurfaceExpression "제대로" .
 ex:lemmametaphor_lg368 ex:hasConfidence "0.7800" .
 ex:lemmametaphor_lg368 ex:hasContextSentence "피고인의 신체에 대한 검증 결과에 따르면, 피고인의 가슴은 불룩하여 우람하고, 팔뚝도 굵고 탄탄해 보였으며, 복부와 등에는 약간의 주름이 보였고 피부가 약간 처져 보이긴 하였으나 전체적으로 피고인의 몸은 근육질의 건장한 몸으로 보였고, 피고인의 하반신 피부는 상반신에 비하여 더 매끄럽고 깨끗한 상태로 보였는바, 피해자가 실제로는 피고인의 벗은 몸을 제대로 보지 못한 채 피고인의 연령 등으로만 짐작하여 신체의 주름상태 등을 만연히 진술하였을 가능성을 배제할 수 없다." .
-_:mapping_061 ex:hasConfidence "0.7800"^^xsd:decimal .
-_:mapping_061 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_061 ex:needsHumanReview "true" .
+_:mapping_026 ex:hasConfidence "0.7800"^^xsd:decimal .
+_:mapping_026 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_026 ex:needsHumanReview "true" .
 
 ex:targetdomain_행동_양상 ex:isConceptualizedAs ex:sourcedomain_몸의_동작과_자세 .
 ex:lemmametaphor_lg376 ex:hasSourceDomain ex:sourcedomain_몸의_동작과_자세 .
@@ -982,9 +422,9 @@ ex:lemmametaphor_lg376 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg376 ex:hasSurfaceExpression "태도" .
 ex:lemmametaphor_lg376 ex:hasConfidence "0.8200" .
 ex:lemmametaphor_lg376 ex:hasContextSentence "3) 사건 발생 전후 피고인과의 관계 등에서 나타나는 피해자의 아래와 같은 태도는 강제추행을 당한 피해자라고 하기에는 수긍하기 어려운 측면이 있다." .
-_:mapping_062 ex:hasConfidence "0.8200"^^xsd:decimal .
-_:mapping_062 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_062 ex:needsHumanReview "true" .
+_:mapping_027 ex:hasConfidence "0.8200"^^xsd:decimal .
+_:mapping_027 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_027 ex:needsHumanReview "true" .
 
 ex:targetdomain_수치적_근접성 ex:isConceptualizedAs ex:sourcedomain_공간적_거리의_짧음 .
 ex:lemmametaphor_lg377 ex:hasSourceDomain ex:sourcedomain_공간적_거리의_짧음 .
@@ -998,9 +438,9 @@ ex:lemmametaphor_lg377 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg377 ex:hasSurfaceExpression "가깝다" .
 ex:lemmametaphor_lg377 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg377 ex:hasContextSentence "가) 피해자와 피고인은 40세에 가까운 연령의 차이가 있고 이 사건 이전에는 일면식이 없던 사이인데, 피해자는 채팅 어플에서 나이 차이가 15세 이상일 경우 직접 대화가 불가능하자 63세의 ‘(대화명 생략)’이라는 대화명으로 계정을 새로이 가입하면서까지 피고인에게 먼저 연락을 시도하였다." .
-_:mapping_063 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_063 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_063 ex:needsHumanReview "true" .
+_:mapping_028 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_028 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_028 ex:needsHumanReview "true" .
 
 ex:targetdomain_인적_관계 ex:isConceptualizedAs ex:sourcedomain_공간적_거리 .
 ex:lemmametaphor_lg382 ex:hasSourceDomain ex:sourcedomain_공간적_거리 .
@@ -1014,9 +454,9 @@ ex:lemmametaphor_lg382 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg382 ex:hasSurfaceExpression "사이" .
 ex:lemmametaphor_lg382 ex:hasConfidence "0.7400" .
 ex:lemmametaphor_lg382 ex:hasContextSentence "가) 피해자와 피고인은 40세에 가까운 연령의 차이가 있고 이 사건 이전에는 일면식이 없던 사이인데, 피해자는 채팅 어플에서 나이 차이가 15세 이상일 경우 직접 대화가 불가능하자 63세의 ‘(대화명 생략)’이라는 대화명으로 계정을 새로이 가입하면서까지 피고인에게 먼저 연락을 시도하였다." .
-_:mapping_064 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_064 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_064 ex:needsHumanReview "true" .
+_:mapping_029 ex:hasConfidence "0.7400"^^xsd:decimal .
+_:mapping_029 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_029 ex:needsHumanReview "true" .
 
 ex:targetdomain_의사_입장의_명시 ex:isConceptualizedAs ex:sourcedomain_어둠을_빛으로_환하게_함 .
 ex:lemmametaphor_lg404 ex:hasSourceDomain ex:sourcedomain_어둠을_빛으로_환하게_함 .
@@ -1030,9 +470,9 @@ ex:lemmametaphor_lg404 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg404 ex:hasSurfaceExpression "밝히다" .
 ex:lemmametaphor_lg404 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg404 ex:hasContextSentence "피해자는 피고인을 처음 만났음에도 별다른 거부 의사를 밝히지 않고 피고인의 권유에 따라 모텔로 함께 들어갔다." .
-_:mapping_065 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_065 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_065 ex:needsHumanReview "true" .
+_:mapping_030 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_030 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_030 ex:needsHumanReview "true" .
 
 ex:targetdomain_시간적_선행 ex:isConceptualizedAs ex:sourcedomain_공간적_앞섬 .
 ex:lemmametaphor_lg415 ex:hasSourceDomain ex:sourcedomain_공간적_앞섬 .
@@ -1046,8 +486,8 @@ ex:lemmametaphor_lg415 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg415 ex:hasSurfaceExpression "앞서다" .
 ex:lemmametaphor_lg415 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg415 ex:hasContextSentence "피해자는 자신이 돈을 받지 않겠다는 의사를 표시하였음에도 피고인이 억지로 피해자의 핸드백에 돈을 집어넣었다고 주장하나, 피해자가 피고인을 만나기에 앞서 채팅 어플 또는 카카오톡 메신저를 통하여 여러 차례 자신이 처한 경제적 어려움에 관하여 하소연을 한 사실이 있는 데다가 돈을 받은 직후 피고인에게 감사의 뜻을 전하고 피고인 모친의 밥이나 반찬도 챙겨드리겠다는 취지의 말을 한 점 등에 비추어 보면 피해자가 돈을 받는 과정에서 그리 강한 거부의사를 표하지는 않았던 것으로 보인다." .
-_:mapping_066 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_066 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_031 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_031 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_통신수단 ex:isConceptualizedAs ex:sourcedomain_전달하는_사람 .
 ex:lemmametaphor_lg417 ex:hasSourceDomain ex:sourcedomain_전달하는_사람 .
@@ -1061,9 +501,9 @@ ex:lemmametaphor_lg417 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg417 ex:hasSurfaceExpression "메신저" .
 ex:lemmametaphor_lg417 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg417 ex:hasContextSentence "피해자는 자신이 돈을 받지 않겠다는 의사를 표시하였음에도 피고인이 억지로 피해자의 핸드백에 돈을 집어넣었다고 주장하나, 피해자가 피고인을 만나기에 앞서 채팅 어플 또는 카카오톡 메신저를 통하여 여러 차례 자신이 처한 경제적 어려움에 관하여 하소연을 한 사실이 있는 데다가 돈을 받은 직후 피고인에게 감사의 뜻을 전하고 피고인 모친의 밥이나 반찬도 챙겨드리겠다는 취지의 말을 한 점 등에 비추어 보면 피해자가 돈을 받는 과정에서 그리 강한 거부의사를 표하지는 않았던 것으로 보인다." .
-_:mapping_067 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_067 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_067 ex:needsHumanReview "true" .
+_:mapping_032 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_032 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_032 ex:needsHumanReview "true" .
 
 ex:targetdomain_의도_취지 ex:isConceptualizedAs ex:sourcedomain_속으로_먹는_마음 .
 ex:lemmametaphor_lg424 ex:hasSourceDomain ex:sourcedomain_속으로_먹는_마음 .
@@ -1077,9 +517,9 @@ ex:lemmametaphor_lg424 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg424 ex:hasSurfaceExpression "뜻" .
 ex:lemmametaphor_lg424 ex:hasConfidence "0.7200" .
 ex:lemmametaphor_lg424 ex:hasContextSentence "피해자는 자신이 돈을 받지 않겠다는 의사를 표시하였음에도 피고인이 억지로 피해자의 핸드백에 돈을 집어넣었다고 주장하나, 피해자가 피고인을 만나기에 앞서 채팅 어플 또는 카카오톡 메신저를 통하여 여러 차례 자신이 처한 경제적 어려움에 관하여 하소연을 한 사실이 있는 데다가 돈을 받은 직후 피고인에게 감사의 뜻을 전하고 피고인 모친의 밥이나 반찬도 챙겨드리겠다는 취지의 말을 한 점 등에 비추어 보면 피해자가 돈을 받는 과정에서 그리 강한 거부의사를 표하지는 않았던 것으로 보인다." .
-_:mapping_068 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_068 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_068 ex:needsHumanReview "true" .
+_:mapping_033 ex:hasConfidence "0.7200"^^xsd:decimal .
+_:mapping_033 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_033 ex:needsHumanReview "true" .
 
 ex:targetdomain_의사_전달 ex:isConceptualizedAs ex:sourcedomain_이어지게_하다_남기다 .
 ex:lemmametaphor_lg425 ex:hasSourceDomain ex:sourcedomain_이어지게_하다_남기다 .
@@ -1093,9 +533,9 @@ ex:lemmametaphor_lg425 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg425 ex:hasSurfaceExpression "전하다" .
 ex:lemmametaphor_lg425 ex:hasConfidence "0.6800" .
 ex:lemmametaphor_lg425 ex:hasContextSentence "피해자는 자신이 돈을 받지 않겠다는 의사를 표시하였음에도 피고인이 억지로 피해자의 핸드백에 돈을 집어넣었다고 주장하나, 피해자가 피고인을 만나기에 앞서 채팅 어플 또는 카카오톡 메신저를 통하여 여러 차례 자신이 처한 경제적 어려움에 관하여 하소연을 한 사실이 있는 데다가 돈을 받은 직후 피고인에게 감사의 뜻을 전하고 피고인 모친의 밥이나 반찬도 챙겨드리겠다는 취지의 말을 한 점 등에 비추어 보면 피해자가 돈을 받는 과정에서 그리 강한 거부의사를 표하지는 않았던 것으로 보인다." .
-_:mapping_069 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_069 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_069 ex:needsHumanReview "true" .
+_:mapping_034 ex:hasConfidence "0.6800"^^xsd:decimal .
+_:mapping_034 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_034 ex:needsHumanReview "true" .
 
 ex:targetdomain_의사_태도의_강도 ex:isConceptualizedAs ex:sourcedomain_물리적_힘의_세기 .
 ex:lemmametaphor_lg434 ex:hasSourceDomain ex:sourcedomain_물리적_힘의_세기 .
@@ -1109,8 +549,8 @@ ex:lemmametaphor_lg434 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg434 ex:hasSurfaceExpression "강하다" .
 ex:lemmametaphor_lg434 ex:hasConfidence "0.9300" .
 ex:lemmametaphor_lg434 ex:hasContextSentence "피해자는 자신이 돈을 받지 않겠다는 의사를 표시하였음에도 피고인이 억지로 피해자의 핸드백에 돈을 집어넣었다고 주장하나, 피해자가 피고인을 만나기에 앞서 채팅 어플 또는 카카오톡 메신저를 통하여 여러 차례 자신이 처한 경제적 어려움에 관하여 하소연을 한 사실이 있는 데다가 돈을 받은 직후 피고인에게 감사의 뜻을 전하고 피고인 모친의 밥이나 반찬도 챙겨드리겠다는 취지의 말을 한 점 등에 비추어 보면 피해자가 돈을 받는 과정에서 그리 강한 거부의사를 표하지는 않았던 것으로 보인다." .
-_:mapping_070 ex:hasConfidence "0.9300"^^xsd:decimal .
-_:mapping_070 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_035 ex:hasConfidence "0.9300"^^xsd:decimal .
+_:mapping_035 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_신뢰_관계 ex:isConceptualizedAs ex:sourcedomain_몸을_기대는_물리적_지지 .
 ex:lemmametaphor_lg452 ex:hasSourceDomain ex:sourcedomain_몸을_기대는_물리적_지지 .
@@ -1124,89 +564,9 @@ ex:lemmametaphor_lg452 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg452 ex:hasSurfaceExpression "의지하다" .
 ex:lemmametaphor_lg452 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg452 ex:hasContextSentence "피해자는 피고인의 나이가 많아 자칫 남들이 자신과 피고인의 관계를 이른바 ‘원조교제’ 등으로 오해할까 두려워 취한 행동이었다는 취지로 진술하나, 믿고 의지하였던 피고인한테서 뜻밖의 강제추행을 당한 직후 극도의 혐오감으로 인하여 피고인의 모습만 보고도 토할 것 같고 그저 빨리 돌아가고 싶었다고 하면서도 모텔을 나간 이후 타인의 반응까지 고려하여 피고인의 얼굴을 닦아준 점은 선뜻 수긍하기 어렵다." .
-_:mapping_071 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_071 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_071 ex:needsHumanReview "true" .
-
-ex:targetdomain_위급_상황에서의_지원_요청 ex:isConceptualizedAs ex:sourcedomain_남을_돕는_행위 .
-ex:lemmametaphor_lg465 ex:hasSourceDomain ex:sourcedomain_남을_돕는_행위 .
-ex:lemmametaphor_lg465 ex:hasTargetDomain ex:targetdomain_위급_상황에서의_지원_요청 .
-ex:lemmametaphor_lg465 ex:realizesConceptualMetaphor ex:conceptualmetaphor_위급_상황의_지원은_돕는_행위 .
-ex:lemmametaphor_lg465 ex:hasSourceDomainLabel "남을 돕는 행위" .
-ex:lemmametaphor_lg465 ex:hasTargetDomainLabel "위급 상황에서의 지원 요청" .
-ex:lemmametaphor_lg465 ex:hasConceptualMetaphorLabel "위급 상황의 지원은 돕는 행위" .
-ex:lemmametaphor_lg465 ex:hasMIPVULabel "MRW_INDIRECT" .
-ex:lemmametaphor_lg465 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg465 ex:hasSurfaceExpression "도움" .
-ex:lemmametaphor_lg465 ex:hasConfidence "0.7200" .
-ex:lemmametaphor_lg465 ex:hasContextSentence "마) 피해자는 모텔에서 강제추행 피해를 당하였다고 하면서도 즉시 도움을 요청하거나 모텔을 빠져나오려는 행동을 취하지 않았고, 모텔에서 나와 피고인의 차량을 같이 타고 피해자 차량이 주차된 장소로 돌아온 후 자신의 차량을 운전하여 귀가하였다." .
-_:mapping_072 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_072 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_072 ex:needsHumanReview "true" .
-
-ex:targetdomain_장소를_벗어나는_행위 ex:isConceptualizedAs ex:sourcedomain_박힌_물건이_제자리에서_나오는_물리적_이동 .
-ex:lemmametaphor_lg467 ex:hasSourceDomain ex:sourcedomain_박힌_물건이_제자리에서_나오는_물리적_이동 .
-ex:lemmametaphor_lg467 ex:hasTargetDomain ex:targetdomain_장소를_벗어나는_행위 .
-ex:lemmametaphor_lg467 ex:realizesConceptualMetaphor ex:conceptualmetaphor_장소를_벗어나는_행위_is_박힌_물건이_빠지는_것 .
-ex:lemmametaphor_lg467 ex:hasSourceDomainLabel "박힌 물건이 제자리에서 나오는 물리적 이동" .
-ex:lemmametaphor_lg467 ex:hasTargetDomainLabel "장소를 벗어나는 행위" .
-ex:lemmametaphor_lg467 ex:hasConceptualMetaphorLabel "장소를 벗어나는 행위 IS 박힌 물건이 빠지는 것" .
-ex:lemmametaphor_lg467 ex:hasMIPVULabel "MRW_INDIRECT" .
-ex:lemmametaphor_lg467 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg467 ex:hasSurfaceExpression "빠지다" .
-ex:lemmametaphor_lg467 ex:hasConfidence "0.6800" .
-ex:lemmametaphor_lg467 ex:hasContextSentence "마) 피해자는 모텔에서 강제추행 피해를 당하였다고 하면서도 즉시 도움을 요청하거나 모텔을 빠져나오려는 행동을 취하지 않았고, 모텔에서 나와 피고인의 차량을 같이 타고 피해자 차량이 주차된 장소로 돌아온 후 자신의 차량을 운전하여 귀가하였다." .
-_:mapping_073 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_073 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_073 ex:needsHumanReview "true" .
-
-ex:targetdomain_문자_메신저를_통한_의사_전달 ex:isConceptualizedAs ex:sourcedomain_사실을_알리거나_주장하는_전언 .
-ex:lemmametaphor_lg482 ex:hasSourceDomain ex:sourcedomain_사실을_알리거나_주장하는_전언 .
-ex:lemmametaphor_lg482 ex:hasTargetDomain ex:targetdomain_문자_메신저를_통한_의사_전달 .
-ex:lemmametaphor_lg482 ex:realizesConceptualMetaphor ex:conceptualmetaphor_문자_의사소통_is_전언 .
-ex:lemmametaphor_lg482 ex:hasSourceDomainLabel "사실을 알리거나 주장하는 전언" .
-ex:lemmametaphor_lg482 ex:hasTargetDomainLabel "문자/메신저를 통한 의사 전달" .
-ex:lemmametaphor_lg482 ex:hasConceptualMetaphorLabel "문자 의사소통 IS 전언" .
-ex:lemmametaphor_lg482 ex:hasMIPVULabel "MRW_INDIRECT" .
-ex:lemmametaphor_lg482 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg482 ex:hasSurfaceExpression "메시지" .
-ex:lemmametaphor_lg482 ex:hasConfidence "0.7000" .
-ex:lemmametaphor_lg482 ex:hasContextSentence "가) 피해자 진술에 의하더라도 사건 당일 해바라기센터에 전화하여 피해사실에 관한 상담을 하면서도 피고인에 대한 처벌이나 공식적인 사건처리를 원하지는 않았는데, 이후 피고인이 피해자의 카카오톡 메시지에 답을 하지 않자 화가 나 고소에 이르렀다는 취지인바, 위와 같은 고소 경위에 비추어 피해자가 피고인의 추행 사실 자체가 아닌 다른 부수적 사유에 의하여 이 사건 고소에 이르렀을 가능성도 배제할 수 없다." .
-_:mapping_074 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_074 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_074 ex:needsHumanReview "true" .
-
-ex:targetdomain_형사절차상_범죄_신고와_처벌_요구 ex:isConceptualizedAs ex:sourcedomain_고하여_하소연하는_행위 .
-ex:lemmametaphor_lg485 ex:hasSourceDomain ex:sourcedomain_고하여_하소연하는_행위 .
-ex:lemmametaphor_lg485 ex:hasTargetDomain ex:targetdomain_형사절차상_범죄_신고와_처벌_요구 .
-ex:lemmametaphor_lg485 ex:realizesConceptualMetaphor ex:conceptualmetaphor_형사_고소_is_하소연 .
-ex:lemmametaphor_lg485 ex:hasSourceDomainLabel "고하여 하소연하는 행위" .
-ex:lemmametaphor_lg485 ex:hasTargetDomainLabel "형사절차상 범죄 신고와 처벌 요구" .
-ex:lemmametaphor_lg485 ex:hasConceptualMetaphorLabel "형사 고소 IS 하소연" .
-ex:lemmametaphor_lg485 ex:hasMIPVULabel "MRW_INDIRECT" .
-ex:lemmametaphor_lg485 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg485 ex:hasSurfaceExpression "고소" .
-ex:lemmametaphor_lg485 ex:hasConfidence "0.7400" .
-ex:lemmametaphor_lg485 ex:hasContextSentence "가) 피해자 진술에 의하더라도 사건 당일 해바라기센터에 전화하여 피해사실에 관한 상담을 하면서도 피고인에 대한 처벌이나 공식적인 사건처리를 원하지는 않았는데, 이후 피고인이 피해자의 카카오톡 메시지에 답을 하지 않자 화가 나 고소에 이르렀다는 취지인바, 위와 같은 고소 경위에 비추어 피해자가 피고인의 추행 사실 자체가 아닌 다른 부수적 사유에 의하여 이 사건 고소에 이르렀을 가능성도 배제할 수 없다." .
-_:mapping_075 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_075 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_075 ex:needsHumanReview "true" .
-
-ex:targetdomain_지속적_의사소통_관계_유지 ex:isConceptualizedAs ex:sourcedomain_상호_관련성 .
-ex:lemmametaphor_lg498 ex:hasSourceDomain ex:sourcedomain_상호_관련성 .
-ex:lemmametaphor_lg498 ex:hasTargetDomain ex:targetdomain_지속적_의사소통_관계_유지 .
-ex:lemmametaphor_lg498 ex:realizesConceptualMetaphor ex:conceptualmetaphor_communication_is_relation .
-ex:lemmametaphor_lg498 ex:hasSourceDomainLabel "상호 관련성" .
-ex:lemmametaphor_lg498 ex:hasTargetDomainLabel "지속적 의사소통/관계 유지" .
-ex:lemmametaphor_lg498 ex:hasConceptualMetaphorLabel "COMMUNICATION IS RELATION" .
-ex:lemmametaphor_lg498 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg498 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg498 ex:hasSurfaceExpression "연락하다" .
-ex:lemmametaphor_lg498 ex:hasConfidence "0.6300" .
-ex:lemmametaphor_lg498 ex:hasContextSentence "나) 피고인은 사건 당일 피해자와 헤어진 후 카카오톡 메신저를 통하여 피해자에게 “◇◇(가명)야 도착하면 톡 해줘~”, “◇◇야 운전하느라 피곤하지? 잘자~ 시간되면 연락해”" .
-_:mapping_076 ex:hasConfidence "0.6300"^^xsd:decimal .
-_:mapping_076 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_076 ex:needsHumanReview "true" .
+_:mapping_036 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_036 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_036 ex:needsHumanReview "true" .
 
 ex:targetdomain_의사소통_정보_전달 ex:isConceptualizedAs ex:sourcedomain_이동_이송 .
 ex:lemmametaphor_lg504 ex:hasSourceDomain ex:sourcedomain_이동_이송 .
@@ -1220,57 +580,9 @@ ex:lemmametaphor_lg504 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg504 ex:hasSurfaceExpression "보내다" .
 ex:lemmametaphor_lg504 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg504 ex:hasContextSentence "등으로 피해자의 안전한 귀가를 염려하는 한편 이후에도 피해자와 연락을 지속하고자 하는 내용의 메시지를 보내기도 하였고, 사건 발생일로부터 약 3일이 경과한 2019. 1. 23.경 피해자와 전화통화를 하면서도 강제추행 피해 사실을 주장하며 항의하는 피해자에게 추행에 관하여 사과하거나 합의를 제안하는 등으로 반응하지 않고 오히려 적극적으로 자신의 결백함을 주장하기도 하였다." .
-_:mapping_077 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_077 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_077 ex:needsHumanReview "true" .
-
-ex:targetdomain_분쟁_해결_조건_조율 ex:isConceptualizedAs ex:sourcedomain_의견_일치 .
-ex:lemmametaphor_lg511 ex:hasSourceDomain ex:sourcedomain_의견_일치 .
-ex:lemmametaphor_lg511 ex:hasTargetDomain ex:targetdomain_분쟁_해결_조건_조율 .
-ex:lemmametaphor_lg511 ex:realizesConceptualMetaphor ex:conceptualmetaphor_dispute_resolution_is_agreement .
-ex:lemmametaphor_lg511 ex:hasSourceDomainLabel "의견 일치" .
-ex:lemmametaphor_lg511 ex:hasTargetDomainLabel "분쟁 해결/조건 조율" .
-ex:lemmametaphor_lg511 ex:hasConceptualMetaphorLabel "DISPUTE RESOLUTION IS AGREEMENT" .
-ex:lemmametaphor_lg511 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg511 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg511 ex:hasSurfaceExpression "합의" .
-ex:lemmametaphor_lg511 ex:hasConfidence "0.7200" .
-ex:lemmametaphor_lg511 ex:hasContextSentence "등으로 피해자의 안전한 귀가를 염려하는 한편 이후에도 피해자와 연락을 지속하고자 하는 내용의 메시지를 보내기도 하였고, 사건 발생일로부터 약 3일이 경과한 2019. 1. 23.경 피해자와 전화통화를 하면서도 강제추행 피해 사실을 주장하며 항의하는 피해자에게 추행에 관하여 사과하거나 합의를 제안하는 등으로 반응하지 않고 오히려 적극적으로 자신의 결백함을 주장하기도 하였다." .
-_:mapping_078 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_078 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_078 ex:needsHumanReview "true" .
-
-ex:targetdomain_대응_응답 ex:isConceptualizedAs ex:sourcedomain_자극_반응 .
-ex:lemmametaphor_lg513 ex:hasSourceDomain ex:sourcedomain_자극_반응 .
-ex:lemmametaphor_lg513 ex:hasTargetDomain ex:targetdomain_대응_응답 .
-ex:lemmametaphor_lg513 ex:realizesConceptualMetaphor ex:conceptualmetaphor_response_is_reaction .
-ex:lemmametaphor_lg513 ex:hasSourceDomainLabel "자극-반응" .
-ex:lemmametaphor_lg513 ex:hasTargetDomainLabel "대응/응답" .
-ex:lemmametaphor_lg513 ex:hasConceptualMetaphorLabel "RESPONSE IS REACTION" .
-ex:lemmametaphor_lg513 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg513 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg513 ex:hasSurfaceExpression "반응하다" .
-ex:lemmametaphor_lg513 ex:hasConfidence "0.6700" .
-ex:lemmametaphor_lg513 ex:hasContextSentence "등으로 피해자의 안전한 귀가를 염려하는 한편 이후에도 피해자와 연락을 지속하고자 하는 내용의 메시지를 보내기도 하였고, 사건 발생일로부터 약 3일이 경과한 2019. 1. 23.경 피해자와 전화통화를 하면서도 강제추행 피해 사실을 주장하며 항의하는 피해자에게 추행에 관하여 사과하거나 합의를 제안하는 등으로 반응하지 않고 오히려 적극적으로 자신의 결백함을 주장하기도 하였다." .
-_:mapping_079 ex:hasConfidence "0.6700"^^xsd:decimal .
-_:mapping_079 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_079 ex:needsHumanReview "true" .
-
-ex:targetdomain_법적_대인적_대응_태도 ex:isConceptualizedAs ex:sourcedomain_능동적이고_긍정적인_태도 .
-ex:lemmametaphor_lg515 ex:hasSourceDomain ex:sourcedomain_능동적이고_긍정적인_태도 .
-ex:lemmametaphor_lg515 ex:hasTargetDomain ex:targetdomain_법적_대인적_대응_태도 .
-ex:lemmametaphor_lg515 ex:realizesConceptualMetaphor ex:conceptualmetaphor_법적_대인적_대응_태도_is_능동적_태도 .
-ex:lemmametaphor_lg515 ex:hasSourceDomainLabel "능동적이고 긍정적인 태도" .
-ex:lemmametaphor_lg515 ex:hasTargetDomainLabel "법적·대인적 대응 태도" .
-ex:lemmametaphor_lg515 ex:hasConceptualMetaphorLabel "법적·대인적 대응 태도 IS 능동적 태도" .
-ex:lemmametaphor_lg515 ex:hasMIPVULabel "BORDERLINE_CANDIDATE" .
-ex:lemmametaphor_lg515 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg515 ex:hasSurfaceExpression "적극적" .
-ex:lemmametaphor_lg515 ex:hasConfidence "0.6200" .
-ex:lemmametaphor_lg515 ex:hasContextSentence "등으로 피해자의 안전한 귀가를 염려하는 한편 이후에도 피해자와 연락을 지속하고자 하는 내용의 메시지를 보내기도 하였고, 사건 발생일로부터 약 3일이 경과한 2019. 1. 23.경 피해자와 전화통화를 하면서도 강제추행 피해 사실을 주장하며 항의하는 피해자에게 추행에 관하여 사과하거나 합의를 제안하는 등으로 반응하지 않고 오히려 적극적으로 자신의 결백함을 주장하기도 하였다." .
-_:mapping_080 ex:hasConfidence "0.6200"^^xsd:decimal .
-_:mapping_080 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_080 ex:needsHumanReview "true" .
+_:mapping_037 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_037 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_037 ex:needsHumanReview "true" .
 
 ex:targetdomain_무죄성_무고함의_주장 ex:isConceptualizedAs ex:sourcedomain_깨끗하고_흰_상태 .
 ex:lemmametaphor_lg516 ex:hasSourceDomain ex:sourcedomain_깨끗하고_흰_상태 .
@@ -1284,8 +596,8 @@ ex:lemmametaphor_lg516 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg516 ex:hasSurfaceExpression "결백하다" .
 ex:lemmametaphor_lg516 ex:hasConfidence "0.9600" .
 ex:lemmametaphor_lg516 ex:hasContextSentence "등으로 피해자의 안전한 귀가를 염려하는 한편 이후에도 피해자와 연락을 지속하고자 하는 내용의 메시지를 보내기도 하였고, 사건 발생일로부터 약 3일이 경과한 2019. 1. 23.경 피해자와 전화통화를 하면서도 강제추행 피해 사실을 주장하며 항의하는 피해자에게 추행에 관하여 사과하거나 합의를 제안하는 등으로 반응하지 않고 오히려 적극적으로 자신의 결백함을 주장하기도 하였다." .
-_:mapping_081 ex:hasConfidence "0.9600"^^xsd:decimal .
-_:mapping_081 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_038 ex:hasConfidence "0.9600"^^xsd:decimal .
+_:mapping_038 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_판단상의_오류를_특정하는_행위 ex:isConceptualizedAs ex:sourcedomain_무엇인가를_꼭_집어_가리키는_행위 .
 ex:lemmametaphor_lg519 ex:hasSourceDomain ex:sourcedomain_무엇인가를_꼭_집어_가리키는_행위 .
@@ -1299,8 +611,8 @@ ex:lemmametaphor_lg519 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg519 ex:hasSurfaceExpression "지적하다" .
 ex:lemmametaphor_lg519 ex:hasConfidence "0.9500" .
 ex:lemmametaphor_lg519 ex:hasContextSentence "원심이 일관되지 않다고 지적한 부분은 구체적인 묘사의 표현이 다소 다른 것일 뿐 그 내용이 일관되지 않다고 평가하기 어렵고, 번복되었다고 지적한 부분도 매우 지엽적일 뿐 아니라 번복된 것인지도 불분명하다." .
-_:mapping_082 ex:hasConfidence "0.9500"^^xsd:decimal .
-_:mapping_082 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_039 ex:hasConfidence "0.9500"^^xsd:decimal .
+_:mapping_039 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_진술_정황의_신빙성_판단 ex:isConceptualizedAs ex:sourcedomain_물건값을_헤아려_매기는_행위 .
 ex:lemmametaphor_lg524 ex:hasSourceDomain ex:sourcedomain_물건값을_헤아려_매기는_행위 .
@@ -1314,8 +626,8 @@ ex:lemmametaphor_lg524 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg524 ex:hasSurfaceExpression "평가하다" .
 ex:lemmametaphor_lg524 ex:hasConfidence "0.9300" .
 ex:lemmametaphor_lg524 ex:hasContextSentence "원심이 일관되지 않다고 지적한 부분은 구체적인 묘사의 표현이 다소 다른 것일 뿐 그 내용이 일관되지 않다고 평가하기 어렵고, 번복되었다고 지적한 부분도 매우 지엽적일 뿐 아니라 번복된 것인지도 불분명하다." .
-_:mapping_083 ex:hasConfidence "0.9300"^^xsd:decimal .
-_:mapping_083 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_040 ex:hasConfidence "0.9300"^^xsd:decimal .
+_:mapping_040 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_짧은_개인_메시지 ex:isConceptualizedAs ex:sourcedomain_작은_종잇조각 .
 ex:lemmametaphor_lg531 ex:hasSourceDomain ex:sourcedomain_작은_종잇조각 .
@@ -1329,8 +641,8 @@ ex:lemmametaphor_lg531 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg531 ex:hasSurfaceExpression "쪽지" .
 ex:lemmametaphor_lg531 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg531 ex:hasContextSentence "2) 피해자는 최초 진술 당시부터 자신에게 불리할 수 있는 내용들(자신이 먼저 피고인에게 쪽지를 보낸 사실, 피고인의 제안에 동의하여 모텔에 들어간 사실, 피고인이 ‘안아보자’고 하여 동의를 했던 사실, 모텔을 나오면서 피고인의 얼굴에 묻은 립스틱을 닦아준 사실 등)까지 모두 숨김없이 진술하였다." .
-_:mapping_084 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_084 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_041 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_041 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_상대에게_권하는_행위 ex:isConceptualizedAs ex:sourcedomain_의견을_내놓는_행위 .
 ex:lemmametaphor_lg532 ex:hasSourceDomain ex:sourcedomain_의견을_내놓는_행위 .
@@ -1344,8 +656,8 @@ ex:lemmametaphor_lg532 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg532 ex:hasSurfaceExpression "제안" .
 ex:lemmametaphor_lg532 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg532 ex:hasContextSentence "2) 피해자는 최초 진술 당시부터 자신에게 불리할 수 있는 내용들(자신이 먼저 피고인에게 쪽지를 보낸 사실, 피고인의 제안에 동의하여 모텔에 들어간 사실, 피고인이 ‘안아보자’고 하여 동의를 했던 사실, 모텔을 나오면서 피고인의 얼굴에 묻은 립스틱을 닦아준 사실 등)까지 모두 숨김없이 진술하였다." .
-_:mapping_085 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_085 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_042 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_042 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_외부_자료에_근거한_판단 ex:isConceptualizedAs ex:sourcedomain_제삼자의_입장에서_보는_관점 .
 ex:lemmametaphor_lg539 ex:hasSourceDomain ex:sourcedomain_제삼자의_입장에서_보는_관점 .
@@ -1359,8 +671,8 @@ ex:lemmametaphor_lg539 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg539 ex:hasSurfaceExpression "객관적" .
 ex:lemmametaphor_lg539 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg539 ex:hasContextSentence "사건 전후에 피고인과 피해자가 주고받은 메시지의 내용, 사건 이후 피해자가 친구와 주고받은 메시지의 내용, 피해자가 사건 이후 자살시도를 하였던 점 등 객관적인 정황들도 피해자의 진술에 부합한다." .
-_:mapping_086 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_086 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_043 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_043 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_법적_판단_해석 ex:isConceptualizedAs ex:sourcedomain_지식_획득 .
 ex:lemmametaphor_lg544 ex:hasSourceDomain ex:sourcedomain_지식_획득 .
@@ -1374,9 +686,9 @@ ex:lemmametaphor_lg544 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg544 ex:hasSurfaceExpression "알다" .
 ex:lemmametaphor_lg544 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg544 ex:hasContextSentence "3) 사건 당시 피고인의 신체에 대한 피해자의 진술은 그 진술 자체로 다분히 주관적이고 감정적인 것임을 알 수 있고, 피고인의 피부 상태 등에 대한 법원의 검증 결과 역시 객관적인 기준을 가지고 비교하기 어려우므로, 이러한 증거조사 결과를 토대로 피해자 진술의 증명력을 배척하는 것은 합리적이라고 보기 어렵다." .
-_:mapping_087 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_087 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_087 ex:needsHumanReview "true" .
+_:mapping_044 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_044 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_044 ex:needsHumanReview "true" .
 
 ex:targetdomain_논증_판단의_근거 ex:isConceptualizedAs ex:sourcedomain_건축물의_물리적_받침 .
 ex:lemmametaphor_lg549 ex:hasSourceDomain ex:sourcedomain_건축물의_물리적_받침 .
@@ -1390,9 +702,9 @@ ex:lemmametaphor_lg549 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg549 ex:hasSurfaceExpression "토대" .
 ex:lemmametaphor_lg549 ex:hasConfidence "0.9300" .
 ex:lemmametaphor_lg549 ex:hasContextSentence "3) 사건 당시 피고인의 신체에 대한 피해자의 진술은 그 진술 자체로 다분히 주관적이고 감정적인 것임을 알 수 있고, 피고인의 피부 상태 등에 대한 법원의 검증 결과 역시 객관적인 기준을 가지고 비교하기 어려우므로, 이러한 증거조사 결과를 토대로 피해자 진술의 증명력을 배척하는 것은 합리적이라고 보기 어렵다." .
-_:mapping_088 ex:hasConfidence "0.9300"^^xsd:decimal .
-_:mapping_088 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_088 ex:needsHumanReview "true" .
+_:mapping_045 ex:hasConfidence "0.9300"^^xsd:decimal .
+_:mapping_045 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_045 ex:needsHumanReview "true" .
 
 ex:targetdomain_법적_절차에서의_증거_수용 ex:isConceptualizedAs ex:sourcedomain_선택하여_사용함 .
 ex:lemmametaphor_lg551 ex:hasSourceDomain ex:sourcedomain_선택하여_사용함 .
@@ -1406,9 +718,9 @@ ex:lemmametaphor_lg551 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg551 ex:hasSurfaceExpression "채택하다" .
 ex:lemmametaphor_lg551 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg551 ex:hasContextSentence "4) 원심이 ‘강제추행을 당한 피해자라고 하기에는 수긍하기 어려운 측면’이라고 판단한 피해자의 태도는 적법하게 채택된 증거에 따라 인정되는 아래와 같은 사정을 고려할 때 충분히 납득할 만하고, 이러한 사정을 들어 피해자 진술의 신빙성을 배척하는 것은 잘못된 통념에 따라 통상의 성폭력 피해자라면 마땅히 보여야 할 반응을 상정해 두고 이에 어긋나는 행동을 하였다는 이유로 피해자 진술의 합리성을 부정한 것으로, 앞서 본 법리에 비추어 볼 때, 정의와 형평의 이념에 입각하여 논리와 경험의 법칙에 따른 증거판단이라고 볼 수 없다." .
-_:mapping_089 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_089 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_089 ex:needsHumanReview "true" .
+_:mapping_046 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_046 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_046 ex:needsHumanReview "true" .
 
 ex:targetdomain_논증에서_근거_제시 ex:isConceptualizedAs ex:sourcedomain_안으로_들어감 .
 ex:lemmametaphor_lg554 ex:hasSourceDomain ex:sourcedomain_안으로_들어감 .
@@ -1422,9 +734,9 @@ ex:lemmametaphor_lg554 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg554 ex:hasSurfaceExpression "들다" .
 ex:lemmametaphor_lg554 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg554 ex:hasContextSentence "4) 원심이 ‘강제추행을 당한 피해자라고 하기에는 수긍하기 어려운 측면’이라고 판단한 피해자의 태도는 적법하게 채택된 증거에 따라 인정되는 아래와 같은 사정을 고려할 때 충분히 납득할 만하고, 이러한 사정을 들어 피해자 진술의 신빙성을 배척하는 것은 잘못된 통념에 따라 통상의 성폭력 피해자라면 마땅히 보여야 할 반응을 상정해 두고 이에 어긋나는 행동을 하였다는 이유로 피해자 진술의 합리성을 부정한 것으로, 앞서 본 법리에 비추어 볼 때, 정의와 형평의 이념에 입각하여 논리와 경험의 법칙에 따른 증거판단이라고 볼 수 없다." .
-_:mapping_090 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_090 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_090 ex:needsHumanReview "true" .
+_:mapping_047 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_047 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_047 ex:needsHumanReview "true" .
 
 ex:targetdomain_수준_지위의_저하 ex:isConceptualizedAs ex:sourcedomain_물리적_낮음 .
 ex:lemmametaphor_lg558 ex:hasSourceDomain ex:sourcedomain_물리적_낮음 .
@@ -1438,24 +750,8 @@ ex:lemmametaphor_lg558 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg558 ex:hasSurfaceExpression "낮다" .
 ex:lemmametaphor_lg558 ex:hasConfidence "0.9600" .
 ex:lemmametaphor_lg558 ex:hasContextSentence "가) 피해자(여, 30세)는 지능지수가 72 정도로 낮고, 고등학교를 졸업한 후 식당 아르바이트 등을 하며 지내는 사람이다." .
-_:mapping_091 ex:hasConfidence "0.9600"^^xsd:decimal .
-_:mapping_091 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-
-ex:targetdomain_관계의_생성 ex:isConceptualizedAs ex:sourcedomain_형상_모양의_이루어짐 .
-ex:lemmametaphor_lg570 ex:hasSourceDomain ex:sourcedomain_형상_모양의_이루어짐 .
-ex:lemmametaphor_lg570 ex:hasTargetDomain ex:targetdomain_관계의_생성 .
-ex:lemmametaphor_lg570 ex:realizesConceptualMetaphor ex:conceptualmetaphor_relationship_formation_is_shape_formation .
-ex:lemmametaphor_lg570 ex:hasSourceDomainLabel "형상/모양의 이루어짐" .
-ex:lemmametaphor_lg570 ex:hasTargetDomainLabel "관계의 생성" .
-ex:lemmametaphor_lg570 ex:hasConceptualMetaphorLabel "RELATIONSHIP FORMATION IS SHAPE FORMATION" .
-ex:lemmametaphor_lg570 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg570 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg570 ex:hasSurfaceExpression "형성" .
-ex:lemmametaphor_lg570 ex:hasConfidence "0.6300" .
-ex:lemmametaphor_lg570 ex:hasContextSentence "스스로를 ‘가난하다’고 표현하고 이 사건 무렵 사기를 당하기도 하는 등 사회·경제적 지위가 낮고, 타인과의 관계 형성에 대한 욕구가 높은 반면 현실적으로는 심리적으로 고립된 상황에 처해 있었던 것으로 보인다." .
-_:mapping_092 ex:hasConfidence "0.6300"^^xsd:decimal .
-_:mapping_092 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_092 ex:needsHumanReview "true" .
+_:mapping_048 ex:hasConfidence "0.9600"^^xsd:decimal .
+_:mapping_048 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_정도_강도 ex:isConceptualizedAs ex:sourcedomain_공간적_높이 .
 ex:lemmametaphor_lg572 ex:hasSourceDomain ex:sourcedomain_공간적_높이 .
@@ -1469,40 +765,8 @@ ex:lemmametaphor_lg572 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg572 ex:hasSurfaceExpression "높다" .
 ex:lemmametaphor_lg572 ex:hasConfidence "0.9500" .
 ex:lemmametaphor_lg572 ex:hasContextSentence "스스로를 ‘가난하다’고 표현하고 이 사건 무렵 사기를 당하기도 하는 등 사회·경제적 지위가 낮고, 타인과의 관계 형성에 대한 욕구가 높은 반면 현실적으로는 심리적으로 고립된 상황에 처해 있었던 것으로 보인다." .
-_:mapping_093 ex:hasConfidence "0.9500"^^xsd:decimal .
-_:mapping_093 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-
-ex:targetdomain_사용자_정보 ex:isConceptualizedAs ex:sourcedomain_인물의_약력 .
-ex:lemmametaphor_lg578 ex:hasSourceDomain ex:sourcedomain_인물의_약력 .
-ex:lemmametaphor_lg578 ex:hasTargetDomain ex:targetdomain_사용자_정보 .
-ex:lemmametaphor_lg578 ex:realizesConceptualMetaphor ex:conceptualmetaphor_user_information_is_a_biographical_profile .
-ex:lemmametaphor_lg578 ex:hasSourceDomainLabel "인물의 약력" .
-ex:lemmametaphor_lg578 ex:hasTargetDomainLabel "사용자 정보" .
-ex:lemmametaphor_lg578 ex:hasConceptualMetaphorLabel "USER INFORMATION IS A BIOGRAPHICAL PROFILE" .
-ex:lemmametaphor_lg578 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg578 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg578 ex:hasSurfaceExpression "프로필" .
-ex:lemmametaphor_lg578 ex:hasConfidence "0.6600" .
-ex:lemmametaphor_lg578 ex:hasContextSentence "나) 피해자는 채팅 어플 ‘○○○’를 통하여 피고인(남, 70세, 당시 아이디에 표시된 나이는 62세)을 알게 되어 서로의 프로필을 보는 등 관심을 주고받던 중 2019. 1. 4. 나이가 63세로 된 아이디를 만들어 피고인에게 먼저 쪽지를 보냈다." .
-_:mapping_094 ex:hasConfidence "0.6600"^^xsd:decimal .
-_:mapping_094 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_094 ex:needsHumanReview "true" .
-
-ex:targetdomain_호감_상호작용 ex:isConceptualizedAs ex:sourcedomain_주의를_기울임 .
-ex:lemmametaphor_lg579 ex:hasSourceDomain ex:sourcedomain_주의를_기울임 .
-ex:lemmametaphor_lg579 ex:hasTargetDomain ex:targetdomain_호감_상호작용 .
-ex:lemmametaphor_lg579 ex:realizesConceptualMetaphor ex:conceptualmetaphor_affection_is_attention .
-ex:lemmametaphor_lg579 ex:hasSourceDomainLabel "주의를 기울임" .
-ex:lemmametaphor_lg579 ex:hasTargetDomainLabel "호감/상호작용" .
-ex:lemmametaphor_lg579 ex:hasConceptualMetaphorLabel "AFFECTION IS ATTENTION" .
-ex:lemmametaphor_lg579 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg579 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg579 ex:hasSurfaceExpression "관심" .
-ex:lemmametaphor_lg579 ex:hasConfidence "0.7000" .
-ex:lemmametaphor_lg579 ex:hasContextSentence "나) 피해자는 채팅 어플 ‘○○○’를 통하여 피고인(남, 70세, 당시 아이디에 표시된 나이는 62세)을 알게 되어 서로의 프로필을 보는 등 관심을 주고받던 중 2019. 1. 4. 나이가 63세로 된 아이디를 만들어 피고인에게 먼저 쪽지를 보냈다." .
-_:mapping_095 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_095 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_095 ex:needsHumanReview "true" .
+_:mapping_049 ex:hasConfidence "0.9500"^^xsd:decimal .
+_:mapping_049 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_시간적_진행 ex:isConceptualizedAs ex:sourcedomain_가운데_중간 .
 ex:lemmametaphor_lg580 ex:hasSourceDomain ex:sourcedomain_가운데_중간 .
@@ -1516,8 +780,8 @@ ex:lemmametaphor_lg580 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg580 ex:hasSurfaceExpression "중" .
 ex:lemmametaphor_lg580 ex:hasConfidence "0.9300" .
 ex:lemmametaphor_lg580 ex:hasContextSentence "나) 피해자는 채팅 어플 ‘○○○’를 통하여 피고인(남, 70세, 당시 아이디에 표시된 나이는 62세)을 알게 되어 서로의 프로필을 보는 등 관심을 주고받던 중 2019. 1. 4. 나이가 63세로 된 아이디를 만들어 피고인에게 먼저 쪽지를 보냈다." .
-_:mapping_096 ex:hasConfidence "0.9300"^^xsd:decimal .
-_:mapping_096 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_050 ex:hasConfidence "0.9300"^^xsd:decimal .
+_:mapping_050 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_계정_생성 ex:isConceptualizedAs ex:sourcedomain_사물을_이루다 .
 ex:lemmametaphor_lg581 ex:hasSourceDomain ex:sourcedomain_사물을_이루다 .
@@ -1531,8 +795,8 @@ ex:lemmametaphor_lg581 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg581 ex:hasSurfaceExpression "만들다" .
 ex:lemmametaphor_lg581 ex:hasConfidence "0.9000" .
 ex:lemmametaphor_lg581 ex:hasContextSentence "나) 피해자는 채팅 어플 ‘○○○’를 통하여 피고인(남, 70세, 당시 아이디에 표시된 나이는 62세)을 알게 되어 서로의 프로필을 보는 등 관심을 주고받던 중 2019. 1. 4. 나이가 63세로 된 아이디를 만들어 피고인에게 먼저 쪽지를 보냈다." .
-_:mapping_097 ex:hasConfidence "0.9000"^^xsd:decimal .
-_:mapping_097 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_051 ex:hasConfidence "0.9000"^^xsd:decimal .
+_:mapping_051 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_방문_교류 ex:isConceptualizedAs ex:sourcedomain_화자_쪽으로_이동 .
 ex:lemmametaphor_lg587 ex:hasSourceDomain ex:sourcedomain_화자_쪽으로_이동 .
@@ -1546,8 +810,8 @@ ex:lemmametaphor_lg587 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg587 ex:hasSurfaceExpression "오다" .
 ex:lemmametaphor_lg587 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg587 ex:hasContextSentence "그 쪽지 내용은 ‘나이차이 때문에 쪽지 보내는 게 안 되서 다른 걸로 가입했다. 늘 와주셔서 감사드린다는 말을 하고 싶었다. 꼭 좋은 인연 만나시길 바란다.’는 취지이다." .
-_:mapping_098 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_098 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_052 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_052 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_관계의_질 ex:isConceptualizedAs ex:sourcedomain_만족할_만한_성질 .
 ex:lemmametaphor_lg589 ex:hasSourceDomain ex:sourcedomain_만족할_만한_성질 .
@@ -1561,168 +825,8 @@ ex:lemmametaphor_lg589 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg589 ex:hasSurfaceExpression "좋다" .
 ex:lemmametaphor_lg589 ex:hasConfidence "0.8800" .
 ex:lemmametaphor_lg589 ex:hasContextSentence "그 쪽지 내용은 ‘나이차이 때문에 쪽지 보내는 게 안 되서 다른 걸로 가입했다. 늘 와주셔서 감사드린다는 말을 하고 싶었다. 꼭 좋은 인연 만나시길 바란다.’는 취지이다." .
-_:mapping_099 ex:hasConfidence "0.8800"^^xsd:decimal .
-_:mapping_099 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-
-ex:targetdomain_전화기_연락_수단의_명칭_형성 ex:isConceptualizedAs ex:sourcedomain_몸에_지니고_다니는_행위 .
-ex:lemmametaphor_lg594 ex:hasSourceDomain ex:sourcedomain_몸에_지니고_다니는_행위 .
-ex:lemmametaphor_lg594 ex:hasTargetDomain ex:targetdomain_전화기_연락_수단의_명칭_형성 .
-ex:lemmametaphor_lg594 ex:realizesConceptualMetaphor ex:conceptualmetaphor_전화기_연락_수단은_휴대되는_것 .
-ex:lemmametaphor_lg594 ex:hasSourceDomainLabel "몸에 지니고 다니는 행위" .
-ex:lemmametaphor_lg594 ex:hasTargetDomainLabel "전화기/연락 수단의 명칭 형성" .
-ex:lemmametaphor_lg594 ex:hasConceptualMetaphorLabel "전화기/연락 수단은 휴대되는 것" .
-ex:lemmametaphor_lg594 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg594 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg594 ex:hasSurfaceExpression "휴대" .
-ex:lemmametaphor_lg594 ex:hasConfidence "0.6200" .
-ex:lemmametaphor_lg594 ex:hasContextSentence "여기에 대하여 피고인은 ‘너무 반갑게 받았다.’는 취지로 답장을 보낸 후 휴대전화 번호를 물어보고 전화통화를 하자고 제안하였으며, 자신은 연예인과 친분이 있고 재계 인사들과도 잘 안다고 이야기하면서 ‘어려운 문제가 있으면 상의하라, 좋은 관계로 서로 살아가면서 도움이 됐으면 좋겠다.’는 취지로 말하였다." .
-_:mapping_100 ex:hasConfidence "0.6200"^^xsd:decimal .
-_:mapping_100 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_100 ex:needsHumanReview "true" .
-
-ex:targetdomain_도움_조언_요청 ex:isConceptualizedAs ex:sourcedomain_서로_의논하는_행위 .
-ex:lemmametaphor_lg603 ex:hasSourceDomain ex:sourcedomain_서로_의논하는_행위 .
-ex:lemmametaphor_lg603 ex:hasTargetDomain ex:targetdomain_도움_조언_요청 .
-ex:lemmametaphor_lg603 ex:realizesConceptualMetaphor ex:conceptualmetaphor_도움_조언_요청은_서로_의논하기 .
-ex:lemmametaphor_lg603 ex:hasSourceDomainLabel "서로 의논하는 행위" .
-ex:lemmametaphor_lg603 ex:hasTargetDomainLabel "도움·조언 요청" .
-ex:lemmametaphor_lg603 ex:hasConceptualMetaphorLabel "도움·조언 요청은 서로 의논하기" .
-ex:lemmametaphor_lg603 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg603 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg603 ex:hasSurfaceExpression "상의하다" .
-ex:lemmametaphor_lg603 ex:hasConfidence "0.6700" .
-ex:lemmametaphor_lg603 ex:hasContextSentence "여기에 대하여 피고인은 ‘너무 반갑게 받았다.’는 취지로 답장을 보낸 후 휴대전화 번호를 물어보고 전화통화를 하자고 제안하였으며, 자신은 연예인과 친분이 있고 재계 인사들과도 잘 안다고 이야기하면서 ‘어려운 문제가 있으면 상의하라, 좋은 관계로 서로 살아가면서 도움이 됐으면 좋겠다.’는 취지로 말하였다." .
-_:mapping_101 ex:hasConfidence "0.6700"^^xsd:decimal .
-_:mapping_101 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_101 ex:needsHumanReview "true" .
-
-ex:targetdomain_사회적_관계의_지속 ex:isConceptualizedAs ex:sourcedomain_생명_생활을_이어_가는_행위 .
-ex:lemmametaphor_lg605 ex:hasSourceDomain ex:sourcedomain_생명_생활을_이어_가는_행위 .
-ex:lemmametaphor_lg605 ex:hasTargetDomain ex:targetdomain_사회적_관계의_지속 .
-ex:lemmametaphor_lg605 ex:realizesConceptualMetaphor ex:conceptualmetaphor_사회적_관계는_살아가는_것 .
-ex:lemmametaphor_lg605 ex:hasSourceDomainLabel "생명/생활을 이어 가는 행위" .
-ex:lemmametaphor_lg605 ex:hasTargetDomainLabel "사회적 관계의 지속" .
-ex:lemmametaphor_lg605 ex:hasConceptualMetaphorLabel "사회적 관계는 살아가는 것" .
-ex:lemmametaphor_lg605 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg605 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg605 ex:hasSurfaceExpression "살아가다" .
-ex:lemmametaphor_lg605 ex:hasConfidence "0.6400" .
-ex:lemmametaphor_lg605 ex:hasContextSentence "여기에 대하여 피고인은 ‘너무 반갑게 받았다.’는 취지로 답장을 보낸 후 휴대전화 번호를 물어보고 전화통화를 하자고 제안하였으며, 자신은 연예인과 친분이 있고 재계 인사들과도 잘 안다고 이야기하면서 ‘어려운 문제가 있으면 상의하라, 좋은 관계로 서로 살아가면서 도움이 됐으면 좋겠다.’는 취지로 말하였다." .
-_:mapping_102 ex:hasConfidence "0.6400"^^xsd:decimal .
-_:mapping_102 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_102 ex:needsHumanReview "true" .
-
-ex:targetdomain_사회적_위세와_세련됨의_평가 ex:isConceptualizedAs ex:sourcedomain_품질_수준의_높음 .
-ex:lemmametaphor_lg607 ex:hasSourceDomain ex:sourcedomain_품질_수준의_높음 .
-ex:lemmametaphor_lg607 ex:hasTargetDomain ex:targetdomain_사회적_위세와_세련됨의_평가 .
-ex:lemmametaphor_lg607 ex:realizesConceptualMetaphor ex:conceptualmetaphor_사회적_위세는_높은_수준 .
-ex:lemmametaphor_lg607 ex:hasSourceDomainLabel "품질·수준의 높음" .
-ex:lemmametaphor_lg607 ex:hasTargetDomainLabel "사회적 위세와 세련됨의 평가" .
-ex:lemmametaphor_lg607 ex:hasConceptualMetaphorLabel "사회적 위세는 높은 수준" .
-ex:lemmametaphor_lg607 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg607 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg607 ex:hasSurfaceExpression "고급하다" .
-ex:lemmametaphor_lg607 ex:hasConfidence "0.5800" .
-ex:lemmametaphor_lg607 ex:hasContextSentence "피해자는 기뻐하면서 피고인의 사회적 지위와 고급스러운 스타일을 부러워하고 동경하는 취지의 메시지를 보냈고, 피고인은 쪽지로 대화를 나눈 지 4일 만에 피해자에게 ‘만나서 식사라도 하자.’고 먼저 제안하였다." .
-_:mapping_103 ex:hasConfidence "0.5800"^^xsd:decimal .
-_:mapping_103 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_103 ex:needsHumanReview "true" .
-
-ex:targetdomain_선망과_지향 ex:isConceptualizedAs ex:sourcedomain_간절히_그리워함 .
-ex:lemmametaphor_lg610 ex:hasSourceDomain ex:sourcedomain_간절히_그리워함 .
-ex:lemmametaphor_lg610 ex:hasTargetDomain ex:targetdomain_선망과_지향 .
-ex:lemmametaphor_lg610 ex:realizesConceptualMetaphor ex:conceptualmetaphor_선망은_그리워함 .
-ex:lemmametaphor_lg610 ex:hasSourceDomainLabel "간절히 그리워함" .
-ex:lemmametaphor_lg610 ex:hasTargetDomainLabel "선망과 지향" .
-ex:lemmametaphor_lg610 ex:hasConceptualMetaphorLabel "선망은 그리워함" .
-ex:lemmametaphor_lg610 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg610 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg610 ex:hasSurfaceExpression "동경하다" .
-ex:lemmametaphor_lg610 ex:hasConfidence "0.6300" .
-ex:lemmametaphor_lg610 ex:hasContextSentence "피해자는 기뻐하면서 피고인의 사회적 지위와 고급스러운 스타일을 부러워하고 동경하는 취지의 메시지를 보냈고, 피고인은 쪽지로 대화를 나눈 지 4일 만에 피해자에게 ‘만나서 식사라도 하자.’고 먼저 제안하였다." .
-_:mapping_104 ex:hasConfidence "0.6300"^^xsd:decimal .
-_:mapping_104 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_104 ex:needsHumanReview "true" .
-
-ex:targetdomain_대화_교류 ex:isConceptualizedAs ex:sourcedomain_하나를_둘_이상으로_가르는_행위 .
-ex:lemmametaphor_lg611 ex:hasSourceDomain ex:sourcedomain_하나를_둘_이상으로_가르는_행위 .
-ex:lemmametaphor_lg611 ex:hasTargetDomain ex:targetdomain_대화_교류 .
-ex:lemmametaphor_lg611 ex:realizesConceptualMetaphor ex:conceptualmetaphor_대화는_나누는_것 .
-ex:lemmametaphor_lg611 ex:hasSourceDomainLabel "하나를 둘 이상으로 가르는 행위" .
-ex:lemmametaphor_lg611 ex:hasTargetDomainLabel "대화·교류" .
-ex:lemmametaphor_lg611 ex:hasConceptualMetaphorLabel "대화는 나누는 것" .
-ex:lemmametaphor_lg611 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg611 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg611 ex:hasSurfaceExpression "나누다" .
-ex:lemmametaphor_lg611 ex:hasConfidence "0.7000" .
-ex:lemmametaphor_lg611 ex:hasContextSentence "피해자는 기뻐하면서 피고인의 사회적 지위와 고급스러운 스타일을 부러워하고 동경하는 취지의 메시지를 보냈고, 피고인은 쪽지로 대화를 나눈 지 4일 만에 피해자에게 ‘만나서 식사라도 하자.’고 먼저 제안하였다." .
-_:mapping_105 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_105 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_105 ex:needsHumanReview "true" .
-
-ex:targetdomain_친분_형성을_위한_만남 ex:isConceptualizedAs ex:sourcedomain_음식을_먹는_행위 .
-ex:lemmametaphor_lg614 ex:hasSourceDomain ex:sourcedomain_음식을_먹는_행위 .
-ex:lemmametaphor_lg614 ex:hasTargetDomain ex:targetdomain_친분_형성을_위한_만남 .
-ex:lemmametaphor_lg614 ex:realizesConceptualMetaphor ex:conceptualmetaphor_만남은_식사 .
-ex:lemmametaphor_lg614 ex:hasSourceDomainLabel "음식을 먹는 행위" .
-ex:lemmametaphor_lg614 ex:hasTargetDomainLabel "친분 형성을 위한 만남" .
-ex:lemmametaphor_lg614 ex:hasConceptualMetaphorLabel "만남은 식사" .
-ex:lemmametaphor_lg614 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg614 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg614 ex:hasSurfaceExpression "식사" .
-ex:lemmametaphor_lg614 ex:hasConfidence "0.6600" .
-ex:lemmametaphor_lg614 ex:hasContextSentence "피해자는 기뻐하면서 피고인의 사회적 지위와 고급스러운 스타일을 부러워하고 동경하는 취지의 메시지를 보냈고, 피고인은 쪽지로 대화를 나눈 지 4일 만에 피해자에게 ‘만나서 식사라도 하자.’고 먼저 제안하였다." .
-_:mapping_106 ex:hasConfidence "0.6600"^^xsd:decimal .
-_:mapping_106 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_106 ex:needsHumanReview "true" .
-
-ex:targetdomain_대화하기_좋은_장소의_상태 ex:isConceptualizedAs ex:sourcedomain_소리가_없는_고요함 .
-ex:lemmametaphor_lg615 ex:hasSourceDomain ex:sourcedomain_소리가_없는_고요함 .
-ex:lemmametaphor_lg615 ex:hasTargetDomain ex:targetdomain_대화하기_좋은_장소의_상태 .
-ex:lemmametaphor_lg615 ex:realizesConceptualMetaphor ex:conceptualmetaphor_한적함은_고요함 .
-ex:lemmametaphor_lg615 ex:hasSourceDomainLabel "소리가 없는 고요함" .
-ex:lemmametaphor_lg615 ex:hasTargetDomainLabel "대화하기 좋은 장소의 상태" .
-ex:lemmametaphor_lg615 ex:hasConceptualMetaphorLabel "한적함은 고요함" .
-ex:lemmametaphor_lg615 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg615 ex:hasMetaphorType "ORIENTATIONAL" .
-ex:lemmametaphor_lg615 ex:hasSurfaceExpression "조용하다" .
-ex:lemmametaphor_lg615 ex:hasConfidence "0.6100" .
-ex:lemmametaphor_lg615 ex:hasContextSentence "다) 피해자는 2019. 1. 20. 18:00경 ☆☆☆☆에서 피고인을 만났는데, 피고인이 ‘조용한 곳에 가서 이야기를 하자.’고 하여 자리를 이동하기로 하였고, 피고인의 차를 타고 이동하던 중 피고인이 모텔에 가자고 하여 모텔에 들어가게 되었다." .
-_:mapping_107 ex:hasConfidence "0.6100"^^xsd:decimal .
-_:mapping_107 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_107 ex:needsHumanReview "true" .
-
-ex:targetdomain_성적_접촉_행위 ex:isConceptualizedAs ex:sourcedomain_신체_동작 .
-ex:lemmametaphor_lg622 ex:hasSourceDomain ex:sourcedomain_신체_동작 .
-ex:lemmametaphor_lg622 ex:hasTargetDomain ex:targetdomain_성적_접촉_행위 .
-ex:lemmametaphor_lg622 ex:realizesConceptualMetaphor ex:conceptualmetaphor_sexual_activity_is_body_movement .
-ex:lemmametaphor_lg622 ex:hasSourceDomainLabel "신체 동작" .
-ex:lemmametaphor_lg622 ex:hasTargetDomainLabel "성적 접촉/행위" .
-ex:lemmametaphor_lg622 ex:hasConceptualMetaphorLabel "SEXUAL ACTIVITY IS BODY MOVEMENT" .
-ex:lemmametaphor_lg622 ex:hasMIPVULabel "MRW_INDIRECT" .
-ex:lemmametaphor_lg622 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg622 ex:hasSurfaceExpression "짓" .
-ex:lemmametaphor_lg622 ex:hasConfidence "0.6300" .
-ex:lemmametaphor_lg622 ex:hasContextSentence "피해자는 ‘피고인이 춥다고 모텔에 들어가자고 하였고 아무 짓도 하지 않겠다는 말도 하여, 나이가 많아서 추위를 많이 타나보다 하는 생각에서 피고인의 제안에 응하였다.’고 진술하는바, 피고인과 피해자의 나이 차이, 피해자의 심리 상태 등에 비추어 이러한 피해자의 행동은 충분히 납득할 만하고, 앞서 본 법리에 비추어 볼 때 이와 같은 경위로 피해자가 모텔에 들어가는 데 동의하고 안아보는 걸 허락했다고 하더라도 이러한 사정을 그 이상의 성적 접촉은 원하지 않았다는 피해자의 진술을 의심할 만한 사정이라고 볼 수는 없다." .
-_:mapping_108 ex:hasConfidence "0.6300"^^xsd:decimal .
-_:mapping_108 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_108 ex:needsHumanReview "true" .
-
-ex:targetdomain_추측_판단 ex:isConceptualizedAs ex:sourcedomain_시각적_인식 .
-ex:lemmametaphor_lg626 ex:hasSourceDomain ex:sourcedomain_시각적_인식 .
-ex:lemmametaphor_lg626 ex:hasTargetDomain ex:targetdomain_추측_판단 .
-ex:lemmametaphor_lg626 ex:realizesConceptualMetaphor ex:conceptualmetaphor_judging_is_seeing .
-ex:lemmametaphor_lg626 ex:hasSourceDomainLabel "시각적 인식" .
-ex:lemmametaphor_lg626 ex:hasTargetDomainLabel "추측/판단" .
-ex:lemmametaphor_lg626 ex:hasConceptualMetaphorLabel "JUDGING IS SEEING" .
-ex:lemmametaphor_lg626 ex:hasMIPVULabel "MRW_INDIRECT" .
-ex:lemmametaphor_lg626 ex:hasMetaphorType "STRUCTURAL" .
-ex:lemmametaphor_lg626 ex:hasSurfaceExpression "보다" .
-ex:lemmametaphor_lg626 ex:hasConfidence "0.7100" .
-ex:lemmametaphor_lg626 ex:hasContextSentence "피해자는 ‘피고인이 춥다고 모텔에 들어가자고 하였고 아무 짓도 하지 않겠다는 말도 하여, 나이가 많아서 추위를 많이 타나보다 하는 생각에서 피고인의 제안에 응하였다.’고 진술하는바, 피고인과 피해자의 나이 차이, 피해자의 심리 상태 등에 비추어 이러한 피해자의 행동은 충분히 납득할 만하고, 앞서 본 법리에 비추어 볼 때 이와 같은 경위로 피해자가 모텔에 들어가는 데 동의하고 안아보는 걸 허락했다고 하더라도 이러한 사정을 그 이상의 성적 접촉은 원하지 않았다는 피해자의 진술을 의심할 만한 사정이라고 볼 수는 없다." .
-_:mapping_109 ex:hasConfidence "0.7100"^^xsd:decimal .
-_:mapping_109 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_109 ex:needsHumanReview "true" .
+_:mapping_053 ex:hasConfidence "0.8800"^^xsd:decimal .
+_:mapping_053 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_성적_행위의_정당화와_관계_포장 ex:isConceptualizedAs ex:sourcedomain_애정과_귀중히_여김 .
 ex:lemmametaphor_lg644 ex:hasSourceDomain ex:sourcedomain_애정과_귀중히_여김 .
@@ -1736,9 +840,9 @@ ex:lemmametaphor_lg644 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg644 ex:hasSurfaceExpression "사랑하다" .
 ex:lemmametaphor_lg644 ex:hasConfidence "0.8600" .
 ex:lemmametaphor_lg644 ex:hasContextSentence "마) 피해자는 피해상황에 대하여, 너무 깜짝 놀라고 피고인의 힘이 세서 반항하기 어려웠고 계속 발버둥 치면서 저항하다가 화장실로 도망갔으며, 피고인이 ‘내가 널 사랑해서 너가 원하지 않아서 하지 않은 거다. 너가 원할 때 관계를 가지겠다.’고 말하여 너무 놀라서 바들바들 떨렸다는 취지로 진술하였다." .
-_:mapping_110 ex:hasConfidence "0.8600"^^xsd:decimal .
-_:mapping_110 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_110 ex:needsHumanReview "true" .
+_:mapping_054 ex:hasConfidence "0.8600"^^xsd:decimal .
+_:mapping_054 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_054 ex:needsHumanReview "true" .
 
 ex:targetdomain_심리적_불쾌감과_오염감의_해소 ex:isConceptualizedAs ex:sourcedomain_물로_몸을_씻는_행위 .
 ex:lemmametaphor_lg653 ex:hasSourceDomain ex:sourcedomain_물로_몸을_씻는_행위 .
@@ -1752,9 +856,9 @@ ex:lemmametaphor_lg653 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg653 ex:hasSurfaceExpression "샤워하다" .
 ex:lemmametaphor_lg653 ex:hasConfidence "0.7400" .
 ex:lemmametaphor_lg653 ex:hasContextSentence "피해자는 이후 피고인의 차량 안에서 오줌을 지렸고, 집에 돌아와서는 온몸을 락스로 샤워하였다고 진술하였으며, 피고인의 메시지에 답장을 하지 않았고, 다음 날 새벽 02:20경 친구에게 ‘괴롭다’는 취지의 메시지를 보내고 03:30경 해바라기센터에 전화를 하였으며 이후 자살시도를 하였다." .
-_:mapping_111 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_111 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_111 ex:needsHumanReview "true" .
+_:mapping_055 ex:hasConfidence "0.7400"^^xsd:decimal .
+_:mapping_055 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_055 ex:needsHumanReview "true" .
 
 ex:targetdomain_정서적_강도와_정도 ex:isConceptualizedAs ex:sourcedomain_물리적_크기 .
 ex:lemmametaphor_lg657 ex:hasSourceDomain ex:sourcedomain_물리적_크기 .
@@ -1768,8 +872,8 @@ ex:lemmametaphor_lg657 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg657 ex:hasSurfaceExpression "크다" .
 ex:lemmametaphor_lg657 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg657 ex:hasContextSentence "이와 같이 피해자가 믿고 의지하는 마음이 컸던 피고인으로부터 갑작스럽게 심한 추행을 당하여 극도로 당황하고 두려움과 수치심을 느끼게 된 상황이었다면, 피해자가 즉시 주변의 도움을 요청하거나 홀로 모텔을 빠져나오지 않은 채 피고인의 차를 타고 자신의 차가 있던 ☆☆☆☆까지 돌아왔다고 하여, 그것이 매우 이례적이라거나 납득하기 어려운 행동이라고 볼 수 없다." .
-_:mapping_112 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_112 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_056 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_056 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_사회적_지원망과_도움의_범위 ex:isConceptualizedAs ex:sourcedomain_대상의_둘레와_주변_공간 .
 ex:lemmametaphor_lg663 ex:hasSourceDomain ex:sourcedomain_대상의_둘레와_주변_공간 .
@@ -1783,9 +887,9 @@ ex:lemmametaphor_lg663 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg663 ex:hasSurfaceExpression "주변" .
 ex:lemmametaphor_lg663 ex:hasConfidence "0.6800" .
 ex:lemmametaphor_lg663 ex:hasContextSentence "이와 같이 피해자가 믿고 의지하는 마음이 컸던 피고인으로부터 갑작스럽게 심한 추행을 당하여 극도로 당황하고 두려움과 수치심을 느끼게 된 상황이었다면, 피해자가 즉시 주변의 도움을 요청하거나 홀로 모텔을 빠져나오지 않은 채 피고인의 차를 타고 자신의 차가 있던 ☆☆☆☆까지 돌아왔다고 하여, 그것이 매우 이례적이라거나 납득하기 어려운 행동이라고 볼 수 없다." .
-_:mapping_113 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_113 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_113 ex:needsHumanReview "true" .
+_:mapping_057 ex:hasConfidence "0.6800"^^xsd:decimal .
+_:mapping_057 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_057 ex:needsHumanReview "true" .
 
 ex:targetdomain_사정에_대한_납득과_판단 ex:isConceptualizedAs ex:sourcedomain_알아차리고_받아들이는_인지_행위 .
 ex:lemmametaphor_lg668 ex:hasSourceDomain ex:sourcedomain_알아차리고_받아들이는_인지_행위 .
@@ -1799,9 +903,9 @@ ex:lemmametaphor_lg668 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg668 ex:hasSurfaceExpression "이해하다" .
 ex:lemmametaphor_lg668 ex:hasConfidence "0.7900" .
 ex:lemmametaphor_lg668 ex:hasContextSentence "바) 피해자가 모텔에서 나오기 전 피고인의 얼굴에 묻은 립스틱을 닦아준 것은 이례적이기는 하나, 피해자는 ‘남들이 원조교제로 오해하여 이상하게 쳐다볼까 봐 그랬다.’고 진술하고 있어 이해할 만한 측면이 있고, 무엇보다도 피해자는 최초 경찰 조사에서 아무도 묻지 않은 위 내용을 먼저 구체적으로 진술하였는바, 추행 사실을 거짓으로 진술하는 것이라면 굳이 위와 같은 진술을 할 필요가 없었을 것이므로, 오히려 위와 같은 이례적인 사정을 숨기지 않고 진술하였다는 점은 피해자 진술의 신빙성을 높이는 사정이라고 할 수도 있다." .
-_:mapping_114 ex:hasConfidence "0.7900"^^xsd:decimal .
-_:mapping_114 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_114 ex:needsHumanReview "true" .
+_:mapping_058 ex:hasConfidence "0.7900"^^xsd:decimal .
+_:mapping_058 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_058 ex:needsHumanReview "true" .
 
 ex:targetdomain_수사_절차 ex:isConceptualizedAs ex:sourcedomain_자세히_살펴봄 .
 ex:lemmametaphor_lg671 ex:hasSourceDomain ex:sourcedomain_자세히_살펴봄 .
@@ -1815,9 +919,9 @@ ex:lemmametaphor_lg671 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg671 ex:hasSurfaceExpression "조사" .
 ex:lemmametaphor_lg671 ex:hasConfidence "0.9100" .
 ex:lemmametaphor_lg671 ex:hasContextSentence "바) 피해자가 모텔에서 나오기 전 피고인의 얼굴에 묻은 립스틱을 닦아준 것은 이례적이기는 하나, 피해자는 ‘남들이 원조교제로 오해하여 이상하게 쳐다볼까 봐 그랬다.’고 진술하고 있어 이해할 만한 측면이 있고, 무엇보다도 피해자는 최초 경찰 조사에서 아무도 묻지 않은 위 내용을 먼저 구체적으로 진술하였는바, 추행 사실을 거짓으로 진술하는 것이라면 굳이 위와 같은 진술을 할 필요가 없었을 것이므로, 오히려 위와 같은 이례적인 사정을 숨기지 않고 진술하였다는 점은 피해자 진술의 신빙성을 높이는 사정이라고 할 수도 있다." .
-_:mapping_115 ex:hasConfidence "0.9100"^^xsd:decimal .
-_:mapping_115 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_115 ex:needsHumanReview "true" .
+_:mapping_059 ex:hasConfidence "0.9100"^^xsd:decimal .
+_:mapping_059 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_059 ex:needsHumanReview "true" .
 
 ex:targetdomain_정보_사정의_비공개 ex:isConceptualizedAs ex:sourcedomain_물리적으로_보이지_않게_함 .
 ex:lemmametaphor_lg676 ex:hasSourceDomain ex:sourcedomain_물리적으로_보이지_않게_함 .
@@ -1831,9 +935,9 @@ ex:lemmametaphor_lg676 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg676 ex:hasSurfaceExpression "숨기다" .
 ex:lemmametaphor_lg676 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg676 ex:hasContextSentence "바) 피해자가 모텔에서 나오기 전 피고인의 얼굴에 묻은 립스틱을 닦아준 것은 이례적이기는 하나, 피해자는 ‘남들이 원조교제로 오해하여 이상하게 쳐다볼까 봐 그랬다.’고 진술하고 있어 이해할 만한 측면이 있고, 무엇보다도 피해자는 최초 경찰 조사에서 아무도 묻지 않은 위 내용을 먼저 구체적으로 진술하였는바, 추행 사실을 거짓으로 진술하는 것이라면 굳이 위와 같은 진술을 할 필요가 없었을 것이므로, 오히려 위와 같은 이례적인 사정을 숨기지 않고 진술하였다는 점은 피해자 진술의 신빙성을 높이는 사정이라고 할 수도 있다." .
-_:mapping_116 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_116 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_116 ex:needsHumanReview "true" .
+_:mapping_060 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_060 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_060 ex:needsHumanReview "true" .
 
 ex:targetdomain_신빙성의_정도_증가 ex:isConceptualizedAs ex:sourcedomain_물리적_높이_증가 .
 ex:lemmametaphor_lg677 ex:hasSourceDomain ex:sourcedomain_물리적_높이_증가 .
@@ -1847,8 +951,8 @@ ex:lemmametaphor_lg677 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg677 ex:hasSurfaceExpression "높이다" .
 ex:lemmametaphor_lg677 ex:hasConfidence "0.9600" .
 ex:lemmametaphor_lg677 ex:hasContextSentence "바) 피해자가 모텔에서 나오기 전 피고인의 얼굴에 묻은 립스틱을 닦아준 것은 이례적이기는 하나, 피해자는 ‘남들이 원조교제로 오해하여 이상하게 쳐다볼까 봐 그랬다.’고 진술하고 있어 이해할 만한 측면이 있고, 무엇보다도 피해자는 최초 경찰 조사에서 아무도 묻지 않은 위 내용을 먼저 구체적으로 진술하였는바, 추행 사실을 거짓으로 진술하는 것이라면 굳이 위와 같은 진술을 할 필요가 없었을 것이므로, 오히려 위와 같은 이례적인 사정을 숨기지 않고 진술하였다는 점은 피해자 진술의 신빙성을 높이는 사정이라고 할 수도 있다." .
-_:mapping_117 ex:hasConfidence "0.9600"^^xsd:decimal .
-_:mapping_117 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_061 ex:hasConfidence "0.9600"^^xsd:decimal .
+_:mapping_061 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
 
 ex:targetdomain_사건의_공식적_통보 ex:isConceptualizedAs ex:sourcedomain_행정_관청에_사실을_보고함 .
 ex:lemmametaphor_lg683 ex:hasSourceDomain ex:sourcedomain_행정_관청에_사실을_보고함 .
@@ -1862,9 +966,9 @@ ex:lemmametaphor_lg683 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg683 ex:hasSurfaceExpression "신고" .
 ex:lemmametaphor_lg683 ex:hasConfidence "0.7300" .
 ex:lemmametaphor_lg683 ex:hasContextSentence "아) 피해자는 피해 당일 새벽 03:30경 해바라기센터에 전화를 했을 때 경찰신고를 망설이는 이유에 대하여 ‘피고인은 돈도 많고 TV에도 나온 사람이라 자신이 당한 일을 말해도 경찰에 돈 써서 풀려날 것 같다. 내 의사는 아니었지만 돈을 받았으니 꽃뱀 취급을 할 것 같다.’는 취지로 말하였다." .
-_:mapping_118 ex:hasConfidence "0.7300"^^xsd:decimal .
-_:mapping_118 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_118 ex:needsHumanReview "true" .
+_:mapping_062 ex:hasConfidence "0.7300"^^xsd:decimal .
+_:mapping_062 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_062 ex:needsHumanReview "true" .
 
 ex:targetdomain_부당한_영향력_행사 ex:isConceptualizedAs ex:sourcedomain_수단을_이용함 .
 ex:lemmametaphor_lg686 ex:hasSourceDomain ex:sourcedomain_수단을_이용함 .
@@ -1878,25 +982,9 @@ ex:lemmametaphor_lg686 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg686 ex:hasSurfaceExpression "쓰다" .
 ex:lemmametaphor_lg686 ex:hasConfidence "0.8100" .
 ex:lemmametaphor_lg686 ex:hasContextSentence "아) 피해자는 피해 당일 새벽 03:30경 해바라기센터에 전화를 했을 때 경찰신고를 망설이는 이유에 대하여 ‘피고인은 돈도 많고 TV에도 나온 사람이라 자신이 당한 일을 말해도 경찰에 돈 써서 풀려날 것 같다. 내 의사는 아니었지만 돈을 받았으니 꽃뱀 취급을 할 것 같다.’는 취지로 말하였다." .
-_:mapping_119 ex:hasConfidence "0.8100"^^xsd:decimal .
-_:mapping_119 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_119 ex:needsHumanReview "true" .
-
-ex:targetdomain_사람에_대한_비난적_낙인 ex:isConceptualizedAs ex:sourcedomain_알록달록한_뱀 .
-ex:lemmametaphor_lg688 ex:hasSourceDomain ex:sourcedomain_알록달록한_뱀 .
-ex:lemmametaphor_lg688 ex:hasTargetDomain ex:targetdomain_사람에_대한_비난적_낙인 .
-ex:lemmametaphor_lg688 ex:realizesConceptualMetaphor ex:conceptualmetaphor_비난받는_여성은_뱀 .
-ex:lemmametaphor_lg688 ex:hasSourceDomainLabel "알록달록한 뱀" .
-ex:lemmametaphor_lg688 ex:hasTargetDomainLabel "사람에 대한 비난적 낙인" .
-ex:lemmametaphor_lg688 ex:hasConceptualMetaphorLabel "비난받는 여성은 뱀" .
-ex:lemmametaphor_lg688 ex:hasMIPVULabel "MRW_CANDIDATE" .
-ex:lemmametaphor_lg688 ex:hasMetaphorType "ONTOLOGICAL" .
-ex:lemmametaphor_lg688 ex:hasSurfaceExpression "꽃뱀" .
-ex:lemmametaphor_lg688 ex:hasConfidence "0.6200" .
-ex:lemmametaphor_lg688 ex:hasContextSentence "아) 피해자는 피해 당일 새벽 03:30경 해바라기센터에 전화를 했을 때 경찰신고를 망설이는 이유에 대하여 ‘피고인은 돈도 많고 TV에도 나온 사람이라 자신이 당한 일을 말해도 경찰에 돈 써서 풀려날 것 같다. 내 의사는 아니었지만 돈을 받았으니 꽃뱀 취급을 할 것 같다.’는 취지로 말하였다." .
-_:mapping_120 ex:hasConfidence "0.6200"^^xsd:decimal .
-_:mapping_120 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_120 ex:needsHumanReview "true" .
+_:mapping_063 ex:hasConfidence "0.8100"^^xsd:decimal .
+_:mapping_063 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_063 ex:needsHumanReview "true" .
 
 ex:targetdomain_사람을_특정_범주로_간주함 ex:isConceptualizedAs ex:sourcedomain_물건을_사용하거나_대상으로_삼음 .
 ex:lemmametaphor_lg689 ex:hasSourceDomain ex:sourcedomain_물건을_사용하거나_대상으로_삼음 .
@@ -1910,9 +998,9 @@ ex:lemmametaphor_lg689 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg689 ex:hasSurfaceExpression "취급" .
 ex:lemmametaphor_lg689 ex:hasConfidence "0.7900" .
 ex:lemmametaphor_lg689 ex:hasContextSentence "아) 피해자는 피해 당일 새벽 03:30경 해바라기센터에 전화를 했을 때 경찰신고를 망설이는 이유에 대하여 ‘피고인은 돈도 많고 TV에도 나온 사람이라 자신이 당한 일을 말해도 경찰에 돈 써서 풀려날 것 같다. 내 의사는 아니었지만 돈을 받았으니 꽃뱀 취급을 할 것 같다.’는 취지로 말하였다." .
-_:mapping_121 ex:hasConfidence "0.7900"^^xsd:decimal .
-_:mapping_121 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_121 ex:needsHumanReview "true" .
+_:mapping_064 ex:hasConfidence "0.7900"^^xsd:decimal .
+_:mapping_064 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_064 ex:needsHumanReview "true" .
 
 ex:lemmametaphor_lg691 ex:hasSourceDomain ex:sourcedomain_행정_관청에_사실을_보고함 .
 ex:lemmametaphor_lg691 ex:hasTargetDomain ex:targetdomain_사건의_공식적_통보 .
@@ -1925,9 +1013,9 @@ ex:lemmametaphor_lg691 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg691 ex:hasSurfaceExpression "신고하다" .
 ex:lemmametaphor_lg691 ex:hasConfidence "0.7000" .
 ex:lemmametaphor_lg691 ex:hasContextSentence "피해자는 다음 날 아침 친구가 신고해야 한다고 권유하고 피고인이 제대로 사과하지 않자 경찰에 고소를 하였다." .
-_:mapping_122 ex:hasConfidence "0.7000"^^xsd:decimal .
-_:mapping_122 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_122 ex:needsHumanReview "true" .
+_:mapping_065 ex:hasConfidence "0.7000"^^xsd:decimal .
+_:mapping_065 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_065 ex:needsHumanReview "true" .
 
 ex:targetdomain_상황의_타당성_자연스러움 ex:isConceptualizedAs ex:sourcedomain_저절로_됨_억지_없음 .
 ex:lemmametaphor_lg694 ex:hasSourceDomain ex:sourcedomain_저절로_됨_억지_없음 .
@@ -1941,9 +1029,9 @@ ex:lemmametaphor_lg694 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg694 ex:hasSurfaceExpression "자연하다" .
 ex:lemmametaphor_lg694 ex:hasConfidence "0.6800" .
 ex:lemmametaphor_lg694 ex:hasContextSentence "피해자의 위와 같은 망설임과 고소 경위는 지극히 자연스럽고, 추행 사실 자체가 아닌 다른 부수적 사유에 의하여 고소에 이르렀을 가능성을 배제할 수 없다는 의심은 합리적이지 않다." .
-_:mapping_123 ex:hasConfidence "0.6800"^^xsd:decimal .
-_:mapping_123 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_123 ex:needsHumanReview "true" .
+_:mapping_066 ex:hasConfidence "0.6800"^^xsd:decimal .
+_:mapping_066 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_066 ex:needsHumanReview "true" .
 
 ex:targetdomain_요청_부탁_행위 ex:isConceptualizedAs ex:sourcedomain_무언가를_갖게_하거나_누리게_하는_사동 .
 ex:lemmametaphor_lg697 ex:hasSourceDomain ex:sourcedomain_무언가를_갖게_하거나_누리게_하는_사동 .
@@ -1957,9 +1045,9 @@ ex:lemmametaphor_lg697 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg697 ex:hasSurfaceExpression "달다" .
 ex:lemmametaphor_lg697 ex:hasConfidence "0.7400" .
 ex:lemmametaphor_lg697 ex:hasContextSentence "5) 한편 피고인의 변소 취지는, 처음 만난 피해자에게 모텔에 가자고 하고 50만 원을 준 후 뽀뽀를 해달라고 하고 가슴을 만져 봐도 되냐고 물어 피해자가 허락하여 뽀뽀를 하고 옷 위로 가슴을 만졌는데 갑자기 피해자가 이상하다는 생각이 들어 피고인이 스스로 나가자고 하여 모텔을 나왔다는 것이다." .
-_:mapping_124 ex:hasConfidence "0.7400"^^xsd:decimal .
-_:mapping_124 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_124 ex:needsHumanReview "true" .
+_:mapping_067 ex:hasConfidence "0.7400"^^xsd:decimal .
+_:mapping_067 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_067 ex:needsHumanReview "true" .
 
 ex:targetdomain_자기주도적_행위 ex:isConceptualizedAs ex:sourcedomain_자기_자신 .
 ex:lemmametaphor_lg700 ex:hasSourceDomain ex:sourcedomain_자기_자신 .
@@ -1973,9 +1061,9 @@ ex:lemmametaphor_lg700 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg700 ex:hasSurfaceExpression "스스로" .
 ex:lemmametaphor_lg700 ex:hasConfidence "0.7100" .
 ex:lemmametaphor_lg700 ex:hasContextSentence "5) 한편 피고인의 변소 취지는, 처음 만난 피해자에게 모텔에 가자고 하고 50만 원을 준 후 뽀뽀를 해달라고 하고 가슴을 만져 봐도 되냐고 물어 피해자가 허락하여 뽀뽀를 하고 옷 위로 가슴을 만졌는데 갑자기 피해자가 이상하다는 생각이 들어 피고인이 스스로 나가자고 하여 모텔을 나왔다는 것이다." .
-_:mapping_125 ex:hasConfidence "0.7100"^^xsd:decimal .
-_:mapping_125 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_125 ex:needsHumanReview "true" .
+_:mapping_068 ex:hasConfidence "0.7100"^^xsd:decimal .
+_:mapping_068 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_068 ex:needsHumanReview "true" .
 
 ex:targetdomain_판결문_속_판단_내용 ex:isConceptualizedAs ex:sourcedomain_판결하여_보이는_행위 .
 ex:lemmametaphor_lg706 ex:hasSourceDomain ex:sourcedomain_판결하여_보이는_행위 .
@@ -1989,9 +1077,9 @@ ex:lemmametaphor_lg706 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg706 ex:hasSurfaceExpression "판시" .
 ex:lemmametaphor_lg706 ex:hasConfidence "0.6300" .
 ex:lemmametaphor_lg706 ex:hasContextSentence "위와 같은 사정을 종합하면 피해자 진술의 신빙성을 인정할 수 있음에도, 그 판시와 같은 사정만으로 이를 배척한 원심판결에는 진술의 신빙성 판단의 기준이 되는 경험칙과 증거법칙을 위반하여 자유심증주의의 한계를 벗어남으로써 판결에 영향을 미친 잘못이 있고, 이 점을 지적하는 검사의 상고이유 주장은 이유 있다." .
-_:mapping_126 ex:hasConfidence "0.6300"^^xsd:decimal .
-_:mapping_126 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_126 ex:needsHumanReview "true" .
+_:mapping_069 ex:hasConfidence "0.6300"^^xsd:decimal .
+_:mapping_069 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_069 ex:needsHumanReview "true" .
 
 ex:targetdomain_판단_결과에_대한_작용 ex:isConceptualizedAs ex:sourcedomain_공간적_도달_접촉 .
 ex:lemmametaphor_lg709 ex:hasSourceDomain ex:sourcedomain_공간적_도달_접촉 .
@@ -2005,9 +1093,9 @@ ex:lemmametaphor_lg709 ex:hasMetaphorType "ORIENTATIONAL" .
 ex:lemmametaphor_lg709 ex:hasSurfaceExpression "미치다" .
 ex:lemmametaphor_lg709 ex:hasConfidence "0.8600" .
 ex:lemmametaphor_lg709 ex:hasContextSentence "위와 같은 사정을 종합하면 피해자 진술의 신빙성을 인정할 수 있음에도, 그 판시와 같은 사정만으로 이를 배척한 원심판결에는 진술의 신빙성 판단의 기준이 되는 경험칙과 증거법칙을 위반하여 자유심증주의의 한계를 벗어남으로써 판결에 영향을 미친 잘못이 있고, 이 점을 지적하는 검사의 상고이유 주장은 이유 있다." .
-_:mapping_127 ex:hasConfidence "0.8600"^^xsd:decimal .
-_:mapping_127 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_127 ex:needsHumanReview "true" .
+_:mapping_070 ex:hasConfidence "0.8600"^^xsd:decimal .
+_:mapping_070 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_070 ex:needsHumanReview "true" .
 
 ex:targetdomain_법적_오류 ex:isConceptualizedAs ex:sourcedomain_일반적_그릇됨 .
 ex:lemmametaphor_lg710 ex:hasSourceDomain ex:sourcedomain_일반적_그릇됨 .
@@ -2021,9 +1109,9 @@ ex:lemmametaphor_lg710 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg710 ex:hasSurfaceExpression "잘못" .
 ex:lemmametaphor_lg710 ex:hasConfidence "0.7900" .
 ex:lemmametaphor_lg710 ex:hasContextSentence "위와 같은 사정을 종합하면 피해자 진술의 신빙성을 인정할 수 있음에도, 그 판시와 같은 사정만으로 이를 배척한 원심판결에는 진술의 신빙성 판단의 기준이 되는 경험칙과 증거법칙을 위반하여 자유심증주의의 한계를 벗어남으로써 판결에 영향을 미친 잘못이 있고, 이 점을 지적하는 검사의 상고이유 주장은 이유 있다." .
-_:mapping_128 ex:hasConfidence "0.7900"^^xsd:decimal .
-_:mapping_128 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_128 ex:needsHumanReview "true" .
+_:mapping_071 ex:hasConfidence "0.7900"^^xsd:decimal .
+_:mapping_071 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_071 ex:needsHumanReview "true" .
 
 ex:targetdomain_판결의_최종_판단 ex:isConceptualizedAs ex:sourcedomain_논의의_최종_결정 .
 ex:lemmametaphor_lg711 ex:hasSourceDomain ex:sourcedomain_논의의_최종_결정 .
@@ -2037,9 +1125,9 @@ ex:lemmametaphor_lg711 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg711 ex:hasSurfaceExpression "결론" .
 ex:lemmametaphor_lg711 ex:hasConfidence "0.7700" .
 ex:lemmametaphor_lg711 ex:hasContextSentence "5. 결론" .
-_:mapping_129 ex:hasConfidence "0.7700"^^xsd:decimal .
-_:mapping_129 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_129 ex:needsHumanReview "true" .
+_:mapping_072 ex:hasConfidence "0.7700"^^xsd:decimal .
+_:mapping_072 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_072 ex:needsHumanReview "true" .
 
 ex:targetdomain_사건의_절차적_이송 ex:isConceptualizedAs ex:sourcedomain_되돌려_보내기 .
 ex:lemmametaphor_lg714 ex:hasSourceDomain ex:sourcedomain_되돌려_보내기 .
@@ -2053,9 +1141,9 @@ ex:lemmametaphor_lg714 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg714 ex:hasSurfaceExpression "환송하다" .
 ex:lemmametaphor_lg714 ex:hasConfidence "0.8400" .
 ex:lemmametaphor_lg714 ex:hasContextSentence "그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하도록 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다." .
-_:mapping_130 ex:hasConfidence "0.8400"^^xsd:decimal .
-_:mapping_130 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_130 ex:needsHumanReview "true" .
+_:mapping_073 ex:hasConfidence "0.8400"^^xsd:decimal .
+_:mapping_073 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_073 ex:needsHumanReview "true" .
 
 ex:targetdomain_재판관의_판단_입장 ex:isConceptualizedAs ex:sourcedomain_대상에_대한_생각 .
 ex:lemmametaphor_lg718 ex:hasSourceDomain ex:sourcedomain_대상에_대한_생각 .
@@ -2069,9 +1157,9 @@ ex:lemmametaphor_lg718 ex:hasMetaphorType "ONTOLOGICAL" .
 ex:lemmametaphor_lg718 ex:hasSurfaceExpression "의견" .
 ex:lemmametaphor_lg718 ex:hasConfidence "0.7200" .
 ex:lemmametaphor_lg718 ex:hasContextSentence "그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하도록 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다." .
-_:mapping_131 ex:hasConfidence "0.7200"^^xsd:decimal .
-_:mapping_131 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_131 ex:needsHumanReview "true" .
+_:mapping_074 ex:hasConfidence "0.7200"^^xsd:decimal .
+_:mapping_074 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_074 ex:needsHumanReview "true" .
 
 ex:targetdomain_법원의_최종_판단 ex:isConceptualizedAs ex:sourcedomain_시비_선악_판단 .
 ex:lemmametaphor_lg720 ex:hasSourceDomain ex:sourcedomain_시비_선악_판단 .
@@ -2085,14 +1173,13 @@ ex:lemmametaphor_lg720 ex:hasMetaphorType "STRUCTURAL" .
 ex:lemmametaphor_lg720 ex:hasSurfaceExpression "판결하다" .
 ex:lemmametaphor_lg720 ex:hasConfidence "0.8000" .
 ex:lemmametaphor_lg720 ex:hasContextSentence "그러므로 원심판결을 파기하고, 사건을 다시 심리·판단하도록 원심법원에 환송하기로 하여, 관여 대법관의 일치된 의견으로 주문과 같이 판결한다." .
-_:mapping_132 ex:hasConfidence "0.8000"^^xsd:decimal .
-_:mapping_132 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
-_:mapping_132 ex:needsHumanReview "true" .
+_:mapping_075 ex:hasConfidence "0.8000"^^xsd:decimal .
+_:mapping_075 ex:mappingReason "Deterministic KG mapping from lemma-level MIPVU annotation." .
+_:mapping_075 ex:needsHumanReview "true" .
 
 ex:conceptualmetaphor_abstract_domain_is_a_container a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_abstract_judgment_is_following a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_account_creation_is_making a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_affection_is_attention a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_appellate_remand_is_returning a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_argument_is_a_supported_structure a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_argumentation_is_motion_into_a_space a ex:ConceptualMetaphor .
@@ -2100,14 +1187,10 @@ ex:conceptualmetaphor_assumption_is_placing a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_bringing_someone_to_a_place_is_keeping_them_close a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_clarity_is_concreteness a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_communication_is_motion a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_communication_is_relation a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_communication_is_transfer_continuation a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_communication_medium_is_a_messenger a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_conformity_to_expectation_is_fitting a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_control_is_pressure a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_control_is_tying a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_control_sexual_assault_is_mounting a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_dispute_resolution_is_agreement a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_during_an_event_is_in_the_middle_of_a_process a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_effects_reach_judgments a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_emotional_experience_is_sensory_perception a ex:ConceptualMetaphor .
@@ -2119,11 +1202,9 @@ ex:conceptualmetaphor_intensity_is_height a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_intensity_is_physical_force a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_intensity_is_size a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_intention_is_inner_mind a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_issue_as_object a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_judging_is_seeing a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_judgment_is_conclusion a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_judgment_is_lighting a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_judgment_is_measurement a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_judicial_decision_is_judgment a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_judicial_findings_are_judicial_acts a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_judicial_position_is_opinion a ex:ConceptualMetaphor .
@@ -2131,101 +1212,45 @@ ex:conceptualmetaphor_legal_error_is_wrongdoing a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_legal_interpretation_is_knowing a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_legal_issue_is_a_question a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_legal_judgment_is_seeing a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_legal_judgment_is_value_assessment a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_less_is_down a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_meaning_is_content a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_mental_states_are_possessions a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_minimal_contact_is_a_hand_tip a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_permission_is_agreement a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_psychological_cleanliness_is_physical_washing a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_reasoning_is_building a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_relationship_formation_is_shape_formation a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_relationship_quality_is_desirable_quality a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_requesting_is_causing_to_have a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_response_is_reaction a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_self_directed_action_is_action_by_oneself a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_sexual_activity_is_body_movement a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_sexual_contact_is_hand_contact a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_sexual_contact_is_rubbing a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_sexual_contact_is_suction a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_sexual_intercourse_is_insertion a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_sexual_justification_is_love a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_social_support_is_surrounding_space a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_statement_is_an_object_that_can_be_turned_over a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_stillness_is_standing a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_time_is_space a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_trust_is_physical_support a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_understanding_is_grasping a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_user_information_is_a_biographical_profile a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_visiting_is_coming a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_경험은_때 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_권유_행위_is_의견_제시 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_근거는_거기에_있다 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_근거는_표식 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_논리적_제외_is_물리적_배척 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_대면은_마주_닿음 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_대화는_나누는_것 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_도움_조언_요청은_서로_의논하기 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_만남은_식사 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_무죄성_무고함_is_깨끗함 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_문서_내_항목_지시는_낮은_위치 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_문자_의사소통_is_전언 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_법적_대인적_대응_태도_is_능동적_태도 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_부당한_해결은_수단_사용 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_비난받는_여성은_뱀 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_사건_통보_is_행정_보고 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_사고_능력은_추론_행위 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_사람_분류는_물건_취급 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_사실의_참됨_is_마음의_거짓_없음 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_사회적_관계는_살아가는_것 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_사회적_위세는_높은_수준 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_선망은_그리워함 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_소송상_입증_부담_is_의무 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_수사_절차_is_자세히_살펴봄 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_수준은_높낮이다 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_수치적_근접성은_공간적_가까움 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_신빙성_판단_is_가치_산정 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_신빙성은_높이 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_신체의_단단함_평가_is_물체의_단단함 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_신체의_두께_평가_is_물체의_두께 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_연락_소통은_막힘_없이_지나감 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_외부_근거_판단_is_제삼자_관점 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_위급_상황의_지원은_돕는_행위 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_의사_입장의_명시는_밝힘이다 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_인적_관계는_공간적_거리 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_인체_체형은_근육의_성질 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_장소를_벗어나는_행위_is_박힌_물건이_빠지는_것 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_전화기_연락_수단은_휴대되는_것 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_정보_비공개_is_물리적_은폐 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_조건은_요구되는_것 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_조사_검증의_산출_is_열매 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_직책은_지휘_행위 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_짧은_개인_메시지_is_작은_종잇조각 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_타당성은_자연스러움 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_판결의_결론은_글의_끝맺음 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_판결의_취소는_물건을_깨뜨려_버리기 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_판단상의_오류_특정_is_가리키기 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_판단은_행위다 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_판단의_가능성_is_남은_공간 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_판단의_성립_is_도착 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_판단의_유지_is_형태의_유지 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_피부의_늘어진_상태_is_아래로_늘어짐 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_피부의_상태는_깨끗한_표면 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_피부의_표면_상태는_반드러운_표면 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_한적함은_고요함 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_행동_양상은_몸의_동작과_자세 a ex:ConceptualMetaphor .
 ex:conceptualmetaphor_행위의_정확성은_규격에_맞음 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_혐오감의_강도_is_구토_행위 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_혐오감의_평가_is_물리적_오염 a ex:ConceptualMetaphor .
-ex:conceptualmetaphor_형사_고소_is_하소연 a ex:ConceptualMetaphor .
-ex:lemmametaphor_lg027 a ex:MetaphorInstance .
-ex:lemmametaphor_lg034 a ex:MetaphorInstance .
-ex:lemmametaphor_lg038 a ex:MetaphorInstance .
-ex:lemmametaphor_lg041 a ex:MetaphorInstance .
-ex:lemmametaphor_lg046 a ex:MetaphorInstance .
-ex:lemmametaphor_lg047 a ex:MetaphorInstance .
-ex:lemmametaphor_lg048 a ex:MetaphorInstance .
-ex:lemmametaphor_lg050 a ex:MetaphorInstance .
 ex:lemmametaphor_lg080 a ex:MetaphorInstance .
 ex:lemmametaphor_lg084 a ex:MetaphorInstance .
 ex:lemmametaphor_lg086 a ex:MetaphorInstance .
@@ -2244,37 +1269,10 @@ ex:lemmametaphor_lg198 a ex:MetaphorInstance .
 ex:lemmametaphor_lg211 a ex:MetaphorInstance .
 ex:lemmametaphor_lg214 a ex:MetaphorInstance .
 ex:lemmametaphor_lg223 a ex:MetaphorInstance .
-ex:lemmametaphor_lg224 a ex:MetaphorInstance .
-ex:lemmametaphor_lg233 a ex:MetaphorInstance .
 ex:lemmametaphor_lg234 a ex:MetaphorInstance .
 ex:lemmametaphor_lg239 a ex:MetaphorInstance .
 ex:lemmametaphor_lg252 a ex:MetaphorInstance .
 ex:lemmametaphor_lg256 a ex:MetaphorInstance .
-ex:lemmametaphor_lg261 a ex:MetaphorInstance .
-ex:lemmametaphor_lg271 a ex:MetaphorInstance .
-ex:lemmametaphor_lg275 a ex:MetaphorInstance .
-ex:lemmametaphor_lg279 a ex:MetaphorInstance .
-ex:lemmametaphor_lg281 a ex:MetaphorInstance .
-ex:lemmametaphor_lg285 a ex:MetaphorInstance .
-ex:lemmametaphor_lg286 a ex:MetaphorInstance .
-ex:lemmametaphor_lg287 a ex:MetaphorInstance .
-ex:lemmametaphor_lg289 a ex:MetaphorInstance .
-ex:lemmametaphor_lg290 a ex:MetaphorInstance .
-ex:lemmametaphor_lg301 a ex:MetaphorInstance .
-ex:lemmametaphor_lg305 a ex:MetaphorInstance .
-ex:lemmametaphor_lg306 a ex:MetaphorInstance .
-ex:lemmametaphor_lg308 a ex:MetaphorInstance .
-ex:lemmametaphor_lg311 a ex:MetaphorInstance .
-ex:lemmametaphor_lg317 a ex:MetaphorInstance .
-ex:lemmametaphor_lg320 a ex:MetaphorInstance .
-ex:lemmametaphor_lg324 a ex:MetaphorInstance .
-ex:lemmametaphor_lg332 a ex:MetaphorInstance .
-ex:lemmametaphor_lg336 a ex:MetaphorInstance .
-ex:lemmametaphor_lg338 a ex:MetaphorInstance .
-ex:lemmametaphor_lg345 a ex:MetaphorInstance .
-ex:lemmametaphor_lg349 a ex:MetaphorInstance .
-ex:lemmametaphor_lg350 a ex:MetaphorInstance .
-ex:lemmametaphor_lg356 a ex:MetaphorInstance .
 ex:lemmametaphor_lg358 a ex:MetaphorInstance .
 ex:lemmametaphor_lg363 a ex:MetaphorInstance .
 ex:lemmametaphor_lg364 a ex:MetaphorInstance .
@@ -2289,15 +1287,7 @@ ex:lemmametaphor_lg424 a ex:MetaphorInstance .
 ex:lemmametaphor_lg425 a ex:MetaphorInstance .
 ex:lemmametaphor_lg434 a ex:MetaphorInstance .
 ex:lemmametaphor_lg452 a ex:MetaphorInstance .
-ex:lemmametaphor_lg465 a ex:MetaphorInstance .
-ex:lemmametaphor_lg467 a ex:MetaphorInstance .
-ex:lemmametaphor_lg482 a ex:MetaphorInstance .
-ex:lemmametaphor_lg485 a ex:MetaphorInstance .
-ex:lemmametaphor_lg498 a ex:MetaphorInstance .
 ex:lemmametaphor_lg504 a ex:MetaphorInstance .
-ex:lemmametaphor_lg511 a ex:MetaphorInstance .
-ex:lemmametaphor_lg513 a ex:MetaphorInstance .
-ex:lemmametaphor_lg515 a ex:MetaphorInstance .
 ex:lemmametaphor_lg516 a ex:MetaphorInstance .
 ex:lemmametaphor_lg519 a ex:MetaphorInstance .
 ex:lemmametaphor_lg524 a ex:MetaphorInstance .
@@ -2309,24 +1299,11 @@ ex:lemmametaphor_lg549 a ex:MetaphorInstance .
 ex:lemmametaphor_lg551 a ex:MetaphorInstance .
 ex:lemmametaphor_lg554 a ex:MetaphorInstance .
 ex:lemmametaphor_lg558 a ex:MetaphorInstance .
-ex:lemmametaphor_lg570 a ex:MetaphorInstance .
 ex:lemmametaphor_lg572 a ex:MetaphorInstance .
-ex:lemmametaphor_lg578 a ex:MetaphorInstance .
-ex:lemmametaphor_lg579 a ex:MetaphorInstance .
 ex:lemmametaphor_lg580 a ex:MetaphorInstance .
 ex:lemmametaphor_lg581 a ex:MetaphorInstance .
 ex:lemmametaphor_lg587 a ex:MetaphorInstance .
 ex:lemmametaphor_lg589 a ex:MetaphorInstance .
-ex:lemmametaphor_lg594 a ex:MetaphorInstance .
-ex:lemmametaphor_lg603 a ex:MetaphorInstance .
-ex:lemmametaphor_lg605 a ex:MetaphorInstance .
-ex:lemmametaphor_lg607 a ex:MetaphorInstance .
-ex:lemmametaphor_lg610 a ex:MetaphorInstance .
-ex:lemmametaphor_lg611 a ex:MetaphorInstance .
-ex:lemmametaphor_lg614 a ex:MetaphorInstance .
-ex:lemmametaphor_lg615 a ex:MetaphorInstance .
-ex:lemmametaphor_lg622 a ex:MetaphorInstance .
-ex:lemmametaphor_lg626 a ex:MetaphorInstance .
 ex:lemmametaphor_lg644 a ex:MetaphorInstance .
 ex:lemmametaphor_lg653 a ex:MetaphorInstance .
 ex:lemmametaphor_lg657 a ex:MetaphorInstance .
@@ -2337,7 +1314,6 @@ ex:lemmametaphor_lg676 a ex:MetaphorInstance .
 ex:lemmametaphor_lg677 a ex:MetaphorInstance .
 ex:lemmametaphor_lg683 a ex:MetaphorInstance .
 ex:lemmametaphor_lg686 a ex:MetaphorInstance .
-ex:lemmametaphor_lg688 a ex:MetaphorInstance .
 ex:lemmametaphor_lg689 a ex:MetaphorInstance .
 ex:lemmametaphor_lg691 a ex:MetaphorInstance .
 ex:lemmametaphor_lg694 a ex:MetaphorInstance .
@@ -2351,46 +1327,29 @@ ex:lemmametaphor_lg714 a ex:MetaphorInstance .
 ex:lemmametaphor_lg718 a ex:MetaphorInstance .
 ex:lemmametaphor_lg720 a ex:MetaphorInstance .
 ex:sourcedomain_가운데_중간 a ex:SourceDomain .
-ex:sourcedomain_가치_산정_계량 a ex:SourceDomain .
-ex:sourcedomain_간절히_그리워함 a ex:SourceDomain .
 ex:sourcedomain_감각적_지각 a ex:SourceDomain .
 ex:sourcedomain_건축물의_물리적_받침 a ex:SourceDomain .
-ex:sourcedomain_고하여_하소연하는_행위 a ex:SourceDomain .
 ex:sourcedomain_공간적_거리 a ex:SourceDomain .
 ex:sourcedomain_공간적_거리의_짧음 a ex:SourceDomain .
 ex:sourcedomain_공간적_경계_위로_지나감 a ex:SourceDomain .
 ex:sourcedomain_공간적_높이 a ex:SourceDomain .
 ex:sourcedomain_공간적_도달_접촉 a ex:SourceDomain .
-ex:sourcedomain_공간적_뒤쪽 a ex:SourceDomain .
-ex:sourcedomain_공간적_면 a ex:SourceDomain .
 ex:sourcedomain_공간적_앞섬 a ex:SourceDomain .
 ex:sourcedomain_공간적_울타리_경계_안 a ex:SourceDomain .
 ex:sourcedomain_그릇이나_포장_안에_든_물리적_내용물 a ex:SourceDomain .
 ex:sourcedomain_근육의_성질 a ex:SourceDomain .
-ex:sourcedomain_글의_끝맺음_단계 a ex:SourceDomain .
 ex:sourcedomain_기준이나_규격에_맞음 a ex:SourceDomain .
-ex:sourcedomain_길이_측정_표준 a ex:SourceDomain .
 ex:sourcedomain_깨끗하고_흰_상태 a ex:SourceDomain .
-ex:sourcedomain_깨뜨려_없애기 a ex:SourceDomain .
-ex:sourcedomain_끈을_매듭으로_묶는_물리적_행위 a ex:SourceDomain .
-ex:sourcedomain_남은_땅 a ex:SourceDomain .
-ex:sourcedomain_남을_돕는_행위 a ex:SourceDomain .
-ex:sourcedomain_낮은_위치 a ex:SourceDomain .
 ex:sourcedomain_논의의_최종_결정 a ex:SourceDomain .
-ex:sourcedomain_능동적이고_긍정적인_태도 a ex:SourceDomain .
 ex:sourcedomain_대상에_대한_생각 a ex:SourceDomain .
 ex:sourcedomain_대상의_둘레와_주변_공간 a ex:SourceDomain .
 ex:sourcedomain_되돌려_보내기 a ex:SourceDomain .
-ex:sourcedomain_두_물체를_맞대어_문지르는_물리적_동작 a ex:SourceDomain .
 ex:sourcedomain_뒤를_따라_가는_물리적_이동 a ex:SourceDomain .
 ex:sourcedomain_뒤에서_지지하는_행위 a ex:SourceDomain .
-ex:sourcedomain_뒤집힘 a ex:SourceDomain .
 ex:sourcedomain_때나_찌꺼기가_없는_물리적_표면 a ex:SourceDomain .
-ex:sourcedomain_마음의_거짓_없음 a ex:SourceDomain .
 ex:sourcedomain_막힘_없이_지나가다 a ex:SourceDomain .
 ex:sourcedomain_만족할_만한_성질 a ex:SourceDomain .
 ex:sourcedomain_몸_가까이_두는_행위 a ex:SourceDomain .
-ex:sourcedomain_몸에_지니고_다니는_행위 a ex:SourceDomain .
 ex:sourcedomain_몸을_기대는_물리적_지지 a ex:SourceDomain .
 ex:sourcedomain_몸의_동작과_자세 a ex:SourceDomain .
 ex:sourcedomain_무언가를_갖게_하거나_누리게_하는_사동 a ex:SourceDomain .
@@ -2401,160 +1360,87 @@ ex:sourcedomain_물건을_사용하거나_대상으로_삼음 a ex:SourceDomain 
 ex:sourcedomain_물로_몸을_씻는_행위 a ex:SourceDomain .
 ex:sourcedomain_물리적_낮음 a ex:SourceDomain .
 ex:sourcedomain_물리적_높이_증가 a ex:SourceDomain .
-ex:sourcedomain_물리적_도착 a ex:SourceDomain .
-ex:sourcedomain_물리적_머묾 a ex:SourceDomain .
-ex:sourcedomain_물리적_배척 a ex:SourceDomain .
-ex:sourcedomain_물리적_소유 a ex:SourceDomain .
-ex:sourcedomain_물리적_오염_지저분함 a ex:SourceDomain .
 ex:sourcedomain_물리적_크기 a ex:SourceDomain .
 ex:sourcedomain_물리적_힘의_세기 a ex:SourceDomain .
 ex:sourcedomain_물리적으로_보이지_않게_함 a ex:SourceDomain .
-ex:sourcedomain_물체를_틈_구멍에_넣는_행위 a ex:SourceDomain .
 ex:sourcedomain_물체에_힘이나_무게를_가하는_물리적_압박 a ex:SourceDomain .
-ex:sourcedomain_물체의_단단함_굳셈 a ex:SourceDomain .
-ex:sourcedomain_물체의_두께_지름 a ex:SourceDomain .
 ex:sourcedomain_물체의_맞물림과_정렬 a ex:SourceDomain .
-ex:sourcedomain_미루어_생각하여_논함 a ex:SourceDomain .
-ex:sourcedomain_박힌_물건이_제자리에서_나오는_물리적_이동 a ex:SourceDomain .
-ex:sourcedomain_변함없는_모양 a ex:SourceDomain .
 ex:sourcedomain_빛을_보내어_밝게_하는_행위 a ex:SourceDomain .
 ex:sourcedomain_사물을_이루다 a ex:SourceDomain .
 ex:sourcedomain_사물의_본래_몸체_바탕 a ex:SourceDomain .
-ex:sourcedomain_사실을_알리거나_주장하는_전언 a ex:SourceDomain .
-ex:sourcedomain_상호_관련성 a ex:SourceDomain .
-ex:sourcedomain_생명_생활을_이어_가는_행위 a ex:SourceDomain .
-ex:sourcedomain_서로_의논하는_행위 a ex:SourceDomain .
 ex:sourcedomain_선이나_길이_서로_마주_닿음 a ex:SourceDomain .
 ex:sourcedomain_선택하여_사용함 a ex:SourceDomain .
-ex:sourcedomain_소리가_없는_고요함 a ex:SourceDomain .
 ex:sourcedomain_속으로_먹는_마음 a ex:SourceDomain .
 ex:sourcedomain_손으로_가볍게_대는_물리적_접촉 a ex:SourceDomain .
 ex:sourcedomain_손으로_대어_주무르거나_쥐는_물리적_접촉 a ex:SourceDomain .
-ex:sourcedomain_손의_끝부분 a ex:SourceDomain .
 ex:sourcedomain_수단을_이용함 a ex:SourceDomain .
-ex:sourcedomain_시각적_인식 a ex:SourceDomain .
 ex:sourcedomain_시각적_인지 a ex:SourceDomain .
-ex:sourcedomain_시간_때 a ex:SourceDomain .
 ex:sourcedomain_시비_선악_판단 a ex:SourceDomain .
-ex:sourcedomain_신체_동작 a ex:SourceDomain .
-ex:sourcedomain_실제_구토_행위 a ex:SourceDomain .
 ex:sourcedomain_안으로_들어감 a ex:SourceDomain .
-ex:sourcedomain_알록달록한_뱀 a ex:SourceDomain .
 ex:sourcedomain_알아차리고_받아들이는_인지_행위 a ex:SourceDomain .
 ex:sourcedomain_애정과_귀중히_여김 a ex:SourceDomain .
 ex:sourcedomain_어둠을_빛으로_환하게_함 a ex:SourceDomain .
-ex:sourcedomain_열매_맺음 a ex:SourceDomain .
-ex:sourcedomain_위에서_아래로_늘어짐 a ex:SourceDomain .
-ex:sourcedomain_음식을_먹는_행위 a ex:SourceDomain .
-ex:sourcedomain_음의_낮음 a ex:SourceDomain .
-ex:sourcedomain_의견_일치 a ex:SourceDomain .
 ex:sourcedomain_의견을_내놓는_행위 a ex:SourceDomain .
-ex:sourcedomain_의무_임무 a ex:SourceDomain .
 ex:sourcedomain_의사_의견의_일치 a ex:SourceDomain .
 ex:sourcedomain_이동_이송 a ex:SourceDomain .
 ex:sourcedomain_이어지게_하다_남기다 a ex:SourceDomain .
-ex:sourcedomain_인물의_약력 a ex:SourceDomain .
 ex:sourcedomain_일반적_그릇됨 a ex:SourceDomain .
-ex:sourcedomain_입으로_빨아들이는_물리적_동작 a ex:SourceDomain .
-ex:sourcedomain_자극_반응 a ex:SourceDomain .
 ex:sourcedomain_자기_자신 a ex:SourceDomain .
 ex:sourcedomain_자세히_살펴봄 a ex:SourceDomain .
-ex:sourcedomain_작고_둥근_표식 a ex:SourceDomain .
 ex:sourcedomain_작은_종잇조각 a ex:SourceDomain .
 ex:sourcedomain_저절로_됨_억지_없음 a ex:SourceDomain .
 ex:sourcedomain_저절로_밀릴_정도의_반드러운_표면 a ex:SourceDomain .
 ex:sourcedomain_전달하는_사람 a ex:SourceDomain .
 ex:sourcedomain_제삼자의_입장에서_보는_관점 a ex:SourceDomain .
-ex:sourcedomain_주의를_기울임 a ex:SourceDomain .
 ex:sourcedomain_지식_획득 a ex:SourceDomain .
 ex:sourcedomain_지휘하고_살피는_행위 a ex:SourceDomain .
-ex:sourcedomain_직립_자세 a ex:SourceDomain .
 ex:sourcedomain_직접_경험하거나_지각할_수_있는_형태를_갖춘_사물 a ex:SourceDomain .
-ex:sourcedomain_청구_행위 a ex:SourceDomain .
-ex:sourcedomain_탈것에_몸을_올려놓는_행위 a ex:SourceDomain .
 ex:sourcedomain_판결하여_보이는_행위 a ex:SourceDomain .
-ex:sourcedomain_품질_수준의_높음 a ex:SourceDomain .
-ex:sourcedomain_하나를_둘_이상으로_가르는_행위 a ex:SourceDomain .
 ex:sourcedomain_해답을_요구하는_물음 a ex:SourceDomain .
-ex:sourcedomain_행위_수행의_어려움 a ex:SourceDomain .
 ex:sourcedomain_행정_관청에_사실을_보고함 a ex:SourceDomain .
-ex:sourcedomain_형상_모양의_이루어짐 a ex:SourceDomain .
 ex:sourcedomain_화자_쪽으로_이동 a ex:SourceDomain .
 ex:targetdomain_가정_설정과_전제 a ex:TargetDomain .
 ex:targetdomain_감정_경험 a ex:TargetDomain .
-ex:targetdomain_경험_표지 a ex:TargetDomain .
 ex:targetdomain_계정_생성 a ex:TargetDomain .
-ex:targetdomain_관계의_생성 a ex:TargetDomain .
 ex:targetdomain_관계의_질 a ex:TargetDomain .
 ex:targetdomain_규범과_기대의_부합_여부 a ex:TargetDomain .
-ex:targetdomain_근거의_존재 a ex:TargetDomain .
-ex:targetdomain_논리적_제외 a ex:TargetDomain .
 ex:targetdomain_논증_판단의_근거 a ex:TargetDomain .
 ex:targetdomain_논증과_신빙성_보강 a ex:TargetDomain .
 ex:targetdomain_논증에서_근거_제시 a ex:TargetDomain .
 ex:targetdomain_대상의_독립적_평가 a ex:TargetDomain .
-ex:targetdomain_대응_응답 a ex:TargetDomain .
-ex:targetdomain_대화_교류 a ex:TargetDomain .
-ex:targetdomain_대화하기_좋은_장소의_상태 a ex:TargetDomain .
-ex:targetdomain_도움_조언_요청 a ex:TargetDomain .
 ex:targetdomain_무죄성_무고함의_주장 a ex:TargetDomain .
-ex:targetdomain_문서_내_항목_지시 a ex:TargetDomain .
-ex:targetdomain_문자_메신저를_통한_의사_전달 a ex:TargetDomain .
 ex:targetdomain_방문_교류 a ex:TargetDomain .
 ex:targetdomain_법원의_최종_판단 a ex:TargetDomain .
-ex:targetdomain_법적_대인적_대응_태도 a ex:TargetDomain .
 ex:targetdomain_법적_오류 a ex:TargetDomain .
 ex:targetdomain_법적_절차에서의_증거_수용 a ex:TargetDomain .
-ex:targetdomain_법적_판단 a ex:TargetDomain .
 ex:targetdomain_법적_판단_해석 a ex:TargetDomain .
 ex:targetdomain_법적_판단과_평가 a ex:TargetDomain .
 ex:targetdomain_부당한_영향력_행사 a ex:TargetDomain .
-ex:targetdomain_분쟁_해결_조건_조율 a ex:TargetDomain .
 ex:targetdomain_사건의_공식적_통보 a ex:TargetDomain .
 ex:targetdomain_사건의_절차적_이송 a ex:TargetDomain .
-ex:targetdomain_사고_판단_능력 a ex:TargetDomain .
-ex:targetdomain_사람에_대한_비난적_낙인 a ex:TargetDomain .
 ex:targetdomain_사람을_특정_범주로_간주함 a ex:TargetDomain .
 ex:targetdomain_사람의_실제_대면 a ex:TargetDomain .
-ex:targetdomain_사실의_참됨 a ex:TargetDomain .
-ex:targetdomain_사안의_국면 a ex:TargetDomain .
-ex:targetdomain_사용자_정보 a ex:TargetDomain .
 ex:targetdomain_사정에_대한_납득과_판단 a ex:TargetDomain .
-ex:targetdomain_사회적_관계의_지속 a ex:TargetDomain .
 ex:targetdomain_사회적_법적_범위 a ex:TargetDomain .
-ex:targetdomain_사회적_위세와_세련됨의_평가 a ex:TargetDomain .
 ex:targetdomain_사회적_지원망과_도움의_범위 a ex:TargetDomain .
 ex:targetdomain_상대를_특정_장소로_이동시키는_행위 a ex:TargetDomain .
 ex:targetdomain_상대에게_권하는_행위 a ex:TargetDomain .
-ex:targetdomain_상대의_제압_성적_폭력 a ex:TargetDomain .
-ex:targetdomain_상대의_제압_통제 a ex:TargetDomain .
 ex:targetdomain_상황의_타당성_자연스러움 a ex:TargetDomain .
-ex:targetdomain_선망과_지향 a ex:TargetDomain .
 ex:targetdomain_성적_신체_접촉 a ex:TargetDomain .
-ex:targetdomain_성적_접촉_행위 a ex:TargetDomain .
-ex:targetdomain_성적_행위 a ex:TargetDomain .
 ex:targetdomain_성적_행위의_정당화와_관계_포장 a ex:TargetDomain .
-ex:targetdomain_소송상_입증_부담 a ex:TargetDomain .
 ex:targetdomain_수사_절차 a ex:TargetDomain .
 ex:targetdomain_수준_지위의_저하 a ex:TargetDomain .
-ex:targetdomain_수준의_낮음 a ex:TargetDomain .
 ex:targetdomain_수치적_근접성 a ex:TargetDomain .
 ex:targetdomain_시간적_선행 a ex:TargetDomain .
-ex:targetdomain_시간적_순서 a ex:TargetDomain .
 ex:targetdomain_시간적_진행 a ex:TargetDomain .
 ex:targetdomain_신뢰_관계 a ex:TargetDomain .
 ex:targetdomain_신빙성의_정도_증가 a ex:TargetDomain .
 ex:targetdomain_신체_접촉을_통한_해악_성적_행위 a ex:TargetDomain .
-ex:targetdomain_신체_접촉의_최소_허용_범위 a ex:TargetDomain .
 ex:targetdomain_신체_제압 a ex:TargetDomain .
-ex:targetdomain_신체의_단단함_평가 a ex:TargetDomain .
-ex:targetdomain_신체의_두께_평가 a ex:TargetDomain .
-ex:targetdomain_심리_상태의_보유 a ex:TargetDomain .
 ex:targetdomain_심리적_불쾌감과_오염감의_해소 a ex:TargetDomain .
 ex:targetdomain_연락_소통 a ex:TargetDomain .
 ex:targetdomain_외부_자료에_근거한_판단 a ex:TargetDomain .
 ex:targetdomain_요청_부탁_행위 a ex:TargetDomain .
-ex:targetdomain_위급_상황에서의_지원_요청 a ex:TargetDomain .
 ex:targetdomain_의도_취지 a ex:TargetDomain .
 ex:targetdomain_의사_입장의_명시 a ex:TargetDomain .
 ex:targetdomain_의사_전달 a ex:TargetDomain .
@@ -2563,48 +1449,26 @@ ex:targetdomain_의사소통_정보_전달 a ex:TargetDomain .
 ex:targetdomain_인적_관계 a ex:TargetDomain .
 ex:targetdomain_인체_체형_묘사 a ex:TargetDomain .
 ex:targetdomain_자기주도적_행위 a ex:TargetDomain .
-ex:targetdomain_장소를_벗어나는_행위 a ex:TargetDomain .
 ex:targetdomain_재판관의_판단_입장 a ex:TargetDomain .
 ex:targetdomain_쟁점_이의제기_대상 a ex:TargetDomain .
-ex:targetdomain_전화기_연락_수단의_명칭_형성 a ex:TargetDomain .
 ex:targetdomain_정도_강도 a ex:TargetDomain .
 ex:targetdomain_정보_사정의_비공개 a ex:TargetDomain .
 ex:targetdomain_정서적_강도와_정도 a ex:TargetDomain .
-ex:targetdomain_정지_상태 a ex:TargetDomain .
-ex:targetdomain_조사_검증의_산출 a ex:TargetDomain .
-ex:targetdomain_지속적_의사소통_관계_유지 a ex:TargetDomain .
 ex:targetdomain_직책_역할 a ex:TargetDomain .
 ex:targetdomain_진술_메시지의_의미_취지 a ex:TargetDomain .
-ex:targetdomain_진술_입장의_변경 a ex:TargetDomain .
 ex:targetdomain_진술_정황의_신빙성_판단 a ex:TargetDomain .
 ex:targetdomain_진술의_명확성_세부성 a ex:TargetDomain .
 ex:targetdomain_짧은_개인_메시지 a ex:TargetDomain .
-ex:targetdomain_추측_판단 a ex:TargetDomain .
-ex:targetdomain_친분_형성을_위한_만남 a ex:TargetDomain .
 ex:targetdomain_통신수단 a ex:TargetDomain .
 ex:targetdomain_판결문_속_판단_내용 a ex:TargetDomain .
-ex:targetdomain_판결의_결론_구조 a ex:TargetDomain .
 ex:targetdomain_판결의_최종_판단 a ex:TargetDomain .
-ex:targetdomain_판결의_효력_제거 a ex:TargetDomain .
 ex:targetdomain_판단_검토 a ex:TargetDomain .
 ex:targetdomain_판단_결과에_대한_작용 a ex:TargetDomain .
-ex:targetdomain_판단_결과의_도달 a ex:TargetDomain .
-ex:targetdomain_판단_기준 a ex:TargetDomain .
-ex:targetdomain_판단_내용의_유지 a ex:TargetDomain .
-ex:targetdomain_판단_수긍의_난이도 a ex:TargetDomain .
 ex:targetdomain_판단_행위의_기준화 a ex:TargetDomain .
 ex:targetdomain_판단상의_오류를_특정하는_행위 a ex:TargetDomain .
-ex:targetdomain_판단의_가능성_여지 a ex:TargetDomain .
-ex:targetdomain_판단의_근거 a ex:TargetDomain .
-ex:targetdomain_피부의_늘어진_상태 a ex:TargetDomain .
 ex:targetdomain_피부의_상태 a ex:TargetDomain .
 ex:targetdomain_피부의_표면_상태 a ex:TargetDomain .
-ex:targetdomain_필요조건의_설정 a ex:TargetDomain .
 ex:targetdomain_한계_초과 a ex:TargetDomain .
 ex:targetdomain_행동_양상 a ex:TargetDomain .
 ex:targetdomain_행위_허락 a ex:TargetDomain .
 ex:targetdomain_행위의_정확성 a ex:TargetDomain .
-ex:targetdomain_혐오감의_강도 a ex:TargetDomain .
-ex:targetdomain_혐오감의_평가 a ex:TargetDomain .
-ex:targetdomain_형사절차상_범죄_신고와_처벌_요구 a ex:TargetDomain .
-ex:targetdomain_호감_상호작용 a ex:TargetDomain .

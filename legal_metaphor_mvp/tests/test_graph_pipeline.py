@@ -13,6 +13,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
+from nodes.rdf_mapping import rdf_mapping_node  # noqa: E402
 from nodes.validation_check import validation_check_node  # noqa: E402
 from schemas.annotation import create_empty_state  # noqa: E402
 
@@ -120,6 +121,42 @@ class ValidationStatusTests(unittest.TestCase):
         self.assertEqual(result.get("status"), "needs_repair")
         self.assertEqual(result.get("metadata", {}).get("validation_status"), "needs_repair")
         self.assertTrue(result.get("human_review_items"))
+
+
+class RdfMappingNodeTests(unittest.TestCase):
+    def test_rdf_mapping_node_maps_only_confirmed_mrw(self) -> None:
+        state = create_empty_state(document_id="doc-1", case_id="case-1", raw_text="테스트")
+        state["mipvu_annotations"] = [
+            {
+                "lemma_group_id": "lg001",
+                "lemma": "무너지다",
+                "mipvu_label": "MRW",
+                "source_domain": "BUILDING",
+                "target_domain": "ARGUMENT",
+                "conceptual_metaphor": "ARGUMENT IS A BUILDING",
+            },
+            {
+                "lemma_group_id": "lg002",
+                "lemma": "맡기다",
+                "mipvu_label": "MRW_candidate",
+                "source_domain": "DELEGATED RESPONSIBILITY",
+                "target_domain": "LEGAL DISCRETION",
+                "conceptual_metaphor": "LEGAL DISCRETION IS DELEGATED RESPONSIBILITY",
+            },
+            {
+                "lemma_group_id": "lg003",
+                "lemma": "흔들리다",
+                "mipvu_label": "borderline_candidate",
+                "source_domain": "PHYSICAL INSTABILITY",
+                "target_domain": "TESTIMONY CREDIBILITY",
+                "conceptual_metaphor": "CREDIBILITY IS PHYSICAL STABILITY",
+            },
+        ]
+
+        result = rdf_mapping_node(state)
+
+        self.assertEqual(len(result["rdf_mappings"]), 1)
+        self.assertEqual(result["rdf_mappings"][0]["primary_triple"]["subject_label"], "ARGUMENT")
 
 
 if __name__ == "__main__":

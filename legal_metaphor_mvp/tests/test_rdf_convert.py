@@ -104,6 +104,22 @@ class RdfMappingTests(unittest.TestCase):
                     "target_domain": "",
                     "conceptual_metaphor": "",
                 },
+                {
+                    "lemma_group_id": "lg003",
+                    "lemma": "맡기다",
+                    "mipvu_label": "MRW_candidate",
+                    "source_domain": "DELEGATED RESPONSIBILITY",
+                    "target_domain": "LEGAL DISCRETION",
+                    "conceptual_metaphor": "LEGAL DISCRETION IS DELEGATED RESPONSIBILITY",
+                },
+                {
+                    "lemma_group_id": "lg004",
+                    "lemma": "흔들리다",
+                    "mipvu_label": "borderline_candidate",
+                    "source_domain": "PHYSICAL INSTABILITY",
+                    "target_domain": "TESTIMONY CREDIBILITY",
+                    "conceptual_metaphor": "CREDIBILITY IS PHYSICAL STABILITY",
+                },
             ],
         }
 

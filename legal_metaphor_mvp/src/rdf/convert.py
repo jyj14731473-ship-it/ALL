@@ -74,7 +74,7 @@ def _mipvu_identification_label(annotation: dict[str, Any]) -> str:
 
 def _is_mipvu_kg_candidate(annotation: dict[str, Any]) -> bool:
     label = str(annotation.get("mipvu_label", "")).strip()
-    if label not in {"MRW", "MRW_candidate", "borderline_candidate"}:
+    if label != "MRW":
         return False
     return all(
         str(annotation.get(key, "")).strip()
