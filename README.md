@@ -43,7 +43,7 @@ python -c "import openai, konlpy, rdflib, pydantic; print('OK')"
 ```
 
 `ruff check src/`는 `All checks passed!`가 나오면 정상입니다.
-`pytest`는 모든 테스트가 통과하면 정상입니다.
+`pytest`는 기본 단위 테스트가 모두 통과하면 정상입니다.
 import 테스트는 `OK`가 출력되면 정상입니다.
 
 ## Usage
@@ -62,15 +62,16 @@ python main.py --input data/input/example.txt --json-output outputs/intermediate
 - 실행: `python -m all_metaphor.cli --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
 - 호환 실행: `python main.py --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
 - 테스트: `pytest`
+- 통합 테스트: `pytest -m integration`
 - 린트: `ruff check src/`
 - 포맷: `ruff format src/`
 - 타입 검사: `mypy src/`
 
 ## Known Issues
 
-- KonLPy/JPype Windows 환경에서 pytest 종료 후 `fatal exception: access violation`이 발생할 수 있습니다.
-- exit code 0이고 테스트 결과가 정상인 경우 현재는 통과로 봅니다.
-- 운영 환경에서 모니터링이 필요합니다.
+- KonLPy/JPype Windows 환경에서 실제 Okt/JVM을 호출하는 통합 테스트 실행 시 `fatal exception: access violation` 로그가 발생할 수 있습니다.
+- 기본 `pytest` 실행은 `integration` 테스트를 제외하므로 Okt/JVM을 호출하지 않습니다.
+- 실제 Okt smoke test는 `pytest -m integration`으로 명시 실행합니다.
 
 ## Project Structure
 

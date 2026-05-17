@@ -62,6 +62,7 @@ External library policy: Any dependency outside this list requires explicit appr
 - After implementing each pipeline node, add or update focused unit tests for that node and any touched helper module before moving to the next node.
 - After any code change, run `ruff format src/ tests/` before committing.
 - Before committing or handing off implementation work, run `ruff check src/` and `pytest`; both must pass unless a blocker is explicitly reported.
+- Default `pytest` excludes tests marked `integration`; run `pytest -m integration` explicitly for real external runtime smoke tests such as KonLPy Okt/JVM.
 - Breaking changes to the intermediate schema or RDF vocabulary must bump `schema_version` until separate RDF vocabulary versioning is approved.
 - Processing Pipeline and Pipeline Nodes sections must stay in sync.
 - Preserve MIPVU as the conceptual metaphor identification methodology.
@@ -429,6 +430,7 @@ Future folders are TBD and should be added only after their purpose is confirmed
 - Run: `python -m all_metaphor.cli --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
 - Compatibility run: `python main.py --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
 - Test: `pytest`
+- Integration test: `pytest -m integration`
 - Lint: `ruff check src/`
 - Format: `ruff format src/`
 - Type check: `mypy src/` (optional)
