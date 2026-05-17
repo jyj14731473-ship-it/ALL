@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ALL_Metaphor
 
 ## Overview
@@ -84,6 +84,3 @@ python main.py data/input/example.txt
 프로젝트 규칙과 제약은 `AGENTS.md`에 있습니다.
 한국어 MIPVU 적용 규칙은 `skills/korean-mipvu/SKILL.md`에 있습니다.
 세부 참고 자료는 `skills/korean-mipvu/references/`에 있습니다.
-=======
-Now I am become Death, the destroyer of worlds.
->>>>>>> 5a91558e166eb9165b9bdfe4dd5e6292b861d69f
