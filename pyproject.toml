@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools==82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ALL"
+version = "0.1.0"
+description = "ALL_Metaphor analyzes Korean legal judgment text for MIPVU-based conceptual metaphors and RDF mapping."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "openai==2.37.0",
+    "konlpy==0.6.0",
+    "rdflib==7.6.0",
+    "pydantic==2.13.4",
+    "python-dotenv==1.2.2",
+]
+
+[project.scripts]
+all-metaphor = "all_metaphor.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.0.3",
+    "pytest-cov==7.1.0",
+    "ruff==0.15.13",
+    "mypy==2.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["all_metaphor*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "N", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "integration: tests that exercise installed external runtime components",
+]
+
+[tool.coverage.run]
+source = ["src/all_metaphor"]
+branch = true
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
