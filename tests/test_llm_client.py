@@ -146,16 +146,19 @@ def make_unit(
 
 
 def llm_json(candidate_id: str, *, decision: str = "non_metaphorical") -> str:
+    is_metaphorical = decision == "metaphorical"
     return json.dumps(
         {
             "results": [
                 {
                     "candidate_id": candidate_id,
                     "mipvu_decision": decision,
-                    "metaphor_type": "indirect" if decision == "metaphorical" else None,
+                    "metaphor_type": "indirect" if is_metaphorical else None,
                     "contextual_meaning": "계약 관계가 법적으로 이루어진다는 의미",
                     "basic_meaning": "일이나 관계가 이루어진다는 사전적 의미",
                     "meaning_contrast": "법률 관습적 의미로 사용됨",
+                    "source_domain": "일의 성립" if is_metaphorical else None,
+                    "target_domain": "법률관계" if is_metaphorical else None,
                     "confidence": 0.84,
                     "rationale": "법률 전문용어의 관습적 의미에 가깝다.",
                 }
@@ -193,6 +196,8 @@ def test_judge_candidates_updates_candidate_fields(settings: RuntimeSettings) ->
     assert judged[0].contextual_meaning == "계약 관계가 법적으로 이루어진다는 의미"
     assert judged[0].basic_meaning == "일이나 관계가 이루어진다는 사전적 의미"
     assert judged[0].meaning_contrast == "법률 관습적 의미로 사용됨"
+    assert judged[0].source_domain is None
+    assert judged[0].target_domain is None
     assert judged[0].confidence == 0.84
     assert judged[0].llm_rationale == "법률 전문용어의 관습적 의미에 가깝다."
 
@@ -204,6 +209,59 @@ def test_judge_candidates_updates_candidate_fields(settings: RuntimeSettings) ->
     prompt_candidates = extract_prompt_candidates(call)
     assert prompt_candidates[0]["local_context"] == "계약의 성립 여부를 판단한다."
     assert prompt_candidates[0]["surface"] == "성립"
+
+
+def test_judge_candidates_applies_metaphorical_domains(settings: RuntimeSettings) -> None:
+    fake_chat = FakeChatCompletions([llm_json("candidate-000001", decision="metaphorical")])
+    candidate = make_candidate("candidate-000001")
+
+    judged = LlmClient(settings, chat_completions=fake_chat).judge_candidates([candidate])
+
+    assert judged[0].mipvu_decision is MipvuDecision.METAPHORICAL
+    assert judged[0].source_domain == "일의 성립"
+    assert judged[0].target_domain == "법률관계"
+
+
+def test_judge_candidates_repairs_metaphorical_response_without_domains(
+    settings: RuntimeSettings,
+) -> None:
+    invalid_response = json.dumps(
+        {
+            "results": [
+                {
+                    "candidate_id": "candidate-000001",
+                    "mipvu_decision": "metaphorical",
+                    "metaphor_type": "indirect",
+                    "contextual_meaning": "법률 요건이 갖추어짐.",
+                    "basic_meaning": "어떤 일이 이루어짐.",
+                    "meaning_contrast": "법률 요건의 성취를 일의 성립과 비교함.",
+                    "source_domain": None,
+                    "target_domain": None,
+                    "confidence": 0.8,
+                    "rationale": "도메인 누락 응답.",
+                }
+            ]
+        },
+        ensure_ascii=False,
+    )
+    fake_chat = FakeChatCompletions(
+        [invalid_response, llm_json("candidate-000001", decision="metaphorical")]
+    )
+
+    judged = LlmClient(settings, chat_completions=fake_chat).judge_candidates(
+        [make_candidate("candidate-000001")]
+    )
+
+    assert judged[0].mipvu_decision is MipvuDecision.METAPHORICAL
+    assert judged[0].source_domain == "일의 성립"
+    assert judged[0].target_domain == "법률관계"
+    assert len(fake_chat.calls) == 2
+    repair_messages = fake_chat.calls[1]["messages"]
+    assert isinstance(repair_messages, list)
+    repair_user_message = repair_messages[1]["content"]
+    assert isinstance(repair_user_message, str)
+    assert "source_domain" in repair_user_message
+    assert "target_domain" in repair_user_message
 
 
 def test_judge_candidates_repairs_invalid_json_once(settings: RuntimeSettings) -> None:
@@ -288,6 +346,8 @@ def test_judge_candidates_splits_batches_by_sentence_and_hard_cap(
                             "contextual_meaning": "context",
                             "basic_meaning": "basic",
                             "meaning_contrast": None,
+                            "source_domain": None,
+                            "target_domain": None,
                             "confidence": 0.6,
                             "rationale": "ok",
                         }

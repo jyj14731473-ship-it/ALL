@@ -314,3 +314,11 @@ def test_cli_has_python_module_entrypoint_guard() -> None:
 
     assert 'if __name__ == "__main__":' in source
     assert "raise SystemExit(main())" in source
+
+
+def test_root_main_is_cli_compatibility_wrapper() -> None:
+    source = Path("main.py").read_text(encoding="utf-8")
+
+    assert "from all_metaphor.cli import main" in source
+    assert "raise SystemExit(main())" in source
+    assert "run_pipeline_to_files" not in source

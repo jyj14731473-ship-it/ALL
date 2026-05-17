@@ -1,4 +1,3 @@
-
 # ALL_Metaphor
 
 ## Overview
@@ -9,10 +8,10 @@ RDF 출력은 로컬 지식 그래프 활용을 위해 Turtle (`.ttl`) 형식으
 
 ## Project Status
 
-- Phase 0: ✅ Complete
-- Phase 1: ✅ Complete (56 tests, 98% coverage)
-- Phase 2: ⏳ In Progress
-- Phase 3: 📋 Planned
+- Phase 0: Complete
+- Phase 1: Complete
+- Phase 2: In Progress
+- Phase 3: Planned
 
 ## Setup
 
@@ -33,6 +32,7 @@ Copy-Item .env.example .env
 ```
 
 `.env` 파일을 열어 `OPENAI_API_KEY`, `OPENAI_MODEL`, `KRDICT_API_KEY`를 입력합니다.
+`ALL_LOG_LEVEL`은 선택값이며 기본값은 `INFO`입니다.
 
 설치 검증:
 
@@ -42,22 +42,25 @@ pytest
 python -c "import openai, konlpy, rdflib, pydantic; print('OK')"
 ```
 
-`ruff check src/`는 `All checks passed!` 또는 검사할 파일이 없다는 메시지가 나오면 정상입니다.
-`pytest`는 테스트가 없을 경우 `no tests collected` 또는 `no tests ran`이면 정상입니다.
+`ruff check src/`는 `All checks passed!`가 나오면 정상입니다.
+`pytest`는 모든 테스트가 통과하면 정상입니다.
 import 테스트는 `OK`가 출력되면 정상입니다.
 
 ## Usage
 
-CLI는 `.txt` 판결문 파일 경로 하나를 인자로 받습니다.
-진입점은 `main.py`이며 실제 실행은 pipeline 모듈에 위임합니다.
+권장 실행 방식은 패키지 CLI입니다.
+입력 `.txt`, intermediate JSON 출력 경로, Turtle RDF 출력 경로를 명시합니다.
+루트 `main.py`는 같은 CLI를 호출하는 호환 wrapper입니다.
 
 ```powershell
-python main.py data/input/example.txt
+python -m all_metaphor.cli --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl
+python main.py --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl
 ```
 
 ## Commands
 
-- 실행: `python main.py data/input/example.txt`
+- 실행: `python -m all_metaphor.cli --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
+- 호환 실행: `python main.py --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
 - 테스트: `pytest`
 - 린트: `ruff check src/`
 - 포맷: `ruff format src/`

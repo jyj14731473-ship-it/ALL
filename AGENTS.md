@@ -112,6 +112,7 @@ External library policy: Any dependency outside this list requires explicit appr
 ### Code Layout
 
 - `pyproject.toml`: pinned dependencies and tool configuration.
+- `main.py`: compatibility wrapper for `python main.py ...`; delegate directly to `src/all_metaphor/cli.py:main()`.
 - `src/all_metaphor/cli.py`: CLI entrypoint for `python -m all_metaphor.cli`. Use `argparse` only, require `--input`, `--json-output`, and `--ttl-output`, and delegate execution to `src/all_metaphor/pipeline.py:run_pipeline_to_files()`.
 - `src/all_metaphor/config.py`: environment variables, runtime settings, and path defaults.
 - `src/all_metaphor/pipeline.py`: orchestration of pipeline nodes.
@@ -402,6 +403,7 @@ Use the following minimal implementation structure once code is added.
 .
 ├── AGENTS.md
 ├── pyproject.toml
+├── main.py
 ├── src/
 │   └── all_metaphor/
 ├── tests/
@@ -424,6 +426,7 @@ Future folders are TBD and should be added only after their purpose is confirmed
 ## 5. Commands
 
 - Run: `python -m all_metaphor.cli --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
+- Compatibility run: `python main.py --input data/input/example.txt --json-output outputs/intermediate/example.json --ttl-output outputs/rdf/example.ttl`
 - Test: `pytest`
 - Lint: `ruff check src/`
 - Format: `ruff format src/`

@@ -65,6 +65,8 @@ Required output shape:
       "contextual_meaning": "string | null",
       "basic_meaning": "string | null",
       "meaning_contrast": "string | null",
+      "source_domain": "string | null",
+      "target_domain": "string | null",
       "confidence": 0.0,
       "rationale": "string"
     }}
@@ -75,6 +77,10 @@ Constraints:
 - Include exactly one result for each input candidate_id.
 - confidence must be between 0.0 and 1.0.
 - metaphor_type must be null unless mipvu_decision is metaphorical.
+- source_domain and target_domain must be non-null when mipvu_decision is metaphorical.
+- source_domain and target_domain must be null when mipvu_decision is non_metaphorical or unresolved.
+- Use concise conceptual-domain labels, not full sentences.
+- If source/target domain cannot be identified confidently, choose unresolved.
 - If mipvu_decision is unresolved, explain the uncertainty in rationale.
 - If the candidate is conventional legal terminology in this context, choose non_metaphorical.
 
@@ -87,7 +93,12 @@ Your previous response was not valid JSON for the required schema.
 
 Do not change the substantive judgments unless required to satisfy the schema.
 Return JSON only with this exact top-level shape:
-{{"results":[...]}}
+{{"results":[{{"candidate_id":"string","mipvu_decision":"metaphorical | non_metaphorical | unresolved","metaphor_type":"indirect | direct | implicit | null","contextual_meaning":"string | null","basic_meaning":"string | null","meaning_contrast":"string | null","source_domain":"string | null","target_domain":"string | null","confidence":0.0,"rationale":"string"}}]}}
+
+Remember:
+- source_domain and target_domain must be non-null only for metaphorical judgments.
+- source_domain and target_domain must be null for non_metaphorical or unresolved judgments.
+- If domains cannot be identified confidently, return unresolved.
 
 Original candidates:
 {candidates_json}
@@ -157,13 +168,40 @@ class _LlmJudgment(_StrictBaseModel):
     contextual_meaning: str | None = None
     basic_meaning: str | None = None
     meaning_contrast: str | None = None
+    source_domain: str | None = None
+    target_domain: str | None = None
     confidence: float = Field(ge=0.0, le=1.0)
     rationale: str
 
     @model_validator(mode="after")
-    def validate_metaphor_type_consistency(self) -> _LlmJudgment:
-        if self.mipvu_decision is not MipvuDecision.METAPHORICAL and self.metaphor_type is not None:
-            msg = "metaphor_type must be null unless mipvu_decision is metaphorical"
+    def validate_rdf_field_consistency(self) -> _LlmJudgment:
+        if self.mipvu_decision is MipvuDecision.METAPHORICAL:
+            missing_fields = [
+                field_name
+                for field_name, value in {
+                    "metaphor_type": self.metaphor_type,
+                    "source_domain": self.source_domain,
+                    "target_domain": self.target_domain,
+                }.items()
+                if value is None or (isinstance(value, str) and value.strip() == "")
+            ]
+            if missing_fields:
+                msg = (
+                    "metaphorical judgment requires "
+                    f"{', '.join(missing_fields)}"
+                )
+                raise ValueError(msg)
+            return self
+
+        if (
+            self.metaphor_type is not None
+            or self.source_domain is not None
+            or self.target_domain is not None
+        ):
+            msg = (
+                "metaphor_type, source_domain, and target_domain must be null unless "
+                "mipvu_decision is metaphorical"
+            )
             raise ValueError(msg)
         return self
 
@@ -475,6 +513,8 @@ def _apply_judgment(
             "contextual_meaning": judgment.contextual_meaning,
             "basic_meaning": judgment.basic_meaning,
             "meaning_contrast": judgment.meaning_contrast,
+            "source_domain": judgment.source_domain,
+            "target_domain": judgment.target_domain,
             "confidence": judgment.confidence,
             "llm_rationale": judgment.rationale,
         },
@@ -497,6 +537,8 @@ def _mark_unresolved(
         {
             "mipvu_decision": MipvuDecision.UNRESOLVED,
             "metaphor_type": None,
+            "source_domain": None,
+            "target_domain": None,
             "meaning_contrast": None,
             "confidence": 0.0,
             "llm_rationale": rationale,
