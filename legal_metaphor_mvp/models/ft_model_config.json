@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "provider": "openai",
+  "model_name": "",
+  "notes": "Optional future fine-tuned model config. Main MVP uses prompt mode by default."
+}
+

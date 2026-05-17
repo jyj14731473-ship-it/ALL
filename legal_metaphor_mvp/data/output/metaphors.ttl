@@ -1,0 +1,4 @@
+@prefix ex: <http://example.org/legal-metaphor#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# No RDF mapping.
