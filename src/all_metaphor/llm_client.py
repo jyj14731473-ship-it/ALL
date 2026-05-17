@@ -186,10 +186,7 @@ class _LlmJudgment(_StrictBaseModel):
                 if value is None or (isinstance(value, str) and value.strip() == "")
             ]
             if missing_fields:
-                msg = (
-                    "metaphorical judgment requires "
-                    f"{', '.join(missing_fields)}"
-                )
+                msg = f"metaphorical judgment requires {', '.join(missing_fields)}"
                 raise ValueError(msg)
             return self
 

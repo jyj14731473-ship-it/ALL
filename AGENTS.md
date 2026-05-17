@@ -165,6 +165,7 @@ External library policy: Any dependency outside this list requires explicit appr
 - Deduplicate candidate lemmas before dictionary lookup and LLM judgment.
 - Cache dictionary lookup results per normalized lexical unit during a run.
 - Keep OpenAI prompts structured and ask for machine-readable JSON only.
+- Require metaphorical LLM judgments to include concise `source_domain` and `target_domain` labels; if either domain cannot be identified confidently, keep the candidate `unresolved`.
 - Validate LLM responses against the intermediate JSON schema before RDF mapping.
 - Preserve raw input text locally only; do not log full judgment text.
 - Keep RDF output limited to validated entities and predicates from the project vocabulary unless a new predicate is explicitly approved.
